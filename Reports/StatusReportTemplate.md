@@ -29,11 +29,11 @@
 &nbsp;  
 
 ### **Progress & Issues**  
-* **Tasks Completed:** <Description>  
-* **Successful Tactics:** <Desceiption>
-* **Learning:** <Description>
-* **Issues & Challenges:** <Description>
-* **Sticking Points:** <Description>
+* **Tasks Completed:** <Description>  <p>&nbsp;</p>
+* **Successful Tactics:** <Description> <p>&nbsp;</p>
+* **Learning:** <Description> <p>&nbsp;</p>
+* **Issues & Challenges:** <Description> <p>&nbsp;</p>
+* **Sticking Points:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -69,11 +69,11 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  
-* **Successful Tactics:** <Desceiption>
-* **Learning:** <Description>
-* **Issues & Challenges:** <Description>
-* **Sticking Points:** <Description>
+* **Tasks Completed:** <Description>  <p>&nbsp;</p>
+* **Successful Tactics:** <Description> <p>&nbsp;</p>
+* **Learning:** <Description> <p>&nbsp;</p>
+* **Issues & Challenges:** <Description> <p>&nbsp;</p>
+* **Sticking Points:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -104,11 +104,11 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  
-* **Successful Tactics:** <Desceiption>
-* **Learning:** <Description>
-* **Issues & Challenges:** <Description>
-* **Sticking Points:** <Description>
+* **Tasks Completed:** <Description>  <p>&nbsp;</p>
+* **Successful Tactics:** <Description> <p>&nbsp;</p>
+* **Learning:** <Description> <p>&nbsp;</p>
+* **Issues & Challenges:** <Description> <p>&nbsp;</p>
+* **Sticking Points:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -139,11 +139,11 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  
-* **Successful Tactics:** <Desceiption>
-* **Learning:** <Description>
-* **Issues & Challenges:** <Description>
-* **Sticking Points:** <Description>
+* **Tasks Completed:** <Description>  <p>&nbsp;</p>
+* **Successful Tactics:** <Description> <p>&nbsp;</p>
+* **Learning:** <Description> <p>&nbsp;</p>
+* **Issues & Challenges:** <Description> <p>&nbsp;</p>
+* **Sticking Points:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -174,11 +174,11 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  
-* **Successful Tactics:** <Desceiption>
-* **Learning:** <Description>
-* **Issues & Challenges:** <Description>
-* **Sticking Points:** <Description>
+* **Tasks Completed:** <Description>  <p>&nbsp;</p>
+* **Successful Tactics:** <Description> <p>&nbsp;</p>
+* **Learning:** <Description> <p>&nbsp;</p>
+* **Issues & Challenges:** <Description> <p>&nbsp;</p>
+* **Sticking Points:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -209,11 +209,11 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  
-* **Successful Tactics:** <Desceiption>
-* **Learning:** <Description>
-* **Issues & Challenges:** <Description>
-* **Sticking Points:** <Description>
+* **Tasks Completed:** <Description>  <p>&nbsp;</p>
+* **Successful Tactics:** <Description> <p>&nbsp;</p>
+* **Learning:** <Description> <p>&nbsp;</p>
+* **Issues & Challenges:** <Description> <p>&nbsp;</p>
+* **Sticking Points:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
