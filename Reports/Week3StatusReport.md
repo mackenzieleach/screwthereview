@@ -16,10 +16,10 @@ This is the first status report, so we have no previous plans and goals for the 
 &nbsp;  
 
 ### **Progress & Issues**  
-* **Tasks Completed:** This week, we completed the "Requirements & Team Policies" deliverable. This living document includes information about team member roles, features, initial use cases, team policies and an estimated schedule for tasks. The document can be found here: [Screw the Review: Requirements & Team Policies](https://docs.google.com/document/d/1AdpmiG6Gi3a_kvq9dlz2P9KB4OZ5nPvZS9F1-CJdxzk/edit?usp=sharing)
-* **Successful Tactics:** <Description>
-* **Learning:** <Description>
-* **Issues & Challenges:** <Description>
+* **Tasks Completed:** This week, we completed the "Requirements & Team Policies" deliverable. This living document includes information about team member roles, features, initial use cases, team policies and an estimated schedule for tasks. The document can be found here: [Screw the Review: Requirements & Team Policies](https://docs.google.com/document/d/1AdpmiG6Gi3a_kvq9dlz2P9KB4OZ5nPvZS9F1-CJdxzk/edit?usp=sharing). <p>&nbsp;</p> 
+* **Successful Tactics:** <Description> <p>&nbsp;</p>
+* **Learning:** <Description> <p>&nbsp;</p>
+* **Issues & Challenges:** <Description> <p>&nbsp;</p>
 * **Sticking Points:** <Description>
 
 &nbsp;  
@@ -44,10 +44,10 @@ This is the first status report, so we have no previous plans and goals for the 
 <!-- ############################################################################################## -->
 ## Team Member Reports: Luke LeVassuer
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  
-* **Successful Tactics:** <Description>
-* **Learning:** <Description>
-* **Issues & Challenges:** <Description>
+* **Tasks Completed:** <Description> <p>&nbsp;</p>
+* **Successful Tactics:** <Description> <p>&nbsp;</p>
+* **Learning:** <Description> <p>&nbsp;</p>
+* **Issues & Challenges:** <Description> <p>&nbsp;</p>
 * **Sticking Points:** <Description>
 
 &nbsp;  
@@ -67,10 +67,10 @@ This is the first status report, so we have no previous plans and goals for the 
 <!-- ############################################################################################## -->
 ## Team Member Reports: Mackenzie Leach
 **Progress & Issues**  
-* **Tasks Completed:** This week, I completed a use case for the "Requirements & Team Policies" document, formalized the description of Screw the review, MVP features and strech goals, and was responsible for the overall proofreading and formatting of the document. I created a Markdown template for our weekly status reports and added an internal document in our Google Drive for weekly meeting agendas, notes and the assignment of action items. 
-* **Successful Tactics:** <Description>
-* **Learning:** The main thing I focused on learning this week was Markdown syntax as it is not something I have worked extensively with in Github previously. 
-* **Issues & Challenges:** <Description>
+* **Tasks Completed:** This week, I completed a use case for the "Requirements & Team Policies" document, formalized the description of Screw the review, MVP features and strech goals, and was responsible for the overall proofreading and formatting of the document. I created a Markdown template for our weekly status reports and added an internal document in our Google Drive for weekly meeting agendas, notes and the assignment of action items. <p>&nbsp;</p>
+* **Successful Tactics:** <Description> <p>&nbsp;</p>
+* **Learning:** The main thing I focused on learning this week was Markdown syntax as it is not something I have worked extensively with in Github previously. <p>&nbsp;</p>
+* **Issues & Challenges:** <Description> <p>&nbsp;</p>
 * **Sticking Points:** <Description>
 
 &nbsp;  
@@ -90,11 +90,11 @@ This is the first status report, so we have no previous plans and goals for the 
 <!-- ############################################################################################## -->
 ## Team Member Reports: Josh Sherbrooke
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  
-* **Successful Tactics:** <Description>
-* **Learning:** <Description>
-* **Issues & Challenges:** <Description>
-* **Sticking Points:** <Description>
+* **Tasks Completed:** <Description>  <p>&nbsp;</p>
+* **Successful Tactics:** <Description> <p>&nbsp;</p>
+* **Learning:** <Description> <p>&nbsp;</p>
+* **Issues & Challenges:** <Description> <p>&nbsp;</p>
+* **Sticking Points:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -113,11 +113,11 @@ This is the first status report, so we have no previous plans and goals for the 
 <!-- ############################################################################################## -->
 ## Team Member Reports: LuLu Pinczower
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  
-* **Successful Tactics:** <Description>
-* **Learning:** <Description>
-* **Issues & Challenges:** <Description>
-* **Sticking Points:** <Description>
+* **Tasks Completed:** <Description>  <p>&nbsp;</p>
+* **Successful Tactics:** <Description> <p>&nbsp;</p>
+* **Learning:** <Description> <p>&nbsp;</p>
+* **Issues & Challenges:** <Description> <p>&nbsp;</p>
+* **Sticking Points:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -136,11 +136,11 @@ This is the first status report, so we have no previous plans and goals for the 
 <!-- ############################################################################################## -->
 ## Team Member Reports: Rachel Ye
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  
-* **Successful Tactics:** <Description>
-* **Learning:** <Description>
-* **Issues & Challenges:** <Description>
-* **Sticking Points:** <Description>
+* **Tasks Completed:** <Description>  <p>&nbsp;</p>
+* **Successful Tactics:** <Description> <p>&nbsp;</p>
+* **Learning:** <Description> <p>&nbsp;</p>
+* **Issues & Challenges:** <Description> <p>&nbsp;</p>
+* **Sticking Points:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
