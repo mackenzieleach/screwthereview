@@ -60,7 +60,7 @@ This is the first status report, so we have no previous plans and goals for the 
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVassuer** | <Task> | <Due> 
+**Luke LeVasseur** | <Task> | <Due> 
 
 &nbsp;  
 
