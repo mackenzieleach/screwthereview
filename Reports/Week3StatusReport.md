@@ -151,7 +151,7 @@ This is the first status report, so we have no previous plans and goals for the 
 
 **Upcoming Plans & Goals**  
 * **Goal 1:** Use the Yelp API to make a simple GET request. 
-* **Goal 2:** Determine what filters we want for the application and which API calls we should make.
+* **Goal 2:** Looking into mockup tools or blocking out a rough draft of the app on PowerPoint.
 
 &nbsp;  
 
