@@ -136,11 +136,11 @@ This is the first status report, so we have no previous plans and goals for the 
 <!-- ############################################################################################## -->
 ## Team Member Reports: Rachel Ye
 **Progress & Issues**  
-* **Tasks Completed:** <Obtained API key from Yelp and explored scope of required data feeds> <p>&nbsp;</p>
-* **Successful Tactics:** <Research data feeds and existing applications. Ask clarifying questions regarding goals and use cases of application and how this relates to data required.> <p>&nbsp;</p>
-* **Learning:** <It is essential that all members share an understanding of the goals and scope of a projext early on> <p>&nbsp;</p>
+* **Tasks Completed:** <Description>  <p>&nbsp;</p>
+* **Successful Tactics:** <Description> <p>&nbsp;</p>
+* **Learning:** <Description> <p>&nbsp;</p>
 * **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Determining requirements of database and / or API access> <p>&nbsp;</p>
+* **Blockers:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
