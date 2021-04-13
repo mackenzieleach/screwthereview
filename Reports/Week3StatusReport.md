@@ -20,7 +20,7 @@ This is the first status report, so we have no previous plans and goals for the 
 * **Successful Tactics:** <Description> <p>&nbsp;</p>
 * **Learning:** <Description> <p>&nbsp;</p>
 * **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Sticking Points:** <Description>
+* **Blockers:** <Description>
 
 &nbsp;  
 
@@ -33,7 +33,7 @@ This is the first status report, so we have no previous plans and goals for the 
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVassuer** | <Task> | <Due> 
+**Luke Levasseur** | <Task> | <Due> 
 **Mackenzie Leach** | <Task> | <Due>  
 **Josh Sherbrooke** | <Task> | <Due>  
 **LuLu Pinczower** | <Task> | <Due>  
@@ -48,7 +48,7 @@ This is the first status report, so we have no previous plans and goals for the 
 * **Successful Tactics:** <Description> <p>&nbsp;</p>
 * **Learning:** <Description> <p>&nbsp;</p>
 * **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Sticking Points:** <Description>
+* **Blockers:** <Description>
 
 &nbsp;  
 
@@ -71,7 +71,7 @@ This is the first status report, so we have no previous plans and goals for the 
 * **Successful Tactics:** <Description> <p>&nbsp;</p>
 * **Learning:** The main thing I focused on learning this week was Markdown syntax as it is not something I have worked extensively with in Github previously. <p>&nbsp;</p>
 * **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Sticking Points:** <Description>
+* **Blockers:** <Description>
 
 &nbsp;  
 
@@ -94,7 +94,7 @@ This is the first status report, so we have no previous plans and goals for the 
 * **Successful Tactics:** <Description> <p>&nbsp;</p>
 * **Learning:** <Description> <p>&nbsp;</p>
 * **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Sticking Points:** <Description> <p>&nbsp;</p>
+* **Blockers:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -117,7 +117,7 @@ This is the first status report, so we have no previous plans and goals for the 
 * **Successful Tactics:** <Description> <p>&nbsp;</p>
 * **Learning:** <Description> <p>&nbsp;</p>
 * **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Sticking Points:** <Description> <p>&nbsp;</p>
+* **Blockers:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -140,7 +140,7 @@ This is the first status report, so we have no previous plans and goals for the 
 * **Successful Tactics:** <Description> <p>&nbsp;</p>
 * **Learning:** <Description> <p>&nbsp;</p>
 * **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Sticking Points:** <Description> <p>&nbsp;</p>
+* **Blockers:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
