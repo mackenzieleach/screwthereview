@@ -1,5 +1,5 @@
 # Week <#> Status Report
-**Month, DD, YYYY**
+**Month DD, YYYY**
 &nbsp;  
 
 ## Team Report
@@ -19,7 +19,7 @@
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVassuer** | <Task> | <Due> 
+**Luke LeVasseur** | <Task> | <Due> 
 **Mackenzie Leach** | <Task> | <Due>  
 **Josh Sherbrooke** | <Task> | <Due>  
 **LuLu Pinczower** | <Task> | <Due>  
@@ -33,7 +33,7 @@
 * **Successful Tactics:** <Description> <p>&nbsp;</p>
 * **Learning:** <Description> <p>&nbsp;</p>
 * **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Sticking Points:** <Description> <p>&nbsp;</p>
+* **Blockers:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -46,7 +46,7 @@
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVassuer** | <Task> | <Due> 
+**Luke LeVasseur** | <Task> | <Due> 
 **Mackenzie Leach** | <Task> | <Due>  
 **Josh Sherbrooke** | <Task> | <Due>  
 **LuLu Pinczower** | <Task> | <Due>  
@@ -55,7 +55,7 @@
 &nbsp;  
 
 <!-- ############################################################################################## -->
-## Team Member Reports: Luke LeVassuer
+## Team Member Reports: Luke LeVasseur
 **Previous Plans & Goals**
 * **Goal 1:**
 * **Goal 2:**
@@ -64,7 +64,7 @@
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVassuer** | <Task> | <Due> 
+**Luke LeVasseur** | <Task> | <Due> 
 
 &nbsp; 
 
@@ -73,7 +73,7 @@
 * **Successful Tactics:** <Description> <p>&nbsp;</p>
 * **Learning:** <Description> <p>&nbsp;</p>
 * **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Sticking Points:** <Description> <p>&nbsp;</p>
+* **Blockers:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -85,7 +85,7 @@
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVassuer** | <Task> | <Due> 
+**Luke LeVasseur** | <Task> | <Due> 
 
 &nbsp;  
 
@@ -108,7 +108,7 @@
 * **Successful Tactics:** <Description> <p>&nbsp;</p>
 * **Learning:** <Description> <p>&nbsp;</p>
 * **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Sticking Points:** <Description> <p>&nbsp;</p>
+* **Blockers:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -143,7 +143,7 @@
 * **Successful Tactics:** <Description> <p>&nbsp;</p>
 * **Learning:** <Description> <p>&nbsp;</p>
 * **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Sticking Points:** <Description> <p>&nbsp;</p>
+* **Blockers:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -178,7 +178,7 @@
 * **Successful Tactics:** <Description> <p>&nbsp;</p>
 * **Learning:** <Description> <p>&nbsp;</p>
 * **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Sticking Points:** <Description> <p>&nbsp;</p>
+* **Blockers:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -213,7 +213,7 @@
 * **Successful Tactics:** <Description> <p>&nbsp;</p>
 * **Learning:** <Description> <p>&nbsp;</p>
 * **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Sticking Points:** <Description> <p>&nbsp;</p>
+* **Blockers:** <Description> <p>&nbsp;</p>
 
 &nbsp;  
 
