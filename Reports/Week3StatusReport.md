@@ -84,8 +84,8 @@ This is the first status report, so we have no previous plans and goals for the 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
 **Mackenzie Leach** | Proofread Requirements & Team Policies | 4/13, 11:59 PM PDT
-| | Git Setup Deliverable | 4/20, 11:59 PM PDT
 | | Complete Team Status Report with Luke | 4/14, 11:00 PM PDT
+| | Git Setup Deliverable | 4/20, 11:59 PM PDT
 
 &nbsp;  
 
