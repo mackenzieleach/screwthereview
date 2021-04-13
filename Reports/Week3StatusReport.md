@@ -150,13 +150,13 @@ This is the first status report, so we have no previous plans and goals for the 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Use the Yelp API to make a simple GET request. 
+* **Goal 2:** Determine what filters we want for the application and which API calls we should make.
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Rachel Ye** | <Task> | <Due>  
+**Rachel Ye** | Call a GET request successfully from the Yelp API. | 4/16 11:59pm PST 
   
   
