@@ -44,23 +44,24 @@ This is the first status report, so we have no previous plans and goals for the 
 <!-- ############################################################################################## -->
 ## Team Member Reports: Luke LeVasseur
 **Progress & Issues**  
-* **Tasks Completed:** <Description> <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description>
+* **Tasks Completed:** This week, I met with the Screw the Review team for the first time! I got to know all our members and gained a deeper understanding of the desired app functionality from Lulu (who pitched the project). Deliverable-wise, I wrote the "Setup App" use case, Defined our project's non-functional requirements, and set up a daily standup reminder in the team Slack channel.<p>&nbsp;</p>
+* **Successful Tactics:** In the early stages of any project, getting to a shared understanding of team skillsets and features is crucial. I tried to communicate proactively with my team through the whole week, be curious and empathetic towards their previous software project experiences, and ensure alignment by giving space for group members to share concerns during team meetings.<p>&nbsp;</p>
+* **Learning:** This week, I learned about the Yelp API datamodel and the Auth0 API. I also learned how to effectively get a group to alignment on features early in a project without direct and diverse user input.  <p>&nbsp;</p>
+* **Issues & Challenges:** I really really really need to get comfortable with programming languages outside of Java. I was not very helpful in discussions of software stack tradeoffs and need to keep exploring dif software options. <p>&nbsp;</p>
+* **Blockers:** None :)
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Start thinking about what data we will want to store in our backend and how to best to store it schema-wise
+* **Goal 2:** Support clear, proactive, and empathetic communication amongst team members
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
+**Luke LeVasseur** | Proofread Requirements & Team Policies | 4/13, 11:59 PM PDT
+| | Complete Team Status Report with Kenzie | 4/14, 11:00 PM PDT
 
 &nbsp;  
 
