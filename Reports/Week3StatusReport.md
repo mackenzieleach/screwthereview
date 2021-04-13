@@ -6,7 +6,7 @@
 ### **Meeting Agenda**
 1. Receive feedback on MVP features and stretch goals from user perspective.
 2. Discuss tradeoffs of maintaining database or utlizing API search.
-4. <Agenda Item 3>
+4. Feedback on selected technology stack for Screw the Review
 
 &nbsp;  
 
@@ -33,10 +33,12 @@ This is the first status report, so we have no previous plans and goals for the 
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke Levasseur** | <Task> | <Due> 
-**Mackenzie Leach** | <Task> | <Due>  
+**Luke LeVasseur** | Proofread Requirements & Team Policies | 4/13, 11:59 PM PDT
+**Luke LeVasseur** | Complete Team Status Report with Kenzie | 4/14, 11:00 PM PDT
+**Mackenzie Leach** | Proofread Requirements & Team Policies | 4/13, 11:59 PM PDT
+**Mackenzie Leach** | Complete Team Status Report with Luke | 4/14, 11:00 PM PDT
 **Josh Sherbrooke** | <Task> | <Due>  
-**LuLu Pinczower** | <Task> | <Due>  
+**LuLu Pinczower** | Determine list of viable languages to use with API | 4/15, 11:59 PM  
 **Rachel Ye** | <Task> | <Due>  
 
 &nbsp;  
@@ -132,7 +134,7 @@ This is the first status report, so we have no previous plans and goals for the 
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**LuLu Pinczower** | Identify SDKs to accomodate Yelp API and our chosen software toolset | 4/15 11:59 PM PST
+**LuLu Pinczower** | Determine list of viable languages to use with API | 4/15 11:59 PM PDT
 
 &nbsp;  
 
