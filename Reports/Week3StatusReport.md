@@ -68,22 +68,24 @@ This is the first status report, so we have no previous plans and goals for the 
 ## Team Member Reports: Mackenzie Leach
 **Progress & Issues**  
 * **Tasks Completed:** This week, I completed a use case for the "Requirements & Team Policies" document, formalized the description of Screw the review, MVP features and strech goals, and was responsible for the overall proofreading and formatting of the document. I created a Markdown template for our weekly status reports and added an internal document in our Google Drive for weekly meeting agendas, notes and the assignment of action items. <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** The main thing I focused on learning this week was Markdown syntax as it is not something I have worked extensively with in Github previously. <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description>
+* **Successful Tactics:** <Description> I think that create meeting agendas with an estimated time that we were going to spend discussing each item helped keep our team on track to make our meeting effective. I also found that it was helpful to screenshare during group work to walk through how to edit status reports and the organization of our Google Drive and meeting agendas. <p>&nbsp;</p>
+* **Learning:** The main thing I focused on learning this week was Markdown syntax as it is not something I have worked extensively in Github previously. I also learned a bit more about using Postman to explore the APIs we will be using for this project.  <p>&nbsp;</p>
+* **Issues & Challenges:** The main issue I encountered this week is a lack of familiarity with some of the components we will be using for our application. I will definitely need to start reviewing some of the languages I have not worked in for a long period of time and learn more about the components of our tech stack I am unfamiliar with. <p>&nbsp;</p>
+* **Blockers:** While we have our core features, we haven't yet discussed the specific technologies and languages we are going to be using to implement the frontend of the application, nor what we want the user interface to look like. 
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Familiarize myself with the Yelp Fusion API using Postman
+* **Goal 2:** Begin reviewing frontend technologies and languages
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Mackenzie Leach** | <Task> | <Due> 
+**Mackenzie Leach** | Proofread Requirements & Team Policies | 4/13, 11:59 PM PDT
+| | Git Setup Deliverable | 4/20, 11:59 PM PDT
+| | Complete Team Status Report with Luke | 4/14, 11:00 PM PDT
 
 &nbsp;  
 
