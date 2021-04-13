@@ -141,11 +141,11 @@ This is the first status report, so we have no previous plans and goals for the 
 <!-- ############################################################################################## -->
 ## Team Member Reports: Rachel Ye
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** For this week I focused on brainstorming and evaluating different use cases during our group meetings. I considered different edge cases and scenarios for how the different features in our application should interact with one another. I also began familiariing myself with the Yelp API which will be a core part of our application.  <p>&nbsp;</p>
+* **Successful Tactics:** I found it helpful that we gave each other constructive feedback when writing about the use cases. Another tactic that helped was being able to openly discuss questions such as figuring out the software toolsets over zoom instead of trying to communicate through slack or text. <p>&nbsp;</p>
+* **Learning:** This week I did not learn specific new technical skills yet, but I am planning to play around with the Yelp API and Postman. Some of the languages we plan to use such as Node.js and React are langauges I haven't used since last year so I need to brush up on these. <p>&nbsp;</p>
+* **Issues & Challenges:** It was difficult to determine which features should be part of our MVP and which ones are additional features for when we have time. There are some features I was really excited about such as implementing a swipe feature on restaurants but we had to keep our time frame in mind. <p>&nbsp;</p>
+* **Blockers:** Currently I have a rough idea of what our frontend and backend will use, but we need to make the backend model more specific. I think if we create a database scheme or a ViewModel it will guide our tasks much better. I also believe we should create a mockup of the app soon to help us visualize what we will be coding. <p>&nbsp;</p>
 
 &nbsp;  
 
