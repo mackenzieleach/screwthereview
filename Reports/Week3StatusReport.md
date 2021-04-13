@@ -132,7 +132,7 @@ This is the first status report, so we have no previous plans and goals for the 
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**LuLu Pinczower** | Determine list of viable languages to use with API | 4/15 11:59 PM PDT
+**LuLu Pinczower** | Identify SDKs to accomodate Yelp API and our chosen software toolset | 4/15 11:59 PM PST
 
 &nbsp;  
 
