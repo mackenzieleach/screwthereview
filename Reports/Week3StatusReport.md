@@ -42,7 +42,7 @@ This is the first status report, so we have no previous plans and goals for the 
 &nbsp;  
 
 <!-- ############################################################################################## -->
-## Team Member Reports: Luke LeVassuer
+## Team Member Reports: Luke LeVasseur
 **Progress & Issues**  
 * **Tasks Completed:** <Description> <p>&nbsp;</p>
 * **Successful Tactics:** <Description> <p>&nbsp;</p>
