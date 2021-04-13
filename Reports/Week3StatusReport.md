@@ -4,9 +4,9 @@
 
 ## Team Report
 ### **Meeting Agenda**
-1. <Agenda Item 1>
-2. <Agenda Item 2>
-3. <Agenda Item 3>
+1. Receive feedback on MVP features and stretch goals from user perspective.
+2. Discuss tradeoffs of maintaining database or utlizing API search.
+4. <Agenda Item 3>
 
 &nbsp;  
 
