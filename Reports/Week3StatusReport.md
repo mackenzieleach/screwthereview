@@ -35,11 +35,13 @@ This is the first status report, so we have no previous plans and goals for the 
 ------------ | ------------------------|------------
 **Luke LeVasseur** | Proofread Requirements & Team Policies | 4/13, 11:59 PM PDT
 **Luke LeVasseur** | Complete Team Status Report with Kenzie | 4/14, 11:00 PM PDT
+**Luke LeVasseur** | Git Setup Deliverable with Kenzie | 4/20, 11:59 PM PDT
 **Mackenzie Leach** | Proofread Requirements & Team Policies | 4/13, 11:59 PM PDT
 **Mackenzie Leach** | Complete Team Status Report with Luke | 4/14, 11:00 PM PDT
-**Josh Sherbrooke** | Investigate Mockups | 4/19, 11:59 PDT  
-**LuLu Pinczower** | Determine list of viable languages to use with API | 4/15, 11:59 PM  
-**Rachel Ye** | <Task> | <Due>  
+**Mackenzie Leach** | Git Setup Deliverable with Luke | 4/20, 11:59 PM PDT
+**Josh Sherbrooke** | Investigate Preliminary Mockups | 4/19, 11:59 PM PDT  
+**LuLu Pinczower** | Determine list of viable languages to use with API | 4/15, 11:59 PM PDT 
+**Rachel Ye** | Call a GET request successfully from the Yelp API. | 4/16 11:59pm PST 
 
 &nbsp;  
 
@@ -64,6 +66,7 @@ This is the first status report, so we have no previous plans and goals for the 
 ------------ | ------------------------|------------
 **Luke LeVasseur** | Proofread Requirements & Team Policies | 4/13, 11:59 PM PDT
 | | Complete Team Status Report with Kenzie | 4/14, 11:00 PM PDT
+| | Git Setup Deliverable with Kenzie | 4/20, 11:59 PM PDT
 
 &nbsp;  
 
@@ -80,7 +83,7 @@ This is the first status report, so we have no previous plans and goals for the 
 
 **Upcoming Plans & Goals**  
 * **Goal 1:** Familiarize myself with the Yelp Fusion API using Postman
-* **Goal 2:** Begin reviewing frontend technologies and languages
+* **Goal 2:** Begin reviewing frontend technologies and languages (React)
 
 &nbsp;  
 
