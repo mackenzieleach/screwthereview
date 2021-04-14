@@ -37,7 +37,7 @@ This is the first status report, so we have no previous plans and goals for the 
 **Luke LeVasseur** | Complete Team Status Report with Kenzie | 4/14, 11:00 PM PDT
 **Mackenzie Leach** | Proofread Requirements & Team Policies | 4/13, 11:59 PM PDT
 **Mackenzie Leach** | Complete Team Status Report with Luke | 4/14, 11:00 PM PDT
-**Josh Sherbrooke** | <Task> | <Due>  
+**Josh Sherbrooke** | Investigate Mockups | 4/19, 11:59 PDT  
 **LuLu Pinczower** | Determine list of viable languages to use with API | 4/15, 11:59 PM  
 **Rachel Ye** | <Task> | <Due>  
 
@@ -95,23 +95,23 @@ This is the first status report, so we have no previous plans and goals for the 
 <!-- ############################################################################################## -->
 ## Team Member Reports: Josh Sherbrooke
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week I contributed to the completion of the Requirements and team policies document, helped hammer down architecture, and began investigation into design and mockups.  <p>&nbsp;</p>
+* **Successful Tactics:** Heavy early investment in documentation helped team planning and software architecture conversations be efficient and nonrepetitive. <p>&nbsp;</p>
+* **Learning:** I learned a lot about the Yelp API, which I had never used before. Simple get requests can capture a vast amount of useful data from Yelp. <p>&nbsp;</p>
+* **Issues & Challenges:** None. <p>&nbsp;</p>
+* **Blockers:** None. <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Create a mockup for group discussion.
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Josh Sherbrooke** | <Task> | <Due> 
+**Josh Sherbrooke** | Review Requirements and Team Planning | 4/13, 11:59 PM PDT 
+| | Create a preliminary mockup | 4/19, 11:00 PM PDT
 
 &nbsp;  
 
