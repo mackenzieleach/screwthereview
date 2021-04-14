@@ -6,7 +6,8 @@
 ### **Meeting Agenda**
 1. Receive feedback on MVP features and stretch goals from user perspective.
 2. Discuss tradeoffs of maintaining database or utlizing API search.
-4. Feedback on selected technology stack for Screw the Review
+3. Discuss and settle into communication cadences for the rest of the quarter.
+4. Begin thinking about technology stack for Screw the Review and compile a rough draft.
 
 &nbsp;  
 
@@ -17,10 +18,10 @@ This is the first status report, so we have no previous plans and goals for the 
 
 ### **Progress & Issues**  
 * **Tasks Completed:** This week, we completed the "Requirements & Team Policies" deliverable. This living document includes information about team member roles, features, initial use cases, team policies and an estimated schedule for tasks. The document can be found here: [Screw the Review: Requirements & Team Policies](https://docs.google.com/document/d/1AdpmiG6Gi3a_kvq9dlz2P9KB4OZ5nPvZS9F1-CJdxzk/edit?usp=sharing). <p>&nbsp;</p> 
-* **Successful Tactics:** One of the things that was successful this week was having synchronous Zoom meetings to discuss MVP and stretch goal features and the technoloy, tools and frameworks we will be using for our application. It gave us the opportunity to start firmly outlining our plans so we can hit the ground running with development. We have also established our workflow at these meetings and communication expectations for our Slack channel.  <p>&nbsp;</p>
-* **Learning:** As a team, we bring a really diverse background of skills, knowledge and software toolsets to this project. Each of us will be learning new tools and frameworks as we go this quarter. This week in particular, we are all getting familiar with the Yelp API and how we will be interacting with this in our application. <p>&nbsp;</p>
+* **Successful Tactics:** One of the things that was successful this week was having synchronous Zoom meetings to discuss MVP and stretch goal features and the technoloy, tools, and frameworks we will be using for our application. It gave us the opportunity to start firmly outlining our plans so we can hit the ground running with development. We have also established our workflow at these meetings and communication expectations for our Slack channel.  <p>&nbsp;</p>
+* **Learning:** As a team, we bring a really diverse background of skills, knowledge, and software toolsets to this project. Each of us will be learning new tools and frameworks as we go this quarter. This week in particular, we are all getting familiar with the Yelp API and how we will be interacting with this in our application. <p>&nbsp;</p>
 * **Issues & Challenges:** So far, we have been off to a smooth start in terms of team meetings and establishing communication channels. Our main challenge was really narrowing down what we wanted as our MVP features and which should be stretch goals. Ultimately, we were able to cohesively decide as a team after utilizing one of our synchronous Zoom meetings to dive deeper into what we want our application to do. <p>&nbsp;</p>
-* **Blockers:** While we have more of a detailed plan for our frontend implementation using React, we need to weight tradeoffs for our backend implementation. Specifically, we are unsure if we should pursue using a relational database to store information from the Yelp API or directly call the API each time a request is made through our application. This is on our meeting agenda to discuss with Wilson this Thursday. <Description>
+* **Blockers:** While we have more of a detailed plan for our frontend implementation using React, we need to weigh tradeoffs for our backend implementation. Specifically, we are unsure if we should pursue using a relational database to store information from the Yelp API or directly call the API each time a request is made through our application. This is on our meeting agenda to discuss with Wilson this Thursday. <Description>
 
 &nbsp;  
 
