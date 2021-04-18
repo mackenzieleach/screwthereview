@@ -19,7 +19,7 @@ Screw the Review is a web application designed to provide the user with new expe
 &nbsp;  
 
 ## Technical Approach
-To successfully develop this application, it requires access to a large dataset containing experiences such as restaurants, bars, parks and more. The Yelp Fusion API contains recommednations for businesses to be used in the pseudo-random experience recommendation. The application will make calls to the Yelp Fusion API for each search that is performed in the generation of a random experience. For example, if a user requests their experience to be a restaurant with Chinese cuisine, we will call the Yelp Fusion API with these filters and randomly select from the results returned to present the user with an experience. We make the assumption that the data for experiences provided by the Yelp API is current and frequently updated.
+To successfully develop this application, it requires access to a large dataset containing experiences such as restaurants, bars, parks and more. The Yelp Fusion API contains recommedations for businesses to be used in the pseudo-random experience recommendation. The application will make calls to the Yelp Fusion API for each search that is performed in the generation of a random experience. For example, if a user requests their experience to be a restaurant with Chinese cuisine, we will call the Yelp Fusion API with these filters and randomly select from the results returned to present the user with an experience. We make the assumption that the data for experiences provided by the Yelp API is current and frequently updated.
 
 &nbsp;  
 
@@ -34,4 +34,11 @@ For the backend of this application, we will be supporting a user model that all
 
 &nbsp;  
 
+In the development of this application, we plan to utilize a user model. This will require an application user to provide their email address and a password to access their account and viewing history. The main risk this poses is security as it is crucial to keep this sensitive information private. To mitigate the security risks that come with a user model for this application, we will be using Auth0, which is a free authentication and authorization platform that can be used with any language or framework. All sensitive user data is hosted via their secure platform, providing security for sensitive user data like passwords. Additionally, it offers the ability to configure what rules and access to data users have after they have been authenticated, allowing us to better customize security for our application. 
+
+&nbsp;  
+
 ## Repository Layout
+More information about repository structure is forthcoming as we begin development in the coming weeks. 
+
+**Reports:** This directory contains our team's weekly status reports for the course. 
