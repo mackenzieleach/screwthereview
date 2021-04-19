@@ -185,23 +185,24 @@ These are the previous goals and tasks from the Week 3 Status Report:
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week I completed a mockup of the "roulette" screen, independent of the suggestion that will follow from it. I also spent some time seeking out and sharing resources regarding the devlopment of web applications using React and Node.js.  <p>&nbsp;</p>
+* **Successful Tactics:** I was especially busy this week as I travelled and received the vaccine, but I still managed to finish all my tasks with successful time management. This mostly comes from setting aside a chunk of time to finish assignemnts instead of in little bursts. <p>&nbsp;</p>
+* **Learning:** I have some experience using React and Node.js, but I definitely needed a refresher. Thus, most of my learning was technical as I read up on the conceptual side of developing and application with our intended stack. <p>&nbsp;</p>
+* **Issues & Challenges:** I am definitely finding working remotely on a group project difficult. It seems as though there is always new information being shared on one platform or another and it is difficult to keep up with all of our tasks and communication. <p>&nbsp;</p>
+* **Blockers:** I am finding it difficult to produce a mockup of my screen without seeing the general style tendencies of my other group mates. I would consider this a blocker because it likely means that I will need to redo much of my design to ensure consistency across the application. <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Coordinate with group members regarding style / design choices for the front end.
+* **Goal 2:** Become more comfortable with our stack so that developement moves more smoothly.
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**LuLu Pinczower** | <Task> | <Due> 
+**LuLu Pinczower** | Have all required packages and tools required to develop with React and Node.js | 04/22 11:59 PM PST
+| | Refine my screen mockup and evaluate others | 4/20, 11:59 PM PDT
 
 &nbsp;  
 
