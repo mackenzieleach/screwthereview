@@ -28,7 +28,6 @@ These are the previous goals and tasks from the Week 3 Status Report:
 **Mackenzie Leach** | Proofread Requirements & Team Policies | 4/13, 11:59 PM PDT
 **Mackenzie Leach** | Complete Team Status Report with Luke | 4/14, 11:00 PM PDT
 **Mackenzie Leach** | Git Setup Deliverable with Luke | 4/20, 11:59 PM PDT
-**Josh Sherbrooke** | Investigate Preliminary Mockups | 4/19, 11:59 PM PDT  
 **LuLu Pinczower** | Determine list of viable languages to use with API | 4/15, 11:59 PM PDT 
 **Rachel Ye** | Call a GET request successfully from the Yelp API. | 4/16 11:59pm PST 
 
@@ -54,8 +53,7 @@ These are the previous goals and tasks from the Week 3 Status Report:
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
 **Luke LeVasseur** | <Task> | <Due> 
-**Mackenzie Leach** | <Task> | <Due>  
-**Josh Sherbrooke** | <Task> | <Due>  
+**Mackenzie Leach** | <Task> | <Due>    
 **LuLu Pinczower** | <Task> | <Due>  
 **Rachel Ye** | <Task> | <Due>  
 
@@ -134,41 +132,6 @@ These are the previous goals and tasks from the Week 3 Status Report:
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
 **Mackenzie Leach** | <Task> | <Due> 
-
-&nbsp;  
-
-<!-- ############################################################################################## -->
-## Team Member Reports: Josh Sherbrooke
-**Previous Plans & Goals**
-* **Goal 1:** Create a mockup for group discussion.
-
-&nbsp;  
-
-**Team Member** | **Task** | **Due**
------------- | ------------------------|------------
-**Josh Sherbrooke** | Review Requirements and Team Planning | 4/13, 11:59 PM PDT 
-| | Create a preliminary mockup | 4/19, 11:00 PM PDT
-
-&nbsp; 
-
-**Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
-
-&nbsp;  
-
-**Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
-
-&nbsp;  
-
-**Team Member** | **Task** | **Due**
------------- | ------------------------|------------
-**Josh Sherbrooke** | <Task> | <Due> 
 
 &nbsp;  
 
