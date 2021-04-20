@@ -115,23 +115,25 @@ These are the previous goals and tasks from the Week 3 Status Report:
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week, Luke and I wrapped up the changes to the Requirements & Team Policies document based on the feedback we got from our meeting last week. We also finished the Readme.md for our repository for the deliverable this week. Outside of documentation, I created a mockup for the search interface and experience results screen for my use case. Each of us has also completed a mockup of the homescreen so we can more formally decide on a final layout. Our goal is to actually use Figma to create prototypes so we are very clear on features and implementation details.   <p>&nbsp;</p>
+* **Successful Tactics:** I think utilizing Slack to send out quick action item reminders and having a set meeting agenda for our synchronous meetings was really helpful this week in using time effectively. Luke and I also communicate regularly about documentation and deliverables, and the clear communication has made it really easy to complete the deliverables. <p>&nbsp;</p>
+* **Learning:** Outside of the MySQL relational database for our backend, I lack a lot of familiarity with the tools, framework and languages were going to be developing the project in. I've been working through React tutorials to get prepared to use it in development as well as reading about how to launch Node.js code on GCP, which is our eventual goal for development. Most of my learning over these next few weeks will really be centered around these tools! <p>&nbsp;</p>
+* **Issues & Challenges:** To date, we haven't encountered any issues so far with teamwork or development. I think the biggest challenge personally and as a team is going to be finding examples and tutorials for Node.js and React to help us get our app off the ground since this isn't something any of us are experienced in. <p>&nbsp;</p>
+* **Blockers:** None this week! <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Work through the CSE 331 React Guide and React tutorials by team meeting on Monday 4/26 
+* **Goal 2:** Start prototyping the UI (mobile & desktop), estimated completion by Friday 4/30 
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Mackenzie Leach** | <Task> | <Due> 
+**Mackenzie Leach** | Team Status Report (with Luke) | 4/21, 11:00 PM PDT
+ | Updated Mockup & Homepage Mockup | 4/22, 1:00 PM PDT 
+ | Architecture & Design Deliverable (with Luke) | 4/27, 11:59 PM PDT
 
 &nbsp;  
 
