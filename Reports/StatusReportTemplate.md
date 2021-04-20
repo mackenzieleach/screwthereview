@@ -21,7 +21,6 @@
 ------------ | ------------------------|------------
 **Luke LeVasseur** | <Task> | <Due> 
 **Mackenzie Leach** | <Task> | <Due>  
-**Josh Sherbrooke** | <Task> | <Due>  
 **LuLu Pinczower** | <Task> | <Due>  
 **Rachel Ye** | <Task> | <Due>  
 
@@ -47,8 +46,7 @@
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
 **Luke LeVasseur** | <Task> | <Due> 
-**Mackenzie Leach** | <Task> | <Due>  
-**Josh Sherbrooke** | <Task> | <Due>  
+**Mackenzie Leach** | <Task> | <Due>   
 **LuLu Pinczower** | <Task> | <Due>  
 **Rachel Ye** | <Task> | <Due>  
 
@@ -121,41 +119,6 @@
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
 **Mackenzie Leach** | <Task> | <Due> 
-
-&nbsp;  
-
-<!-- ############################################################################################## -->
-## Team Member Reports: Josh Sherbrooke
-**Previous Plans & Goals**
-* **Goal 1:**
-* **Goal 2:**
-
-&nbsp;
-
-**Team Member** | **Task** | **Due**
------------- | ------------------------|------------
-**Josh Sherbrooke** | <Task> | <Due> 
-
-&nbsp; 
-
-**Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
-
-&nbsp;  
-
-**Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
-
-&nbsp;  
-
-**Team Member** | **Task** | **Due**
------------- | ------------------------|------------
-**Josh Sherbrooke** | <Task> | <Due> 
 
 &nbsp;  
 
