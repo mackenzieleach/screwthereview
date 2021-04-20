@@ -132,8 +132,8 @@ These are the previous goals and tasks from the Week 3 Status Report:
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
 **Mackenzie Leach** | Team Status Report (with Luke) | 4/21, 11:00 PM PDT
- | Updated Mockup & Homepage Mockup | 4/22, 1:00 PM PDT 
- | Architecture & Design Deliverable (with Luke) | 4/27, 11:59 PM PDT
+ || Updated Mockup & Homepage Mockup | 4/22, 1:00 PM PDT 
+ || Architecture & Design Deliverable (with Luke) | 4/27, 11:59 PM PDT
 
 &nbsp;  
 
