@@ -7,7 +7,6 @@ University of Washington
 **Team Members & Roles**
 1. Luke LeVasseur (Backend Developer, Documentation Co-Lead)
 2. Mackenzie Leach (Frontend Developer, Documentation Co-Lead)
-3. Josh Sherbrooke (Developer)
 4. LuLu Pinczower (Full-Stack Developer, 3rd Party Data Lead)
 5. Rachel Ye (Full-Stack Developer) 
 
