@@ -1,4 +1,4 @@
-# Screw the Review: Taste Something New
+# Screw the Review: Experience Something New
 CSE 403: Software Engineering  
 University of Washington  
 
