@@ -78,23 +78,25 @@ These are the previous goals and tasks from the Week 3 Status Report:
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** Kenzie and I have developed a really strong co-working cadence on documentation projects over the past week! We've worked together on the Requirements and Policies Doc, submitting what I thought was a great summary of our plan for STR, as well as status reports for the team. Outside of docs, I was able to play with a few bootstrapping frameworks for our app (npm create-react-app is awesome) so that we have the skeleton of our cod ein place before starting implementation. <p>&nbsp;</p>
+* **Successful Tactics:** Proactivity is key! One of the biggest reasons I took 403 is because I was excited about building a software project from scratch, and a lot of the technical knowledge I need to obtain for our team to succeed is something that I just have to go out and look for. Being proactive in bootstrapping the app, understanding our APIs, and communicating with the group has been immensely helpful. <p>&nbsp;</p>
+* **Learning:** In my quest to understand what the heck Javascript is, I've been working through a few React tutorials. I've also explored strategies for architecting our DB design in the coming weeks. <p>&nbsp;</p>
+* **Issues & Challenges:** Not too much this week - the only thing I can think of is the daunting challenge of finding actionable code samples and explanations that will provide value to our app through implemention. There's so much to learn, it's scary! <p>&nbsp;</p>
+* **Blockers:** None <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Figure out how to make API calls from a React app (Maybe onClick() => request and render response)
+* **Goal 2:** Solidify feature list and UI through lo-fi mockups
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
+**Luke LeVasseur** | Complete Team Status Report with Kenzie | 4/21 
+**Luke LeVasseur** | Architecture and Design Deliverable | 4/27 
+**Luke LeVasseur** | Talk to Savio (coworker at my internship) about NPM and Deployment | 4/27 
 
 &nbsp;  
 
