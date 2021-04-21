@@ -44,7 +44,7 @@ These are the previous goals and tasks from the Week 3 Status Report:
 &nbsp;  
 
 ### **Upcoming Plans & Goals**  
-* **Goal 1:** Develop a timeline of action items for development through beta release on May 11
+* **Goal 1:** Develop a timeline of action items for development through beta release on May 11 (estimated completion 4/22)
 * **Goal 2:** Solidify feature list and UI through lo-fi mockups (estimated completion 4/22)
 * **Goal 3:** Create final mockups for UI (esimated completion 4/30)
 
@@ -52,9 +52,13 @@ These are the previous goals and tasks from the Week 3 Status Report:
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
-**Mackenzie Leach** | <Task> | <Due>    
-**LuLu Pinczower** | <Task> | <Due>  
+** All ** | Revise lofi-mockups | 4/22, 1:30 PM PDT
+|| Homepage lofi-mockups | 4/22, 1:30 PM PDT
+**Luke LeVasseur** | Architecture and Design Deliverable | 4/27, 11:59 PM PDT
+|| Talk to Savio (coworker at my internship) about NPM and Deployment | 4/27, 11:59 PM PDT 
+**Mackenzie Leach** | Architecture and Design Deliverable | 4/27, 11:59 PM PDT   
+|| Create finalized UI Mockups | 4/30, 11:59 PM
+**LuLu Pinczower** | Set up development environment with React and Node.js | 04/22 11:59 PM PST
 **Rachel Ye** | <Task> | <Due>  
 
 &nbsp;  
