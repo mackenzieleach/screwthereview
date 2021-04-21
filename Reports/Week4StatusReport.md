@@ -52,7 +52,7 @@ These are the previous goals and tasks from the Week 3 Status Report:
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-** All ** | Revise lofi-mockups | 4/22, 1:30 PM PDT
+**All** | Revise lofi-mockups | 4/22, 1:30 PM PDT
 || Homepage lofi-mockups | 4/22, 1:30 PM PDT
 **Luke LeVasseur** | Architecture and Design Deliverable | 4/27, 11:59 PM PDT
 || Talk to Savio (coworker at my internship) about NPM and Deployment | 4/27, 11:59 PM PDT 
