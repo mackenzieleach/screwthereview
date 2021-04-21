@@ -4,9 +4,9 @@
 
 ## Team Report
 ### **Meeting Agenda**
-1. <Agenda Item 1>
-2. <Agenda Item 2>
-3. <Agenda Item 3>
+1. Discuss the impact of Josh's departure WRT reassigning work and updating our feature list
+2. Review mockups and align on front-end functionality
+3. Discuss project architecture - DB schema, compartmentalized MVC model, etc.
 
 &nbsp;  
 
@@ -35,24 +35,26 @@ These are the previous goals and tasks from the Week 3 Status Report:
 &nbsp;  
 
 ### **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** Our main deliverable this week was our Git repository setup. This assignment elft us with a substantiabl amount of bandwidth remaining, which we used to begin thinking about bootstrapping our software stack and to sketch out some lo-fidelity mockups. We also iterated on last weeks Requirements and Team policies deliverable. <p>&nbsp;</p>
+* **Successful Tactics:** Havign explicit deadlines and meeting agendas helped us immensely in tracking our individual action items over the past week. Proactive communication also was beneficial in getting ahead of our blockers. <p>&nbsp;</p>
+* **Learning:** All of us are working asynchronously to get more familiar with the software stack we plan to use. Also, npm init create-react-app is magical! <p>&nbsp;</p>
+* **Issues & Challenges:** While we were happy to take on the challenge of creating mockups early in the project to help us define feature goals, we've been challenged to do so asynchronously. Following the diverge -> converge best practice of design ideation and development has been difficult. Furthermore, finding the right learning resources to help us get off the group with our app has also been tough. <p>&nbsp;</p>
+* **Blockers:** None right now! <p>&nbsp;</p>
 
 &nbsp;  
 
 ### **Upcoming Plans & Goals**  
 * **Goal 1:**
-* **Goal 2:**
+* **Goal 2:** Solidify feature list and UI through lo-fi mockups
 * **Goal 3:**
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
+**Luke LeVasseur** | Proofread Requirements & Team Policies | 4/13, 11:59 PM PDT
+| | Complete Team Status Report with Kenzie | 4/14, 11:00 PM PDT
+| | Git Setup Deliverable with Kenzie | 4/20, 11:59 PM PDT
 **Mackenzie Leach** | <Task> | <Due>    
 **LuLu Pinczower** | <Task> | <Due>  
 **Rachel Ye** | <Task> | <Due>  
