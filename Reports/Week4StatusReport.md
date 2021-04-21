@@ -192,11 +192,11 @@ These are the previous goals and tasks from the Week 3 Status Report:
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week I foxused more on getting the mockup drawn correctly on notebook paper and implementing feedback from my team members. I drew out a layout of what I imagine the Experience page would look like from a web application format. I am also in progress with download node and npm onto my computer and getting the tools set up in my environment. I downloaded Postman and will probably experiment with the Yelp API this week. <p>&nbsp;</p>
+* **Successful Tactics:** Our group meetings are very productive because we have an organized agenda. <p>&nbsp;</p>
+* **Learning:** I am learning about node and node package manager and I plan to document my steps. I also plan to refresh my memory on GET requests and React. I hope to brush through a React tutorial to refresh myself on the basics. <p>&nbsp;</p>
+* **Issues & Challenges:** So far there are no issues. If I run into issues, I plan to reach out to my team members. The only challenge I have is to come up with an effective design for the home page of the application so that it is uniform and consistently themed with the rest of the features. <p>&nbsp;</p>
+* **Blockers:** So far I'm feeling good about the application but I'm worried that we have substantially more coding work to do without Josh on the team. <p>&nbsp;</p>
 
 &nbsp;  
 
