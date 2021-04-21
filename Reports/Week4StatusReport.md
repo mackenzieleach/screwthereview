@@ -35,26 +35,24 @@ These are the previous goals and tasks from the Week 3 Status Report:
 &nbsp;  
 
 ### **Progress & Issues**  
-* **Tasks Completed:** Our main deliverable this week was our Git repository setup. This assignment elft us with a substantiabl amount of bandwidth remaining, which we used to begin thinking about bootstrapping our software stack and to sketch out some lo-fidelity mockups. We also iterated on last weeks Requirements and Team policies deliverable. <p>&nbsp;</p>
-* **Successful Tactics:** Havign explicit deadlines and meeting agendas helped us immensely in tracking our individual action items over the past week. Proactive communication also was beneficial in getting ahead of our blockers. <p>&nbsp;</p>
+* **Tasks Completed:** Our main deliverable this week was our Git repository setup. This assignment left us with a substantial amount of bandwidth remaining, which we used to begin thinking about bootstrapping our software stack and to sketch out some lo-fidelity mockups. We also iterated on last weeks Requirements and Team policies deliverable to further address feedback. Finally, we have all created a revised set of mockups for our UI after a feedback iteration and will be using these to form a unified understanding of functionality and design moving forward. <p>&nbsp;</p>
+* **Successful Tactics:** Having explicit deadlines and meeting agendas helped us immensely in tracking our individual action items over the past week. Proactive communication also was beneficial in getting ahead of our blockers. We are also getting in the habit of using Slack standups on the days we don't meet, which is helpful to be aware of what team members are working on and what responsibilities each of us need to complete. <p>&nbsp;</p>
 * **Learning:** All of us are working asynchronously to get more familiar with the software stack we plan to use. Also, npm init create-react-app is magical! <p>&nbsp;</p>
-* **Issues & Challenges:** While we were happy to take on the challenge of creating mockups early in the project to help us define feature goals, we've been challenged to do so asynchronously. Following the diverge -> converge best practice of design ideation and development has been difficult. Furthermore, finding the right learning resources to help us get off the group with our app has also been tough. <p>&nbsp;</p>
+* **Issues & Challenges:** While we were happy to take on the challenge of creating mockups early in the project to help us define feature goals, we've been challenged to do so asynchronously. Following the diverge -> converge best practice of design ideation and development has been difficult. Furthermore, finding the right learning resources to help us get off the group with our app has also been tough. Lastly, we are noticing that we have different styles in communicating asynchronously and it can be difficult to keep everyone up to date with different resources and documents. To address this, a recap of action items is sent the day before meetings in our group's private Slack with direct links to the relevant folders and documents. <p>&nbsp;</p>
 * **Blockers:** None right now! <p>&nbsp;</p>
 
 &nbsp;  
 
 ### **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:** Solidify feature list and UI through lo-fi mockups
-* **Goal 3:**
+* **Goal 1:** Develop a timeline of action items for development through beta release on May 11
+* **Goal 2:** Solidify feature list and UI through lo-fi mockups (estimated completion 4/22)
+* **Goal 3:** Create final mockups for UI (esimated completion 4/30)
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | Proofread Requirements & Team Policies | 4/13, 11:59 PM PDT
-| | Complete Team Status Report with Kenzie | 4/14, 11:00 PM PDT
-| | Git Setup Deliverable with Kenzie | 4/20, 11:59 PM PDT
+**Luke LeVasseur** | <Task> | <Due> 
 **Mackenzie Leach** | <Task> | <Due>    
 **LuLu Pinczower** | <Task> | <Due>  
 **Rachel Ye** | <Task> | <Due>  
