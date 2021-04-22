@@ -39,7 +39,7 @@ These are the previous goals and tasks from the Week 3 Status Report:
 * **Successful Tactics:** Having explicit deadlines and meeting agendas helped us immensely in tracking our individual action items over the past week. Proactive communication also was beneficial in getting ahead of our blockers. We are also getting in the habit of using Slack standups on the days we don't meet, which is helpful to be aware of what team members are working on and what responsibilities each of us need to complete. <p>&nbsp;</p>
 * **Learning:** All of us are working asynchronously to get more familiar with the software stack we plan to use. Also, npm init create-react-app is magical! <p>&nbsp;</p>
 * **Issues & Challenges:** While we were happy to take on the challenge of creating mockups early in the project to help us define feature goals, we've been challenged to do so asynchronously. Following the diverge -> converge best practice of design ideation and development has been difficult. Furthermore, finding the right learning resources to help us get off the group with our app has also been tough. Lastly, we are noticing that we have different styles in communicating asynchronously and it can be difficult to keep everyone up to date with different resources and documents. To address this, a recap of action items is sent the day before meetings in our group's private Slack with direct links to the relevant folders and documents. <p>&nbsp;</p>
-* **Blockers:** None right now! <p>&nbsp;</p>
+* **Blockers:** Since we are now working with one less team member, we are a bit concerned about the level of workload in the coming weeks for development. However, we have a great communication system and regular meetings which should help us over this hurdle. <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -59,7 +59,7 @@ These are the previous goals and tasks from the Week 3 Status Report:
 **Mackenzie Leach** | Architecture and Design Deliverable | 4/27, 11:59 PM PDT   
 || Create finalized UI Mockups | 4/30, 11:59 PM
 **LuLu Pinczower** | Set up development environment with React and Node.js | 04/22 11:59 PM PST
-**Rachel Ye** | <Task> | <Due>  
+**Rachel Ye** | Download npm and track steps for documentatoin | 4/24, 11:59 PM PDT 
 
 &nbsp;  
 
@@ -97,8 +97,8 @@ These are the previous goals and tasks from the Week 3 Status Report:
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
 **Luke LeVasseur** | Complete Team Status Report with Kenzie | 4/21 
-**Luke LeVasseur** | Architecture and Design Deliverable | 4/27 
-**Luke LeVasseur** | Talk to Savio (coworker at my internship) about NPM and Deployment | 4/27 
+|| Architecture and Design Deliverable | 4/27 
+|| Talk to Savio (coworker at my internship) about NPM and Deployment | 4/27 
 
 &nbsp;  
 
