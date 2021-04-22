@@ -201,11 +201,11 @@ These are the previous goals and tasks from the Week 3 Status Report:
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Finish up mockup and implement changes and feedback.
+* **Goal 2:** Finish downloading npm and setting up my environment. Keep track of documentation steps so we can add it to the GitHub.
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Rachel Ye** | <Task> | <Due>  
+**Rachel Ye** | Download npm and track all the steps I took. | 4/24 Sunday 
