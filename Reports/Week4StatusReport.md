@@ -35,29 +35,31 @@ These are the previous goals and tasks from the Week 3 Status Report:
 &nbsp;  
 
 ### **Progress & Issues**  
-* **Tasks Completed:** Our main deliverable this week was our Git repository setup. This assignment elft us with a substantiabl amount of bandwidth remaining, which we used to begin thinking about bootstrapping our software stack and to sketch out some lo-fidelity mockups. We also iterated on last weeks Requirements and Team policies deliverable. <p>&nbsp;</p>
-* **Successful Tactics:** Havign explicit deadlines and meeting agendas helped us immensely in tracking our individual action items over the past week. Proactive communication also was beneficial in getting ahead of our blockers. <p>&nbsp;</p>
+* **Tasks Completed:** Our main deliverable this week was our Git repository setup. This assignment left us with a substantial amount of bandwidth remaining, which we used to begin thinking about bootstrapping our software stack and to sketch out some lo-fidelity mockups. We also iterated on last weeks Requirements and Team policies deliverable to further address feedback. Finally, we have all created a revised set of mockups for our UI after a feedback iteration and will be using these to form a unified understanding of functionality and design moving forward. <p>&nbsp;</p>
+* **Successful Tactics:** Having explicit deadlines and meeting agendas helped us immensely in tracking our individual action items over the past week. Proactive communication also was beneficial in getting ahead of our blockers. We are also getting in the habit of using Slack standups on the days we don't meet, which is helpful to be aware of what team members are working on and what responsibilities each of us need to complete. <p>&nbsp;</p>
 * **Learning:** All of us are working asynchronously to get more familiar with the software stack we plan to use. Also, npm init create-react-app is magical! <p>&nbsp;</p>
-* **Issues & Challenges:** While we were happy to take on the challenge of creating mockups early in the project to help us define feature goals, we've been challenged to do so asynchronously. Following the diverge -> converge best practice of design ideation and development has been difficult. Furthermore, finding the right learning resources to help us get off the group with our app has also been tough. <p>&nbsp;</p>
-* **Blockers:** None right now! <p>&nbsp;</p>
+* **Issues & Challenges:** While we were happy to take on the challenge of creating mockups early in the project to help us define feature goals, we've been challenged to do so asynchronously. Following the diverge -> converge best practice of design ideation and development has been difficult. Furthermore, finding the right learning resources to help us get off the group with our app has also been tough. Lastly, we are noticing that we have different styles in communicating asynchronously and it can be difficult to keep everyone up to date with different resources and documents. To address this, a recap of action items is sent the day before meetings in our group's private Slack with direct links to the relevant folders and documents. <p>&nbsp;</p>
+* **Blockers:** Since we are now working with one less team member, we are a bit concerned about the level of workload in the coming weeks for development. However, we have a great communication system and regular meetings which should help us over this hurdle. <p>&nbsp;</p>
 
 &nbsp;  
 
 ### **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:** Solidify feature list and UI through lo-fi mockups
-* **Goal 3:**
+* **Goal 1:** Develop a timeline of action items for development through beta release on May 11 (estimated completion 4/22)
+* **Goal 2:** Solidify feature list and UI through lo-fi mockups (estimated completion 4/22)
+* **Goal 3:** Create final mockups for UI (esimated completion 4/30)
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | Proofread Requirements & Team Policies | 4/13, 11:59 PM PDT
-| | Complete Team Status Report with Kenzie | 4/14, 11:00 PM PDT
-| | Git Setup Deliverable with Kenzie | 4/20, 11:59 PM PDT
-**Mackenzie Leach** | <Task> | <Due>    
-**LuLu Pinczower** | <Task> | <Due>  
-**Rachel Ye** | <Task> | <Due>  
+**All** | Revise lofi-mockups | 4/22, 1:30 PM PDT
+|| Homepage lofi-mockups | 4/22, 1:30 PM PDT
+**Luke LeVasseur** | Architecture and Design Deliverable | 4/27, 11:59 PM PDT
+|| Talk to Savio (coworker at my internship) about NPM and Deployment | 4/27, 11:59 PM PDT 
+**Mackenzie Leach** | Architecture and Design Deliverable | 4/27, 11:59 PM PDT   
+|| Create finalized UI Mockups | 4/30, 11:59 PM
+**LuLu Pinczower** | Set up development environment with React and Node.js | 04/22 11:59 PM PST
+**Rachel Ye** | Download npm and track steps for documentatoin | 4/24, 11:59 PM PDT 
 
 &nbsp;  
 
@@ -95,8 +97,8 @@ These are the previous goals and tasks from the Week 3 Status Report:
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
 **Luke LeVasseur** | Complete Team Status Report with Kenzie | 4/21 
-**Luke LeVasseur** | Architecture and Design Deliverable | 4/27 
-**Luke LeVasseur** | Talk to Savio (coworker at my internship) about NPM and Deployment | 4/27 
+|| Architecture and Design Deliverable | 4/27 
+|| Talk to Savio (coworker at my internship) about NPM and Deployment | 4/27 
 
 &nbsp;  
 
@@ -190,20 +192,20 @@ These are the previous goals and tasks from the Week 3 Status Report:
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week I foxused more on getting the mockup drawn correctly on notebook paper and implementing feedback from my team members. I drew out a layout of what I imagine the Experience page would look like from a web application format. I am also in progress with download node and npm onto my computer and getting the tools set up in my environment. I downloaded Postman and will probably experiment with the Yelp API this week. <p>&nbsp;</p>
+* **Successful Tactics:** Our group meetings are very productive because we have an organized agenda. <p>&nbsp;</p>
+* **Learning:** I am learning about node and node package manager and I plan to document my steps. I also plan to refresh my memory on GET requests and React. I hope to brush through a React tutorial to refresh myself on the basics. <p>&nbsp;</p>
+* **Issues & Challenges:** So far there are no issues. If I run into issues, I plan to reach out to my team members. The only challenge I have is to come up with an effective design for the home page of the application so that it is uniform and consistently themed with the rest of the features. <p>&nbsp;</p>
+* **Blockers:** So far I'm feeling good about the application but I'm worried that we have substantially more coding work to do without Josh on the team. <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Finish up mockup and implement changes and feedback.
+* **Goal 2:** Finish downloading npm and setting up my environment. Keep track of documentation steps so we can add it to the GitHub.
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Rachel Ye** | <Task> | <Due>  
+**Rachel Ye** | Download npm and track all the steps I took. | 4/24 Sunday 
