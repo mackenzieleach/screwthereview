@@ -41,3 +41,4 @@ In the development of this application, we plan to utilize a user model. This wi
 More information about repository structure is forthcoming as we begin development in the coming weeks. 
 
 **Reports:** This directory contains our team's weekly status reports for the course. 
+**screwthereview**: This folder contains the source code for the application. 
