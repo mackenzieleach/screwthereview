@@ -1,12 +1,11 @@
-# Week <#> Status Report
-**Month DD, YYYY**
+# Week 5 Status Report
+**April 28, 2021**
 &nbsp;  
 
 ## Team Report
 ### **Meeting Agenda**
-1. <Agenda Item 1>
-2. <Agenda Item 2>
-3. <Agenda Item 3>
+1. Feedback on the Architecture & Design Deliverable
+2. Updates on Development Progress
 
 &nbsp;  
 
@@ -27,7 +26,7 @@ These are the previous plans & goals from the Week 4 Status Report
 **Mackenzie Leach** | Architecture and Design Deliverable | 4/27, 11:59 PM PDT   
 || Create finalized UI Mockups | 4/30, 11:59 PM
 **LuLu Pinczower** | Set up development environment with React and Node.js | 04/22 11:59 PM PST
-**Rachel Ye** | Download npm and track steps for documentatoin | 4/24, 11:59 PM PDT 
+**Rachel Ye** | Download npm and track steps for documentation | 4/24, 11:59 PM PDT 
 
 &nbsp;  
 
