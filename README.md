@@ -40,6 +40,15 @@ In the development of this application, we plan to utilize a user model. This wi
 ## Repository Layout
 More information about repository structure is forthcoming as we begin development in the coming weeks. 
 
-**Mockups:** This directory offers mock-ups for our landing page, search feature, roulette fearure, about page, experience result page and account page.
+**Mockups:** This directory offers mock-ups for our landing page, search feature, roulette fearure, about page, experience result page and account page.  
+
+&nbsp;  
+
 **Reports:** This directory contains our team's weekly status reports for the course as well as a status report template. 
-**screwthereview**: This folder contains the source code for the application. 
+
+&nbsp;  
+
+**screwthereview**: Inside this directory is the source code for our application and package.json, which specifies the dependencies for our React application.
+  - **src**: This folder contains a .js class provided by the Create-React-App framework that allows us to render our website.
+
+&nbsp;  
