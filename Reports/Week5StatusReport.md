@@ -110,23 +110,28 @@ These are the previous plans & goals from the Week 4 Status Report
 &nbsp;  
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week has been very busy as we get the development of this project off the ground. Over the weekend, LuLu and I set up our Azure DB, Azure Web Services to deploy our website on a URL and Azure DevOps to allow for release pipelines. Second, I completed a final set of UI mockups that our team will be using and they are now located in our repository. Third, I tackled the estimated schedule, breaking down individual development and documentation tasks, sprints and due dates as well as the documentatoin plan. Finally, I am in the process of setting up a Trello board for our team for better communication of tasks and due dates. <p>&nbsp;</p>
+* **Successful Tactics:** Creating a meeting agenda has been really helpful in keeping synchronus meetings efficient. LuLu and I also spent additional time on Zoom working together on general setup, which was definitely much easier than working asynchronously. I also think that utilizing Trello and having an estimated schedule with due dates is going to help keep us accountable for the development timeline. <p>&nbsp;</p>
+* **Learning:** This week was a lot of learning about Azure and how to set up a build pipeline that installs the correct dependencies. I also learned how to access our deployment logs so I can now check the status of any error messages we recieve during deployment. I also learned a lot about the React Router framework that is used to route to multiple pages in React while still maintaining properties of a single page application. LuLu actually used this documentation to set up the router framework and I will be using it to do some continued work on the navigation bar and footer styles. <p>&nbsp;</p>
+* **Issues & Challenges:** LuLu and I spent an incredible amount of time setting up Azure and pipelines to deploy our application. Since we are using the "free" plan to save the $100 Azure credit for later in the quarter, we have not yet been able to see the website as we timed out on our limit during setup. Personally, I feel a bit overwhelmed by how much I am going to be learning about React and Node.js and how quickly our features are going to be developed. Lastly, I think there was a drop off in team communication this week as everyone is incredibly busy. We were much tighter on deadlines and needed to set some new communications norms like using @channel in Slack to notify others of urgent messages, which was not being used before. <p>&nbsp;</p>
+* **Blockers:** I need to get my team documentation and resources on React Boostrap which we will all need to use in our code to allow for dynamic resizing between mobile and web platforms on Tuesday so we can really start development! <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Create "Resource" document for all team members to utilize during development
+* **Goal 2:** Learn about React Bootstrap and design plan for integration into application
+* **Goal 3:** Set up Trello Board for clearer communication about tasks & due dates
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Mackenzie Leach** | <Task> | <Due> 
+**Mackenzie Leach** | Team Status Report | 4/28, 11:00 PM PDT
+|| Develop Footer & Nav Bar Design | 4/28, 11:59 PM PDT
+|| Write & Proof Testing & CI Deliverable | 5/4, 11:59 PM
+|| Develop Experience Result Component | 5/6, 11:59 PM
+|| Azure YML Script for Auto-Build on Commit | 5/10, 7:00 PM PDT
 
 &nbsp;  
 
@@ -149,7 +154,7 @@ These are the previous plans & goals from the Week 4 Status Report
 * **Tasks Completed:** This week I assisted Kenzie in setting up our Azure hosting site. I also spent some more time researching additional data that we may need to access for completion of our application. For example, we discovered that Yelp offers a JSON file that houses all business categories which will be very helpful in building out the roulette aspect of the application.  <p>&nbsp;</p>
 * **Successful Tactics:** Kenzie and I spent a lot of time meeting and going over the infrastructure and implementation of Azure. I definitely found the face to face (Zoom) communication very helpful in clarifying any questions. <p>&nbsp;</p>
 * **Learning:** Throughout the process of working with Azure, I defintely learned alot about the build process of a Node.js application. I also learned alot about dependencies and how applications can be "packaged" together. <p>&nbsp;</p>
-* **Issues & Challenges:** The biggest issue was definitely utilzing the build / deployment features on Azure. There does not seem to be copious amounts of documentaion on Nod.js / Azure apps, so setup went pretty slowly. On top of this, we are just beginning development, and I still need to brush up on my Node.js and React knowledge. <p>&nbsp;</p>
+* **Issues & Challenges:** The biggest issue was definitely utilzing the build / deployment features on Azure. There does not seem to be copious amounts of documentaion on Node.js / Azure apps, so setup went pretty slowly. On top of this, we are just beginning development, and I still need to brush up on my Node.js and React knowledge. <p>&nbsp;</p>
 * **Blockers:** At this point, my main blocker is lack of a backend. We definitely need to expedite the build of our database so that we can succesfully complete all features of our application on time. <p>&nbsp;</p>
 
 &nbsp;  
