@@ -146,23 +146,24 @@ These are the previous plans & goals from the Week 4 Status Report
 &nbsp;  
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week I assisted Kenzie in setting up our Azure hosting site. I also spent some more time researching additional data that we may need to access for completion of our application. For example, we discovered that Yelp offers a JSON file that houses all business categories which will be very helpful in building out the roulette aspect of the application.  <p>&nbsp;</p>
+* **Successful Tactics:** Kenzie and I spent a lot of time meeting and going over the infrastructure and implementation of Azure. I definitely found the face to face (Zoom) communication very helpful in clarifying any questions. <p>&nbsp;</p>
+* **Learning:** Throughout the process of working with Azure, I defintely learned alot about the build process of a Node.js application. I also learned alot about dependencies and how applications can be "packaged" together. <p>&nbsp;</p>
+* **Issues & Challenges:** The biggest issue was definitely utilzing the build / deployment features on Azure. There does not seem to be copious amounts of documentaion on Nod.js / Azure apps, so setup went pretty slowly. On top of this, we are just beginning development, and I still need to brush up on my Node.js and React knowledge. <p>&nbsp;</p>
+* **Blockers:** At this point, my main blocker is lack of a backend. We definitely need to expedite the build of our database so that we can succesfully complete all features of our application on time. <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Start integrating API calls into our skeletal applicatin
+* **Goal 2:** Begin building out backend / database infrasturcture
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**LuLu Pinczower** | <Task> | <Due> 
+**LuLu Pinczower** | Connect API credentials to skeleton Node app | 4/29 11:59 PM PDT
+| | Load Yelp categories into databse | 4/29, 11:59 PM PDT
 
 &nbsp;  
 
