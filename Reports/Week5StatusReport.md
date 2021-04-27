@@ -163,6 +163,8 @@ These are the previous plans & goals from the Week 4 Status Report
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
 **LuLu Pinczower** | Connect API credentials to skeleton Node app | 4/29 11:59 PM PDT
+| | Begin frontend development of roulette wheel | 4/29, 11:59 PM PDT
+| | Link front and back end of roulette wheel | 5/3, 11:59 PM PDT
 | | Load Yelp categories into databse | 4/29, 11:59 PM PDT
 
 &nbsp;  
