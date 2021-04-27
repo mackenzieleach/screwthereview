@@ -40,5 +40,6 @@ In the development of this application, we plan to utilize a user model. This wi
 ## Repository Layout
 More information about repository structure is forthcoming as we begin development in the coming weeks. 
 
-**Reports:** This directory contains our team's weekly status reports for the course. 
+**Mockups:** This directory offers mock-ups for our landing page, search feature, roulette fearure, about page, experience result page and account page.
+**Reports:** This directory contains our team's weekly status reports for the course as well as a status report template. 
 **screwthereview**: This folder contains the source code for the application. 
