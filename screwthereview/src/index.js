@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Roulette from './Roulette';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
