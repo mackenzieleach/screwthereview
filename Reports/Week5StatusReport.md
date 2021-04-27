@@ -72,23 +72,28 @@ These are the previous plans & goals from the Week 4 Status Report
 &nbsp;  
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week I wrote the SW Architecture and Testing plan sections of our team's deliverable. I also Drew a mockup of our home screen and got started with setting up my dev environment. <p>&nbsp;</p>
+* **Successful Tactics:** Communication, communication, communication. <p>&nbsp;</p>
+* **Learning:** Nuances between SW Design and Architecutre, why GCP Free Tier is subpar vs Azure, and how to create a data model diagram! <p>&nbsp;</p>
+* **Issues & Challenges:** I drove from SD to Seattle this weekend! Which meant 0 hours to do school things! That was very long and not very fun, and catching up has been difficult. No team issues/challenges though - all good now :) <p>&nbsp;</p>
+* **Blockers:** None <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Develop some cool code! (Landing page specifically)
+* **Goal 2:** Start integration Auth0 into our app
+* **Goal 3:** Connect w Savio to see if he has any pointers
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
+**Luke LeVasseur** | Team Status Report (with Kenzie) | 4/28, 11:00 PM PDT
+|| Write & Proof Testing & CI Deliverable | 5/4, 11:59 PM
+|| Develop landing page components | 5/4, 11:59 PM
+
+
 
 &nbsp;  
 
