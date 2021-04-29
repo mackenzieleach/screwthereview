@@ -31,27 +31,35 @@ These are the previous plans & goals from the Week 4 Status Report
 &nbsp;  
 
 ### **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This has been a very busy week for the team. Each member describes a lot of the small pieces that needed to come together in their individual report, but as a team we now have an Azure database and URL set up to view our application live. We also have the scaffolding to now allow each team member to work on development of MVP features in parallel.  <p>&nbsp;</p>
+* **Successful Tactics:** Starting on development and setting up our infrastructure has required a lot of communication over the past week. Our synchronous team meeting on Monday allowed us to dive into the estimated schedule and really talk through what each feature page is going to include in terms of code. Particularly, I think our team has a better understanding gof how data will be passed through components and the individual API calls being made.  <p>&nbsp;</p>
+* **Learning:** We learned a lot about Azure over the past week as we looked through other potential platform options and utlimately went through Azure setup. None of us have much familiarity with React and we've also learned a lot about how a single page React app is structured. Each of us is also learning about the API that our code will be working with.   <p>&nbsp;</p>
+* **Issues & Challenges:** Getting off the ground with development has definitely been a bit overwhelming for all of us this week! While we are able to start coding and test through localhost, our Azure URL is currently not built, which Kenzie will be debugging later this week to set up for beta release.  <p>&nbsp;</p>
+* **Blockers:** LuLu will be utilizing our Azure DB in her code, which we still need to configure. We do have a Zoom planned Thursday to do so and integrate that into our code. <p>&nbsp;</p>
 
 &nbsp;  
 
 ### **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
-* **Goal 3:**
+* **Goal 1:** Develop MVP features for Beta released by May 6, 11:59 PM to allow for testing 
+* **Goal 2:** Practice clear communication and support teammates through development.
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
-**Mackenzie Leach** | <Task> | <Due>   
-**LuLu Pinczower** | <Task> | <Due>  
-**Rachel Ye** | <Task> | <Due>  
+**Luke LeVasseur** | Team Status Report (with Kenzie) | 4/28, 11:00 PM PDT
+**Luke LeVasseur** | Write & Proof Testing & CI Deliverable | 5/4, 11:59 PM
+**Luke LeVasseur** | Develop Landing Page Components | 5/4, 11:59 PM
+**Mackenzie Leach** | Team Status Report | 4/28, 11:00 PM PDT
+**Mackenzie Leach** | Develop Footer & Nav Bar Design | 4/28, 11:59 PM PDT
+**Mackenzie Leach** | Write & Proof Testing & CI Deliverable | 5/4, 11:59 PM
+**Mackenzie Leach**| Develop Experience Result Component | 5/6, 11:59 PM
+**Mackenzie Leach**| Azure YML Script for Auto-Build on Commit | 5/10, 7:00 PM PDT 
+**LuLu Pinczower** | Connect API credentials to skeleton Node app | 4/29 11:59 PM PDT
+**LuLu Pinczower** | Begin frontend development of roulette wheel | 4/29, 11:59 PM PDT
+**LuLu Pinczower** | Link front and back end of roulette wheel | 5/3, 11:59 PM PDT
+**LuLu Pinczower** | Load Yelp categories into databse | 4/29, 11:59 PM PDT
+**Rachel Ye** | Start the Search feature and make an API call | <Due>  
 
 &nbsp;  
 
@@ -188,25 +196,26 @@ These are the previous plans & goals from the Week 4 Status Report
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Rachel Ye** | Download npm and track all the steps I took. | 4/24 Sunday 
+**Rachel Ye** | Download npm and track all the steps I took. Finish revisions for my mockup | 4/24 Sunday 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** I completed the documentation task and revisions for my mockup and homepage. I've been reading documentation and trying to get my react environment setup for the project. This week I also wrote the Software Design section and described the different components for our project.<p>&nbsp;</p>
+* **Successful Tactics:** Reading documentation online has been helpful. I have been referencing online tutorials to help familiarize myself with React, components, and making API calls. <p>&nbsp;</p>
+* **Learning:** I have been learning a lot about React. <p>&nbsp;</p>
+* **Issues & Challenges:** Some of my issues were downloading yarn and npm correctly so that it would actually run the application. I kept running into problems where it wouldn't actually start the application and my files wouldn't compile. Another ongoing for me was to learn about state and components in React because I'm working on creating my own UI elements for my search page. <p>&nbsp;</p>
+* **Blockers:**  An issue I was facing was getting yarn to start my app properly but I ended up recloning the repo after realizing the yarn install commands wasn't enough. <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Finish reading react tutorials and work on the search component page.
+* **Goal 2:** Read the React documentation and make an API call. Create the keyword, location filter, price filter, and distance filter.
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Rachel Ye** | <Task> | <Due>  
+**Rachel Ye** | Start the page for the Search component | 5/1
+**Rachel Ye** | Make an API call with the keyword bar | 5/1
   
   
