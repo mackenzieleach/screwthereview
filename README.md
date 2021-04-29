@@ -4,6 +4,11 @@ University of Washington
 
 &nbsp;  
 
+**Netlify Build Status:**   &nbsp;  [![Netlify Status](https://api.netlify.com/api/v1/badges/6db340e3-519e-4862-b657-842b58112060/deploy-status)](https://app.netlify.com/sites/screwthereview/deploys)  
+**Screw the Review:** [https://screwthereview.netlify.app/](https://screwthereview.netlify.app/)
+
+&nbsp; 
+
 **Team Members & Roles**
 1. Luke LeVasseur (Backend Developer, Documentation Co-Lead)
 2. Mackenzie Leach (Frontend Developer, Documentation Co-Lead)
