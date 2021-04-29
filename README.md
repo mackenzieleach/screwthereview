@@ -48,36 +48,13 @@ In the development of this application, we plan to utilize a user model. This wi
 &nbsp;  
 
 ## Repository Layout
-More information about repository structure is forthcoming as we begin development in the coming weeks. 
+This section provides more details about each component of our repository.   
+  - **Images:** This directory contains images that will be used on the Screw the Review website. It currently includes our logo and custom headers for each page of the website on a transparent background for rendering.   
+  - **Mockups:** This directory offers mock-ups for our landing page, search feature, roulette fearure, about page, experience result page and account page.    
+  - **Reports:** This directory contains our team's weekly status reports for the course as well as a status report template.   
+  - **Mockups:** This directory contains our team's official UI Mockups for each page that we will be building for the application. It includes the landing page, search, category wheel, about, account and experience result pages.     
+  - **node_modules:** These provide our build system with vital information about dependencies. These are automatically generated.    
+  - **public:** This folder contains the index.html file that allows the React application to be rendered during deployment. It also holds our static category data used in the category wheel features.    
+  - **src**: This folder contains all of the backend and frontend UI code. Under the React framework, each feature has its own Node.js class where both backend and frontend code are written. It also currently contains a sample test file, which will likely change and we implement a CI testing framework.   
+  - **package.json**: This file specifies all of the dependencies that are required and allows them to be automatically built when the website is deployed without manual installation scripts. 
 
-**Images:** This directory contains images that will be used on the Screw the Review website. It currently includes our logo and custom headers for each page of the website on a transparent background for rendering. 
-
-&nbsp;  
-
-**Mockups:** This directory offers mock-ups for our landing page, search feature, roulette fearure, about page, experience result page and account page.  
-
-&nbsp;  
-
-**Reports:** This directory contains our team's weekly status reports for the course as well as a status report template. 
-
-&nbsp;  
-
-**Mockups:** This directory contains our team's official UI Mockups for each page that we will be building for the application. It includes the landing page, search, category wheel, about, account and experience result pages. 
-
-&nbsp;  
-
-**node_modules:** These provide our build system with vital information about dependencies. These are automatically generated. 
-
-&nbsp;  
-
-**public:** This folder contains the index.html file that allows the React application to be rendered during deployment. It also holds our static category data used in the category wheel features. 
-
-&nbsp; 
-
-**src**: This folder contains all of the backend and frontend UI code. Under the React framework, each feature has its own Node.js class where both backend and frontend code are written. It also currently contains a sample test file, which will likely change and we implement a CI testing framework. 
-
-&nbsp; 
-
-**package.json**: This file specifies all of the dependencies that are required and allows them to be automatically built when the website is deployed without manual installation scripts. 
-
-&nbsp;  
