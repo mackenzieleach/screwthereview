@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css';
+import { Route, Switch } from 'react-router-dom';
+
 import './App.css';
+
 import Navigation from './Navigation';
 import Home from './Home';
 import Search from './Search';
@@ -14,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navigation />
+        <Navigation/>
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/search" component={Search} />

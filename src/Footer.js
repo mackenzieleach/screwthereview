@@ -7,10 +7,6 @@ function Footer() {
             <div className="footer-middle">
                 <div className="container">
                     <div className="row">
-                        {/* Column 1*/}
-                        <div className="col-md-3 col-sm-6">
-                            <span> Copyright &copy; Screw the Review {new Date().getFullYear()}</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -24,7 +20,7 @@ const FooterContainer = styled.footer`
 .footer-middle{
     background: var(--mainColor);
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-left: 20px;
 }
 
