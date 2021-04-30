@@ -4,10 +4,11 @@ import logo from './ScrewtheReviewLogo.png'
 function Navigation() {
     return (
         <nav className="navbar navbar-expand-sm navbar-light">
-            <a className="navbar-brand ml-2" href="/">
-                <img src={logo} alt="logo" style = {{ width:'100px'}}/>
+            <a className="navbar-brand mr-3" href="/">
+                <img src={logo} alt="logo" style = {{ width:'150px'}}/>
             </a>
         
+            { /* Collapsable Button on Right */ }
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
