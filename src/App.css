@@ -39,13 +39,25 @@
 
 .nav-bar {
   background: #4dd8ff;
-  padding: 32px;
+  padding: 25px;
 }
 
 .nav-bar > a {
-  font-size: 32px;
-  padding-right: 16px;
+  font-size: 25px;
+  padding-right: 10px;
   text-decoration: none;
+}
+
+/* FOOTER */
+:root {
+  --mainColor: #4dd8ff;
+}
+
+.main-footer{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 /* WHEEL */
