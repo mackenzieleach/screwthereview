@@ -1,7 +1,11 @@
 /* NAVBAR */
 .navbar {
   background: #4dd8ff;
-  padding: 10px;
+  padding-bottom: 5px;
+  font-size: 25px;
+  font-family: 'Helvetica';
+  font-weight: 800;
+  
 }
 
 .navbar > a {
@@ -14,6 +18,10 @@
 
 .navbar-collapse.in {
   display: block !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* FOOTER */
