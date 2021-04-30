@@ -7,6 +7,7 @@ import Search from './Search';
 import Roulette from './Roulette';
 import About from './About';
 import Account from './Account';
+import Footer from './Footer';
 
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path="/about" component={About} />
           <Route path="/account" component={Account} />
         </Switch>
+        <Footer />
       </div >
     );
   }
