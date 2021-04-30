@@ -1,46 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
 
-// class Roulette extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <p>
-//             Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//           <a
-//             className="App-link"
-//             href="https://reactjs.org"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Learn React
-//         </a>
-//         </header>
-//       </div>
-//     );
-//   }
-// }
-
-// export default Roulette;
+var WHEELSIZE = 8;
 
 class Roulette extends React.Component {
   state = {
-    list: [
-      "$100",
-      "$500",
-      "$9,999",
-      "$1",
-      "$60",
-      "$1,000",
-      "$4.44",
-      "$0",
-      "$333"
-    ],
-    // list: ["$100", "$500", "$9,999", "$1", "$60", "$1,000", "$4.44"],
-    // list: ["$100","$500","$9,999","$1","$60"],
+    // list: [
+    //   "$100",
+    //   "$500",
+    //   "$9,999",
+    //   "$1",
+    //   "$60",
+    //   "$1,000",
+    //   "$4.44",
+    //   "$0",
+    //   "$333"
+    // ],
+    list: [],
     radius: 75, // PIXELS
     rotate: 0, // DEGREES
     easeOut: 0, // SECONDS
@@ -53,28 +29,61 @@ class Roulette extends React.Component {
   };
 
   componentDidMount() {
+
     // generate canvas wheel on load
     this.renderWheel();
   }
 
   renderWheel() {
+    let categories = [];
+    const categoryMap = new Map(
+      [["Arts & Entertainment", "arts"],
+      ["Active Life", "active"],
+      ["Bakeries", "bakeries"],
+      ["Coffee & Tea", "coffee"],
+      ["Frozen Treats", "icecream"],
+      ["Speciality Food", "gourmet"],
+      ["Street Vendors", "streetvendors"],
+      ["Tours", "tours"],
+      ["Nightlife", "nightlife"],
+      ["Restaurants", "restaurants"],
+      ["Shopping", "shopping"],
+      ["Media Stores", "media"]]
+    );
+    // let canvas = document.getElementById("wheel");
+    // let radius = canvas.width / 4;
+
+
+    console.log(this.state.radius);
+    let keys = Array.from(categoryMap.keys());
+    // randomly select categories to populate wheel
+    let selectedCategory;
+    for (var i = 0; i < WHEELSIZE; i++) {
+      selectedCategory = keys[Math.floor(Math.random() * keys.length)]
+      categories.push(selectedCategory);
+      categoryMap.delete(selectedCategory);
+    }
     // determine number/size of sectors that need to created
-    let numOptions = this.state.list.length;
+    let numOptions = WHEELSIZE;
     let arcSize = (2 * Math.PI) / numOptions;
     this.setState({
-      angle: arcSize
-    });
+      list: categories,
+      angle: arcSize,
+      // radius: radius
+    }, () => {
+      console.log(this.state.radius);
+      // get index of starting position of selector
+      this.topPosition(numOptions, arcSize);
 
-    // get index of starting position of selector
-    this.topPosition(numOptions, arcSize);
-
-    // dynamically generate sectors from state list
-    let angle = 0;
-    for (let i = 0; i < numOptions; i++) {
-      let text = this.state.list[i];
-      this.renderSector(i + 1, text, angle, arcSize, this.getColor());
-      angle += arcSize;
+      // dynamically generate sectors from state list
+      let angle = 0;
+      for (let j = 0; j < numOptions; j++) {
+        let text = this.state.list[j];
+        this.renderSector(j + 1, text, angle, arcSize, this.getColor());
+        angle += arcSize;
+      }
     }
+    );
   }
 
   topPosition = (num, angle) => {
@@ -202,17 +211,19 @@ class Roulette extends React.Component {
       <div className="App">
         <h1>Spinning Prize Wheel React</h1>
         <span id="selector">&#9660;</span>
-        <canvas
-          id="wheel"
-          width="500"
-          height="500"
-          style={{
-            WebkitTransform: `rotate(${this.state.rotate}deg)`,
-            WebkitTransition: `-webkit-transform ${
-              this.state.easeOut
-            }s ease-out`
-          }}
-        />
+        <div className = "canvasContainer">
+          <canvas
+            id="wheel"
+            width="500"
+            height="500"
+            style={{
+              WebkitTransform: `rotate(${this.state.rotate}deg)`,
+              WebkitTransition: `-webkit-transform ${
+                this.state.easeOut
+              }s ease-out`
+            }}
+          />
+        </div>
 
         {this.state.spinning ? (
           <button type="button" id="reset" onClick={this.reset}>

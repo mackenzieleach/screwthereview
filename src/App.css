@@ -37,6 +37,11 @@
 }
 
 /* WHEEL */
+/* #wheel {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+} */
+
 button {
   background: none;
   border: 1px solid black;
@@ -71,8 +76,6 @@ button {
   border-color: red;
 }
 
-
-
 #readout {
   position: absolute;
   bottom: 7vh;
@@ -98,3 +101,10 @@ input {
   border:none;
   border-bottom: 1px solid black
 }
+
+/* .canvasContainer {
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  height: 400px;
+} */

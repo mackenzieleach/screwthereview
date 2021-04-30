@@ -1,0 +1,56 @@
+{
+    "categories": [
+        {
+            "alias": "arts",
+            "title": "Arts & Entertainment"
+        },
+        {
+            "alias": "active",
+            "title": "Active Life"
+        },
+        {
+            "alias": "beautysvc",
+            "title": "Beauty & Spas"
+        },
+        {
+            "alias": "bakeries",
+            "title": "Bakeries"
+        },
+        {
+            "alias": "coffee",
+            "title": "Coffee & Tea"
+        },
+        {
+            "alias": "icecream",
+            "title": "Frozen Treats"
+        },
+        {
+            "alias": "gourmet",
+            "title": "Specialty Food"
+        },
+        {
+            "alias": "streetvendors",
+            "title": "Street Vendors"
+        },
+        {
+            "alias": "tours",
+            "title": "Tours"
+        },
+        {
+            "alias": "nightlife",
+            "title": "Nightlife"
+        },
+        {
+            "alias": "restaurants",
+            "title": "Restaurants"
+        },
+        {
+            "alias": "shopping",
+            "title": "Shopping"
+        },
+        {
+            "alias": "media",
+            "title": "Media Stores"
+        }
+    ]
+}
