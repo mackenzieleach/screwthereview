@@ -1,21 +1,12 @@
 import React, { Component } from 'react';
+// import categoryMap from './categories';
 import './App.css';
 
 var WHEELSIZE = 8;
 
 class Roulette extends React.Component {
   state = {
-    // list: [
-    //   "$100",
-    //   "$500",
-    //   "$9,999",
-    //   "$1",
-    //   "$60",
-    //   "$1,000",
-    //   "$4.44",
-    //   "$0",
-    //   "$333"
-    // ],
+
     list: [],
     radius: 75, // PIXELS
     rotate: 0, // DEGREES
@@ -50,18 +41,20 @@ class Roulette extends React.Component {
       ["Shopping", "shopping"],
       ["Media Stores", "media"]]
     );
-    // let canvas = document.getElementById("wheel");
-    // let radius = canvas.width / 4;
+
+    let canvas = document.getElementById("wheel");
+    let radius = canvas.width / 4;
 
 
-    console.log(this.state.radius);
     let keys = Array.from(categoryMap.keys());
     // randomly select categories to populate wheel
     let selectedCategory;
+    let rand;
     for (var i = 0; i < WHEELSIZE; i++) {
-      selectedCategory = keys[Math.floor(Math.random() * keys.length)]
+      rand = Math.floor(Math.random() * keys.length)
+      selectedCategory = keys[rand]
       categories.push(selectedCategory);
-      categoryMap.delete(selectedCategory);
+      keys.splice(rand, 1);
     }
     // determine number/size of sectors that need to created
     let numOptions = WHEELSIZE;
@@ -69,7 +62,7 @@ class Roulette extends React.Component {
     this.setState({
       list: categories,
       angle: arcSize,
-      // radius: radius
+      radius: radius
     }, () => {
       console.log(this.state.radius);
       // get index of starting position of selector
@@ -80,6 +73,8 @@ class Roulette extends React.Component {
       for (let j = 0; j < numOptions; j++) {
         let text = this.state.list[j];
         this.renderSector(j + 1, text, angle, arcSize, this.getColor());
+        console.log(angle);
+        console.log(arcSize);
         angle += arcSize;
       }
     }
@@ -115,7 +110,6 @@ class Roulette extends React.Component {
   };
 
   renderSector(index, text, start, arc, color) {
-    // create canvas arc for each list element
     let canvas = document.getElementById("wheel");
     let ctx = canvas.getContext("2d");
     let x = canvas.width / 2;
@@ -138,12 +132,13 @@ class Roulette extends React.Component {
 
     ctx.save();
     ctx.translate(
-      baseSize + Math.cos(angle - arc / 2) * textRadius,
-      baseSize + Math.sin(angle - arc / 2) * textRadius
+      baseSize + Math.cos(angle - arc / 2) * textRadius -160,
+      baseSize + Math.sin(angle - arc / 2) * textRadius -160
     );
     ctx.rotate(angle - arc / 2 + Math.PI / 2);
-    ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
+    ctx.fillText(text, -ctx.measureText(text).width / 2, 60);
     ctx.restore();
+  
   }
 
   getColor() {
@@ -210,19 +205,25 @@ class Roulette extends React.Component {
     return (
       <div className="App">
         <h1>Spinning Prize Wheel React</h1>
-        <span id="selector">&#9660;</span>
-        <div className = "canvasContainer">
-          <canvas
-            id="wheel"
-            width="500"
-            height="500"
-            style={{
-              WebkitTransform: `rotate(${this.state.rotate}deg)`,
-              WebkitTransition: `-webkit-transform ${
-                this.state.easeOut
-              }s ease-out`
-            }}
-          />
+        
+        <div className="container" id="wheel-container">
+          <div className="row">
+            <span id="selector" className="col-6 offset-3 text-center">&#9660;</span>
+          </div>
+          <div className="row">
+              <canvas
+                id="wheel"
+                width="500"
+                height="500"
+                className="col-6 offset-3"
+                style={{
+                  WebkitTransform: `rotate(${this.state.rotate}deg)`,
+                  WebkitTransition: `-webkit-transform ${
+                    this.state.easeOut
+                  }s ease-out`
+                }}
+                />
+            </div>
         </div>
 
         {this.state.spinning ? (

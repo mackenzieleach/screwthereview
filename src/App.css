@@ -37,10 +37,10 @@
 }
 
 /* WHEEL */
-/* #wheel {
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
-} */
+#wheel {
+  width: 100%;
+  height: 100%;
+}
 
 button {
   background: none;
@@ -84,11 +84,9 @@ button {
 
 
 #selector {
-  position: absolute;
-  top: 20vh;
-  right: 49vw;
-  font-size: 40px;
+  font-size: 100px;
   z-index: 3;
+  margin-bottom: -6%;
 }
 
 #result{
@@ -102,9 +100,6 @@ input {
   border-bottom: 1px solid black
 }
 
-/* .canvasContainer {
-  margin-right: auto;
-  margin-left: auto;
-  width: 400px;
-  height: 400px;
-} */
+.canvasContainer {
+  align-items: center;
+}
