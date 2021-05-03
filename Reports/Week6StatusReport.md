@@ -100,14 +100,6 @@
 <!-- ############################################################################################## -->
 ## Team Member Reports: Mackenzie Leach
 **Previous Plans & Goals**
-* **Goal 1:**
-* **Goal 2:**
-
-&nbsp;
-
-**Team Member** | **Task** | **Due**
------------- | ------------------------|------------
-**Mackenzie Leach** | <Task> | <Due> 
 * **Goal 1:** Create "Resource" document for all team members to utilize during development
 * **Goal 2:** Learn about React Bootstrap and design plan for integration into application
 * **Goal 3:** Set up Trello Board for clearer communication about tasks & due dates
@@ -153,7 +145,8 @@
 <!-- ############################################################################################## -->
 ## Team Member Reports: LuLu Pinczower
 **Previous Plans & Goals**
-database infrasturcture
+* **Goal 1:** Start integrating API calls into our skeletal applicatin
+* **Goal 2:** Begin building out backend / database infrasturcture
 
 &nbsp;  
 
