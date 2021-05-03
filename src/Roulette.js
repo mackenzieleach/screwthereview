@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import categoryMap from './categories';
+import title from './CategoryWheel.png'
 import './App.css';
 
 var WHEELSIZE = 8;
@@ -70,9 +70,13 @@ class Roulette extends React.Component {
 
       // dynamically generate sectors from state list
       let angle = 0;
+      
+      // list of colors for wheel segments
+      let colors = ['rgba(255,3,3,1)', 'rgba(77,216,255,1)', 'rgba(255,79,205,1)', 'rgba(255,204,77,1)']
+      let numColors = colors.length;
       for (let j = 0; j < numOptions; j++) {
         let text = this.state.list[j];
-        this.renderSector(j + 1, text, angle, arcSize, this.getColor());
+        this.renderSector(j + 1, text, angle, arcSize, colors[j % numColors]);
         console.log(angle);
         console.log(arcSize);
         angle += arcSize;
@@ -132,8 +136,8 @@ class Roulette extends React.Component {
 
     ctx.save();
     ctx.translate(
-      baseSize + Math.cos(angle - arc / 2) * textRadius -160,
-      baseSize + Math.sin(angle - arc / 2) * textRadius -160
+      baseSize + Math.cos(angle - arc / 2) * textRadius - 165,
+      baseSize + Math.sin(angle - arc / 2) * textRadius - 165
     );
     ctx.rotate(angle - arc / 2 + Math.PI / 2);
     ctx.fillText(text, -ctx.measureText(text).width / 2, 60);
@@ -206,23 +210,27 @@ class Roulette extends React.Component {
       <div className="App">
         <h1>Spinning Prize Wheel React</h1>
         
-        <div className="container" id="wheel-container">
+        <div className="container-fluid" id="wheel-container">
           <div className="row">
-            <span id="selector" className="col-6 offset-3 text-center">&#9660;</span>
+            <span id="selector" className="col-6 text-center">&#9660;</span>
           </div>
           <div className="row">
               <canvas
                 id="wheel"
                 width="500"
                 height="500"
-                className="col-6 offset-3"
+                className="col-6"
                 style={{
                   WebkitTransform: `rotate(${this.state.rotate}deg)`,
                   WebkitTransition: `-webkit-transform ${
                     this.state.easeOut
                   }s ease-out`
                 }}
-                />
+            />
+            <div className="col-6">
+              <img src={title} className="row" style={{ width: '-webkit-fill-available' }}/>
+              <div className="row">Ready to try something new? Spin the wheel for your new experience!</div>
+            </div>
             </div>
         </div>
 
@@ -232,7 +240,7 @@ class Roulette extends React.Component {
           </button>
         ) : (
           <button type="button" id="spin" onClick={this.spin}>
-            spin
+            SCREW THE REVIEW
           </button>
         )}
         <div class="display">
