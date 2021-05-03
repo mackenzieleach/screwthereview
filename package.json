@@ -51,7 +51,7 @@
       "last 1 safari version"
     ]
   },
-   "devDependencies": {
+  "devDependencies": {
     "identity-obj-proxy": "^3.0.0"
   }
 }
