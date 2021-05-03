@@ -162,23 +162,25 @@ database infrasturcture
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week I made a lot of progres on the roulette page. I succesfully implemented the randomly populating wheel with a very basic set of categories. I also implementing resizing capabilities via the bootstrap package. <p>&nbsp;</p>
+* **Successful Tactics:** All of my success this week came from trial and error. I needed to reacquaint myself withe some of the technologies / packages. I found that I was most successful when I sat down for a long period of time, completely dedicating myself to the app instead of short bursts of work. <p>&nbsp;</p>
+* **Learning:** Although I had some experience using bootstrap, I definitely needed to reacquant myself with a lot of its properties. I also spent a long time research file handling with Node.js because our ultimate goal is to read a JSON file to parse out categories. <p>&nbsp;</p>
+* **Issues & Challenges:** Unfortunately I was unable to read the JSON file of categories using the filehandle package for Node.js. It seems as though this is a rather tough thing to do. For now, I have resorted to a premade map object of categories, but I hope to change this for the future. <p>&nbsp;</p>
+* **Blockers:** While not being able to read a JSON file is a current blocker, it isn't necessarily halting all progress. I successfully found a route around the obstacle. But I would like to implement this capability in the future. <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Continue reading up on JSON data injestion in Node.js applications
+* **Goal 2:** Continue fine tuning front end of roulette page, and start working on results
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**LuLu Pinczower** | <Task> | <Due> 
+**LuLu Pinczower** | Finalize category list for roulette | 5/6, 11:59 PM PDT
+| | finish frontend development of roulette wheel | 5/6, 11:59 PM PDT
+| | integrate roulette page with results page (API handling) | 5/8, 11:59 PM PDT
 
 &nbsp;  
 
