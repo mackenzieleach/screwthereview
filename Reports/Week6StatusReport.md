@@ -125,23 +125,28 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This past week, I finalized our CD launch for Netlify, wrote the CI portion of the Testing & Ci Deliverable and set up the scripting for CI Testing in Github, updated the header and footer to be dynamically responsive and added CSS styling, and am currently working on developing the landing page.   <p>&nbsp;</p>
+* **Successful Tactics:** Similar to other weeks, using a meeting agenda to block in time for standups has been really helpful in keeping synchronous meetings on track and productive. I personally have found the Trello Board to be helpful in organizing my development tasks with due dates for progress. I've also worked on sending out communication when members need to pull changes like the addition of a testing CI to their branches. <p>&nbsp;</p>
+* **Learning:** I've watched a lot of Youtube tutorials to refamiliarize myself with Boostrap and CSS again, especially in the context of React. Additionally, configuring the Github Actions with Netlify and Jest was a lot of learning about Babel configurations to support JSX syntax and a Netlify workaround to only deploy the website when tests successfully pass. I actually made a copy of our repo and uploaded it privatly to Github so I could safely make changes and set up the testing CI before porting the relevant test files back over to our main repository. <p>&nbsp;</p>
+* **Issues & Challenges:** After setting up the URL launch, there was some confusion about how to pull changes from main to branches and a merge undid our launch. I had backed up the code locally since this was our first attempt as a team managing branches, and we ended up needing to start from that code and manually add in the few classes that had changed. Since that was a bit time consuming, the main branch now requires pull requests with one reviewer before changes can be merged and the build and deployment runs on all pull requests to ensure tests are passing. <p>&nbsp;</p>
+* **Blockers:** LuLu and I will be working on the user interface for the experience results page on Saturday. We will need Luke's implementation of the Yelp Scraper completed prior so we can parse through the JSON file returned by the scraper to render.  <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Get started early on writing the user and developer guides for the documentation deliverable
+* **Goal 2:** After writing Quick Start Guide, borrow a friend's computer to verify the steps
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Mackenzie Leach** | <Task> | <Due> 
+**Mackenzie Leach** | Team Status Report W6 | 5/5, 11:00 PM PDT
+|| Photoshop Roulette Title & Spinner for LuLu | 5/5, 11:59 PM PDT
+|| Complete Development & Testing of Landing Page | 5/9, 11:59 PM PDT
+|| Complete Development & Testing of Experience Results UI with LuLu | 5/9, 11:59 PM
+|| Write Quick Start Guide with Luke | 5/10, 7:00 PM PDT
+|| Code Review: Search Feature | 5/10, 7:00 PM PDT
 
 &nbsp;  
 
