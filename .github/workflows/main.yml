@@ -1,7 +1,16 @@
-name: Trigger Netlify Build
-on: push
+name: Run Jest Tests & Deploy to Netlify
+on: [push, pull_request]
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Yarn Modules
+      run: yarn
+    - name: Run Jest Tests
+      run: yarn test "../__tests__"
+  
   build:
     name: Request Netlify Webhook
     runs-on: ubuntu-latest
