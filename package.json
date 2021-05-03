@@ -52,6 +52,7 @@
     ]
   },
   "devDependencies": {
-    "identity-obj-proxy": "^3.0.0"
+    "identity-obj-proxy": "^3.0.0",
+    "react-test-renderer": "^17.0.2"
   }
 }
