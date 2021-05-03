@@ -6,6 +6,7 @@ class Home extends Component {
             <div>
                 <h1>Home</h1>
                 <p>Home page body content</p>
+                <p>CI/CD Deployment Test</p>
             </div>
         );
     }
