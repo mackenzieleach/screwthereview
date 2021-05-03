@@ -50,11 +50,14 @@ In the development of this application, we plan to utilize a user model. This wi
 ## Repository Layout
 This section provides more details about each component of our repository.   
   - **Images:** This directory contains images that will be used on the Screw the Review website. It currently includes our logo and custom headers for each page of the website on a transparent background for rendering.   
-  - **Mockups:** This directory offers mock-ups for our landing page, search feature, roulette fearure, about page, experience result page and account page.    
+  - **Mockups:** This directory contains our team's official UI Mockups for each page that we will be building for the application. It includes the landing page, search, category wheel, about, account and experience result pages.   
   - **Reports:** This directory contains our team's weekly status reports for the course as well as a status report template.   
-  - **Mockups:** This directory contains our team's official UI Mockups for each page that we will be building for the application. It includes the landing page, search, category wheel, about, account and experience result pages.     
+  - **__mocks__:** This directory contains files that allow the testing CI to properly handle CSS and JSX formatting.
+  - **__tests__:** This directly contains all of the testing files for this application written with the Jest testing framework.    
   - **node_modules:** These provide our build system with vital information about dependencies. These are automatically generated.    
   - **public:** This folder contains the index.html file that allows the React application to be rendered during deployment. It also holds our static category data used in the category wheel features.    
-  - **src**: This folder contains all of the backend and frontend UI code. Under the React framework, each feature has its own Node.js class where both backend and frontend code are written. It also currently contains a sample test file, which will likely change and we implement a CI testing framework.   
+  - **src**: This folder contains all of the backend and frontend UI code. Under the React framework, each feature has its own Node.js class where both backend and frontend code are written. It also currently contains a sample test file, which will likely change and we implement a CI testing framework. 
+  - **.babelrc:** This file sets the Babel configurations to allow the testing CI to read files with JSX formatting.
+  - **netlify.toml::** This file contains one command that disables deployment on push to limit deployment via webhook only when all tests successfully pass.  
   - **package.json**: This file specifies all of the dependencies that are required and allows them to be automatically built when the website is deployed without manual installation scripts. 
 
