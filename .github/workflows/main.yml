@@ -9,7 +9,7 @@ jobs:
     - name: Install Yarn Modules
       run: yarn
     - name: Run Jest Tests
-      run: yarn test "../tests"
+      run: yarn test "../__tests__"
   
   build:
     name: Request Netlify Webhook
