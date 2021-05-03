@@ -13,6 +13,7 @@ jobs:
   
   build:
     name: Request Netlify Webhook
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Curl request
