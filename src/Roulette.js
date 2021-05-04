@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import title from './CategoryWheel.png'
+import title from './Images/RouletteLogo.png'
 import './App.css';
 
 var WHEELSIZE = 8;
