@@ -4,8 +4,6 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import logo from './ScrewtheReviewLogo.png'
 
-// 
-
 class Home extends Component {
     render() {
         return (
@@ -27,7 +25,7 @@ class Home extends Component {
                     {/* Column 2: Search and About Us Cards*/}
                     <Col lg={3} md={6} sm={12} xs ={12} style={{paddingBottom: 40}}>
                         {/* Search Card*/}
-                        <div className="card">
+                        <div className="card" id="Search">
                             <img className="card-img-top" src={logo} alt="Logo"/>
                             <div className="card-body">
                                 <a href="#" class="btn btn-link btn-block">Search</a>
@@ -35,7 +33,7 @@ class Home extends Component {
                         </div>
 
                         {/* About Us Card*/}
-                        <div className="card">
+                        <div className="card" id="AboutUs">
                             <img className="card-img-top" src={logo} alt="Logo"/>
                             <div className="card-body">
                                 <a href="#" class="btn btn-link btn-block">About Us</a>
@@ -46,7 +44,7 @@ class Home extends Component {
                     {/* Column 3: Roulette and Contact Us Cards*/}
                     <Col lg={3} md={6} sm={12} xs = {12} style={{paddingBottom: 40}}>
                         {/* Roulette Card*/}
-                        <div className="card">
+                        <div className="card" id="Roulette">
                             <img className="card-img-top" src={logo} alt="Logo"/>
                             <div className="card-body">
                                 <a href="#" class="btn btn-link btn-block">Roulette</a>
@@ -54,7 +52,7 @@ class Home extends Component {
                         </div>
 
                         {/* Contact Us Card*/}
-                        <div className="card">
+                        <div className="card" id="ContactUs">
                             <img class="card-img-top" src={logo} alt="Logo"/>
                             <div class="card-body">
                                 <a href="#" class="btn btn-link btn-block">Contact</a>
