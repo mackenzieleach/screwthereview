@@ -212,14 +212,14 @@ class Roulette extends React.Component {
         
         <div className="container-fluid" id="wheel-container">
           <div className="row">
-            <span id="selector" className="col-6 text-center">&#9660;</span>
+            <span id="selector" className="col-4 offset-1 text-center">&#9660;</span>
           </div>
           <div className="row">
               <canvas
                 id="wheel"
                 width="500"
                 height="500"
-                className="col-6"
+                className="col-4 offset-1"
                 style={{
                   WebkitTransform: `rotate(${this.state.rotate}deg)`,
                   WebkitTransition: `-webkit-transform ${
@@ -227,7 +227,7 @@ class Roulette extends React.Component {
                   }s ease-out`
                 }}
             />
-            <div className="col-6">
+            <div className="col-4 offset-2">
               <img src={title} className="row" style={{ width: '-webkit-fill-available' }}/>
               <div className="row">Ready to try something new? Spin the wheel for your new experience!</div>
             </div>
@@ -235,15 +235,15 @@ class Roulette extends React.Component {
         </div>
 
         {this.state.spinning ? (
-          <button type="button" id="reset" onClick={this.reset}>
+          <button className="row" type="button" id="reset" onClick={this.reset}>
             reset
           </button>
         ) : (
-          <button type="button" id="spin" onClick={this.spin}>
+          <button className="row" type="button" id="spin" onClick={this.spin}>
             SCREW THE REVIEW
           </button>
         )}
-        <div class="display">
+        <div class="display row">
           <span id="readout">
             YOU WON:{"  "}
             <span id="result">{this.state.list[this.state.result]}</span>
