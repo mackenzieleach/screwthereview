@@ -36,6 +36,58 @@
   bottom: 0;
 }
 
+/* LANDING PAGE*/
+#logo {
+  width: 80%
+}
+
+
+
+#welcome {
+  font-family: 'Helvetica';
+  color: black;
+  font-size: 40px;
+  font-weight: 800;
+  padding-top: 20px;
+}
+
+#info {
+  font-family: 'Helvetica';
+  color: black;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+#tiles{
+  font-family: 'Helvetica';
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+  height: 50%;
+}
+
+.card > img {
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body > a {
+  color: black;
+  font-size: 28px;
+  font-family: 'Helvetica';
+  font-weight: 800;
+}
+
 /* WHEEL */
 #wheel {
   width: 100%;
