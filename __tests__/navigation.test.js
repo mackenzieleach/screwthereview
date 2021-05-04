@@ -5,15 +5,16 @@ import Navigation from '../src/Navigation.js';
 
 
 describe('Nav Bar Component', () => {
-    test.skip('Navigation bar matches snapshot dom', () => {
+//     // Use .skip annotation to disable tests
+//     test.skip('Navigation bar matches snapshot dom', () => {
         
-        // using react-test-renderer
-        const component = renderer.create(
-            <Navigation/>
-        );
-        let tree = component.toJSON();
-        expect(tree).toMatchSnapshot();
-  });
+//         // using react-test-renderer
+//         const component = renderer.create(
+//             <Navigation/>
+//         );
+//         let tree = component.toJSON();
+//         expect(tree).toMatchSnapshot();
+//   });
 
   test("Nav bar contains a button + 5 list entries", () => {
         // using react testing lib
