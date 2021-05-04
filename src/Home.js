@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import logo from './ScrewtheReviewLogo.png'
+import logo from './Images/ScrewtheReviewLogo.png'
+import searchIcon from './Images/SearchIcon.png'
+import wheelIcon from './Images/WheelIcon.png'
+import contactIcon from './Images/ContactIcon.png'
+import aboutIcon from './Images/AboutIcon.png'
 
 class Home extends Component {
     render() {
@@ -26,7 +30,7 @@ class Home extends Component {
                     <Col lg={3} md={6} sm={12} xs ={12} style={{paddingBottom: 40}}>
                         {/* Search Card*/}
                         <div className="card" id="Search">
-                            <img className="card-img-top" src={logo} alt="Logo"/>
+                            <img className="card-img-top" src={searchIcon} alt="search-icon"/>
                             <div className="card-body">
                                 <a href="#" class="btn btn-link btn-block">Search</a>
                             </div>
@@ -34,7 +38,7 @@ class Home extends Component {
 
                         {/* About Us Card*/}
                         <div className="card" id="AboutUs">
-                            <img className="card-img-top" src={logo} alt="Logo"/>
+                            <img className="card-img-top" src={aboutIcon} alt="Logo"/>
                             <div className="card-body">
                                 <a href="#" class="btn btn-link btn-block">About Us</a>
                             </div>
@@ -45,7 +49,7 @@ class Home extends Component {
                     <Col lg={3} md={6} sm={12} xs = {12} style={{paddingBottom: 40}}>
                         {/* Roulette Card*/}
                         <div className="card" id="Roulette">
-                            <img className="card-img-top" src={logo} alt="Logo"/>
+                            <img className="card-img-top" src={wheelIcon} alt="Logo"/>
                             <div className="card-body">
                                 <a href="#" class="btn btn-link btn-block">Roulette</a>
                             </div>
@@ -53,7 +57,7 @@ class Home extends Component {
 
                         {/* Contact Us Card*/}
                         <div className="card" id="ContactUs">
-                            <img class="card-img-top" src={logo} alt="Logo"/>
+                            <img class="card-img-top" src={contactIcon} alt="Logo"/>
                             <div class="card-body">
                                 <a href="#" class="btn btn-link btn-block">Contact</a>
                             </div>

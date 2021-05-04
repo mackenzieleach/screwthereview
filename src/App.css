@@ -95,6 +95,7 @@
 .card > img {
   padding-top: 25px;
   padding-bottom: 30px;
+  align: 'middle';
 }
 
 .card-body {
