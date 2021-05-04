@@ -41,8 +41,6 @@
   width: 80%
 }
 
-
-
 #welcome {
   font-family: 'Helvetica';
   color: black;
@@ -67,9 +65,13 @@
   font-size: 20px;
 }
 
+#home_container{
+  width: 100%;
+  height: 100%;
+}
+
 .card {
   margin-bottom: 20px;
-  height: 50%;
 }
 
 .card > img {
@@ -86,6 +88,13 @@
   font-size: 28px;
   font-family: 'Helvetica';
   font-weight: 800;
+}
+
+.card-body > a:focus, .card-body  > a:hover {
+  /* This is the actual color from the stars in logo png*/
+  color: #f5d101;
+  text-decoration: none;
+  box-shadow: none;
 }
 
 /* WHEEL */
