@@ -1,15 +1,33 @@
+/* fonts */
+* {
+  font-size: 24px;
+  font-family: 'Helvetica';
+  font-weight: 800;
+}
+
+.font-large {
+  font-size: 48px;
+}
+
+.font-medium {
+  font-size: 36px;
+}
+
+/* bootstrap overrides */
+.container {
+  max-width: 100%;
+}
+.row {
+  margin-top: 16px;
+}
+
 /* NAVBAR */
 .navbar {
   background: #4dd8ff;
   padding-bottom: 5px;
-  font-size: 25px;
-  font-family: 'Helvetica';
-  font-weight: 800;
-  
 }
 
 .navbar > a {
-  font-size: 25px;
   padding-right: 10px;
   padding-left: 10px;
   text-decoration: none;
@@ -86,7 +104,7 @@ button {
 #selector {
   font-size: 100px;
   z-index: 3;
-  margin-bottom: -6%;
+  margin-bottom: -4%;
 }
 
 #result{
@@ -102,4 +120,10 @@ input {
 
 .canvasContainer {
   align-items: center;
+}
+
+.button {
+  margin: 6px;
+  padding: 6px;
+  outline: black;
 }
