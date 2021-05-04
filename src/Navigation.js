@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './ScrewtheReviewLogo.png'
+import logo from './Images/SearchLogo.png'
 
 function Navigation() {
     return (
