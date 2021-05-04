@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import Wheel from './CategoryWheel.png'
 import './App.css';
 
@@ -207,14 +208,14 @@ class Roulette extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <h1>Spinning Prize Wheel React</h1>
+      <Container className="App">
+        <div className="font-large">Spinning Prize Wheel React</div>
         
-        <div className="container-fluid" id="wheel-container">
-          <div className="row">
+        <Container id="wheel-container">
+          <Row>
             <span id="selector" className="col-4 offset-1 text-center">&#9660;</span>
-          </div>
-          <div className="row">
+          </Row>
+          <Row>
               <canvas
                 id="wheel"
                 width="500"
@@ -229,10 +230,10 @@ class Roulette extends React.Component {
             />
             <div className="col-4 offset-2">
               <img alt="roulette" src={Wheel} className="row" style={{ width: '-webkit-fill-available' }}/>
-              <div className="row">Ready to try something new? Spin the wheel for your new experience!</div>
+              <Row>Ready to try something new? Spin the wheel for your new experience!</Row>
             </div>
-            </div>
-        </div>
+            </Row>
+        </Container>
 
         {this.state.spinning ? (
           <button className="row" type="button" id="reset" onClick={this.reset}>
@@ -243,13 +244,13 @@ class Roulette extends React.Component {
             SCREW THE REVIEW
           </button>
         )}
-        <div class="display row">
+        <Row class="display row">
           <span id="readout">
             YOU WON:{"  "}
             <span id="result">{this.state.list[this.state.result]}</span>
           </span>
-        </div>
-      </div>
+        </Row>
+      </Container>
     );
   }
 }
