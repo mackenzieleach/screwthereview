@@ -25,7 +25,9 @@ class App extends Component {
           <Route path="/about" component={About} />
           <Route path="/account" component={Account} />
         </Switch>
-        <Footer />
+        
+        {/* The Footer doesn't resize when scrolling, will need to be fixed*/}
+        {/* <Footer /> */}
       </div >
     );
   }
