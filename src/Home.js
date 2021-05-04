@@ -14,7 +14,7 @@ class Home extends Component {
             <Container fluid id = "home_container" style={{ paddingLeft: 40, paddingRight: 40, paddingTop: 30}} >
                 <Row>
                     {/* Column 1: Logo, Auth0 Widgets and Description*/}
-                    <Col id="landing_col_1" align='center' style={{paddingBottom: 20}} lg={6} md={12} sm={12} xs={12}>
+                    <Col id="landing_col_1" align='center' style={{paddingBottom: 20}} lg={4} md={12} sm={12} xs={12}>
                         <img  src={logo} alt="Logo" id ="logo"/>
                         <h5 id="welcome" style={{textAlign: "center", paddingBottom: 20}} > Welcome to Screw the Review!</h5>
                         <p id="info"> Screw the Review provides new experiences by randomly generating activities. The Roulette
@@ -27,12 +27,12 @@ class Home extends Component {
                     </Col>
 
                     {/* Column 2: Search and About Us Cards*/}
-                    <Col lg={3} md={6} sm={12} xs ={12} style={{paddingBottom: 40}}>
+                    <Col lg={4} md={6} sm={12} xs ={12} style={{paddingBottom: 40}}>
                         {/* Search Card*/}
                         <div className="card" id="Search">
                             <img className="card-img-top" src={searchIcon} alt="search-icon"/>
                             <div className="card-body">
-                                <a href="#" class="btn btn-link btn-block">Search</a>
+                                <a href="#" className="btn btn-link btn-block" id="button">Search</a>
                             </div>
                         </div>
 
@@ -40,26 +40,26 @@ class Home extends Component {
                         <div className="card" id="AboutUs">
                             <img className="card-img-top" src={aboutIcon} alt="Logo"/>
                             <div className="card-body">
-                                <a href="#" class="btn btn-link btn-block">About Us</a>
+                                <a href="#" className="btn btn-link btn-block" id="button">About Us</a>
                             </div>
                         </div>
                     </Col>
 
                     {/* Column 3: Roulette and Contact Us Cards*/}
-                    <Col lg={3} md={6} sm={12} xs = {12} style={{paddingBottom: 40}}>
+                    <Col lg={4} md={6} sm={12} xs={12} style={{paddingBottom: 40}}>
                         {/* Roulette Card*/}
                         <div className="card" id="Roulette">
                             <img className="card-img-top" src={wheelIcon} alt="Logo"/>
                             <div className="card-body">
-                                <a href="#" class="btn btn-link btn-block">Roulette</a>
+                                <a href="#" className="btn btn-link btn-block" id="button">Roulette</a>
                             </div>
                         </div>
 
                         {/* Contact Us Card*/}
                         <div className="card" id="ContactUs">
-                            <img class="card-img-top" src={contactIcon} alt="Logo"/>
-                            <div class="card-body">
-                                <a href="#" class="btn btn-link btn-block">Contact</a>
+                            <img className="card-img-top" src={contactIcon} alt="Logo"/>
+                            <div className="card-body">
+                                <a href="#" className="btn btn-link btn-block" id="button">Contact</a>
                             </div>
                         </div>
                     </Col>
