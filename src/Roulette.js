@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import title from './CategoryWheel.png'
+import Wheel from './CategoryWheel.png'
 import './App.css';
 
 var WHEELSIZE = 8;
@@ -228,7 +228,7 @@ class Roulette extends React.Component {
                 }}
             />
             <div className="col-4 offset-2">
-              <img src={title} className="row" style={{ width: '-webkit-fill-available' }}/>
+              <img alt="roulette" src={Wheel} className="row" style={{ width: '-webkit-fill-available' }}/>
               <div className="row">Ready to try something new? Spin the wheel for your new experience!</div>
             </div>
             </div>
