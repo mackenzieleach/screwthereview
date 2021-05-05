@@ -32,7 +32,7 @@ class Home extends Component {
                         <div className="card" id="Search">
                             <img className="card-img-top" src={searchIcon} alt="search-icon"/>
                             <div className="card-body">
-                                <a href="#" className="btn btn-link btn-block" id="button">Search</a>
+                                <a href="/search" className="btn btn-link btn-block" id="button">Search</a>
                             </div>
                         </div>
 
@@ -40,7 +40,7 @@ class Home extends Component {
                         <div className="card" id="AboutUs">
                             <img className="card-img-top" src={aboutIcon} alt="Logo"/>
                             <div className="card-body">
-                                <a href="#" className="btn btn-link btn-block" id="button">About Us</a>
+                                <a href="/about" className="btn btn-link btn-block" id="button">About Us</a>
                             </div>
                         </div>
                     </Col>
@@ -51,7 +51,7 @@ class Home extends Component {
                         <div className="card" id="Roulette">
                             <img className="card-img-top" src={wheelIcon} alt="Logo"/>
                             <div className="card-body">
-                                <a href="#" className="btn btn-link btn-block" id="button">Roulette</a>
+                                <a href="/roulette" className="btn btn-link btn-block" id="button">Roulette</a>
                             </div>
                         </div>
 
