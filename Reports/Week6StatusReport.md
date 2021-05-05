@@ -77,23 +77,25 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week, I got down to business building out the backend server of our app. I defined the API requests and promises that our backedn will take, and am in the process of implementing the API Calls + Scraping logic that will return biz info to the frontend. I also wrote our testing plan and implemented the skeleton for writing Jest tests!  <p>&nbsp;</p>
+* **Successful Tactics:** Communication and openness about my own skillset led to me pivoting from front-end development (landing page) to backend (server) work, something I'm much better at. <p>&nbsp;</p>
+* **Learning:** All about React testing frameworks! And scraping webpages using jQuery! <p>&nbsp;</p>
+* **Issues & Challenges:** The Yelp business page html is really challenging to parse, so I'm still thinking about how best to extract the description of our businesses <p>&nbsp;</p>
+* **Blockers:** None <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Configure server endpoints for scrape requests
+* **Goal 2:** Figure out how to scrape biz descriptions
+* **Goal 3:** Return descriptions to front-end
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
+**Luke LeVasseur** | Set up server endpoints w ability to receive request and send temp response | 5/6
+**Luke LeVasseur** | Scrape biz descriptions successfully | 5/11
 
 &nbsp;  
 
