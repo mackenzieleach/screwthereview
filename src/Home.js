@@ -59,7 +59,7 @@ class Home extends Component {
                         <div className="card" id="ContactUs">
                             <img className="card-img-top" src={contactIcon} alt="Logo"/>
                             <div className="card-body">
-                                <a href="#" className="btn btn-link btn-block" id="button">Contact</a>
+                                <a href="/contact" className="btn btn-link btn-block" id="button">Contact</a>
                             </div>
                         </div>
                     </Col>

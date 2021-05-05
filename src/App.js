@@ -11,6 +11,7 @@ import Roulette from './Roulette';
 import About from './About';
 import Account from './Account';
 import Footer from './Footer';
+import Contact from './Contact'
 
 
 class App extends Component {
@@ -24,9 +25,8 @@ class App extends Component {
           <Route path="/roulette" component={Roulette} />
           <Route path="/about" component={About} />
           <Route path="/account" component={Account} />
+          <Route path="/contact" component={Contact} />
         </Switch>
-        
-        {/* The Footer doesn't resize when scrolling, will need to be fixed*/}
         <Footer />
       </div >
     );
