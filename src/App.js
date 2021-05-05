@@ -11,7 +11,6 @@ import Roulette from './Roulette';
 import About from './About';
 import Account from './Account';
 import Footer from './Footer';
-import Contact from './Contact'
 
 
 class App extends Component {

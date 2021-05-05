@@ -63,27 +63,27 @@ class Home extends Component {
                             </div>
                         </div>
 
-                        {/* Contact Us Card:
-                            This card renders a modal (pop-up window) when clicked that displays a contact form
-                        */}
+                        {/* Contact Us Card:*/}
                         <div className="card" id="ContactUs">
                             <img className="card-img-top" src={contactIcon} alt="Logo" />
                             <div className="card-body">
-                                <div className="d-flex align-items-center justify-content-center" style={{ height: "30px" }}>
-                                    <Button variant="primary" onClick={this.openModal}> Contact </Button>
+                                <div className="d-flex align-items-center justify-content-center" id="modal">
+                                    <Button id="contact-button" variant="primary" onClick={this.openModal}> Contact </Button>
                                 </div>
 
-                                <Modal show={this.state.isOpen} onHide={this.closeModal}>
+                                {/* Opens a pop-up window with contact form*/}
+                                <Modal show={this.state.isOpen} onHide={this.closeModal} id="pop-up">
                                     <Modal.Header closeButton>
-                                        <Modal.Title>Contact Us</Modal.Title>
+                                        <Modal.Title id="modal-title">Contact Us</Modal.Title>
                                     </Modal.Header>
-                                    <Modal.Body>
-                                        <p> Please fill out the form below to let us know what you think about Screw the Review! </p>
+                                    <Modal.Body id="modal-body">
+                                        {/* Contact Form is integrated with Netlify*/}
+                                        <p id="contact-prompt"> Please fill out the form below to let us know what you think about Screw the Review! </p>
                                         <form name="contact" netlify>
-                                            <p><label id="form-text">Name: <input type="text" name="name" /></label></p>
-                                            <p><label id="form-text">Email: <input type="email" name="email" /></label></p>
-                                            <p><label id="form-text">Message: <textarea name="message"></textarea></label></p>
-                                            <p><button type="submit">Send</button></p>
+                                            <p><label id="form-text">Name: <input id="name" type="text" name="name" /></label></p>
+                                            <p><label id="form-text">Email: <input id="name" type="email" name="email" /></label></p>
+                                            <p><label id="form-text">Message: <textarea id="name" name="message"></textarea></label></p>
+                                            <p><button id="submit-contact" type="submit">Send</button></p>
                                         </form>
                                     </Modal.Body>
                                 </Modal>
@@ -97,5 +97,3 @@ class Home extends Component {
 }
 
 export default Home;
-
-{/* <a href="/contact" className="btn btn-link btn-block" id="button">Contact</a> */ }
