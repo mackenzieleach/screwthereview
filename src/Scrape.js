@@ -4,20 +4,28 @@ const baseURL = "https://api.yelp.com/v3/businesses/search";
 const descURL = "https://www.yelp.com/biz/";
 const loc = "Seattle"
 const category="restaurants"
+const price = "4" // Any price can be 1 or 2 or 3 or 4, or any comma-separated list of multiple prices (e.g "1,2,3")
 
 // accept a category and location OR any of a location, category, price 
 // and will forward a description, addy, url, phone #, pricing, pictures, tags (type of cuisine, etc.), hours - In a Business Object
-getBiz([category], loc);
+getBiz([category], loc, price);
 
-// Category and Location
-function getBiz(categories, loc){
+// Requires location parameter
+// Optional category (array) and price (string) params
+function getBiz(categories, loc, price){
     var URL = baseURL + "?location=" + loc
+
     if (categories.length >= 1){
         URL = URL + "&categories=" + categories[0]
         for (var i = 1; i < categories.length; i++){
             URL = URL + "," + categories[i]
         }
     }
+
+    if (price) {
+        URL = URL + "&price=" + price
+    }
+
     getExperience(URL);
 }
 
@@ -32,12 +40,11 @@ function getExperience(searchURL){
         (response) => {
             var randomNum = Math.floor(Math.random() * response.data.businesses.length)
             var randomBiz = response.data.businesses[randomNum]
-            // console.log(randomBiz)
+            console.log(randomBiz)
             // var bizDescription = scrapeDescription(randomBiz.id)
             // randomBiz.push({
             //     description: bizDescription
             // });
-            console.log(randomBiz);
             return randomBiz;
         },
         (error) => {
