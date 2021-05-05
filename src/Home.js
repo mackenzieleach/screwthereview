@@ -11,12 +11,12 @@ import aboutIcon from './Images/AboutIcon.png'
 class Home extends Component {
     render() {
         return (
-            <Container fluid id = "home_container" style={{ paddingLeft: 40, paddingRight: 40, paddingTop: 30}} >
-                <Row>
+            <Container fluid id="home-container">
+                <Row className="align-items-center">
                     {/* Column 1: Logo, Auth0 Widgets and Description*/}
-                    <Col id="landing_col_1" align='center' style={{paddingBottom: 20}} lg={4} md={12} sm={12} xs={12}>
+                    <Col id="landing_col_1" align='center' style={{paddingBottom: 20}} lg={6} md={12} sm={12} xs={12}>
                         <img  src={logo} alt="Logo" id ="logo"/>
-                        <h5 id="welcome" style={{textAlign: "center", paddingBottom: 20}} > Welcome to Screw the Review!</h5>
+                        <h5 id="welcome"> Welcome to Screw the Review!</h5>
                         <p id="info"> Screw the Review provides new experiences by randomly generating activities. The Roulette
                             feature offers a totally randomized experience and Search generates an experience from filters
                             like price, location and keywords.
@@ -27,7 +27,7 @@ class Home extends Component {
                     </Col>
 
                     {/* Column 2: Search and About Us Cards*/}
-                    <Col lg={4} md={6} sm={12} xs ={12} style={{paddingBottom: 40}}>
+                    <Col lg={3} md={6} sm={12} xs ={12} style={{paddingBottom: 40}}>
                         {/* Search Card*/}
                         <div className="card" id="Search">
                             <img className="card-img-top" src={searchIcon} alt="search-icon"/>
@@ -46,7 +46,7 @@ class Home extends Component {
                     </Col>
 
                     {/* Column 3: Roulette and Contact Us Cards*/}
-                    <Col lg={4} md={6} sm={12} xs={12} style={{paddingBottom: 40}}>
+                    <Col lg={3} md={6} sm={12} xs={12} style={{paddingBottom: 40}}>
                         {/* Roulette Card*/}
                         <div className="card" id="Roulette">
                             <img className="card-img-top" src={wheelIcon} alt="Logo"/>
