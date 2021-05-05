@@ -27,7 +27,7 @@ class App extends Component {
         </Switch>
         
         {/* The Footer doesn't resize when scrolling, will need to be fixed*/}
-        {/* <Footer /> */}
+        <Footer />
       </div >
     );
   }
