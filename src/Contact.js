@@ -1,25 +1,41 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
 
 class Contact extends Component {
+    state = {
+      isOpen: false
+    };
+  
+    openModal = () => this.setState({ isOpen: true });
+    closeModal = () => this.setState({ isOpen: false });
+  
     render() {
-        return (
-            <div>
-                <h5> Please fill out the contact form below to let us know what you think about Screw the Review! </h5>
-                <form name="contact" netlify>
-                    <p>
-                        <label>Name <input type="text" name="name" /></label>
-                    </p>
-                    <p>
-                        <label>Email <input type="email" name="email" /></label>
-                    </p>
-                    <p>
-                        <button type="submit">Send</button>
-                    </p>
-                </form>
-            </div>
-
-        );
+      return (
+        <>
+          <div
+            className="d-flex align-items-center justify-content-center"
+            style={{ height: "100vh" }}
+          >
+            <Button variant="primary" onClick={this.openModal}>
+              Launch demo modal
+            </Button>
+          </div>
+          <Modal show={this.state.isOpen} onHide={this.closeModal}>
+            <Modal.Header closeButton>
+              <Modal.Title>Modal heading</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={this.closeModal}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
+        </>
+      );
     }
-}
+  }
+  
+  export default Contact;
 
-export default Contact;
