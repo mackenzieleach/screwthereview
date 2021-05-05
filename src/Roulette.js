@@ -210,7 +210,6 @@ class Roulette extends React.Component {
     return (
       <Container className="App">
         <div className="font-large">Spinning Prize Wheel React</div>
-        
         <Container id="wheel-container">
           <Row>
             <span id="selector" className="col-4 offset-1 text-center">&#9660;</span>
@@ -232,18 +231,19 @@ class Roulette extends React.Component {
               <img alt="roulette" src={Wheel} className="row" style={{ width: '-webkit-fill-available' }}/>
               <Row>Ready to try something new? Spin the wheel for your new experience!</Row>
             </div>
-            </Row>
+          </Row>
         </Container>
-
+        <Row>
         {this.state.spinning ? (
-          <button className="row" type="button" id="reset" onClick={this.reset}>
+          <button type="button" id="reset" onClick={this.reset}>
             reset
           </button>
         ) : (
-          <button className="row" type="button" id="spin" onClick={this.spin}>
+          <button type="button" id="spin" onClick={this.spin}>
             SCREW THE REVIEW
           </button>
-        )}
+          )}
+          </Row>
         <Row class="display row">
           <span id="readout">
             YOU WON:{"  "}
