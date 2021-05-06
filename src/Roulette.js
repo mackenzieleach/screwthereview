@@ -220,7 +220,7 @@ class Roulette extends React.Component {
 
   render() {
     return (
-      <Container className="App">
+      <Container fluid className="App page-container">
         <div className="font-large">Spinning Prize Wheel React</div>
         <div id="wheel-container">
           <Row>

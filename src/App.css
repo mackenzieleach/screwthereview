@@ -21,8 +21,12 @@
 /* bootstrap overrides */
 .container {
   max-width: 100%;
-
 }
+
+.page-container {
+  height: -webkit-fill-available;
+}
+
 .row {
   margin-top: 16px;
 }

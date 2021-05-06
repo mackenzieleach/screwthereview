@@ -7,7 +7,7 @@ import './App.css';
 class Result extends Component {
     render() {
         return (
-            <Container>
+            <Container fluid className="page-container">
                 <Row>
                     <div className="col font-large">Panda Express</div>
                 </Row>
