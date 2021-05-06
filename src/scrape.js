@@ -69,9 +69,10 @@ function getExperience(searchURL, response){
             console.log("Found business " + randomBiz.name)
             response.write(JSON.stringify(randomBiz));
 
-            //TODO: Append Business Description and Hours to business
-            // var bizDescription = scrapeDescription(randomBiz);
-            // response.write(JSON.stringify(bizDescription))
+            //TODO: Scrape and append Business Description and Hours to business
+            var bizDescription = scrapeDescription(randomBiz);
+            console.log("Found description: " + bizDescription)
+            response.write(JSON.stringify(bizDescription))
         }
         response.end();
     }).catch(err => {
@@ -96,7 +97,7 @@ function getExperience(searchURL, response){
 }
 
 // Scrapes description and hours from Yelp business page
-async function scrapeDescription(biz){
+function scrapeDescription(biz){
     // let scrape_response = await axios(descURL + biz.id).catch((err) => console.log(err));
 
     // if(scrape_response.status !== 200){
