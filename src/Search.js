@@ -46,7 +46,7 @@ class Search extends Component {
                         </div>
                     </Col>
 
-                    <Col style={{paddingRight: 100}} align='center' style={{paddingBottom: 20}} lg={6} md={12} sm={12} xs={12}>
+                    <Col style={{paddingRight: 100}} style={{paddingBottom: 20}} lg={6} md={12} sm={12} xs={12}>
                         <img src={searchLogo} alt="Logo" id ="searchLogo"/>
                         <form onSubmit={this.handleSubmit}>
                             <div class="form-group">
@@ -54,6 +54,12 @@ class Search extends Component {
                                 <input class="form-control" id="inputdefault" type="text" placeholder="Type a keyword ... (hike, Chinese, etc.)" value={this.state.value} onChange={this.handleChange}/>
                             </div>
                         </form>
+                        <p>Location</p>
+                        <p>Price</p>
+                        <p>Distance</p>
+                        <div class="text-center">
+                            <button type="button" >Screw The Review!</button>
+                        </div>
                     </Col>
                 </Row>
             </Container>
