@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import title from './Images/RouletteLogo.png'
+import selector from './Images/selector.png'
 import './App.css';
 
 var WHEELSIZE = 8;
@@ -85,9 +86,8 @@ class Roulette extends React.Component {
       angle: arcSize,
       radius: radius
     }, () => {
-      console.log(this.state.radius);
       // get index of starting position of selector
-      this.topPosition(numOptions, arcSize);
+      this.topPosition(numOptions/4, arcSize);
 
       // dynamically generate sectors from state list
       let angle = 0;
@@ -98,8 +98,6 @@ class Roulette extends React.Component {
       for (let j = 0; j < numOptions; j++) {
         let text = this.state.list[j];
         this.renderSector(j + 1, text, angle, arcSize, colors[j % numColors]);
-        console.log(angle);
-        console.log(arcSize);
         angle += arcSize;
       }
     }
@@ -224,7 +222,8 @@ class Roulette extends React.Component {
         <div className="font-large">Spinning Prize Wheel React</div>
         <div id="wheel-container">
           <Row>
-            <span id="selector" className="col-4 offset-1 text-center">&#9660;</span>
+            {/* <span id="selector" className="col-4 offset-1 text-center">&#9660;</span> */}
+            
           </Row>
           <Row>
               <canvas
@@ -239,6 +238,7 @@ class Roulette extends React.Component {
                   }s ease-out`
                 }}
             />
+            <span style={{alignSelf: "center", marginLeft: "-40px", zIndex: "3" }}><img id="selector" alt="selector" src={selector} /></span>
             <div className="col-4 offset-2">
               <img alt="roulette" src={title} className="row" style={{ width: '-webkit-fill-available' }}/>
               <Row>Ready to try something new? Spin the wheel for your new experience!</Row>
