@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import title from './Images/RouletteLogo.png'
 import './App.css';
 
@@ -207,14 +210,13 @@ class Roulette extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <h1>Spinning Prize Wheel React</h1>
-        
-        <div className="container-fluid" id="wheel-container">
-          <div className="row">
+      <Container className="App">
+        <div className="font-large">Spinning Prize Wheel React</div>
+        <Container id="wheel-container">
+          <Row>
             <span id="selector" className="col-4 offset-1 text-center">&#9660;</span>
-          </div>
-          <div className="row">
+          </Row>
+          <Row>
               <canvas
                 id="wheel"
                 width="500"
@@ -228,28 +230,29 @@ class Roulette extends React.Component {
                 }}
             />
             <div className="col-4 offset-2">
-              <img src={title} className="row" style={{ width: '-webkit-fill-available' }}/>
-              <div className="row">Ready to try something new? Spin the wheel for your new experience!</div>
+              {/* <img alt="roulette" src={Wheel} className="row" style={{ width: '-webkit-fill-available' }}/> */}
+              <Row>Ready to try something new? Spin the wheel for your new experience!</Row>
             </div>
-            </div>
-        </div>
-
+          </Row>
+        </Container>
+        <Row>
         {this.state.spinning ? (
-          <button className="row" type="button" id="reset" onClick={this.reset}>
+          <button type="button" id="reset" onClick={this.reset}>
             reset
           </button>
         ) : (
-          <button className="row" type="button" id="spin" onClick={this.spin}>
+          <button type="button" id="spin" onClick={this.spin}>
             SCREW THE REVIEW
           </button>
-        )}
-        <div class="display row">
+          )}
+          </Row>
+        <Row class="display row">
           <span id="readout">
             YOU WON:{"  "}
             <span id="result">{this.state.list[this.state.result]}</span>
           </span>
-        </div>
-      </div>
+        </Row>
+      </Container>
     );
   }
 }

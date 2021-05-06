@@ -1,0 +1,22 @@
+{
+    "id": 69420,
+    "name": "Fake Business",
+    "address": "69 420 Street, Seattle, WA, 98115",
+    "url": "https://www.eatmyass.com",
+    "phone": "2066963229",
+    "pricing": "$",
+    "hours": {
+        "Mon": "09001700",
+        "Tues": "09001700",
+        "Weds": "09001700",
+        "Thurs": "09001700",
+        "Fri": "09001700",
+        "Sat": "09001700",
+        "Sun": "09001700"
+    },
+    "tags": {
+        "tag1": "Chinese food",
+        "tag2": "Asian food"
+    }
+}
+    
