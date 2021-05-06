@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from './ScrewtheReviewLogo.png'
+import logo from './Images/ScrewtheReviewLogo.png'
 
 function Navigation() {
     return (
-        <nav className="navbar navbar-expand-sm navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-light">
             <a className="navbar-brand mr-l" href="/">
                 <img src={logo} alt="logo" style={{ width: '150px' }} />
             </a>

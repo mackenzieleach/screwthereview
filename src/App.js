@@ -10,8 +10,9 @@ import Search from './Search';
 import Roulette from './Roulette';
 import About from './About';
 import Account from './Account';
-import Footer from './Footer';
 import Result from './Result';
+import Footer from './Footer';
+import Contact from './Contact'
 
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
           <Route path="/roulette" component={Roulette} />
           <Route path="/about" component={About} />
           <Route path="/account" component={Account} />
+          <Route path="/contact" component={Contact} />
           <Route path="/result" component={Result} />
         </Switch>
         <Footer />

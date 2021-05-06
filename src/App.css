@@ -20,6 +20,7 @@
 /* bootstrap overrides */
 .container {
   max-width: 100%;
+
 }
 .row {
   margin-top: 16px;
@@ -52,11 +53,75 @@
 }
 
 .main-footer{
-  position: absolute;
+  position: sticky;
   left: 0;
   right: 0;
   bottom: 0;
 }
+
+/* LANDING PAGE*/
+#logo {
+  width: 80%
+}
+
+#home-container {
+  width: 100%;
+  height: 100%;
+}
+
+#welcome {
+  font-family: 'Helvetica';
+  color: black;
+  font-size: 40px;
+  font-weight: 800;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+#info {
+  color: black;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: 100;
+}
+
+#tiles{
+  color: black;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-weight: 100;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card > img {
+  padding-top: 25px;
+  padding-bottom: 30px;
+  box-align: 'middle';
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body > a {
+  color: black;
+  font-size: 22px;
+  font-family: 'Helvetica';
+  font-weight: 800;
+}
+
+.card-body > a:focus, .card-body  > a:hover {
+  /* This is the actual color from the stars in logo png*/
+  color: #f5d101;
+  text-decoration: none;
+  box-shadow: none;
+}
+
 
 /* WHEEL */
 #wheel {

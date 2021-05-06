@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import Wheel from './CategoryWheel.png'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import title from './Images/RouletteLogo.png'
 import './App.css';
 
 var WHEELSIZE = 8;
@@ -228,7 +230,7 @@ class Roulette extends React.Component {
                 }}
             />
             <div className="col-4 offset-2">
-              <img alt="roulette" src={Wheel} className="row" style={{ width: '-webkit-fill-available' }}/>
+              {/* <img alt="roulette" src={Wheel} className="row" style={{ width: '-webkit-fill-available' }}/> */}
               <Row>Ready to try something new? Spin the wheel for your new experience!</Row>
             </div>
           </Row>
