@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
- 
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 class Account extends Component {
     render() {
         return (
-            <div>
-                <h1>Account</h1>
-                <p>Home page body content</p>
-            </div>
+            <Container fluid id="account-container">
+                <Row>
+                    <Col>
+                    <h5>Account</h5>
+                    </Col>
+                </Row >
+            </Container >
         );
     }
 }
- 
+
 export default Account;
