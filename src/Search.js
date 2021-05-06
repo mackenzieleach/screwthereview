@@ -7,6 +7,7 @@ import coffee from './Images/Coffee.jpeg'
 import coffee0 from './Images/coffee0.jpeg'
 import people from './Images/people.jpeg'
 import cafe from './Images/cafe.jpeg'
+import { Button } from 'react-bootstrap';
 
 class Search extends Component {
     constructor(props) {
@@ -54,11 +55,40 @@ class Search extends Component {
                                 <input class="form-control" id="inputdefault" type="text" placeholder="Type a keyword ... (hike, Chinese, etc.)" value={this.state.value} onChange={this.handleChange}/>
                             </div>
                         </form>
-                        <p>Location</p>
-                        <p>Price</p>
-                        <p>Distance</p>
+                        <Row>
+                            <label for="sel3">Location</label>
+                            <select class="form-control input-sm" id="sel3">
+                                <option>Seattle, WA</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                        </Row>                        
+                        <Row>
+                            <p>Price</p>
+                            <button type="button" id="dollarButton">
+                                <span>&#36;</span>
+                            </button>
+                            <button type="button" id="dollarButton">
+                                <span>&#36;&#36;</span>
+                            </button>
+                            <button type="button" id="dollarButton">
+                                <span>&#36;&#36;&#36;</span>
+                            </button>
+                            <button type="button" id="dollarButton">
+                                <span>&#36;&#36;&#36;&#36;</span>
+                            </button>
+                        </Row>
+                        <Row>
+                            <p>Distance</p>
+                            <div>
+                                <button type="button" >5 miles</button>
+                                <button type="button" >10 miles</button>
+                                <button type="button" >15 miles</button>
+                                <button type="button" >20 miles</button>
+                            </div>
+                        </Row>
                         <div class="text-center">
-                            <button type="button" >Screw The Review!</button>
+                            <button type="button" class="btn btn-warning">Screw The Review!</button>
                         </div>
                     </Col>
                 </Row>
