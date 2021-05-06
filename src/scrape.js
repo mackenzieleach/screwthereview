@@ -17,26 +17,9 @@ const server = http.createServer(function(req, response) {
         response.end();
         
     } else {
-        response.writeHead(200, {'Content-Type': 'text/json'});
         var URL = constructURL(req);
-        // var URL = constructURL([category], loc, price);
-        console.log("\n Getting business from " + URL)
-        const experience = getExperience(URL);
-        experience.then( (value) => {
-                var randomNum = Math.floor(Math.random() * value.data.businesses.length);
-                var randomBiz = value.data.businesses[randomNum];
-
-                //TODO: Append Business Description and Hours to business
-                var bizDescription = scrapeDescription(randomBiz);
-                randomBiz["description"] = "Test Description"
-                response.write(JSON.stringify(randomBiz));
-                
-                response.end();
-            },
-            (error) => {
-                console.log(error);
-            }
-        );
+        console.log("Getting business from " + URL)
+        getExperience(URL, response);
     }
 });
 
@@ -69,24 +52,60 @@ function constructURL(req){
 }
 
 // Returns a new experience from the Yelp API
-function getExperience(searchURL){
-    return axios.get(searchURL, {
+function getExperience(searchURL, response){
+    axios.get(searchURL, {
         headers: {
             'Authorization' : 'Bearer ' + process.env.YELP_API_KEY
         }
-    });
+    }).then(value => {
+        var randomNum = Math.floor(Math.random() * value.data.businesses.length);
+        var randomBiz = value.data.businesses[randomNum];
+        if (!randomBiz){
+            response.writeHead(404, {'Content-Type': 'text/json'});
+            response.write("Unable to find experience. Loosen filter requirements and try again.");
+            console.log("Unable to find experience. Client should loosen filter requirements and try again.")
+        } else {
+            response.writeHead(200, {'Content-Type': 'text/json'});
+            console.log("Found business " + randomBiz.name)
+            response.write(JSON.stringify(randomBiz));
+
+            //TODO: Append Business Description and Hours to business
+            // var bizDescription = scrapeDescription(randomBiz);
+            // response.write(JSON.stringify(bizDescription))
+        }
+        response.end();
+    }).catch(err => {
+        if (err.response) {
+            // client received an error response (5xx, 4xx)
+            response.writeHead(err.response.status, "error from yelp");
+            response.write("Yelp doesn't like your request. Try again. Remember, categories must be valid from Yelp and price must be an int between 1 and 4")
+            console.log("Error from Yelp")
+            console.log(err.response)
+          } else if (err.request) {
+            // client never received a response, or request never left
+            response.writeHead(err.request, "error on request");
+            // response.write("Yelp doesn't like your request. Try again. Remember, categories must be valid from Yelp and price must be an int between 1 and 4")
+            console.log("Error sending request");
+          } else {
+            // anything else
+            console.log("Unidentified error");
+            console.log(err);
+          }
+          response.end();
+    });;
 }
 
 // Scrapes description and hours from Yelp business page
 async function scrapeDescription(biz){
-    let response = await axios(descURL + biz.id).catch((err) => console.log(err));
+    // let scrape_response = await axios(descURL + biz.id).catch((err) => console.log(err));
 
-    if(response.status !== 200){
-        console.log("Error occurred while fetching data");
-        return;
-    };
+    // if(scrape_response.status !== 200){
+    //     console.log("Error occurred while fetching data");
+    //     return;
+    // };
+
     //TODO: parse description and hours here
-    response = response.data
+    return {"description" : "Test Description"}
     // console.log(response)
     //hours table - Class contains OpenhoursOpenhoursrow
     //description - Class starts w 
