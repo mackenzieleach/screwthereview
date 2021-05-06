@@ -200,32 +200,32 @@
 ## Team Member Reports: Rachel Ye
 **Previous Plans & Goals**
 * **Goal 1:** Finish reading react tutorials and work on the search component page.
-* **Goal 2:** Read the React documentation and make an API call. Create the keyword, location filter, price filter, and distance filter.
+* **Goal 2:** Read the React documentation for getting started on building a webpage. Create the keyword, location filter, price filter, and distance filter.
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
 **Rachel Ye** | Start the page for the Search component | 5/1
-**Rachel Ye** | Make an API call with the keyword bar | 5/1
+**Rachel Ye** | Create keyword, location, price, distance filter and star banner image | 5/1
 
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** I've started the keyword box and I've been working through getting the other filters ready and setup on the search page. <p>&nbsp;</p>
+* **Successful Tactics:** It has been helpful seeing the tasks on trello board! It helps to visualize the different tasks I need to complete for my feature. <p>&nbsp;</p>
+* **Learning:** I am learning more about getting React components set up and reading the documentation for React bootstrap. <p>&nbsp;</p>
+* **Issues & Challenges:** It has been a difficult couple of weeks for me due to being behind in all three of my classes and my part time internship right now. I have been trying to catch up for CSE403 because I recognize I have been not finding enough time to code compared to my teammates. I didn't anticipate learning how to do frontend React would be this challenging. <p>&nbsp;</p>
+* **Blockers:** My biggest blocker is being better at communicating how I am feeling with my teammates and catching up with my search feature page. <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1: Get filters, banner image, and fake picture placeholders done by the weekend **
+* **Goal 2: Polish the search feature pages **
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Rachel Ye** | <Task> | <Due>  
+**Rachel Ye** | Finish filters, banner, and fake picture placeholders by Sunday | Sunday 5/9
