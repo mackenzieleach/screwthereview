@@ -31,12 +31,12 @@ class Home extends Component {
                         <p id="info"> Don't know what you want to do today? Screw the Review is designed to provide new experiences
                         like dining, arts and shopping at the click of a button. Search generates an experience from filters like
                         price, location and keyword. Spin the roulette wheel to receive a category and we'll pick a new experience
-                        to try from it!
+                        from it!
                         </p>
-                        <p id="tiles">Click the tiles to learn more about Screw the Review and experience something new!</p>
+                        <p id="tiles">Click the tiles to learn more and experience something new!</p>
 
-                        <LoginButton>Sign In</LoginButton>
-                        <LogoutButton>Sign Out</LogoutButton>
+                        <LoginButton id="auth0-button"> Sign In </LoginButton>
+                        <LogoutButton id="auth0-button">Sign Out</LogoutButton>
 
                         
                     </Col>
