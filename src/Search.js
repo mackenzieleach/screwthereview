@@ -28,7 +28,7 @@ class Search extends Component {
 
     render() {
         return (
-            <Container>
+            <Container fluid>
                 <Row>
                     <Col lg={3} md={6} sm={12} xs ={12} style={{paddingBottom: 40}}> 
                         <div>
@@ -63,29 +63,43 @@ class Search extends Component {
                                 <option>Option 2</option>
                             </select>
                         </Row>                        
-                        <Row>
+                        <Row xs={6}>
                             <p>Price</p>
-                            <button type="button" id="dollarButton">
-                                <span>&#36;</span>
-                            </button>
-                            <button type="button" id="dollarButton">
-                                <span>&#36;&#36;</span>
-                            </button>
-                            <button type="button" id="dollarButton">
-                                <span>&#36;&#36;&#36;</span>
-                            </button>
-                            <button type="button" id="dollarButton">
-                                <span>&#36;&#36;&#36;&#36;</span>
-                            </button>
+                            <Col>
+                                <button type="button" id="dollarButton">
+                                    <span>&#36;</span>
+                                </button>
+                            </Col>
+                            <Col>
+                                <button type="button" id="dollarButton">
+                                    <span>&#36;&#36;</span>
+                                </button>
+                            </Col>
+                            <Col>
+                                <button type="button" id="dollarButton">
+                                    <span>&#36;&#36;&#36;</span>
+                                </button>
+                            </Col>
+                            <Col>
+                                <button type="button" id="dollarButton">
+                                    <span>&#36;&#36;&#36;&#36;</span>
+                                </button>
+                            </Col>
                         </Row>
                         <Row>
                             <p>Distance</p>
-                            <div>
-                                <button type="button" >5 miles</button>
-                                <button type="button" >10 miles</button>
-                                <button type="button" >15 miles</button>
-                                <button type="button" >20 miles</button>
-                            </div>
+                                <Col>
+                                    <button type="button" >5 miles</button>
+                                </Col>
+                                <Col>
+                                    <button type="button" >10 miles</button>
+                                </Col>
+                                <Col>
+                                    <button type="button" >15 miles</button>
+                                </Col>
+                                <Col>              
+                                    <button type="button" >20 miles</button>
+                                </Col>
                         </Row>
                         <div class="text-center">
                             <button type="button" class="btn btn-warning">Screw The Review!</button>
