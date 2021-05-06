@@ -1,5 +1,6 @@
 /* colors 
 - blue: #4dd8ff;
+- yellow: #ffcc4d
 */
 
 /* fonts */
@@ -20,8 +21,12 @@
 /* bootstrap overrides */
 .container {
   max-width: 100%;
-
 }
+
+.page-container {
+  height: -webkit-fill-available;
+}
+
 .row {
   margin-top: 16px;
 }
@@ -186,38 +191,19 @@ button {
 }
 
 
-#spin, #reset {
-  position: absolute;
+#spin {
   bottom: 20vh;
   right: 45vw;
 }
 
-#spin:hover {
-  color: rgb(0, 180, 120);
-  border-color: rgb(0, 180, 120);
-}
-
-#spin:focus, #reset:focus {
+#spin:focus {
   outline:none;
 }
 
-/* #reset {
-  position: absolute;
-  bottom: 20vh;
-  right: 35vw;
-} */
-
-#reset:hover {
-  color: red;
-  border-color: red;
-}
-
 #readout {
-  position: absolute;
   bottom: 7vh;
   left: 35vw;
 }
-
 
 #selector {
   font-size: 100px;
@@ -244,4 +230,21 @@ input {
   border-radius: 40px ;
   height: 70px ;
   width: 70px ;
+}
+
+.str-button, .str-button:hover {
+  min-width: 460px;
+  padding: 10px;
+  background: #ffcc4d;
+  border: 4px solid black;
+  font-size: 20px;
+  border-radius:5px;
+}
+
+/* override form styling */
+.form-control {
+  border: 4px solid black;
+  font-size: 20px;
+  border-radius:5px;
+  margin: 10px;
 }

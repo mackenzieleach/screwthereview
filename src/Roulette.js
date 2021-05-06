@@ -8,8 +8,14 @@ import './App.css';
 var WHEELSIZE = 8;
 
 class Roulette extends React.Component {
+  // search bar
+  constructor(props) {
+    super(props);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  
   state = {
-
     list: [],
     radius: 75, // PIXELS
     rotate: 0, // DEGREES
@@ -19,8 +25,20 @@ class Roulette extends React.Component {
     offset: null, // RADIANS
     net: null, // RADIANS
     result: null, // INDEX
-    spinning: false
+    spinning: false,
+    searchValue: ''
   };
+
+
+
+  handleChange(event) {
+      this.setState({searchValue: event.target.value});
+  }
+
+  handleSubmit(event) {
+      alert('A name was submitted: ' + this.state.searchValue);
+      event.preventDefault();
+  }
 
   componentDidMount() {
 
@@ -148,14 +166,6 @@ class Roulette extends React.Component {
   
   }
 
-  getColor() {
-    // randomly generate rbg values for wheel sectors
-    let r = Math.floor(Math.random() * 255);
-    let g = Math.floor(Math.random() * 255);
-    let b = Math.floor(Math.random() * 255);
-    return `rgba(${r},${g},${b},0.4)`;
-  }
-
   spin = () => {
     // set random spin degree and ease out time
     // set state variables to initiate animation
@@ -210,9 +220,9 @@ class Roulette extends React.Component {
 
   render() {
     return (
-      <Container className="App">
+      <Container fluid className="App page-container">
         <div className="font-large">Spinning Prize Wheel React</div>
-        <Container id="wheel-container">
+        <div id="wheel-container">
           <Row>
             <span id="selector" className="col-4 offset-1 text-center">&#9660;</span>
           </Row>
@@ -230,28 +240,39 @@ class Roulette extends React.Component {
                 }}
             />
             <div className="col-4 offset-2">
-              {/* <img alt="roulette" src={Wheel} className="row" style={{ width: '-webkit-fill-available' }}/> */}
+              <img alt="roulette" src={title} className="row" style={{ width: '-webkit-fill-available' }}/>
               <Row>Ready to try something new? Spin the wheel for your new experience!</Row>
-            </div>
-          </Row>
-        </Container>
-        <Row>
+              <Row>
+              <span className="font-medium" style={{ alignSelf: 'center' }}>Location: </span>
+              <form onSubmit={this.handleSubmit}>
+                  <div class="form-group">
+                    <label for="inputdefault"></label>
+                    <input class="form-control" id="inputdefault" type="text" placeholder="" value={this.state.searchValue} onChange={this.handleChange}/>
+                  </div>
+               </form>
+              </Row>
+              <Row>
         {this.state.spinning ? (
-          <button type="button" id="reset" onClick={this.reset}>
+          <button className="str-button" type="button" id="reset" onClick={this.reset}>
             reset
           </button>
         ) : (
-          <button type="button" id="spin" onClick={this.spin}>
-            SCREW THE REVIEW
+          <button className="str-button" type="button" id="spin" onClick={this.spin}>
+            Screw that Review!
           </button>
           )}
-          </Row>
-        <Row class="display row">
+        </Row>
+        <Row class="display">
           <span id="readout">
             YOU WON:{"  "}
             <span id="result">{this.state.list[this.state.result]}</span>
           </span>
         </Row>
+            </div>
+          </Row>
+        
+
+        </div>
       </Container>
     );
   }
