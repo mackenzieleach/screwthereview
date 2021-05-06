@@ -9,12 +9,31 @@ const loc = "Seattle"
 const category="restaurants"
 const price = "4" // Any price can be 1 or 2 or 3 or 4, or any comma-separated list of multiple prices (e.g "1,2,3")
 
-var output = getBiz([category], loc, price);
-// console.log(output); //TODO: I dont know how to use JS - How do I make main wait for this result to return? I can display the object in getExperience(), but not here...
+// Server Vars
+const http = require('http');
+const port = 7000
+
+const server = http.createServer(function(req, response) {
+    response.writeHead(200, {'Content-Type': 'text/json'});
+    var URL = constructURL([category], loc, price);
+    console.log("Getting business from " + URL)
+    const experience = getExperience(URL);
+    // console.log(experience);
+    experience.then( (value) => { console.log("Value " + value)} )
+    response.end();
+});
+
+server.listen(port, function(error) {
+    if (error) {
+        console.log('Received error ', error);
+    } else {
+        console.log('Server listening on port ' + port);
+    }
+});
 
 // Requires location parameter
 // Optional category (array) and price (string) params
-function getBiz(categories, loc, price){
+function constructURL(categories, loc, price){
     var URL = baseURL + "?location=" + loc
 
     if (categories && categories.length >= 1){
@@ -27,13 +46,11 @@ function getBiz(categories, loc, price){
     if (price) {
         URL = URL + "&price=" + price
     }
-
-    getExperience(URL);
+    return URL;
 }
 
-function getExperience(searchURL){
-    console.log("Getting biz from Yelp Fusion")
-    axios.get(searchURL, {
+async function getExperience(searchURL){
+    const businesses = await axios.get(searchURL, {
         headers: {
             'Authorization' : 'Bearer ' + process.env.YELP_API_KEY
         }
