@@ -2,11 +2,16 @@
 **May 5, 2021**
 &nbsp;  
 
+# Week 6 Status Report
+**May 5, 2021**
+&nbsp;  
+
 ## Team Report
 ### **Meeting Agenda**
-1. <Agenda Item 1>
-2. <Agenda Item 2>
-3. <Agenda Item 3>
+1. Standup
+2. Review Remaining Architecture & Design Feedback & Implement Changes
+3. Review Testing & CI Deliverable
+4. Pull Requests & Action Items
 
 &nbsp;  
 
@@ -35,27 +40,34 @@
 &nbsp;  
 
 ### **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week has been our biggest development week yet! We've developed basic versions of all the pages on our website, and begun to pull together a API-based server to interact with the front end. We've also set up our testing framework (Jest), CI framework (Netlify), and utilized React Bootstrap to make our pages size dynamically. <p>&nbsp;</p>
+* **Successful Tactics:** Trial and error, proactive communication, and minimizing context-switching have helped our team through this week of asynchronous development and synchronous meetings! We've also been sharing resources that each of us has found helpful to compile our knowledge centrally. <p>&nbsp;</p>
+* **Learning:** Jest and Netlify were both brand-new frameworks to us - we learned all about the benefits of those packages and how to integrate them into our deployment pipeline. We also learned a lot about Bootstrap, endpoint-based client-server interactions, and configuring a DB with Azure. <p>&nbsp;</p>
+* **Issues & Challenges:** Just finding the time to develop! We're cruising right along, but are definitely feeling the time crunch... <p>&nbsp;</p>
+* **Blockers:** None! <p>&nbsp;</p>
 
 &nbsp;  
 
 ### **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
-* **Goal 3:**
+* **Goal 1:** Configure Server to send data based on endpoint requests from client
+* **Goal 2:** Have dynamically-sized frontend components within next week
+* **Goal 3:** Film our product for Beta Release!
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
-**Mackenzie Leach** | <Task> | <Due>   
-**LuLu Pinczower** | <Task> | <Due>  
-**Rachel Ye** | <Task> | <Due>  
+**Luke LeVasseur** | Set up server endpoints w ability to receive request and send temp response | 5/6
+|| Scrape biz descriptions successfully | 5/11
+**Mackenzie Leach** | Team Status Report W6 | 5/5, 11:00 PM PDT
+|| Complete Development & Testing of Landing Page | 5/9, 11:59 PM PDT
+|| Complete Development & Testing of Experience Results UI with LuLu | 5/9, 11:59 PM
+|| Write Quick Start Guide with Luke | 5/10, 7:00 PM PDT
+|| Code Review: Search Feature | 5/10, 7:00 PM PDT
+**LuLu Pinczower** | Finalize category list for roulette | 5/6, 11:59 PM PDT
+| | finish frontend development of roulette wheel | 5/6, 11:59 PM PDT
+| | integrate roulette page with results page (API handling) | 5/8, 11:59 PM PDT
+**Rachel Ye** | Finish filters, banner, and fake picture placeholders by Sunday | Sunday 5/9
 
 &nbsp;  
 
@@ -77,28 +89,32 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week, I got down to business building out the backend server of our app. I defined the API requests and promises that our backedn will take, and am in the process of implementing the API Calls + Scraping logic that will return biz info to the frontend. I also wrote our testing plan and implemented the skeleton for writing Jest tests!  <p>&nbsp;</p>
+* **Successful Tactics:** Communication and openness about my own skillset led to me pivoting from front-end development (landing page) to backend (server) work, something I'm much better at. <p>&nbsp;</p>
+* **Learning:** All about React testing frameworks! And scraping webpages using jQuery! <p>&nbsp;</p>
+* **Issues & Challenges:** The Yelp business page html is really challenging to parse, so I'm still thinking about how best to extract the description of our businesses <p>&nbsp;</p>
+* **Blockers:** None <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Configure server endpoints for scrape requests
+* **Goal 2:** Figure out how to scrape biz descriptions
+* **Goal 3:** Return descriptions to front-end
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
+**Luke LeVasseur** | Set up server endpoints w ability to receive request and send temp response | 5/6
+**Luke LeVasseur** | Scrape biz descriptions successfully | 5/11
 
 &nbsp;  
 
 <!-- ############################################################################################## -->
 ## Team Member Reports: Mackenzie Leach
+A quick note for Wilson: I will be on a flight next week during our meeting time, so the team will be updating me after I land!
+
 **Previous Plans & Goals**
 * **Goal 1:** Create "Resource" document for all team members to utilize during development
 * **Goal 2:** Learn about React Bootstrap and design plan for integration into application
@@ -186,32 +202,32 @@
 ## Team Member Reports: Rachel Ye
 **Previous Plans & Goals**
 * **Goal 1:** Finish reading react tutorials and work on the search component page.
-* **Goal 2:** Read the React documentation and make an API call. Create the keyword, location filter, price filter, and distance filter.
+* **Goal 2:** Read the React documentation for getting started on building a webpage. Create the keyword, location filter, price filter, and distance filter.
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
 **Rachel Ye** | Start the page for the Search component | 5/1
-**Rachel Ye** | Make an API call with the keyword bar | 5/1
+**Rachel Ye** | Create keyword, location, price, distance filter and star banner image | 5/1
 
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** I've started the keyword box and I've been working through getting the other filters ready and setup on the search page. <p>&nbsp;</p>
+* **Successful Tactics:** It has been helpful seeing the tasks on trello board! It helps to visualize the different tasks I need to complete for my feature. <p>&nbsp;</p>
+* **Learning:** I am learning more about getting React components set up and reading the documentation for React bootstrap. <p>&nbsp;</p>
+* **Issues & Challenges:** It has been a difficult couple of weeks for me due to being behind in all three of my classes and my part time internship right now. I have been trying to catch up for CSE403 because I recognize I have been not finding enough time to code compared to my teammates. I didn't anticipate learning how to do frontend React would be this challenging. <p>&nbsp;</p>
+* **Blockers:** My biggest blocker is being better at communicating how I am feeling with my teammates and catching up with my search feature page. <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1: Get filters, banner image, and fake picture placeholders done by the weekend **
+* **Goal 2: Polish the search feature pages **
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Rachel Ye** | <Task> | <Due>  
+**Rachel Ye** | Finish filters, banner, and fake picture placeholders by Sunday | Sunday 5/9
