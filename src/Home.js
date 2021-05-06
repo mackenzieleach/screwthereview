@@ -42,7 +42,7 @@ class Home extends Component {
                     </Col>
 
                     {/* Column 2: Search and About Us Cards*/}
-                    <Col lg={3} md={6} sm={12} xs={12} style={{ paddingBottom: 40 }}>
+                    <Col lg={3} md={6} sm={12} xs={12}>
                         {/* Search Card*/}
                         <div className="card" id="Search">
                             <img className="card-img-top" src={searchIcon} alt="search-icon" />
@@ -61,7 +61,7 @@ class Home extends Component {
                     </Col>
 
                     {/* Column 3: Roulette and Contact Us Cards*/}
-                    <Col lg={3} md={6} sm={12} xs={12} style={{ paddingBottom: 40 }}>
+                    <Col lg={3} md={6} sm={12} xs={12}>
                         {/* Roulette Card*/}
                         <div className="card" id="Roulette">
                             <img className="card-img-top" src={wheelIcon} alt="Logo" />

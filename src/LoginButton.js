@@ -7,4 +7,4 @@ const LoginButton = () => {
   return <button id="auth0-login" onClick={() => loginWithRedirect()}>Log In</button>;
 };
 
-export default LoginButton;
+export default LoginButton; 
