@@ -4,36 +4,40 @@ const axios = require('axios');
 const baseURL = "https://api.yelp.com/v3/businesses/search";
 const descURL = "https://www.yelp.com/biz/"; // TBD, this could change
 
-// PASSED IN FROM ROULETTE OR SEARCH
-const loc = "Seattle"
-const category="restaurants"
-const price = "4" // Any price can be 1 or 2 or 3 or 4, or any comma-separated list of multiple prices (e.g "1,2,3")
-
 // Server Vars
 const http = require('http');
-const port = 7000
+const port = 7000;
 
 // Creates a server that responds with a JSON String representing a business
 const server = http.createServer(function(req, response) {
-    response.writeHead(200, {'Content-Type': 'text/json'});
-    var URL = constructURL([category], loc, price);
-    console.log("\n Getting business from " + URL)
-    const experience = getExperience(URL);
-    const biz = experience.then( (value) => {
-                var randomNum = Math.floor(Math.random() * value.data.businesses.length)
-                var randomBiz = value.data.businesses[randomNum]
+    // req.headers.location, .categories{<CSV of valid Yelp categories>}, and .price
+    if (!req.headers.location) {
+        console.log("404 Error - no location provided")
+        response.writeHead(404, "error");
+        response.end();
+        
+    } else {
+        response.writeHead(200, {'Content-Type': 'text/json'});
+        var URL = constructURL(req);
+        // var URL = constructURL([category], loc, price);
+        console.log("\n Getting business from " + URL)
+        const experience = getExperience(URL);
+        experience.then( (value) => {
+                var randomNum = Math.floor(Math.random() * value.data.businesses.length);
+                var randomBiz = value.data.businesses[randomNum];
+
                 //TODO: Append Business Description and Hours to business
-                // var bizDescription = scrapeDescription(randomBiz.id)
-                // randomBiz.push({
-                //     description: bizDescription
-                // });
+                var bizDescription = scrapeDescription(randomBiz);
+                randomBiz["description"] = "Test Description"
                 response.write(JSON.stringify(randomBiz));
+                
                 response.end();
             },
             (error) => {
                 console.log(error);
             }
         );
+    }
 });
 
 server.listen(port, function(error) {
@@ -46,22 +50,25 @@ server.listen(port, function(error) {
 
 // Requires location parameter
 // Optional category (array) and price (string) params
-function constructURL(categories, loc, price){
-    var URL = baseURL + "?location=" + loc
+function constructURL(req){
+    var URL = baseURL + "?location=" + req.headers.location
 
-    if (categories && categories.length >= 1){
-        URL = URL + "&categories=" + categories[0]
-        for (var i = 1; i < categories.length; i++){
-            URL = URL + "," + categories[i]
+    if (req.headers.price) {
+        URL = URL + "&price=" + req.headers.price
+    }
+
+    if (req.headers.categories){
+        var cat_list = req.headers.categories.split(", ")
+        URL = URL + "&categories=" + cat_list[0]
+        for (var i = 1; i < cat_list.length; i++){
+            URL = URL + "," + cat_list[i]
         }
     }
 
-    if (price) {
-        URL = URL + "&price=" + price
-    }
     return URL;
 }
 
+// Returns a new experience from the Yelp API
 function getExperience(searchURL){
     return axios.get(searchURL, {
         headers: {
@@ -71,8 +78,8 @@ function getExperience(searchURL){
 }
 
 // Scrapes description and hours from Yelp business page
-async function scrapeDescription(id){
-    let response = await axios(descURL + id).catch((err) => console.log(err));
+async function scrapeDescription(biz){
+    let response = await axios(descURL + biz.id).catch((err) => console.log(err));
 
     if(response.status !== 200){
         console.log("Error occurred while fetching data");
