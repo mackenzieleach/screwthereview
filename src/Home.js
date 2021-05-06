@@ -97,8 +97,8 @@ class Home extends Component {
                             </div>
                         </div>
                     </Col>
-                </Row >
-            </Container >
+                </Row>
+            </Container>
         );
     }
 }
