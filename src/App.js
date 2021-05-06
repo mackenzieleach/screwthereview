@@ -13,7 +13,6 @@ import Account from './Account';
 import Result from './Result';
 import Footer from './Footer';
 
-
 class App extends Component {
   render() {
     return (
