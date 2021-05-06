@@ -29,7 +29,7 @@ class About extends Component {
                     </Col>
 
                     {/* Column 2: Luke & Mackenzie's Tiles */}
-                    <Col lg={3} md={6} sm={6} xs={6} style={{ paddingBottom: 40 }}>
+                    <Col lg={3} md={6} sm={6} xs={12}>
                         {/* Luke */}
                         <div className="card" id="Luke">
                             <img className="card-img-top" id="headshot" src={luke} alt="luke" />
@@ -50,7 +50,7 @@ class About extends Component {
                     </Col>
 
                     {/* Column 3: LuLu & Rachel's Cards*/}
-                    <Col lg={3} md={6} sm={6} xs={6} style={{ paddingBottom: 40 }}>
+                    <Col lg={3} md={6} sm={6} xs={12}>
                         {/* LuLu */}
                         <div className="card" id="LuLu">
                             <img className="card-img-top" id="headshot" src={lulu} alt="lulu" />
