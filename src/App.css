@@ -61,10 +61,10 @@
 
 /* LANDING PAGE*/
 #logo {
-  width: 80%
+  width: 70%
 }
 
-#home-container {
+#home-container, #account-container {
   width: 100%;
   height: 100%;
 }
@@ -115,13 +115,62 @@
   font-weight: 800;
 }
 
-.card-body > a:focus, .card-body  > a:hover {
+.card-body > #modal > #contact-button {
+  color: black;
+  background-color: transparent;
+  border-color: transparent;
+  color: black;
+  font-weight: 800;
+  font-size: 22px;
+  font-family: 'Helvetica';
+}
+
+.card-body > a:focus, .card-body  > a:hover, .card-body > #modal > #contact-button:hover {
   /* This is the actual color from the stars in logo png*/
-  color: #f5d101;
+  color: #ffcf00;
   text-decoration: none;
   box-shadow: none;
 }
 
+#modal {
+  height: "30px";
+}
+
+#form-text {
+  font-size: 24px;
+}
+
+#name, #email, #message{
+  border: 2px solid black;
+  border-radius: 1px;
+}
+
+#contact-prompt{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#modal-title {
+  font-weight: 800;
+}
+
+button#submit-contact {
+  width: 200px;
+  font-size: 24px;
+  margin: auto;
+  display: grid;
+  border-radius: 0px;
+  border: 2px solid black;
+}
+
+button#auth0-login, button#auth0-logout{
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 200px;
+  background-color: #ffcf00;
+  font-size: 24px;
+}
 
 /* WHEEL */
 #wheel {
