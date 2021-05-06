@@ -10,7 +10,6 @@ class Account extends Component {
                 <Row>
                     <Col>
                     <h5>Account</h5>
-       
                     </Col>
                 </Row >
             </Container >

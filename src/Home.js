@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import logo from './Images/ScrewtheReviewLogo.png'
-import searchIcon from './Images/SearchIcon.png'
-import wheelIcon from './Images/WheelIcon.png'
-import contactIcon from './Images/ContactIcon.png'
-import aboutIcon from './Images/AboutIcon.png'
-import Modal from 'react-bootstrap/Modal'
-import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import logo from './Images/ScrewtheReviewLogo.png';
+import searchIcon from './Images/SearchIcon.png';
+import wheelIcon from './Images/WheelIcon.png';
+import contactIcon from './Images/ContactIcon.png';
+import aboutIcon from './Images/AboutIcon.png';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 import LoginButton from './LoginButton';
 import LogoutButton from './LogoutButton';
 
