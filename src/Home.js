@@ -53,7 +53,7 @@ class Home extends Component {
 
                         {/* About Us Card*/}
                         <div className="card" id="AboutUs">
-                            <img className="card-img-top" src={aboutIcon} alt="Logo" />
+                            <img className="card-img-top" src={aboutIcon} alt="about-icon" />
                             <div className="card-body">
                                 <a href="/about" className="btn btn-link btn-block" id="button">About Us</a>
                             </div>
@@ -64,7 +64,7 @@ class Home extends Component {
                     <Col lg={3} md={6} sm={12} xs={12}>
                         {/* Roulette Card*/}
                         <div className="card" id="Roulette">
-                            <img className="card-img-top" src={wheelIcon} alt="Logo" />
+                            <img className="card-img-top" src={wheelIcon} alt="wheel-icon" />
                             <div className="card-body">
                                 <a href="/roulette" className="btn btn-link btn-block" id="button">Roulette</a>
                             </div>
@@ -72,7 +72,7 @@ class Home extends Component {
 
                         {/* Contact Us Card:*/}
                         <div className="card" id="ContactUs">
-                            <img className="card-img-top" src={contactIcon} alt="Logo" />
+                            <img className="card-img-top" src={contactIcon} alt="contact-icon" />
                             <div className="card-body">
                                 <div className="d-flex align-items-center justify-content-center" id="modal">
                                     <Button id="contact-button" variant="primary" onClick={this.openModal}> Contact </Button>
