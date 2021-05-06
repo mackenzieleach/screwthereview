@@ -13,14 +13,27 @@ const price = "4" // Any price can be 1 or 2 or 3 or 4, or any comma-separated l
 const http = require('http');
 const port = 7000
 
+// Creates a server that responds with a JSON String representing a business
 const server = http.createServer(function(req, response) {
     response.writeHead(200, {'Content-Type': 'text/json'});
     var URL = constructURL([category], loc, price);
-    console.log("Getting business from " + URL)
+    console.log("\n Getting business from " + URL)
     const experience = getExperience(URL);
-    // console.log(experience);
-    experience.then( (value) => { console.log("Value " + value)} )
-    response.end();
+    const biz = experience.then( (value) => {
+                var randomNum = Math.floor(Math.random() * value.data.businesses.length)
+                var randomBiz = value.data.businesses[randomNum]
+                //TODO: Append Business Description and Hours to business
+                // var bizDescription = scrapeDescription(randomBiz.id)
+                // randomBiz.push({
+                //     description: bizDescription
+                // });
+                response.write(JSON.stringify(randomBiz));
+                response.end();
+            },
+            (error) => {
+                console.log(error);
+            }
+        );
 });
 
 server.listen(port, function(error) {
@@ -49,27 +62,12 @@ function constructURL(categories, loc, price){
     return URL;
 }
 
-async function getExperience(searchURL){
-    const businesses = await axios.get(searchURL, {
+function getExperience(searchURL){
+    return axios.get(searchURL, {
         headers: {
             'Authorization' : 'Bearer ' + process.env.YELP_API_KEY
         }
-    }).then(
-        (response) => {
-            var randomNum = Math.floor(Math.random() * response.data.businesses.length)
-            var randomBiz = response.data.businesses[randomNum]
-            console.log(randomBiz)
-            //TODO: Append Business Description and Hours to business
-            // var bizDescription = scrapeDescription(randomBiz.id)
-            // randomBiz.push({
-            //     description: bizDescription
-            // });
-            return randomBiz;
-        },
-        (error) => {
-            console.log(error);
-        }
-    );
+    });
 }
 
 // Scrapes description and hours from Yelp business page
