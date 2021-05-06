@@ -40,11 +40,11 @@
 &nbsp;  
 
 ### **Progress & Issues**  
-* **Tasks Completed:** This week has been our biggest development week yet! We've developed basic versions of all the pages on our website, and begun o pull together a API-based server to interact w the front end. We've also set up our testing framework (Jest), CI framework (Netlify), and utilized bootstrap to make our pages size dynamically. <p>&nbsp;</p>
-* **Successful Tactics:** Trial and error, proactive communication, and minimizing context-switching have helped our team through this week of asynchronous development and synchronous meetings! <p>&nbsp;</p>
-* **Learning:** Jest and Netlify were both brand-new frameworks to us - we learned all about the benefits of those packages and how to integrate them into our deployment pipeline. We also learned a lot about Bootstrap, endpoint-based client-server interactions, and Cconfiguring a DB with Azure. <p>&nbsp;</p>
+* **Tasks Completed:** This week has been our biggest development week yet! We've developed basic versions of all the pages on our website, and begun to pull together a API-based server to interact with the front end. We've also set up our testing framework (Jest), CI framework (Netlify), and utilized React Bootstrap to make our pages size dynamically. <p>&nbsp;</p>
+* **Successful Tactics:** Trial and error, proactive communication, and minimizing context-switching have helped our team through this week of asynchronous development and synchronous meetings! We've also been sharing resources that each of us has found helpful to compile our knowledge centrally. <p>&nbsp;</p>
+* **Learning:** Jest and Netlify were both brand-new frameworks to us - we learned all about the benefits of those packages and how to integrate them into our deployment pipeline. We also learned a lot about Bootstrap, endpoint-based client-server interactions, and configuring a DB with Azure. <p>&nbsp;</p>
 * **Issues & Challenges:** Just finding the time to develop! We're cruising right along, but are definitely feeling the time crunch... <p>&nbsp;</p>
-* **Blockers:** None ATM. <p>&nbsp;</p>
+* **Blockers:** None! <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -60,7 +60,6 @@
 **Luke LeVasseur** | Set up server endpoints w ability to receive request and send temp response | 5/6
 || Scrape biz descriptions successfully | 5/11
 **Mackenzie Leach** | Team Status Report W6 | 5/5, 11:00 PM PDT
-|| Photoshop Roulette Title & Spinner for LuLu | 5/5, 11:59 PM PDT
 || Complete Development & Testing of Landing Page | 5/9, 11:59 PM PDT
 || Complete Development & Testing of Experience Results UI with LuLu | 5/9, 11:59 PM
 || Write Quick Start Guide with Luke | 5/10, 7:00 PM PDT
@@ -68,6 +67,7 @@
 **LuLu Pinczower** | Finalize category list for roulette | 5/6, 11:59 PM PDT
 | | finish frontend development of roulette wheel | 5/6, 11:59 PM PDT
 | | integrate roulette page with results page (API handling) | 5/8, 11:59 PM PDT
+**Rachel Ye** | Finish filters, banner, and fake picture placeholders by Sunday | Sunday 5/9
 
 &nbsp;  
 
@@ -113,6 +113,8 @@
 
 <!-- ############################################################################################## -->
 ## Team Member Reports: Mackenzie Leach
+A quick note for Wilson: I will be on a flight next week during our meeting time, so the team will be updating me after I land!
+
 **Previous Plans & Goals**
 * **Goal 1:** Create "Resource" document for all team members to utilize during development
 * **Goal 2:** Learn about React Bootstrap and design plan for integration into application
