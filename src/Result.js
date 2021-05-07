@@ -5,15 +5,56 @@ import Map from './Map.png'
 import './App.css';
  
 class Result extends Component {
+    state = {
+        name: null,
+        description: null,
+        phone: null,
+        website: null,
+        address: null,
+        tags: null,
+        price: null,
+        hours: null
+    };
+
+    componentDidMount() {
+        fetch('http://hidden-mesa-04199.herokuapp.com/', {
+          headers: {
+              'location': 'seattle'
+            }
+        })
+        .then((response) => response.text())
+        .then((json) => {
+            // console.log(json);
+            this.parseResult(json);
+        });
+    }
+
+    parseResult = (json) => {
+        console.log(json);
+        const result = JSON.parse(json)
+        this.setState({
+            name: result.name,
+            imageURL: result.image_url,
+            phone: result.display_phone,
+            website: result.url,
+            address: result.location,
+            tags: result.categories,
+            price: result.price,
+            hours: "HOURS"
+        });
+    }
+
+
     render() {
+        
         return (
             <Container fluid className="page-container">
                 <Row>
-                    <div className="col font-large">Panda Express</div>
+                    <div className="col font-large">{this.state.name}</div>
                 </Row>
                 <Row>
                     <Col sm={5}>
-                        <img alt="panda express" className="img-fluid" src={PandaExpress} />
+                        <img alt="panda express" className="img-fluid" src={this.state.imageURL} />
                     </Col>
                     <Col sm={6}>
                         <div className="font-medium">About</div>
@@ -48,6 +89,17 @@ class Result extends Component {
                                 <button className="font-medium">Get Directions</button>
                             </Col>
                         </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col sm={3}>
+                        <table>
+                            <tr>Phone: {this.state.phone}</tr>
+                            <tr>Website: {this.state.website}</tr>
+                            {/* <tr>Address: {this.state.address}</tr> */}
+                            {/* <tr>Tags: {this.state.tags}</tr> */}
+                            <tr>Price: {this.state.price}</tr>
+                        </table>
                     </Col>
                 </Row>
             </Container>

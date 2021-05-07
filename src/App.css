@@ -270,3 +270,14 @@ p#card-info{
 #LuLu, #Rachel, #Mackenzie, #Luke{
   height: 500px;
 }
+
+/* table styling */
+table {
+  width: inherit;
+  border-radius: 5px;
+}
+tr {
+  border: 4px solid black;
+  border-radius: 5px;
+  line-break: anywhere;
+}
