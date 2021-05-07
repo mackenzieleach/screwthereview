@@ -22,7 +22,32 @@ Screw the Review is a web application designed to provide the user with new expe
 &nbsp;  
 
 ## Quick Start Guide
-More information is to come for how to run tests and deploy a build to Netlify!
+The following guide provides information on how to build, run and test Screw the Review! At the bottom of the guide, there are additional documentation resources provided for Yarn and Jest that may be helpful to preview while working through this guide. 
+
+&nbsp;
+
+### Prerequisites
+In order to complete the quick start guides, there are two prerequisites.  
+
+**Clone the Repository:** You will need to clone the repository to your local machine. Open the command line and change to the directory you would like the repository code to be placed in. Once in the directory, run the command:
+
+``` *.sh
+git clone https://github.com/mackenzieleach/screwthereview.git
+```
+
+&nbsp;
+
+**Install Yarn:** Yarn is the package manager used for the code in the application. Running the following command will install all dependencies listed in the package.json file that will be needed for development.
+
+``` *.sh
+yarn install
+```
+
+&nbsp;
+
+**Checkpoint:** To test that you have successfully set up your environment, you will need to change to the "src" directory of the project and run `*.sh yarn start`. This command will compile the code and open the application on ` http://localhost:3000/`. 
+ - If you would like to run the application on a different port, use the command `*.sh PORT=XXXX yarn start` and enter the port number you would like. Screw the Review supports being run on ports 3000, 3001 and 3002. 
+
 
 &nbsp; 
 
