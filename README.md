@@ -22,12 +22,12 @@ Screw the Review is a web application designed to provide the user with new expe
 &nbsp;  
 
 ## Quick Start Guide
-The following guide provides information on how to build, run and test Screw the Review! At the bottom of the guide, there are additional documentation resources provided for Yarn and Jest that may be helpful to preview while working through this guide. 
+The following guide provides information on how to build, run and test Screw the Review from your local machine! After completing this guide, you be able to run all tests in the repository and deploy the website to http://localhost:3000/. The guide will also show you how to checkout a new branch and create a pull request if you're a developer interested in working on this application and would like to see your changes deployed to <https://screwthereview.netlify.app/>. 
 
 &nbsp;
 
 ### Prerequisites
-In order to complete the quick start guides, there are two prerequisites.  
+In order to complete the sections in this quick start guide, there are two prerequisites that must be completed. 
 
 **Clone the Repository:** You will need to clone the repository to your local machine. Open the command line and change to the directory you would like the repository code to be placed in. Once in the directory, run the command:
 
@@ -43,11 +43,35 @@ git clone https://github.com/mackenzieleach/screwthereview.git
 yarn install
 ```
 
+For information about yarn's command line interface, visit their documentation: <https://classic.yarnpkg.com/en/docs/cli/>.
+
 &nbsp;
 
-**Checkpoint:** To test that you have successfully set up your environment, you will need to change to the "src" directory of the project and run `*.sh yarn start`. This command will compile the code and open the application on ` http://localhost:3000/`. 
- - If you would like to run the application on a different port, use the command `*.sh PORT=XXXX yarn start` and enter the port number you would like. Screw the Review supports being run on ports 3000, 3001 and 3002. 
+### Build the System
+Building the system can be done directly from the command line using Yarn. Building the project builds production for the app to the `build` folder and optimizes the build. Execute the following command:
 
+``` *.sh
+yarn build
+```
+
+&nbsp; 
+
+### Test the System
+Yarn offers the ability to run Jest via the yarn command line interface. The most common commands to run tests are listed below:  
+- Run All Tests: `yarn test`
+- Run Specific Test: `yarn test __tests__/my-test.js`
+
+There are many options that you can run these tests with. The most common include
+- `--debug`: prints debugging information about the Jest configuration.
+- `--collectCoverage`: Test coverage information should be collected and reported in the output.
+- `--help`: Shows help information about Jest and options
+- `--verbose`: Displays individual tests results in the test suite.
+
+For a full list of options and their descriptions, visit <https://jestjs.io/docs/cli#running-from-the-command-line>.
+
+&nbsp; 
+
+### Run the System
 
 &nbsp; 
 
