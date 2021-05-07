@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import PandaExpress from './PandaExpress.png';
 import Map from './Map.png'
 import './App.css';
@@ -19,7 +19,8 @@ class Result extends Component {
     componentDidMount() {
         fetch('http://hidden-mesa-04199.herokuapp.com/', {
           headers: {
-              'location': 'seattle'
+                'location': this.props.location
+                // 'category': this.props.category
             }
         })
         .then((response) => response.text())
@@ -30,15 +31,24 @@ class Result extends Component {
     }
 
     parseResult = (json) => {
-        console.log(json);
         const result = JSON.parse(json)
+        console.log(result);
+        // decompose categories
+        let rCategories = result.categories;
+        let sCategories = "";
+        if (rCategories.length > 0) {
+            sCategories = rCategories[0].title;
+        }
+        for (let i = 1; i < rCategories.length; i++) {
+            sCategories += ", " + rCategories[i].title;
+        }
         this.setState({
             name: result.name,
             imageURL: result.image_url,
             phone: result.display_phone,
             website: result.url,
-            address: result.location,
-            tags: result.categories,
+            address: result.location.display_address.join(' '),
+            tags: sCategories,
             price: result.price,
             hours: "HOURS"
         });
@@ -94,13 +104,18 @@ class Result extends Component {
                 <Row>
                     <Col sm={3}>
                         <table>
-                            <tr>Phone: {this.state.phone}</tr>
-                            <tr>Website: {this.state.website}</tr>
-                            {/* <tr>Address: {this.state.address}</tr> */}
-                            {/* <tr>Tags: {this.state.tags}</tr> */}
-                            <tr>Price: {this.state.price}</tr>
+                            <tbody>
+                                <tr>Phone: {this.state.phone}</tr>
+                                <tr><a href={this.state.website}>Website</a></tr>
+                                <tr>Address: {this.state.address}</tr>
+                                <tr>Tags: {this.state.tags}</tr>
+                                <tr>Price: {this.state.price}</tr>
+                            </tbody>
                         </table>
                     </Col>
+                </Row>
+                <Row>
+                    <Button className="str-button" href="/roulette">Spin Again!</Button>
                 </Row>
             </Container>
         );

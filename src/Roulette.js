@@ -28,7 +28,8 @@ class Roulette extends React.Component {
     net: null, // RADIANS
     result: null, // INDEX
     spinning: false,
-    searchValue: ''
+    searchValue: '',
+    seeResult: false,
   };
 
   handleChange(event) {
@@ -214,12 +215,18 @@ class Roulette extends React.Component {
     });
   };
 
+  setViewState = () => {
+    this.setState({
+      seeResult: !this.state.seeResult
+    });
+  }
+
 
 
   render() {
     return (
       <Container fluid className="App page-container">
-        {this.state.list[this.state.result] == null ? (
+        {!this.state.seeResult ? (
           <Row id="wheel-container">
             <canvas
               id="wheel"
@@ -258,17 +265,19 @@ class Roulette extends React.Component {
                   </button>
                 )}
               </Row>
-              <Row class="display">
+              {/* <Row class="display">
                 <span id="readout">
                   YOU WON:{"  "}
                   <span id="result">{this.state.list[this.state.result]}</span>
                 </span>
-                {/* <button id="see-result" className="str-button" onClick={this.sendDataToResult}>Get my result</button> */}
-              </Row>
+              </Row> */}
+              <Row>
+                  <button id="see-result" className="str-button" onClick={this.setViewState}>Get my result</button>
+                </Row>
             </div>
           </Row>
         ) : (
-          <Result location={"seattle"}></Result>
+          <Result location={this.state.searchValue ? this.state.searchValue : "seattle"} category={this.state.list[this.state.result]}></Result>
         )}
       </Container>
     );
