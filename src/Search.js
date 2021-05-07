@@ -9,6 +9,8 @@ import people from './Images/people.jpeg'
 import cafe from './Images/cafe.jpeg'
 import { Button } from 'react-bootstrap';
 
+const fetch = require('node-fetch');
+
 class Search extends Component {
     constructor(props) {
         super(props);
@@ -25,6 +27,23 @@ class Search extends Component {
         alert('A name was submitted: ' + this.state.value);
         event.preventDefault();
     }
+
+    fetchExperience = () => {  
+        // fetch('https://api.localgithub.com/users/github')
+        // .then(res => res.json())
+        // .then(json => console.log(json));
+        fetch('http://localhost:7000', {
+            mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/json',
+                'location': 'seattle',
+              }
+        })
+        .then((response) => response.text())
+        .then((json) => {
+            console.log(json);
+        });
+      }
 
     render() {
         return (
@@ -103,6 +122,10 @@ class Search extends Component {
                         </Row>
                         <div class="text-center">
                             <button type="button" class="btn btn-warning">Screw The Review!</button>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="button" class="btn btn-warning" onClick={this.fetchExperience}>TEST! </button>
                         </div>
                     </Col>
                 </Row>
