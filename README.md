@@ -22,18 +22,29 @@ Screw the Review is a web application designed to provide the user with new expe
 &nbsp;  
 
 ## Quick Start Guide
-The following guide provides information on how to build, run and test Screw the Review from your local machine! After completing this guide, you be able to run all tests in the repository and deploy the website to http://localhost:3000/. The guide will also show you how to checkout a new branch and create a pull request if you're a developer interested in working on this application and would like to see your changes deployed to <https://screwthereview.netlify.app/>. 
+The following guide provides information on how to build, run and test Screw the Review from your local machine! After completing this guide, you be able to run all tests in the repository and deploy the website to http://localhost:3000/ from your computer.
+
+&nbsp;
+
+Please note that the user and developer guides referenced here are still under development and will be available on May 18, 2021. If you are interested in contributing to the code base, the developer guide contains information on how to get started with development, add tests, create pull requests and best practices for coding. 
 
 &nbsp;
 
 ### Prerequisites
-In order to complete the sections in this quick start guide, there are two prerequisites that must be completed. 
+In order to complete the sections in this quick start guide, there are three prerequisites that must be completed. 
+
+**Create a Github Account:** If you do not have a Github Account, you will need to create one to be able to clone the repository. Navigate to <https://github.com/> and create a repository. You will want to save your username and password as these will be needed later in cloning a repository. 
+
+&nbsp;
 
 **Clone the Repository:** You will need to clone the repository to your local machine. Open the command line and change to the directory you would like the repository code to be placed in. Once in the directory, run the command:
 
 ``` *.sh
 git clone https://github.com/mackenzieleach/screwthereview.git
 ```
+&nbsp;
+
+If this is your first time cloning a repository from Github, you will be prompted to enter your username and password before proceeding. 
 
 &nbsp;
 
@@ -42,6 +53,8 @@ git clone https://github.com/mackenzieleach/screwthereview.git
 ``` *.sh
 yarn install
 ```
+
+&nbsp; 
 
 For information about yarn's command line interface, visit their documentation: <https://classic.yarnpkg.com/en/docs/cli/>.
 
@@ -61,6 +74,8 @@ Yarn offers the ability to run Jest via the yarn command line interface. The mos
 - Run All Tests: `yarn test`
 - Run Specific Test: `yarn test __tests__/my-test.js`
 
+&nbsp;  
+
 There are many options that you can run these tests with. The most common include
 - `--debug`: prints debugging information about the Jest configuration.
 - `--collectCoverage`: Test coverage information should be collected and reported in the output.
@@ -72,6 +87,16 @@ For a full list of options and their descriptions, visit <https://jestjs.io/docs
 &nbsp; 
 
 ### Run the System
+At this point, you are ready to deploy the applcation to a web browser using `localhost`. First, you will need to change to the `src` directory of the repository. From this directory run the following:
+
+``` *.sh
+yarn start
+```
+&nbsp;  
+
+The command line will print out any errors or warnings during compliation. If successful, your default web browser will open `http://localhost:3000/` and you will be able to navigate all aspects of the website. If you would prefer to run on another port, you can use the command `PORT=XXXX yarn start` and specify the port number. The application supports being run on ports 3000, 3001 and 3002 in order for Auth0 log in and log out functionality to be supported. This application will automatically compile saved changes and render them on `http://localhost:3000/`.
+
+For more information about how to navigate Screw the Review and its features, please visit the Screw the Review User Guide.
 
 &nbsp; 
 
