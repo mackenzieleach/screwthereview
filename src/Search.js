@@ -33,7 +33,7 @@ class Search extends Component {
         // .then(res => res.json())
         // .then(json => console.log(json));
         fetch('http://localhost:7000', {
-            mode: 'no-cors',
+            // mode: 'no-cors',
             headers: {
                 'Content-Type': 'application/json',
                 'location': 'seattle',

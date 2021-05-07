@@ -15,7 +15,6 @@ const server = http.createServer(function(req, response) {
         console.log("404 Error - no location provided")
         response.writeHead(404, "error");
         response.end();
-        
     } else {
         var URL = constructURL(req);
         console.log("Getting business from " + URL)
@@ -71,7 +70,7 @@ function getExperience(searchURL, response){
 
             //TODO: Scrape and append Business Description and Hours to business
             var bizDescription = scrapeDescription(randomBiz);
-            console.log("Found description: " + bizDescription)
+            console.log("Scraped description: " + bizDescription.description)
             response.write(JSON.stringify(bizDescription))
         }
         response.end();
