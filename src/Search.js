@@ -32,7 +32,7 @@ class Search extends Component {
         // fetch('https://api.localgithub.com/users/github')
         // .then(res => res.json())
         // .then(json => console.log(json));
-        fetch('http://localhost:7000', {
+        fetch('http://hidden-mesa-04199.herokuapp.com/', {
             // mode: 'no-cors',
             headers: {
                 'Content-Type': 'application/json',
