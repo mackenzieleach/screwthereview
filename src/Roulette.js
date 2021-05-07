@@ -27,10 +27,9 @@ class Roulette extends React.Component {
     net: null, // RADIANS
     result: null, // INDEX
     spinning: false,
-    searchValue: ''
+    searchValue: '',
+    JSONData: ''
   };
-
-
 
   handleChange(event) {
       this.setState({searchValue: event.target.value});
@@ -42,7 +41,6 @@ class Roulette extends React.Component {
   }
 
   componentDidMount() {
-
     // generate canvas wheel on load
     this.renderWheel();
   }
@@ -216,6 +214,28 @@ class Roulette extends React.Component {
     });
   };
 
+  // fetchExperience = () => {  
+  //   // // fetch('https://api.localgithub.com/users/github')
+  //   // // .then(res => res.json())
+  //   // // .then(json => console.log(json));
+  //   // fetch('http://localhost:7000', {
+  //   //     headers: { 'location': 'seattle'}
+  //   //   }
+  //   // )
+  //   // .then((response) => response.text())
+  //   // .then((json) => {
+  //   //   console.log(json);
+  //   //   this.JSONData = json;
+  //   // });
+  //   app.post("/result", function (req, res) {
+  //     var location = req.body.location;
+  //     var category = req.body.category;
+  //     var result = {location: location, category: category};
+  //     visited.push(result);
+  //     res.redirect("/result");
+  //  });
+  // }
+
   render() {
     return (
       <Container fluid className="App page-container">
@@ -232,16 +252,18 @@ class Roulette extends React.Component {
                   }s ease-out`
                 }}
             />
-            <span style={{alignSelf: "center", marginLeft: "-40px", zIndex: "3" }}><img id="selector" alt="selector" src={selector} /></span>
+          <span style={{ alignSelf: "center", marginLeft: "-40px", zIndex: "3" }}>
+            <img id="selector" alt="selector" src={selector} />
+          </span>
             <div className="col-4 offset-2">
               <img alt="roulette" src={title} className="row" style={{ width: '-webkit-fill-available' }}/>
               <Row>Ready to try something new? Spin the wheel for your new experience!</Row>
-              <Row style={{ flexWrap: 'none' }}>
+              <Row style={{ flexWrap: 'inherit' }}>
                 <span className="font-medium" style={{ alignSelf: 'center' }}>Location: </span>
                 <form onSubmit={this.handleSubmit}>
-                    <div class="form-group">
+                    <div class="form-group" style={{ marginBottom: '48px'}}>
                       <label for="inputdefault"></label>
-                      <input class="form-control" id="inputdefault" type="text" placeholder="" value={this.state.searchValue} onChange={this.handleChange}/>
+                  <input class="form-control" id="inputdefault" type="text" placeholder="" value={this.state.searchValue} onChange={this.handleChange} style={{ minWidth: '260px'}}/>
                     </div>
                 </form>
               </Row>
@@ -261,6 +283,7 @@ class Roulette extends React.Component {
             YOU WON:{"  "}
             <span id="result">{this.state.list[this.state.result]}</span>
           </span>
+              <button id="see-result" className="str-button" onClick={this.fetchExperience}>Get my result</button>
         </Row>
           </div>
         </Row>
