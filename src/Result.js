@@ -13,7 +13,7 @@ class Result extends Component {
                 </Row>
                 <Row>
                     <Col sm={5}>
-                        <img alt="panda express" src={PandaExpress} style={{ width: '-webkit-fill-available' }}/>
+                        <img alt="panda express" className="img-fluid" src={PandaExpress} />
                     </Col>
                     <Col sm={6}>
                         <div className="font-medium">About</div>
