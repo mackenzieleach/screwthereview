@@ -219,13 +219,7 @@ class Roulette extends React.Component {
   render() {
     return (
       <Container fluid className="App page-container">
-        <div className="font-large">Spinning Prize Wheel React</div>
-        <div id="wheel-container">
-          <Row>
-            {/* <span id="selector" className="col-4 offset-1 text-center">&#9660;</span> */}
-            
-          </Row>
-          <Row>
+          <Row id="wheel-container">
               <canvas
                 id="wheel"
                 width="500"
@@ -242,14 +236,14 @@ class Roulette extends React.Component {
             <div className="col-4 offset-2">
               <img alt="roulette" src={title} className="row" style={{ width: '-webkit-fill-available' }}/>
               <Row>Ready to try something new? Spin the wheel for your new experience!</Row>
-              <Row>
-              <span className="font-medium" style={{ alignSelf: 'center' }}>Location: </span>
-              <form onSubmit={this.handleSubmit}>
-                  <div class="form-group">
-                    <label for="inputdefault"></label>
-                    <input class="form-control" id="inputdefault" type="text" placeholder="" value={this.state.searchValue} onChange={this.handleChange}/>
-                  </div>
-               </form>
+              <Row style={{ flexWrap: 'none' }}>
+                <span className="font-medium" style={{ alignSelf: 'center' }}>Location: </span>
+                <form onSubmit={this.handleSubmit}>
+                    <div class="form-group">
+                      <label for="inputdefault"></label>
+                      <input class="form-control" id="inputdefault" type="text" placeholder="" value={this.state.searchValue} onChange={this.handleChange}/>
+                    </div>
+                </form>
               </Row>
               <Row>
         {this.state.spinning ? (
@@ -268,11 +262,8 @@ class Roulette extends React.Component {
             <span id="result">{this.state.list[this.state.result]}</span>
           </span>
         </Row>
-            </div>
-          </Row>
-        
-
-        </div>
+          </div>
+        </Row>
       </Container>
     );
   }
