@@ -7,13 +7,13 @@ import './App.css';
 class Result extends Component {
     render() {
         return (
-            <Container>
+            <Container fluid className="page-container">
                 <Row>
                     <div className="col font-large">Panda Express</div>
                 </Row>
                 <Row>
                     <Col sm={5}>
-                        <img alt="panda express" src={PandaExpress} style={{ width: '-webkit-fill-available' }}/>
+                        <img alt="panda express" className="img-fluid" src={PandaExpress} />
                     </Col>
                     <Col sm={6}>
                         <div className="font-medium">About</div>
