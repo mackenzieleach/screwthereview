@@ -27,12 +27,15 @@ class Home extends Component {
                     {/* Column 1: Logo, Auth0 Widgets and Description*/}
                     <Col id="landing_col_1" align='center' style={{ paddingBottom: 20 }} lg={6} md={12} sm={12} xs={12}>
                         <img src={logo} alt="Logo" id="logo" />
+
                         <h5 id="welcome"> Welcome to Screw the Review!</h5>
+
                         <p id="info"> Don't know what you want to do today? Screw the Review is designed to provide new experiences
                         like dining, arts and shopping at the click of a button. Search generates an experience from filters like
                         price, location and keyword. Spin the roulette wheel to receive a category and we'll pick a new experience
                         from it!
                         </p>
+
                         <p id="tiles">Click the tiles to learn more and experience something new!</p>
 
                         <LoginButton id="auth0-button"> Sign In </LoginButton>
