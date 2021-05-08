@@ -38,10 +38,10 @@ class Home extends Component {
                         <LoginButton id="auth0-button"> Sign In </LoginButton>
                         <LogoutButton id="auth0-button">Sign Out</LogoutButton>
 
-                        
+
                     </Col>
 
-                    {/* Column 2: Search and About Us Cards*/}
+                    {/* Column 2: Search and Roulette Cards*/}
                     <Col lg={3} md={6} sm={12} xs={12}>
                         {/* Search Card*/}
                         <div className="card" id="Search">
@@ -51,22 +51,25 @@ class Home extends Component {
                             </div>
                         </div>
 
-                        {/* About Us Card*/}
-                        <div className="card" id="AboutUs">
-                            <img className="card-img-top" src={aboutIcon} alt="about-icon" />
-                            <div className="card-body">
-                                <a href="/about" className="btn btn-link btn-block" id="button">About Us</a>
-                            </div>
-                        </div>
-                    </Col>
-
-                    {/* Column 3: Roulette and Contact Us Cards*/}
-                    <Col lg={3} md={6} sm={12} xs={12}>
                         {/* Roulette Card*/}
                         <div className="card" id="Roulette">
                             <img className="card-img-top" src={wheelIcon} alt="wheel-icon" />
                             <div className="card-body">
                                 <a href="/roulette" className="btn btn-link btn-block" id="button">Roulette</a>
+                            </div>
+                        </div>
+
+
+
+                    </Col>
+
+                    {/* Column 3: About Us and Contact Us Cards*/}
+                    <Col lg={3} md={6} sm={12} xs={12}>
+                        {/* About Us Card*/}
+                        <div className="card" id="AboutUs">
+                            <img className="card-img-top" src={aboutIcon} alt="about-icon" />
+                            <div className="card-body">
+                                <a href="/about" className="btn btn-link btn-block" id="button">About Us</a>
                             </div>
                         </div>
 
