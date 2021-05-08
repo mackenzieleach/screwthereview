@@ -1,0 +1,30 @@
+
+
+
+
+describe('Card Component Rendering', () => {
+    test('Search Card Renders', () => {
+        render(<Home/>)
+        expect(screen.findAllByLabelText("Search"));
+        cleanup()
+    })
+
+    test('Roulette Card Renders', () => {
+        render(<Home/>)
+        expect(screen.findAllByLabelText("Roulette"));
+        cleanup()
+    })
+
+    test('About Us Card Renders', () => {
+        render(<Home/>)
+        expect(screen.findAllByLabelText("AboutUs"));
+        cleanup()
+    })
+
+    test('Contact Card Renders', () => {
+        render(<Home/>)
+        expect(screen.findAllByLabelText("ContactUs"));
+        cleanup()
+    })
+})
+
