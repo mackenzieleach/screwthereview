@@ -18,7 +18,7 @@ import logo from '../src/Images/ScrewtheReviewLogo.png';
 
 test('Test Logo Renders', () => {
     render(<Home/>)
-    // expect(Home.find("img").prop("src")).toEqual(logo);
+    expect(screen.find("img").prop("src")).toEqual(logo);
     cleanup()
 })
 
