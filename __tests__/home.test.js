@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-import ReactDOM from 'react-dom';
-import { render, cleanup, screen, fireEvent } from '@testing-library/react';
+import { render, cleanup, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import { mount } from 'enzyme';
+import Modal from 'react-bootstrap/Modal';
 
 import Home from '../src/Home.js';
 
@@ -130,6 +131,8 @@ describe('Link Functionality Tests', () => {
 })
 
 
+// Have not yet found good documentation describing 
+// how to test a modal inside another component
 describe('Contact Modal Window', () => {
 
 })
