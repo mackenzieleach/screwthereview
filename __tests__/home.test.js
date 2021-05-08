@@ -1,55 +1,41 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { render, cleanup, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { mount } from 'enzyme';
-import Modal from 'react-bootstrap/Modal';
-
 import Home from '../src/Home.js';
 
-/* This file implements testing for all UI components in Home.js. 
-screen.findByAltText():
-screen.
-screen. 
-*/
-
-// Testing Ideas:
-// 6. Search Card & Link
-// 7. About Card & Link
-// 8. Roulette Card & Link
-// 9. Contact Card & Modal
+/* This file implements testing for all UI components in Home.js. */
 
 describe('Image Rendering Tests', () => {
     test('Test Logo Renders', () => {
         render(<Home />);
-        expect(screen.findByAltText("Logo"));
+        expect(screen.getByAltText("Logo")).toBeInTheDocument();
         cleanup();
     })
 
     test('Search Icon Renders', () => {
         render(<Home />);
-        expect(screen.findByAltText("search-icon"));
+        expect(screen.getByAltText("search-icon")).toBeInTheDocument();
         cleanup();
     })
 
     test('Roulette Icon Renders', () => {
         render(<Home />);
-        expect(screen.findByAltText("wheel-icon"));
+        expect(screen.getByAltText("wheel-icon")).toBeInTheDocument();
         cleanup();
     })
 
     test('About Us Icon Renders', () => {
         render(<Home />);
-        expect(screen.findByAltText("about-icon"));
+        expect(screen.getByAltText("about-icon")).toBeInTheDocument();
         cleanup();
     })
 
     test('Contact Icon Renders', () => {
         render(<Home />);
-        expect(screen.findByAltText("contact-icon"));
+        expect(screen.getByAltText("contact-icon")).toBeInTheDocument();
         cleanup();
     })
 })
-
 
 describe('Text Rendering Tests', () => {
     test('Heading Text Renders', () => {
@@ -112,27 +98,18 @@ describe('Text Rendering Tests', () => {
 })
 
 
-
 describe('Button Rendering Tests', () => {
     test('Auth0 & Contact Buttons', () => {
         render(<Home />)
-        expect(screen.getAllByRole('button').length).toBe(3);
+        expect(screen.getAllByRole('button').length).toBeGreaterThanOrEqual(3);
         cleanup()
     })
 })
-
 
 describe('Link Functionality Tests', () => {
     test('Search, Roulette & About Links', () => {
         render(<Home />)
-        expect(screen.getAllByRole('link').length).toBe(3);
+        expect(screen.getAllByRole('link').length).toBeGreaterThanOrEqual(3);
         cleanup()
     })
-})
-
-
-// Have not yet found good documentation describing 
-// how to test a modal inside another component
-describe('Contact Modal Window', () => {
-
 })

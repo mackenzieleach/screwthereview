@@ -8,31 +8,31 @@ import About from '../src/About.js';
 describe('Image Rendering Tests', () => {
     test('Test Logo Renders', () => {
         render(<About />);
-        expect(screen.findByAltText("Logo"));
+        expect(screen.getByAltText("Logo")).toBeInTheDocument();
         cleanup();
     })
 
     test('Luke Photo Renders', () => {
         render(<About />);
-        expect(screen.findByAltText("luke"));
+        expect(screen.getByAltText("luke")).toBeInTheDocument();
         cleanup();
     })
 
     test('Mackenzie Photo Renders', () => {
         render(<About />);
-        expect(screen.findByAltText("mackenzie"));
+        expect(screen.getByAltText("kenzie")).toBeInTheDocument();
         cleanup();
     })
 
     test('LuLu Photo Renders', () => {
         render(<About />);
-        expect(screen.findByAltText("lulu"));
+        expect(screen.getByAltText("lulu")).toBeInTheDocument();
         cleanup();
     })
 
     test('Rachel Photo Renders', () => {
         render(<About />);
-        expect(screen.findByAltText("rachel"));
+        expect(screen.getByAltText("rachel")).toBeInTheDocument();
         cleanup();
     })
 })

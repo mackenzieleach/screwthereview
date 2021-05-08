@@ -1,9 +1,0 @@
-// Assert
-        expect(getByText('test')).toBeTruthy()
-
-        // Act
-        fireEvent.click(getByText(/close/i))
-
-        // Assert
-        expect(handleClose).toHaveBeenCalledTimes(1)
-
