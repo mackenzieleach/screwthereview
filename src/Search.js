@@ -39,7 +39,7 @@ class Search extends Component {
             <Container fluid id="search-container">
                 {!this.state.seeResult ? (
                     <Row>
-                        <Col lg={3} md={6} sm={12} xs={12}>
+                        <Col className="d-none d-md-block" lg={3} md={6} sm={12} xs={12}>
                             <div>
                                 <img className="card-img-top" src={museum} alt="museum" id="museum-pic" />
                             </div>
@@ -50,7 +50,7 @@ class Search extends Component {
                                 <img className="card-img-top" src={pasta} alt="pasta" id="pasta-pic" />
                             </div>
                         </Col>
-                        <Col lg={3} md={6} sm={12} xs={12}>
+                        <Col className="d-none d-md-block" smHidden lg={3} md={6} sm={12} xs={12}>
                             <div>
                                 <img className="card-img-top" src={people} alt="people" id="people-pic" />
                             </div>
