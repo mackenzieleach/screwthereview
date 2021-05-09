@@ -281,6 +281,13 @@ p#card-info{
 }
 
 /* Search page styling */
+#museum-pic, #coffee-pic-0, #people-pic, #cafe-pic, #pasta-pic, #hike-pic{
+  margin-bottom: 15px;
+}
+
+
+
+
 .dollarButton {
   border-radius: 40px;
   height: 70px;

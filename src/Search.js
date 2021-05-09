@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import searchLogo from './Images/SearchLogo.png'
-import coffee from './Images/Coffee.jpeg'
-import coffee0 from './Images/coffee0.jpeg'
-import people from './Images/people.jpeg'
-import cafe from './Images/cafe.jpeg'
-import { Button } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import searchLogo from './Images/SearchLogo.png';
+import coffee0 from './Images/coffee0.jpeg';
+import people from './Images/people.jpeg';
+import cafe from './Images/cafe.jpg';
+import pasta from './Images/pasta.jpg';
+import hike from './Images/hike.jpg';
+import museum from './Images/museum.jpg';
+
 
 class Search extends Component {
     constructor(props) {
@@ -30,20 +32,26 @@ class Search extends Component {
         return (
             <Container fluid>
                 <Row>
-                    <Col lg={3} md={6} sm={12} xs ={12} style={{paddingBottom: 40}}> 
+                    <Col lg={3} md={6} sm={12} xs ={12}> 
                         <div>
-                            <img className="card-img-top" src={coffee} alt="coffee" id ="coffeePic" />
+                            <img className="card-img-top" src={museum} alt="museum" id ="museum-pic" />
                         </div>
                         <div>
-                            <img className="card-img-top" src={coffee0} alt="coffee" id ="coffeePic0" />
+                            <img className="card-img-top" src={coffee0} alt="coffee" id ="coffee-pic-0" />
+                        </div>
+                        <div>
+                            <img className="card-img-top" src={pasta} alt="pasta" id ="pasta-pic" />
                         </div>
                     </Col>
-                    <Col lg={3} md={6} sm={12} xs={12} style={{paddingBottom: 40}}>
+                    <Col lg={3} md={6} sm={12} xs={12}>
                         <div>
-                            <img className="card-img-top" src={people} alt="people" id ="peoplePic" />
+                            <img className="card-img-top" src={people} alt="people" id ="people-pic" />
                         </div>
                         <div>
-                            <img className="card-img-top" src={cafe} alt="cafe" id ="cafePic" />
+                            <img className="card-img-top" src={hike} alt="hike" id ="hike-pic" />
+                        </div>
+                        <div>
+                            <img className="card-img-top" src={cafe} alt="cafe" id ="cafe-pic" />
                         </div>
                     </Col>
 
