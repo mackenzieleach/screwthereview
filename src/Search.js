@@ -28,23 +28,6 @@ class Search extends Component {
         event.preventDefault();
     }
 
-    fetchExperience = () => {  
-        // fetch('https://api.localgithub.com/users/github')
-        // .then(res => res.json())
-        // .then(json => console.log(json));
-        fetch('http://hidden-mesa-04199.herokuapp.com/', {
-            // mode: 'no-cors',
-            headers: {
-                'Content-Type': 'application/json',
-                'location': 'seattle',
-              }
-        })
-        .then((response) => response.text())
-        .then((json) => {
-            console.log(json);
-        });
-      }
-
     render() {
         return (
             <Container fluid>
@@ -122,10 +105,6 @@ class Search extends Component {
                         </Row>
                         <div class="text-center">
                             <button type="button" class="btn btn-warning">Screw The Review!</button>
-                        </div>
-
-                        <div class="text-center">
-                            <button type="button" class="btn btn-warning" onClick={this.fetchExperience}>TEST! </button>
                         </div>
                     </Col>
                 </Row>
