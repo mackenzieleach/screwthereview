@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import PandaExpress from './PandaExpress.png';
 import Map from './Map.png'
 import './App.css';
  
@@ -32,7 +31,7 @@ class Result extends Component {
 
     parseResult = (json) => {
         const result = JSON.parse(json)
-        console.log(result);
+        // console.log(result);
         // decompose categories
         let rCategories = result.categories;
         let sCategories = "";
@@ -60,11 +59,11 @@ class Result extends Component {
         return (
             <Container fluid className="page-container">
                 <Row>
-                    <div className="col font-large">{this.state.name}</div>
+                    <div className="col font-large" data-testid="result-name">{this.state.name}</div>
                 </Row>
                 <Row>
                     <Col sm={5}>
-                        <img alt="panda express" className="img-fluid" src={this.state.imageURL} />
+                        <img alt="result" className="img-fluid" src={this.state.imageURL} />
                     </Col>
                     <Col sm={6}>
                         <div className="font-medium">About</div>
@@ -80,20 +79,44 @@ class Result extends Component {
                             </Col>
                             <Col sm={5}>
                                 <div className="font-medium">Hours</div>
-                                <div>Monday      10:30AM-9:30PM</div>
-                                <div>Tuesday     10:30AM-9:30PM</div>
-                                <div>Wednesday   10:30AM-9:30PM</div>
-                                <div>Thursday    10:30AM-9:30PM</div>
-                                <div>Friday      10:30AM-9:30PM</div>
-                                <div>Saturday    10:30AM-9:30PM</div>
-                                <div>Sunday      10:30AM-9:30PM</div>
+                                <table id="result-hours-table" data-testid="result-hours-table" >
+                                    <tbody>
+                                        <tr data-testid="ht-item">
+                                            <td>Sunday</td>
+                                            <td>10:30AM-9:30PM</td>
+                                        </tr>
+                                        <tr data-testid="ht-item">
+                                            <td>Monday</td>
+                                            <td>10:30AM-9:30PM</td>
+                                        </tr>
+                                        <tr data-testid="ht-item">
+                                            <td>Tuesday</td>
+                                            <td>10:30AM-9:30PM</td>
+                                        </tr>
+                                        <tr data-testid="ht-item">
+                                            <td>Wednesday</td>
+                                            <td>10:30AM-9:30PM</td>
+                                        </tr>
+                                        <tr data-testid="ht-item">
+                                            <td>Thursday</td>
+                                            <td>10:30AM-9:30PM</td>
+                                        </tr>
+                                        <tr data-testid="ht-item">
+                                            <td>Friday</td>
+                                            <td>10:30AM-9:30PM</td>
+                                        </tr>
+                                        <tr data-testid="ht-item">
+                                            <td>Saturday</td>
+                                            <td>10:30AM-9:30PM</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
                                 <div className="font-medium">Location</div>
-                                <div>12513 Lake City Way</div>
-                                <div>Seattle, WA 98123</div>
+                                <div>{ this.state.address }</div>
                             </Col>
                             <Col>
                                 <button className="font-medium">Get Directions</button>
@@ -103,13 +126,25 @@ class Result extends Component {
                 </Row>
                 <Row>
                     <Col sm={3}>
-                        <table>
+                        <table id="result-info-table" data-testid="result-info-table">
                             <tbody>
-                                <tr>Phone: {this.state.phone}</tr>
-                                <tr><a href={this.state.website}>Website</a></tr>
-                                <tr>Address: {this.state.address}</tr>
-                                <tr>Tags: {this.state.tags}</tr>
-                                <tr>Price: {this.state.price}</tr>
+                                <tr data-testid="info-item">
+                                    <td>Phone: </td>
+                                    <td>{this.state.phone}</td>
+                                </tr>
+                                <tr data-testid="info-item">
+                                    <td>
+                                        <a role="link" href={this.state.website}>Website</a>
+                                    </td>
+                                </tr>
+                                <tr data-testid="info-item">
+                                    <td>Tags: </td>
+                                    <td>{this.state.tags}</td>
+                                </tr>
+                                <tr data-testid="info-item">
+                                    <td>Price: </td>
+                                    <td>{this.state.price}</td>
+                                </tr>
                             </tbody>
                         </table>
                     </Col>

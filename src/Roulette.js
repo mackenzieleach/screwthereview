@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import title from './Images/RouletteLogo.png'
 import selector from './Images/selector.png'
 import Result from './Result';
@@ -221,13 +220,11 @@ class Roulette extends React.Component {
     });
   }
 
-
-
   render() {
     return (
       <Container fluid className="App page-container">
         {!this.state.seeResult ? (
-          <Row id="wheel-container">
+          <Row id="wheel-container" data-testid="wheel-container">
             <canvas
               id="wheel"
               width="500"
@@ -246,11 +243,12 @@ class Roulette extends React.Component {
               <img alt="roulette" src={title} className="row" style={{ width: '-webkit-fill-available' }} />
               <Row>Ready to try something new? Spin the wheel for your new experience!</Row>
               <Row style={{ flexWrap: 'inherit' }}>
-                <span className="font-medium" style={{ alignSelf: 'center' }}>Location: </span>
+                <span className="font-medium">Location: </span>
                 <form onSubmit={this.handleSubmit}>
-                  <div class="form-group" style={{ marginBottom: '48px' }}>
-                    <label for="inputdefault"></label>
-                    <input class="form-control" id="inputdefault" type="text" placeholder="" value={this.state.searchValue} onChange={this.handleChange} style={{ minWidth: '260px' }} />
+                  <div className="form-group">
+                    <label id="location-label">
+                      <input className="form-control" id="inputdefault" labelledby="location-label" type="text" placeholder="" value={this.state.searchValue} onChange={this.handleChange} style={{ minWidth: '260px' }} />
+                    </label>
                   </div>
                 </form>
               </Row>
@@ -279,7 +277,7 @@ class Roulette extends React.Component {
         ) : (
           <Result location={this.state.searchValue ? this.state.searchValue : "seattle"} category={this.state.list[this.state.result]}></Result>
         )}
-      </Container>
+        </Container>
     );
   }
 }
