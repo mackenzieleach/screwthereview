@@ -275,7 +275,9 @@ class Roulette extends React.Component {
             </div>
           </Row>
         ) : (
-          <Result location={this.state.searchValue ? this.state.searchValue : "seattle"} category={this.state.list[this.state.result]}></Result>
+          <Row>
+            <Result location={this.state.searchValue ? this.state.searchValue : "seattle"} category={this.state.list[this.state.result]}></Result>
+          </Row>
         )}
         </Container>
     );

@@ -52,10 +52,8 @@ class Result extends Component {
             hours: "HOURS"
         });
     }
-
-
+    
     render() {
-        
         return (
             <Container fluid className="page-container">
                 <Row>
@@ -125,7 +123,7 @@ class Result extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col sm={3}>
+                    <Col sm={5}>
                         <table id="result-info-table" data-testid="result-info-table">
                             <tbody>
                                 <tr data-testid="info-item">
@@ -150,9 +148,9 @@ class Result extends Component {
                         </table>
                     </Col>
                 </Row>
-                <Row>
+                {/* <Row>
                     <Button className="str-button" href="/roulette">Spin Again!</Button>
-                </Row>
+                </Row> */}
             </Container>
         );
     }
