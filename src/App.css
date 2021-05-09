@@ -207,7 +207,7 @@ button {
 }
 
 #selector {
-  width: 180px;
+  width: 100px;
   z-index: 3;
   margin-bottom: -40%;
 }
@@ -265,6 +265,21 @@ p#card-info{
   height: 500px;
 }
 
+
+/* table styling */
+#result-info-table {
+  width: inherit;
+  border-radius: 5px;
+}
+#result-info-table tr {
+  border: 4px solid black;
+  border-radius: 5px;
+  line-break: anywhere;
+}
+
+#result-hours-table td {
+  padding-left: 48px;
+
 /* Search page styling */
 .dollarButton {
   border-radius: 40px;
@@ -321,4 +336,5 @@ p#card-info{
   margin-left: auto;
   margin-right: auto;
   display: block;
+
 }

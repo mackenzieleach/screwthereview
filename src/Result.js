@@ -1,19 +1,69 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import PandaExpress from './PandaExpress.png';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import Map from './Map.png'
 import './App.css';
  
 class Result extends Component {
+    state = {
+        name: null,
+        description: null,
+        phone: null,
+        website: null,
+        address: null,
+        tags: null,
+        price: null,
+        hours: null
+    };
+
+    componentDidMount() {
+        fetch('http://hidden-mesa-04199.herokuapp.com/', {
+          headers: {
+                'location': this.props.location
+                // 'category': this.props.category
+            }
+        })
+        .then((response) => response.text())
+        .then((json) => {
+            // console.log(json);
+            this.parseResult(json);
+        });
+    }
+
+    parseResult = (json) => {
+        const result = JSON.parse(json)
+        // console.log(result);
+        // decompose categories
+        let rCategories = result.categories;
+        let sCategories = "";
+        if (rCategories.length > 0) {
+            sCategories = rCategories[0].title;
+        }
+        for (let i = 1; i < rCategories.length; i++) {
+            sCategories += ", " + rCategories[i].title;
+        }
+        this.setState({
+            name: result.name,
+            imageURL: result.image_url,
+            phone: result.display_phone,
+            website: result.url,
+            address: result.location.display_address.join(' '),
+            tags: sCategories,
+            price: result.price,
+            hours: "HOURS"
+        });
+    }
+
+
     render() {
+        
         return (
             <Container fluid className="page-container">
                 <Row>
-                    <div className="col font-large">Panda Express</div>
+                    <div className="col font-large" data-testid="result-name">{this.state.name}</div>
                 </Row>
                 <Row>
                     <Col sm={5}>
-                        <img alt="panda express" className="img-fluid" src={PandaExpress} />
+                        <img alt="result" className="img-fluid" src={this.state.imageURL} />
                     </Col>
                     <Col sm={6}>
                         <div className="font-medium">About</div>
@@ -29,26 +79,79 @@ class Result extends Component {
                             </Col>
                             <Col sm={5}>
                                 <div className="font-medium">Hours</div>
-                                <div>Monday      10:30AM-9:30PM</div>
-                                <div>Tuesday     10:30AM-9:30PM</div>
-                                <div>Wednesday   10:30AM-9:30PM</div>
-                                <div>Thursday    10:30AM-9:30PM</div>
-                                <div>Friday      10:30AM-9:30PM</div>
-                                <div>Saturday    10:30AM-9:30PM</div>
-                                <div>Sunday      10:30AM-9:30PM</div>
+                                <table id="result-hours-table" data-testid="result-hours-table" >
+                                    <tbody>
+                                        <tr data-testid="ht-item">
+                                            <td>Sunday</td>
+                                            <td>10:30AM-9:30PM</td>
+                                        </tr>
+                                        <tr data-testid="ht-item">
+                                            <td>Monday</td>
+                                            <td>10:30AM-9:30PM</td>
+                                        </tr>
+                                        <tr data-testid="ht-item">
+                                            <td>Tuesday</td>
+                                            <td>10:30AM-9:30PM</td>
+                                        </tr>
+                                        <tr data-testid="ht-item">
+                                            <td>Wednesday</td>
+                                            <td>10:30AM-9:30PM</td>
+                                        </tr>
+                                        <tr data-testid="ht-item">
+                                            <td>Thursday</td>
+                                            <td>10:30AM-9:30PM</td>
+                                        </tr>
+                                        <tr data-testid="ht-item">
+                                            <td>Friday</td>
+                                            <td>10:30AM-9:30PM</td>
+                                        </tr>
+                                        <tr data-testid="ht-item">
+                                            <td>Saturday</td>
+                                            <td>10:30AM-9:30PM</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
                                 <div className="font-medium">Location</div>
-                                <div>12513 Lake City Way</div>
-                                <div>Seattle, WA 98123</div>
+                                <div>{ this.state.address }</div>
                             </Col>
                             <Col>
                                 <button className="font-medium">Get Directions</button>
                             </Col>
                         </Row>
                     </Col>
+                </Row>
+                <Row>
+                    <Col sm={3}>
+                        <table id="result-info-table" data-testid="result-info-table">
+                            <tbody>
+                                <tr data-testid="info-item">
+                                    <td>Phone: </td>
+                                    <td>{this.state.phone}</td>
+                                </tr>
+                                <tr data-testid="info-item">
+                                    <td>
+                                        <a role="link" href={this.state.website}>Website</a>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr data-testid="info-item">
+                                    <td>Tags: </td>
+                                    <td>{this.state.tags}</td>
+                                </tr>
+                                <tr data-testid="info-item">
+                                    <td>Price: </td>
+                                    <td>{this.state.price}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </Col>
+                </Row>
+                <Row>
+                    <Button className="str-button" href="/roulette">Spin Again!</Button>
                 </Row>
             </Container>
         );
