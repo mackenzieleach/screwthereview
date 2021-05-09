@@ -48,16 +48,16 @@ class Search extends Component {
                     </Col>
 
                     <Col style={{paddingRight: 100}} style={{paddingBottom: 20}} lg={6} md={12} sm={12} xs={12}>
-                        <img src={searchLogo} alt="Logo" id ="searchLogo"/>
+                        <img src={searchLogo} alt="Logo" class="searchLogo" id ="searchLogo"/>
                         <form onSubmit={this.handleSubmit}>
                             <div class="form-group">
                                 <label for="inputdefault"></label>
-                                <input class="form-control" id="inputdefault" type="text" placeholder="Type a keyword ... (hike, Chinese, etc.)" value={this.state.value} onChange={this.handleChange}/>
+                                <input class="keywordBtn" id="inputdefault" type="text" placeholder="Type a keyword ... (hike, Chinese, etc.)" value={this.state.value} onChange={this.handleChange}/>
                             </div>
                         </form>
                         <Row>
-                            <label for="sel3">Location</label>
-                            <select class="form-control input-sm" id="sel3">
+                            <label for="location">Location</label>
+                            <select class="options" id="location">
                                 <option>Seattle, WA</option>
                                 <option>Option 1</option>
                                 <option>Option 2</option>
@@ -66,22 +66,22 @@ class Search extends Component {
                         <Row xs={6}>
                             <p>Price</p>
                             <Col>
-                                <button type="button" id="dollarButton">
+                                <button type="button" class="dollarButton">
                                     <span>&#36;</span>
                                 </button>
                             </Col>
                             <Col>
-                                <button type="button" id="dollarButton">
+                                <button type="button" class="dollarButton">
                                     <span>&#36;&#36;</span>
                                 </button>
                             </Col>
                             <Col>
-                                <button type="button" id="dollarButton">
+                                <button type="button" class="dollarButton">
                                     <span>&#36;&#36;&#36;</span>
                                 </button>
                             </Col>
                             <Col>
-                                <button type="button" id="dollarButton">
+                                <button type="button" class="dollarButton">
                                     <span>&#36;&#36;&#36;&#36;</span>
                                 </button>
                             </Col>
@@ -89,20 +89,20 @@ class Search extends Component {
                         <Row>
                             <p>Distance</p>
                                 <Col>
-                                    <button type="button" >5 miles</button>
+                                    <button class="distanceButton">5 miles</button>
                                 </Col>
                                 <Col>
-                                    <button type="button" >10 miles</button>
+                                    <button class="distanceButton">10 miles</button>
                                 </Col>
                                 <Col>
-                                    <button type="button" >15 miles</button>
+                                    <button class="distanceButton">15 miles</button>
                                 </Col>
                                 <Col>              
-                                    <button type="button" >20 miles</button>
+                                    <button class="distanceButton">20 miles</button>
                                 </Col>
                         </Row>
                         <div class="text-center">
-                            <button type="button" class="btn btn-warning">Screw The Review!</button>
+                            <button type="button" class="screwReviewButton">Screw that Review!</button>
                         </div>
                     </Col>
                 </Row>
