@@ -19,12 +19,12 @@
 }
 
 /* bootstrap overrides */
-/* .container {
+.container {
   max-width: 100%;
-} */
+}
 
 .page-container {
-  height: 100vh;
+  height: -webkit-fill-available;
 }
 
 .row {
@@ -207,9 +207,10 @@ button {
 }
 
 #selector {
+  font-size: 100px;
   width: 100px;
   z-index: 3;
-  margin-bottom: -40%;
+  margin-bottom: -4%;
 }
 
 #result{
@@ -244,7 +245,6 @@ input {
   margin: 10px;
 }
 
-
 /* About Page */
 #card-title{
   font-size: 24px;
@@ -265,7 +265,6 @@ p#card-info{
   height: 500px;
 }
 
-
 /* table styling */
 #result-info-table {
   width: inherit;
@@ -279,6 +278,7 @@ p#card-info{
 
 #result-hours-table td {
   padding-left: 48px;
+}
 
 /* Search page styling */
 .dollarButton {
