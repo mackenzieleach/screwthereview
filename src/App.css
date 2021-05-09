@@ -69,7 +69,7 @@
   width: 70%
 }
 
-#home-container, #account-container, #about-container {
+#home-container, #account-container, #about-container, #search-container {
   width: -webkit-fill-available;;
   height: -webkit-fill-available;;
 }
@@ -280,13 +280,10 @@ p#card-info{
   padding-left: 48px;
 }
 
-/* Search page styling */
+/* Search Page Styling */
 #museum-pic, #coffee-pic-0, #people-pic, #cafe-pic, #pasta-pic, #hike-pic{
   margin-bottom: 15px;
 }
-
-
-
 
 .dollarButton {
   border-radius: 40px;
@@ -324,7 +321,7 @@ p#card-info{
   border-radius:5px;
   margin-right: 5px;
   margin-left: 5px;
-  width: 100px;
+  width: 80px;
 }
 
 .keywordBtn {
