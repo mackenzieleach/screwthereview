@@ -136,6 +136,7 @@ class Result extends Component {
                                     <td>
                                         <a role="link" href={this.state.website}>Website</a>
                                     </td>
+                                    <td></td>
                                 </tr>
                                 <tr data-testid="info-item">
                                     <td>Tags: </td>
