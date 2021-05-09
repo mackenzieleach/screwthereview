@@ -18,6 +18,8 @@
     "cheerio": "^1.0.0-rc.6",
     "jest-dom": "^4.0.0",
     "jest-fetch-mock": "^3.0.3",
+    "dotenv": "^9.0.0",
+    "fetch": "^1.1.0",
     "jquery": "^3.6.0",
     "mssql": "^6.3.1",
     "react": "^17.0.2",
