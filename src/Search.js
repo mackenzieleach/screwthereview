@@ -9,8 +9,6 @@ import people from './Images/people.jpeg'
 import cafe from './Images/cafe.jpeg'
 import { Button } from 'react-bootstrap';
 
-const fetch = require('node-fetch');
-
 class Search extends Component {
     constructor(props) {
         super(props);
