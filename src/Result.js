@@ -52,10 +52,8 @@ class Result extends Component {
             hours: "HOURS"
         });
     }
-
-
+    
     render() {
-        
         return (
             <Container fluid className="page-container">
                 <Row>
