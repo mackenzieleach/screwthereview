@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import title from './Images/RouletteLogo.png'
 import selector from './Images/selector.png'
+import Result from './Result';
 import './App.css';
 
 var WHEELSIZE = 8;
@@ -27,10 +27,9 @@ class Roulette extends React.Component {
     net: null, // RADIANS
     result: null, // INDEX
     spinning: false,
-    searchValue: ''
+    searchValue: '',
+    seeResult: false,
   };
-
-
 
   handleChange(event) {
       this.setState({searchValue: event.target.value});
@@ -42,7 +41,6 @@ class Roulette extends React.Component {
   }
 
   componentDidMount() {
-
     // generate canvas wheel on load
     this.renderWheel();
   }
@@ -216,64 +214,70 @@ class Roulette extends React.Component {
     });
   };
 
+  setViewState = () => {
+    this.setState({
+      seeResult: !this.state.seeResult
+    });
+  }
+
   render() {
     return (
       <Container fluid className="App page-container">
-        <div className="font-large">Spinning Prize Wheel React</div>
-        <div id="wheel-container">
-          <Row>
-            {/* <span id="selector" className="col-4 offset-1 text-center">&#9660;</span> */}
-            
-          </Row>
-          <Row>
-              <canvas
-                id="wheel"
-                width="500"
-                height="500"
-                className="col-4 offset-1"
-                style={{
-                  WebkitTransform: `rotate(${this.state.rotate}deg)`,
-                  WebkitTransition: `-webkit-transform ${
-                    this.state.easeOut
+        {!this.state.seeResult ? (
+          <Row id="wheel-container" data-testid="wheel-container">
+            <canvas
+              id="wheel"
+              width="500"
+              height="500"
+              className="col-4 offset-1"
+              style={{
+                WebkitTransform: `rotate(${this.state.rotate}deg)`,
+                WebkitTransition: `-webkit-transform ${this.state.easeOut
                   }s ease-out`
-                }}
+              }}
             />
-            <span style={{alignSelf: "center", marginLeft: "-40px", zIndex: "3" }}><img id="selector" alt="selector" src={selector} /></span>
+            <span style={{ alignSelf: "center", marginLeft: "-40px", zIndex: "3" }}>
+              <img id="selector" alt="selector" src={selector} />
+            </span>
             <div className="col-4 offset-2">
-              <img alt="roulette" src={title} className="row" style={{ width: '-webkit-fill-available' }}/>
+              <img alt="roulette" src={title} className="row" style={{ width: '-webkit-fill-available' }} />
               <Row>Ready to try something new? Spin the wheel for your new experience!</Row>
-              <Row>
-              <span className="font-medium" style={{ alignSelf: 'center' }}>Location: </span>
-              <form onSubmit={this.handleSubmit}>
-                  <div class="form-group">
-                    <label for="inputdefault"></label>
-                    <input class="form-control" id="inputdefault" type="text" placeholder="" value={this.state.searchValue} onChange={this.handleChange}/>
+              <Row style={{ flexWrap: 'inherit' }}>
+                <span className="font-medium">Location: </span>
+                <form onSubmit={this.handleSubmit}>
+                  <div className="form-group">
+                    <label id="location-label">
+                      <input className="form-control" id="inputdefault" labelledby="location-label" type="text" placeholder="" value={this.state.searchValue} onChange={this.handleChange} style={{ minWidth: '260px' }} />
+                    </label>
                   </div>
-               </form>
+                </form>
               </Row>
               <Row>
-        {this.state.spinning ? (
-          <button className="str-button" type="button" id="reset" onClick={this.reset}>
-            reset
-          </button>
-        ) : (
-          <button className="str-button" type="button" id="spin" onClick={this.spin}>
-            Screw that Review!
-          </button>
-          )}
-        </Row>
-        <Row class="display">
-          <span id="readout">
-            YOU WON:{"  "}
-            <span id="result">{this.state.list[this.state.result]}</span>
-          </span>
-        </Row>
+                {this.state.spinning ? (
+                  <button className="str-button" type="button" id="reset" onClick={this.reset}>
+                    reset
+                  </button>
+                ) : (
+                  <button className="str-button" type="button" id="spin" onClick={this.spin}>
+                    Screw that Review!
+                  </button>
+                )}
+              </Row>
+              {/* <Row class="display">
+                <span id="readout">
+                  YOU WON:{"  "}
+                  <span id="result">{this.state.list[this.state.result]}</span>
+                </span>
+              </Row> */}
+              <Row>
+                  <button id="see-result" className="str-button" onClick={this.setViewState}>Get my result</button>
+                </Row>
             </div>
           </Row>
-        
-
-        </div>
-      </Container>
+        ) : (
+          <Result location={this.state.searchValue ? this.state.searchValue : "seattle"} category={this.state.list[this.state.result]}></Result>
+        )}
+        </Container>
     );
   }
 }
