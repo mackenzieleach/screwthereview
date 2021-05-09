@@ -285,13 +285,13 @@ p#card-info{
   margin-bottom: 15px;
 }
 
-.dollarButton {
+button#dollarButton {
   border-radius: 40px;
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
   margin-bottom: 20px;
   margin-right: 50px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .options {

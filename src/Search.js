@@ -81,22 +81,22 @@ class Search extends Component {
                                 <Row>
                                     <p id="search-text">Price</p>
                                     <Col lg={2} md={2} sm={2} xs={2}>
-                                        <button type="button" class="dollarButton">
+                                        <button id ="dollarButton" type="button" class="dollarButton">
                                             <span>&#36;</span>
                                         </button>
                                     </Col>
                                     <Col lg={2} md={2} sm={2} xs={2}>
-                                        <button type="button" class="dollarButton">
+                                        <button id ="dollarButton" type="button" class="dollarButton">
                                             <span>&#36;&#36;</span>
                                         </button>
                                     </Col>
                                     <Col lg={2} md={2} sm={2} xs={2}>
-                                        <button type="button" class="dollarButton">
+                                        <button id ="dollarButton" type="button" class="dollarButton">
                                             <span>&#36;&#36;&#36;</span>
                                         </button>
                                     </Col>
                                     <Col lg={2} md={2} sm={2} xs={2}>
-                                        <button type="button" class="dollarButton">
+                                        <button id ="dollarButton" type="button" class="dollarButton">
                                             <span>&#36;&#36;&#36;&#36;</span>
                                         </button>
                                     </Col>
@@ -117,11 +117,10 @@ class Search extends Component {
                                     </Col>
                                 </Row>
                                 <div class="text-center">
-                                    <button type="button" class="screwReviewButton">Screw that Review!</button>
+                                <button type="button" class="screwReviewButton" onClick={this.seeResult}>Screw that Review!</button>
                                 </div>
                             </Col>
                         </Row>
-
                     ) : (
                         <Row>
                             <Result location="seattle" category={this.state.value}></Result>
