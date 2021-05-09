@@ -216,19 +216,6 @@ class Roulette extends React.Component {
     });
   };
 
-  fetchExperience = () => {  
-    fetch('http://hidden-mesa-04199.herokuapp.com/', {
-        headers: {
-            'location': 'seattle'
-          }
-    })
-    .then((response) => response.text())
-    .then((json) => {
-        console.log(json);
-    });
-  }
-
-
   render() {
     return (
       <Container fluid className="App page-container">
