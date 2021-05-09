@@ -227,12 +227,6 @@ input {
   align-items: center;
 }
 
-#dollarButton {
-  border-radius: 40px ;
-  height: 70px ;
-  width: 70px ;
-}
-
 .str-button, .str-button:hover {
   min-width: 460px;
   padding: 10px;
@@ -269,4 +263,62 @@ p#card-info{
 
 #LuLu, #Rachel, #Mackenzie, #Luke{
   height: 500px;
+}
+
+/* Search page styling */
+.dollarButton {
+  border-radius: 40px;
+  height: 70px;
+  width: 70px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  margin-left: 30px;
+}
+
+.options {
+  border: 4px solid black;
+  border-radius:5px;
+  width: 400px;
+  margin-bottom: 20px;
+  height: 50px;
+  margin-left: 70px;
+  display: block;
+}
+
+.screwReviewButton {
+  min-width: 460px;
+  padding: 10px;
+  background: #ffcc4d;
+  border: 4px solid black;
+  font-size: 20px;
+  border-radius:5px;
+  margin-top: 50px;
+}
+
+.distanceButton {
+  background: none;
+  border: 4px solid black;
+  font-size: 20px;
+  border-radius:5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 100px;
+}
+
+.keywordBtn {
+  min-width: 650px;
+  border: 4px solid black;
+  border-radius:5px;
+  min-height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: lightgray;
+}
+
+.searchLogo {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
