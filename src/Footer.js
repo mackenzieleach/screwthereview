@@ -1,26 +1,15 @@
-import styled from 'styled-components';
+import React, { Component } from 'react';
 
-function Footer() {
-    return (
-        <FooterContainer className="main-footer">
-            <div className="footer-middle">
-                <div className="container">
-                    <div className="row">
-                    </div>
+export default class Footer extends Component {
+    render() {
+        return (
+            <footer className="str-footer" id="str-footer">
+                <div class="container" id="str-footer">
+                    <span>&nbsp;</span>
                 </div>
-            </div>
-        </FooterContainer>
-    );
+            </footer>
+
+        )
+    }
 }
 
-export default Footer;
-
-const FooterContainer = styled.footer`
-.footer-middle{
-    background: var(--mainColor);
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-}
-
-`;
