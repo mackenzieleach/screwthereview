@@ -213,9 +213,16 @@ button {
   left: 35vw;
 }
 
+.selector-span {
+  margin-left: 100%;
+  z-index: 3;
+  margin-bottom: -100%;
+  align-self: center;
+}
+
 #selector {
   font-size: 100px;
-  width: 100px;
+  max-width: 100px;
   z-index: 3;
   margin-bottom: -4%;
 }
@@ -236,7 +243,7 @@ input {
 }
 
 .str-button, .str-button:hover {
-  min-width: 460px;
+  width: 100%;
   padding: 10px;
   background: #ffcf00;
   border: 4px solid black;
@@ -275,7 +282,7 @@ p#card-info{
 
 /* table styling */
 #result-info-table {
-  width: inherit;
+  width: 100%;
   border-radius: 5px;
 }
 #result-info-table tr {
@@ -285,7 +292,7 @@ p#card-info{
 }
 
 #result-hours-table td {
-  padding-left: 48px;
+  font-size: 16px;
 }
 
 /* Search Page Styling */

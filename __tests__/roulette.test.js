@@ -31,7 +31,7 @@ describe('Roulette Overall', () => {
     test("Roulette buttons rendered", () => {
     render(<Roulette />);
         const strButton = screen.getByText("Screw that Review!");
-        const experienceButton = screen.getByText("Get my result");
+        const experienceButton = screen.getByText("Get my Result");
         expect(strButton).toBeInTheDocument();
         expect(experienceButton).toBeInTheDocument();
     cleanup();

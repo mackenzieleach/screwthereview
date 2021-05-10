@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container'
+import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import title from './Images/RouletteLogo.png'
 import selector from './Images/selector.png'
@@ -225,22 +226,27 @@ class Roulette extends React.Component {
       <Container fluid className="App page-container">
         {!this.state.seeResult ? (
           <Row id="wheel-container" data-testid="wheel-container">
-            <canvas
-              id="wheel"
-              width="500"
-              height="500"
-              className="col-4 offset-1"
-              style={{
-                WebkitTransform: `rotate(${this.state.rotate}deg)`,
-                WebkitTransition: `-webkit-transform ${this.state.easeOut
-                  }s ease-out`
-              }}
-            />
-            <span style={{ alignSelf: "center", marginLeft: "-40px", zIndex: "3" }}>
-              <img id="selector" alt="selector" src={selector} />
-            </span>
-            <div className="col-4 offset-2">
-              <img alt="roulette" src={title} className="row" style={{ width: '-webkit-fill-available' }} />
+            <Col sm={6}>
+              <Row>
+                <span className="selector-span">
+                  <img id="selector" alt="selector" src={selector} />
+                </span>
+                <canvas
+                  id="wheel"
+                  width="500"
+                  height="500"
+                  style={{
+                    WebkitTransform: `rotate(${this.state.rotate}deg)`,
+                    WebkitTransition: `-webkit-transform ${this.state.easeOut
+                      }s ease-out`
+                  }}
+                />
+              </Row>
+            </Col>
+            <Col sm={{ span: 5, offset: 1 }}>
+              <Row>
+                <img alt="roulette" src={title} style={{ width: '-webkit-fill-available' }} />
+              </Row>
               <Row>Ready to try something new? Spin the wheel for your new experience!</Row>
               {/* <Row style={{ flexWrap: 'inherit' }}>
                 <span className="font-medium">Location: </span>
@@ -309,26 +315,22 @@ class Roulette extends React.Component {
                   </select>
               </Row>
               <Row>
+                <Col sm={6}>
                 {this.state.spinning ? (
                   <button className="str-button" type="button" id="reset" onClick={this.reset}>
-                    reset
+                    Reset
                   </button>
                 ) : (
                   <button className="str-button" type="button" id="spin" onClick={this.spin}>
                     Screw that Review!
                   </button>
-                )}
-              </Row>
-              {/* <Row class="display">
-                <span id="readout">
-                  YOU WON:{"  "}
-                  <span id="result">{this.state.list[this.state.result]}</span>
-                </span>
-              </Row> */}
-              <Row>
-                  <button id="see-result" className="str-button" onClick={this.setViewState}>Get my result</button>
+                  )}
+                </Col>
+                <Col sm={6}>
+                  <button id="see-result" className="str-button" onClick={this.setViewState}>Get my Result</button>
+                  </Col>
                 </Row>
-            </div>
+              </Col>
           </Row>
         ) : (
           <Row>
