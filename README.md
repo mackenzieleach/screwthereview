@@ -16,10 +16,26 @@ University of Washington
 
 &nbsp;  
 
-## Screw the Review: Overview
-Screw the Review is a web application designed to provide the user with new experiences by randomly generating an activity based on their preferences and filters. We refer to the random generation as an “experience” throughout this document. The user may provide some information regarding the type of experience they are seeking in the form of filters and will be provided a random experience that fits those constraints. These constraints may include price, location and type of experience. The user will also have the ability to generate a completely random experience with no filters or have an experience tailored to them based on their previous experiences, interests and dislikes. Screw the Review will be offered as a web-application with support for both desktop and mobile phone users.
+## Screw the Review: Overview & Technical Approach
+Screw the Review is a web application designed to provide the user with new experiences by generating an experience based on filters. In the Roulette feature, a user spins for a category that is used with location to provide an experience. In the search feature, users can select a keyword, location, price and search radius and an experience is returned matching those filters. The web application is also designed to be mobile-friendly, so users can take the application on-the-go.
 
 &nbsp;  
+
+**Frontend Client:** This application was developed in React. This was selected given its modularity of sites with a component driven model. All testing for the frontend client is written with the standard Jest framework. The web application is hosted through Netlify, a free service for URL deployment. Screw the Review uses the [Yelp Fusion API](https://www.yelp.com/fusion) to access a large dataset containing experiences such as restaurants, bars, parks and more. This application relies on the [Business Search Endpoint](https://www.yelp.com/developers/documentation/v3/business_search) during API calls. We make the assumption that the data for experiences provided by the Yelp API is current and frequently updated. Additionally, users can log in and log out of the website through Auth0, which provides a high level of security. 
+
+&nbsp;  
+
+**Backend Server:** This application uses a server with the repository code located at <https://github.com/luuuk/screwthereview-server/blob/main/src/server.js>. This server allows the Roulette & Search features transmit information to be proccessed by the server. The server returns parsable information that is then rendered to the user in the form of an experience result. 
+
+&nbsp;  
+
+**Stretch Goals & Database:** Before the final release of this application, we will support a user-model. A user will be able to view and edit their account as well as see any experiences they have been presented with in their viewing history. The ability to view and edit a user profile will be managed through Auth0 to ensure security. The data for viewing history will be stored in a relational MySQL database hosted on Microsoft Azure, mapping a user to their experiences. 
+
+&nbsp;  
+
+For more information about this application and technical details, please visit [Screw the Review: Requirements & Team Policies](https://docs.google.com/document/d/1AdpmiG6Gi3a_kvq9dlz2P9KB4OZ5nPvZS9F1-CJdxzk/edit?usp=sharing). 
+&nbsp;
+
 
 ## Quick Start Guide
 The following guide provides information on how to build, run and test Screw the Review from your local machine! After completing this guide, you be able to run all tests in the repository and deploy the website to http://localhost:3000/ from your computer. If you chose, you will also be able to spin up a local server <https://github.com/luuuk/screwthereview-server>, although this is not necessary to interact with the client code in this repository. 
@@ -116,26 +132,6 @@ This repository also welcomes pull requests for bug fixes. If you encounter and 
 
 
 &nbsp; 
-
-## Technical Approach
-To successfully develop this application, it requires access to a large dataset containing experiences such as restaurants, bars, parks and more. The Yelp Fusion API contains recommedations for businesses to be used in the pseudo-random experience recommendation. The application will make calls to the Yelp Fusion API for each search that is performed in the generation of a random experience. For example, if a user requests their experience to be a restaurant with Chinese cuisine, we will call the Yelp Fusion API with these filters and randomly select from the results returned to present the user with an experience. We make the assumption that the data for experiences provided by the Yelp API is current and frequently updated.
-
-&nbsp;  
-
-These links provide more information about what the API offers for different types of requests made to the Yelp Fusion API. 
-  * [Yelp Fusion API: Business Search Endpoint](https://www.yelp.com/developers/documentation/v3/business_search)
-  * [Yelp Fusion API: Event Search Endpoint](https://www.yelp.com/developers/documentation/v3/event_search)
-  * [Yelp Fusion API: Event Endpoint](https://www.yelp.com/developers/documentation/v3/event)
-
-&nbsp;  
-
-For the backend of this application, we will be supporting a user model that allows a user to view their experience history and is extensible to post-MVP features, like social networking. To support this, we will implement a MySQL relational database to store information about a user and their experiences. Additionally, the Yelp API provides libraries to interface with Node.js, which is the language the backend will be developed in. In terms of the frontend development, React provides modularity of sites with its component-driven model. This application would be hosted fully through Google Cloud, which also provides a free, publicly accessible URL for users. It is likely we will utilize a service such as TinyURL to provide a shorter and more descriptive URL to users at no cost. 
-
-&nbsp;  
-
-In the development of this application, we plan to utilize a user model. This will require an application user to provide their email address and a password to access their account and viewing history. The main risk this poses is security as it is crucial to keep this sensitive information private. To mitigate the security risks that come with a user model for this application, we will be using Auth0, which is a free authentication and authorization platform that can be used with any language or framework. All sensitive user data is hosted via their secure platform, providing security for sensitive user data like passwords. Additionally, it offers the ability to configure what rules and access to data users have after they have been authenticated, allowing us to better customize security for our application. 
-
-&nbsp;  
 
 ## Repository Layout
 This section provides more details about each component of our repository. This repository holds the client code for Screw the Review. For more information about the sever repository, please visit <https://github.com/luuuk/screwthereview-server>   
