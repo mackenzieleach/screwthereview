@@ -16,10 +16,10 @@ class Result extends Component {
     };
 
     componentDidMount() {
-        fetch('http://hidden-mesa-04199.herokuapp.com/', {
+        fetch('https://hidden-mesa-04199.herokuapp.com/', {
           headers: {
-                'location': this.props.location
-                // 'category': this.props.category
+                'location': this.props.location,
+                'category': this.props.category
             }
         })
         .then((response) => response.text())
