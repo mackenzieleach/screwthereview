@@ -107,6 +107,14 @@ For more information about how to navigate Screw the Review and its features, pl
 
 &nbsp; 
 
+### Bug Reporting
+If you encounter a bug, you may create a **Github Issue** to report the bug. You issue should include a descriptive title, the exact steps you took to encounter the bug, what operating system and browser you are using, and any applicable screenshots of the bug. 
+
+&nbsp; 
+
+This repository also welcomes pull requests for bug fixes. If you encounter and resolve a bug, you may create a **pull request** with your code. It must include a descriptive title and a description of the specific changes you made and how it resolved the bug. The pull request will be reviewed by a repository maintainer and changes may be requested if needed.
+
+
 ## Technical Approach
 To successfully develop this application, it requires access to a large dataset containing experiences such as restaurants, bars, parks and more. The Yelp Fusion API contains recommedations for businesses to be used in the pseudo-random experience recommendation. The application will make calls to the Yelp Fusion API for each search that is performed in the generation of a random experience. For example, if a user requests their experience to be a restaurant with Chinese cuisine, we will call the Yelp Fusion API with these filters and randomly select from the results returned to present the user with an experience. We make the assumption that the data for experiences provided by the Yelp API is current and frequently updated.
 
