@@ -242,7 +242,7 @@ class Roulette extends React.Component {
             <div className="col-4 offset-2">
               <img alt="roulette" src={title} className="row" style={{ width: '-webkit-fill-available' }} />
               <Row>Ready to try something new? Spin the wheel for your new experience!</Row>
-              <Row style={{ flexWrap: 'inherit' }}>
+              {/* <Row style={{ flexWrap: 'inherit' }}>
                 <span className="font-medium">Location: </span>
                 <form onSubmit={this.handleSubmit}>
                   <div className="form-group">
@@ -251,6 +251,62 @@ class Roulette extends React.Component {
                     </label>
                   </div>
                 </form>
+              </Row> */}
+              <Row id="search-row">
+                  <label for="location" id="search-text" >Location</label>
+                  <select class="options" id="location" onChange={this.handleChange} data-testid="location-dropdown">
+                      {/* 50 Most Populated WA Cities (Hardcoded*/}
+                      <option>Select City</option>
+                      <option>Auburn, WA</option>
+                      <option>Bainbridge Island, WA</option>
+                      <option>Bellevue, WA</option>
+                      <option>Bellingham, WA</option>
+                      <option>Bothell, WA</option>
+                      <option>Bremerton, WA</option>
+                      <option>Burien, WA</option>
+                      <option>Des Moines, WA</option>
+                      <option>Edmonds, WA</option>
+                      <option>Everett, WA</option>
+                      <option>Federal Way, WA</option>
+                      <option>Graham, WA</option>
+                      <option>Issaquah, WA</option>
+                      <option>Kennewick, WA</option>
+                      <option>Kirkland, WA</option>
+                      <option>Kent, WA</option>
+                      <option>Lacey, WA</option>
+                      <option>Lake Stevens, WA</option>
+                      <option>Lakewood, WA</option>
+                      <option>Longview, WA</option>
+                      <option>Lynnwood, WA</option>
+                      <option>Marysville, WA</option>
+                      <option>Maple Valley, WA</option>
+                      <option>Mill Creek East, WA</option>
+                      <option>Mercer Island, WA</option>
+                      <option>Mount Vernon, WA</option>
+                      <option>Olympia, WA</option>
+                      <option>Orchards, WA</option>
+                      <option>Pasco, WA</option>
+                      <option>Parkland, WA</option>
+                      <option>Pullman, WA</option>
+                      <option>Puyallup, WA</option>
+                      <option>Redmond, WA</option>
+                      <option>Renton, WA</option>
+                      <option>Richland, WA</option>
+                      <option>Sammamish, WA</option>
+                      <option>Seattle, WA</option>
+                      <option>SeaTac, WA</option>
+                      <option>Shoreline, WA</option>
+                      <option>South Hill, WA</option>
+                      <option>Spanaway, WA</option>
+                      <option>Spokane, WA</option>
+                      <option>Spokane Valley, WA</option>
+                      <option>Tacoma, WA</option>
+                      <option>University Place, WA</option>
+                      <option>Vancouver, WA</option>
+                      <option>Walla Walla, WA</option>
+                      <option>Wenatchee, WA</option>
+                      <option>Yakima, WA</option>
+                  </select>
               </Row>
               <Row>
                 {this.state.spinning ? (
