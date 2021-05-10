@@ -115,6 +115,8 @@ If you encounter a bug, you may create a **Github Issue** to report the bug. You
 This repository also welcomes pull requests for bug fixes. If you encounter and resolve a bug, you may create a **pull request** with your code. It must include a descriptive title and a description of the specific changes you made and how it resolved the bug. The pull request will be reviewed by a repository maintainer and changes may be requested if needed.
 
 
+&nbsp; 
+
 ## Technical Approach
 To successfully develop this application, it requires access to a large dataset containing experiences such as restaurants, bars, parks and more. The Yelp Fusion API contains recommedations for businesses to be used in the pseudo-random experience recommendation. The application will make calls to the Yelp Fusion API for each search that is performed in the generation of a random experience. For example, if a user requests their experience to be a restaurant with Chinese cuisine, we will call the Yelp Fusion API with these filters and randomly select from the results returned to present the user with an experience. We make the assumption that the data for experiences provided by the Yelp API is current and frequently updated.
 
@@ -136,7 +138,7 @@ In the development of this application, we plan to utilize a user model. This wi
 &nbsp;  
 
 ## Repository Layout
-This section provides more details about each component of our repository.   
+This section provides more details about each component of our repository. This repository holds the client code for Screw the Review. For more information about the sever repository, please visit <https://github.com/luuuk/screwthereview-server>   
   - **Images:** This directory contains images that will be used on the Screw the Review website. It currently includes our logo and custom headers for each page of the website on a transparent background for rendering.   
   - **Mockups:** This directory contains our team's official UI Mockups for each page that we will be building for the application. It includes the landing page, search, category wheel, about, account and experience result pages.   
   - **Reports:** This directory contains our team's weekly status reports for the course as well as a status report template.   
