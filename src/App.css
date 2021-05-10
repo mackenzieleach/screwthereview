@@ -171,6 +171,11 @@ button#submit-contact {
   display: grid;
   border-radius: 0px;
   border: 2px solid black;
+  box-shadow: none;
+}
+
+.btn:focus{
+  box-shadow: none;
 }
 
 button#auth0-login, button#auth0-logout{
