@@ -110,7 +110,7 @@ For a full list of options and their descriptions, visit <https://jestjs.io/docs
 &nbsp; 
 
 ### Run the System
-At this point, you are ready to deploy the applcation to a web browser using `localhost`. First, you will need to change to the `src` directory of the repository. From this directory run the following:
+At this point, you are ready to deploy the application to a web browser using `localhost`. First, you will need to change to the `src` directory of the repository. From this directory run the following:
 
 ``` *.sh
 yarn start
