@@ -20,11 +20,18 @@
 
 /* bootstrap overrides */
 .container {
-  max-width: 100%;
+  /* max-width: 100%; */
+  flex: 1
+}
+
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .page-container {
-  height: -webkit-fill-available;
+  min-height: 100vh;
 }
 
 .row {
@@ -55,23 +62,21 @@
 /* FOOTER */
 :root {
   --mainColor: #4dd8ff;
+
 }
 
-.main-footer{
-  position: sticky;
-  left: 0;
-  right: 0;
-  bottom: 0;
+#str-footer{
+  background-color: #4dd8ff;
+  display: flex;
+  flex-wrap: wrap;
+  left:0;
+  right:0;
+  bottom:0;
 }
 
 /* LANDING PAGE*/
 #logo {
   width: 70%
-}
-
-#home-container, #account-container, #about-container, #search-container {
-  width: -webkit-fill-available;;
-  height: -webkit-fill-available;;
 }
 
 #welcome {
@@ -166,14 +171,16 @@ button#submit-contact {
   display: grid;
   border-radius: 0px;
   border: 2px solid black;
+  box-shadow: none;
+}
+
+.btn:focus{
+  box-shadow: none;
 }
 
 button#auth0-login, button#auth0-logout{
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 200px;
+  margin: 30px 30px;
+  width: 30%;
   background-color: #ffcf00;
   font-size: 24px;
 }
@@ -231,10 +238,11 @@ input {
 .str-button, .str-button:hover {
   min-width: 460px;
   padding: 10px;
-  background: #ffcc4d;
+  background: #ffcf00;
   border: 4px solid black;
   font-size: 20px;
   border-radius:5px;
+  margin-bottom: 20px;
 }
 
 /* override form styling */
@@ -301,6 +309,10 @@ button#dollarButton {
   margin-left: 30px;
 }
 
+button#dollarButton:focus:not(:focus-visible), button#distance-button:focus:not(:focus-visible){
+  background-color: #ffcf00;
+}
+
 .options {
   border: 4px solid black;
   border-radius:5px;
@@ -309,17 +321,6 @@ button#dollarButton {
   height: 50px;
   margin-left: 40px;
   display: block;
-}
-
-.screwReviewButton {
-  min-width: 460px;
-  padding: 10px;
-  background: #ffcc4d;
-  border: 4px solid black;
-  font-size: 20px;
-  border-radius:5px;
-  margin-top: 50px;
-  margin-bottom: 20px;
 }
 
 .distanceButton {
@@ -348,5 +349,4 @@ button#dollarButton {
   margin-left: auto;
   margin-right: auto;
   display: block;
-
 }

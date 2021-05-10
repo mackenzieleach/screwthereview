@@ -36,7 +36,7 @@ class Search extends Component {
 
     render() {
         return (
-            <Container fluid id="search-container">
+            <Container fluid className="page-container" id="search-container">
                 {!this.state.seeResult ? (
                     <Row>
                         <Col className="d-none d-md-block" lg={3} md={6} sm={12} xs={12}>
@@ -103,20 +103,20 @@ class Search extends Component {
                             <Row id="search-row">
                                 <p id="search-text">Distance</p>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button class="distanceButton">5 mi</button>
+                                    <button id="distance-button" class="distanceButton">5 mi</button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button class="distanceButton">10 mi</button>
+                                    <button id="distance-button" class="distanceButton">10 mi</button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button class="distanceButton">15 mi</button>
+                                    <button id="distance-button" class="distanceButton">15 mi</button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button class="distanceButton">20 mi</button>
+                                    <button id="distance-button" class="distanceButton">20 mi</button>
                                 </Col>
                             </Row>
                             <div class="text-center">
-                                <button type="button" class="screwReviewButton" onClick={this.seeResult}>Screw that Review!</button>
+                                <button id="str-search" type="button" class="str-button" onClick={this.seeResult}>Screw that Review!</button>
                             </div>
                         </Col>
                     </Row>

@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col'
 class Account extends Component {
     render() {
         return (
-            <Container fluid id="account-container">
+            <Container fluid className="page-container" id="page-container">
                 <Row>
                     <Col>
                     <h5>Account</h5>

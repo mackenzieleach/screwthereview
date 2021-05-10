@@ -22,7 +22,7 @@ class Home extends Component {
 
     render() {
         return (
-            <Container fluid id="home-container">
+            <Container fluid id="page-container">
                 <Row className="align-items-center">
                     {/* Column 1: Logo, Auth0 Widgets and Description*/}
                     <Col id="landing_col_1" align='center' style={{ paddingBottom: 20 }} lg={6} md={12} sm={12} xs={12}>
