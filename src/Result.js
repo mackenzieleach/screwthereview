@@ -61,7 +61,33 @@ class Result extends Component {
                 </Row>
                 <Row>
                     <Col sm={5}>
-                        <img alt="result" className="img-fluid" src={this.state.imageURL} />
+                        <Row>
+                            <img alt="result" className="img-fluid" src={this.state.imageURL} style={{width: "100%"}}/>
+                        </Row>
+                        <Row>
+                            <table id="result-info-table" data-testid="result-info-table">
+                                <tbody>
+                                    <tr data-testid="info-item">
+                                        <td>Phone: </td>
+                                        <td>{this.state.phone}</td>
+                                    </tr>
+                                    <tr data-testid="info-item">
+                                        <td>
+                                            <a role="link" href={this.state.website}>Website</a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr data-testid="info-item">
+                                        <td>Tags: </td>
+                                        <td>{this.state.tags}</td>
+                                    </tr>
+                                    <tr data-testid="info-item">
+                                        <td>Price: </td>
+                                        <td>{this.state.price}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </Row>
                     </Col>
                     <Col sm={6}>
                         <div className="font-medium">About</div>
@@ -120,32 +146,6 @@ class Result extends Component {
                                 <button className="font-medium">Get Directions</button>
                             </Col>
                         </Row>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col sm={5}>
-                        <table id="result-info-table" data-testid="result-info-table">
-                            <tbody>
-                                <tr data-testid="info-item">
-                                    <td>Phone: </td>
-                                    <td>{this.state.phone}</td>
-                                </tr>
-                                <tr data-testid="info-item">
-                                    <td>
-                                        <a role="link" href={this.state.website}>Website</a>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                <tr data-testid="info-item">
-                                    <td>Tags: </td>
-                                    <td>{this.state.tags}</td>
-                                </tr>
-                                <tr data-testid="info-item">
-                                    <td>Price: </td>
-                                    <td>{this.state.price}</td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </Col>
                 </Row>
                 {/* <Row>
