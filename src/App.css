@@ -79,8 +79,6 @@ body{
   width: 70%
 }
 
-
-
 #welcome {
   font-family: 'Helvetica';
   color: black;
@@ -176,11 +174,8 @@ button#submit-contact {
 }
 
 button#auth0-login, button#auth0-logout{
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 200px;
+  margin: 30px 30px;
+  width: 30%;
   background-color: #ffcf00;
   font-size: 24px;
 }
