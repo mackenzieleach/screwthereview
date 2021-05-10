@@ -31,10 +31,7 @@ body{
 }
 
 .page-container {
-  /* Known bug-fix for footer not sticking on different viewports*/
   min-height: 100vh;
-  min-height: -webkit-fill-available;
-  min-height: fill-available;
 }
 
 .row {
@@ -65,30 +62,24 @@ body{
 /* FOOTER */
 :root {
   --mainColor: #4dd8ff;
+
 }
 
 #str-footer{
   background-color: #4dd8ff;
   display: flex;
   flex-wrap: wrap;
-  min-width: 100%;
+  left:0;
+  right:0;
+  bottom:0;
 }
-
-
 
 /* LANDING PAGE*/
 #logo {
   width: 70%
 }
 
-#home-container, #account-container, #about-container, #search-container {
-  width: -webkit-fill-available;
 
-  /* Known bug-fix for footer not sticking on different viewports*/
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
-  min-height: fill-available;
-}
 
 #welcome {
   font-family: 'Helvetica';

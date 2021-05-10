@@ -12,7 +12,7 @@ import luke from './Images/Luke.png';
 class About extends Component {
     render() {
         return (
-            <Container fluid id="about-container">
+            <Container fluid id="page-container">
                 <Row className="align-items-center">
                     {/* Column 1: Logo and Page Description*/}
                     <Col id="landing_col_1" align='center' style={{ paddingBottom: 20 }} lg={6} md={12} sm={12} xs={12}>

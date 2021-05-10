@@ -36,7 +36,7 @@ class Search extends Component {
 
     render() {
         return (
-            <Container fluid id="search-container">
+            <Container fluid className="page-container" id="search-container">
                 {!this.state.seeResult ? (
                     <Row>
                         <Col className="d-none d-md-block" lg={3} md={6} sm={12} xs={12}>
