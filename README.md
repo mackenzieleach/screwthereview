@@ -135,7 +135,6 @@ This repository also welcomes pull requests for bug fixes. If you encounter and 
 
 ## Repository Layout
 This section provides more details about each component of our repository. This repository holds the client code for Screw the Review. For more information about the sever repository, please visit <https://github.com/luuuk/screwthereview-server>   
-  - **Images:** This directory contains images that will be used on the Screw the Review website. It currently includes our logo and custom headers for each page of the website on a transparent background for rendering.   
   - **Mockups:** This directory contains our team's official UI Mockups for each page that we will be building for the application. It includes the landing page, search, category wheel, about, account and experience result pages.   
   - **Reports:** This directory contains our team's weekly status reports for the course as well as a status report template.   
   - **__mocks__:** This directory contains files that allow the testing CI to properly handle CSS and JSX formatting.
@@ -146,4 +145,6 @@ This section provides more details about each component of our repository. This 
   - **.babelrc:** This file sets the Babel configurations to allow the testing CI to read files with JSX formatting.
   - **netlify.toml::** This file contains one command that disables deployment on push to limit deployment via webhook only when all tests successfully pass.  
   - **package.json**: This file specifies all of the dependencies that are required and allows them to be automatically built when the website is deployed without manual installation scripts. 
+  - **setupJest.js:** This file acts as a configuration for tests that require mocking in Jest. 
+  - **yarn.lock:** This file is auto-generated as dependencies are added and should not be edited.
 
