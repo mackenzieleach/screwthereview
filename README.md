@@ -22,7 +22,7 @@ Screw the Review is a web application designed to provide the user with new expe
 &nbsp;  
 
 ## Quick Start Guide
-The following guide provides information on how to build, run and test Screw the Review from your local machine! After completing this guide, you be able to run all tests in the repository and deploy the website to http://localhost:3000/ from your computer.
+The following guide provides information on how to build, run and test Screw the Review from your local machine! After completing this guide, you be able to run all tests in the repository and deploy the website to http://localhost:3000/ from your computer. If you chose, you will also be able to spin up a local server <https://github.com/luuuk/screwthereview-server>, although this is not necessary to interact with the client code in this repository. 
 
 &nbsp;
 
@@ -57,6 +57,13 @@ yarn install
 &nbsp; 
 
 For information about yarn's command line interface, visit their documentation: <https://classic.yarnpkg.com/en/docs/cli/>.
+
+&nbsp;
+
+### Server 
+Screw the Review has a server with repository code hosted at <https://github.com/luuuk/screwthereview-server>. There are two options
+- **Option 1**: You can follow the Quick Start Guide hosted at <https://github.com/luuuk/screwthereview-server> to spin up the server. This is recommended for developers who would like to make changes to the code in the server repository. 
+- **Option 2**: You can continue through this guide without creating a local server. The Heroku server runs continually and supports both the official website and development environments with local host. This option is best if you are soley interested in exploring the client code and user interface.
 
 &nbsp;
 
