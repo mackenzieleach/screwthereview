@@ -103,20 +103,20 @@ class Search extends Component {
                             <Row id="search-row">
                                 <p id="search-text">Distance</p>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button class="distanceButton">5 mi</button>
+                                    <button id="distance-button" class="distanceButton">5 mi</button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button class="distanceButton">10 mi</button>
+                                    <button id="distance-button" class="distanceButton">10 mi</button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button class="distanceButton">15 mi</button>
+                                    <button id="distance-button" class="distanceButton">15 mi</button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button class="distanceButton">20 mi</button>
+                                    <button id="distance-button" class="distanceButton">20 mi</button>
                                 </Col>
                             </Row>
                             <div class="text-center">
-                                <button type="button" class="screwReviewButton" onClick={this.seeResult}>Screw that Review!</button>
+                                <button id="str-search" type="button" class="str-button" onClick={this.seeResult}>Screw that Review!</button>
                             </div>
                         </Col>
                     </Row>

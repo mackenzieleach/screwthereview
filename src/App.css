@@ -231,7 +231,7 @@ input {
 .str-button, .str-button:hover {
   min-width: 460px;
   padding: 10px;
-  background: #ffcc4d;
+  background: #ffcf00;
   border: 4px solid black;
   font-size: 20px;
   border-radius:5px;
@@ -301,6 +301,10 @@ button#dollarButton {
   margin-left: 30px;
 }
 
+button#dollarButton:focus:not(:focus-visible), button#distance-button:focus:not(:focus-visible){
+  background-color: #ffcf00;
+}
+
 .options {
   border: 4px solid black;
   border-radius:5px;
@@ -311,14 +315,7 @@ button#dollarButton {
   display: block;
 }
 
-.screwReviewButton {
-  min-width: 460px;
-  padding: 10px;
-  background: #ffcc4d;
-  border: 4px solid black;
-  font-size: 20px;
-  border-radius:5px;
-  margin-top: 50px;
+#str-search {
   margin-bottom: 20px;
 }
 
