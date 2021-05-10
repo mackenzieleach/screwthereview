@@ -19,9 +19,11 @@ describe('Roulette Overall', () => {
 
     test("Roulette location input box rendered", () => {
     render(<Roulette />);
-        const locationLabel = screen.getByText("Location:");
-        const locationInput = screen.getByPlaceholderText("");
+        const locationLabel = screen.getByText("Location");
+        // const locationInput = screen.getByPlaceholderText("");
+        const locationInput = screen.getByTestId("location-dropdown");
         expect(locationLabel).toBeInTheDocument();
+        // expect(locationInput).toBeInTheDocument();
         expect(locationInput).toBeInTheDocument();
     cleanup();
     })

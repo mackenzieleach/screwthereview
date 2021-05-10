@@ -254,7 +254,7 @@ class Roulette extends React.Component {
               </Row> */}
               <Row id="search-row">
                   <label for="location" id="search-text" >Location</label>
-                  <select class="options" id="location" onChange={this.handleChange}>
+                  <select class="options" id="location" onChange={this.handleChange} data-testid="location-dropdown">
                       {/* 50 Most Populated WA Cities (Hardcoded*/}
                       <option>Select City</option>
                       <option>Auburn, WA</option>
