@@ -63,8 +63,8 @@ class Search extends Component {
                         </Col>
                         <Col id="search-filters" lg={6} md={12} sm={12} xs={12}>
                             <img src={searchLogo} alt="Logo" class="searchLogo" id="searchLogo" />
-                            <form  onSubmit={this.handleSubmit}>
-                                <div  class="form-group">
+                            <form onSubmit={this.handleSubmit}>
+                                <div class="form-group">
                                     <label for="inputdefault"></label>
                                     <input id="keyword-bar" class="keywordBtn" id="inputdefault" type="text" placeholder="Type a keyword ... (hike, Chinese, etc.)" value={this.state.value} onChange={this.handleChange} />
                                 </div>
@@ -72,9 +72,57 @@ class Search extends Component {
                             <Row id="search-row">
                                 <label for="location" id="search-text" >Location</label>
                                 <select class="options" id="location">
+                                    {/* 50 Most Populated WA Cities (Hardcoded*/}
+                                    <option>Select City</option>
+                                    <option>Auburn, WA</option>
+                                    <option>Bainbridge Island, WA</option>
+                                    <option>Bellevue, WA</option>
+                                    <option>Bellingham, WA</option>
+                                    <option>Bothell, WA</option>
+                                    <option>Bremerton, WA</option>
+                                    <option>Burien, WA</option>
+                                    <option>Des Moines, WA</option>
+                                    <option>Edmonds, WA</option>
+                                    <option>Everett, WA</option>
+                                    <option>Federal Way, WA</option>
+                                    <option>Graham, WA</option>
+                                    <option>Issaquah, WA</option>
+                                    <option>Kennewick, WA</option>
+                                    <option>Kirkland, WA</option>
+                                    <option>Kent, WA</option>
+                                    <option>Lacey, WA</option>
+                                    <option>Lake Stevens, WA</option>
+                                    <option>Lakewood, WA</option>
+                                    <option>Longview, WA</option>
+                                    <option>Lynnwood, WA</option>
+                                    <option>Marysville, WA</option>
+                                    <option>Maple Valley, WA</option>
+                                    <option>Mill Creek East, WA</option>
+                                    <option>Mercer Island, WA</option>
+                                    <option>Mount Vernon, WA</option>
+                                    <option>Olympia, WA</option>
+                                    <option>Orchards, WA</option>
+                                    <option>Pasco, WA</option>
+                                    <option>Parkland, WA</option>
+                                    <option>Pullman, WA</option>
+                                    <option>Puyallup, WA</option>
+                                    <option>Redmond, WA</option>
+                                    <option>Renton, WA</option>
+                                    <option>Richland, WA</option>
+                                    <option>Sammamish, WA</option>
                                     <option>Seattle, WA</option>
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
+                                    <option>SeaTac, WA</option>
+                                    <option>Shoreline, WA</option>
+                                    <option>South Hill, WA</option>
+                                    <option>Spanaway, WA</option>
+                                    <option>Spokane, WA</option>
+                                    <option>Spokane Valley, WA</option>
+                                    <option>Tacoma, WA</option>
+                                    <option>University Place, WA</option>
+                                    <option>Vancouver, WA</option>
+                                    <option>Walla Walla, WA</option>
+                                    <option>Wenatchee, WA</option>
+                                    <option>Yakima, WA</option>
                                 </select>
                             </Row>
                             <Row id="search-row">

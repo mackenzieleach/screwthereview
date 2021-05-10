@@ -293,8 +293,17 @@ p#card-info{
   margin-bottom: 15px;
 }
 
+#str-search{
+  margin-top: 25px;
+}
+
 #search-text{
   margin-left: 20px;
+  margin-top: 20px;
+}
+
+#location{
+  margin-top: 20px;
 }
 
 #search-row{
@@ -319,7 +328,7 @@ button#dollarButton:focus:not(:focus-visible), button#distance-button:focus:not(
   min-width: 60%;
   margin-bottom: 20px;
   height: 50px;
-  margin-left: 40px;
+  margin-left: 30px;
   display: block;
 }
 
