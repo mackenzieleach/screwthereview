@@ -116,23 +116,27 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** I finished both the landing page and abput page along with full UI test suites for both. I also helped out with finishing the Bootstrapping for the Search class and hardcoded some values for our location filter until we have the opportunity to use the Google Places API for geographic autocomplete. I wrapped up the Quick Start Guide in this repository and worked with Luke to updated the quick start guide in the server repository. <p>&nbsp;</p>
+* **Successful Tactics:** We've definitely spent a lot of time communicating on Slack and texting each other this week which has been incredibly helpful. We set aside an additoinal two synchronous meetings this week to touch base and work together to resolve bugs as we encountered them. <p>&nbsp;</p>
+* **Learning:** Testing in Jest is a lot more complex than I expected and it was really time consuming to learn how to test UI components. The documentation for Jest is also a bit lacking, so I'd like to learn about utilizing mocking to test out things like link functionality as opposed to just their presence on the page. <p>&nbsp;</p>
+* **Issues & Challenges:** I think time management has been my biggest challenge. I've put a lot off in my other classes to work on this application in the past week and will need to pivot and take a couple of days to catch back up before continuing to grind on this! <p>&nbsp;</p>
+* **Blockers:** None! <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Outline & draft the user and developer guides by May 17. 
+* **Goal 2:** Verify the quick start guide for both repositories by testing it.
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Mackenzie Leach** | <Task> | <Due> 
+**Mackenzie Leach** | Team Status Report | May 12, 11:00 PM PDT 
+| | Update Team Timeline & Tasks | May 12, 11:59 PM PDT 
+| | Outline User & Developer Guides | May 12, 11:59 PM PDT 
+| | Draft User & Developer Guides | May 17, 11:59 PM PDT 
+| | User & Developer Guides Deliverable | May 18, 11:59 PM PDT 
 
 &nbsp;  
 
