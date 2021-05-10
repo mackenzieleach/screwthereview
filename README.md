@@ -34,6 +34,7 @@ Screw the Review is a web application designed to provide the user with new expe
 &nbsp;  
 
 For more information about this application and technical details, please visit [Screw the Review: Requirements & Team Policies](https://docs.google.com/document/d/1AdpmiG6Gi3a_kvq9dlz2P9KB4OZ5nPvZS9F1-CJdxzk/edit?usp=sharing). 
+
 &nbsp;
 
 
