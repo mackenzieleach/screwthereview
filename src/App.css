@@ -325,7 +325,7 @@ p#card-info{
   margin-left: 30px;
 }
 
-.dollarButton:focus:not(:focus-visible), .distance-button:focus:not(:focus-visible){
+.dollarButton:focus:not(:focus-visible), .distanceButton:focus:not(:focus-visible){
   background-color: #ffcf00;
 }
 
