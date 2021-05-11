@@ -173,7 +173,7 @@
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**LuLu Pinczower** | Allow user to personalize location | 5/15 11:59 PM PDT
+**LuLu Pinczower** | Allow user to personalize location | May 15, 11:59 PM PDT
 | | Digest Yelp category JSON values | May 17, 11:59 PM PDT 
 | | Fix small result bugs (slowed rendering of image) | May 15, 11:59 PM PDT 
 | | Integrate Luke's scraper data | May 17, 11:59 PM PDT 
