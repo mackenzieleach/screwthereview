@@ -16,7 +16,7 @@ import Result from './Result';
 class Search extends Component {
     constructor(props) {
         super(props);
-        this.state = { value: '', seeResult: false, locationVal: "seattle", moneyVal: 0, distanceVal: 0};
+        this.state = { value: '', seeResult: false, locationVal: "seattle", moneyVal: 0, distanceVal: "", keyword: ""};
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleLocation = this.handleLocation.bind(this);
@@ -46,8 +46,7 @@ class Search extends Component {
     }
 
     handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.value);
-        event.preventDefault();
+        this.setState({keyword: event.target.value })
     }
 
     seeResult = () => {
@@ -194,7 +193,8 @@ class Search extends Component {
                     </Row>
                 ) : (
                     <Row>
-                        <Result location={this.state.locationVal} category={this.state.value} price={this.state.moneyVal} radius={this.state.distanceVal}></Result>
+                        <Result location={this.state.locationVal} category={this.state.value} price={this.state.moneyVal}
+                            radius={this.state.distanceVal} term={this.state.keyword}></Result>
                     </Row>
                 )}
             </Container>
