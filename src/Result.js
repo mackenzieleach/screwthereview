@@ -55,7 +55,7 @@ class Result extends Component {
     
     render() {
         return (
-            <Container fluid className="page-container">
+            <Container fluid className="page-container" style={{ paddingBottom: "36px"}}>
                 <Row>
                     <div className="col font-large" data-testid="result-name">{this.state.name}</div>
                 </Row>
@@ -91,12 +91,7 @@ class Result extends Component {
                     </Col>
                     <Col sm={6}>
                         <div className="font-medium">About</div>
-                        <div>Bringing people together to share joy has been our family’s inspiration
-                        since the opening of the first Panda Express in 1983 in Glendale,
-                        California. As we continue to open restaurants from coast to coast
-                        and around the world, the bold flavors of Chinese cuisine inspire our
-                        cooking, while our extended family of guests and associates remain
-                        at the heart of what we do. Welcome to our family’s Chinese kitchen.</div>
+                        <div>More about this experience coming soon!</div>
                         <Row>
                             <Col sm={7}>
                                 <img alt="map" src={Map} className="img-responsive fit-image col-12" />
@@ -138,11 +133,11 @@ class Result extends Component {
                             </Col>
                         </Row>
                         <Row>
-                            <Col>
+                            <Col sm={7}>
                                 <div className="font-medium">Location</div>
                                 <div>{ this.state.address }</div>
                             </Col>
-                            <Col>
+                            <Col sm={5}>
                                 <button className="font-medium">Get Directions</button>
                             </Col>
                         </Row>

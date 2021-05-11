@@ -14,7 +14,6 @@ class Roulette extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
   
   state = {
@@ -34,11 +33,6 @@ class Roulette extends React.Component {
 
   handleChange(event) {
       this.setState({searchValue: event.target.value});
-  }
-
-  handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.searchValue);
-      event.preventDefault();
   }
 
   componentDidMount() {
