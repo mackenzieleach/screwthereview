@@ -1,0 +1,14 @@
+name: Run Jest Tests for Pull Request
+env:
+      YELP_API_KEY: ${{ secrets.YELP_API_KEY }}
+on: pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Yarn Modules
+      run: yarn
+    - name: Run Jest Tests
+      run: yarn test "../__tests__"
