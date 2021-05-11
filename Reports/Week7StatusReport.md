@@ -157,23 +157,26 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week I completed 2 main tasks and fine tuned some of my previous UI work. Firstly, I successfully integrated the server and frontend. Both the search and roulette page can succesfully ping the server with a set of headers to receive a random experience result. I also wrote tests for both the roulette and result pages. On top of this, I had some additional bootstrapping that needed to be done to add site-wide consistency.  <p>&nbsp;</p>
+* **Successful Tactics:** Communication was definitely key this week. Whenever I hit an obstacle that I knew a group member had experience in, I made sure to reach out and set up a meeting. For example, Kenzie helped me out with some of the Jest testing semantics, and Luke walked me through the basics of the server that he set up. <p>&nbsp;</p>
+* **Learning:** I have never made calls to a server via a React app, so I definitely needed to do a lot of research on that topic. Similarly, I have never written tests using Jest before. This week was definitely full of technical learning. I also learned how to parse a JSON string into an object that is more usable in our React application <p>&nbsp;</p>
+* **Issues & Challenges:** My main issue encountered this week was integrating the frontend with the server. This definitely took a lot of trial and error that Luke helped out with a lot. In the end, we were able to succesfully instantiate GET requests, retrieving the desired result with limited headers. <p>&nbsp;</p>
+* **Blockers:** My main blocker right now is the limiting offering of location preferences on the roulette and search page. Ideally the user would have much more control over their location, but we will need to tap into more APIs to build this out. <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
+* **Goal 1:** Integrate more flexible user input for location
 * **Goal 2:**
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**LuLu Pinczower** | <Task> | <Due> 
+**LuLu Pinczower** | Allow user to personalize location | 5/15 11:59 PM PDT
+| | Digest Yelp category JSON values | May 17, 11:59 PM PDT 
+| | Fix small result bugs (slowed rendering of image) | May 15, 11:59 PM PDT 
+| | Integrate Luke's scraper data | May 17, 11:59 PM PDT 
 
 &nbsp;  
 
@@ -188,7 +191,6 @@
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
 **Rachel Ye** | Finish filters, banner, and fake picture placeholders by Sunday | Sunday 5/9
-
 &nbsp; 
 
 **Progress & Issues**  
