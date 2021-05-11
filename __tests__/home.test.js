@@ -40,7 +40,7 @@ describe('Image Rendering Tests', () => {
 describe('Text Rendering Tests', () => {
     test('Heading Text Renders', () => {
         render(<Home />)
-        expect(screen.getByText('Welcome to Screw the Review!')).toBeInTheDocument();
+        expect(screen.getByText('Welcome to')).toBeInTheDocument();
         cleanup()
     })
 
