@@ -17,6 +17,8 @@
     "plugins": [
         "react"
     ],
+    "parser": "babel-eslint",
     "rules": {
+        "linebreak-style": 0
     }
 }
