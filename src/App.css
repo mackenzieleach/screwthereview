@@ -5,23 +5,30 @@
 
 /* fonts */
 * {
-  font-size: 24px;
+  font-size: 18px;
   font-family: 'Helvetica';
   font-weight: 800;
 }
 
 .font-large {
-  font-size: 48px;
+  font-size: 36px;
 }
 
 .font-medium {
-  font-size: 36px;
+  font-size: 24px;
 }
 
 /* bootstrap overrides */
 .container {
   /* max-width: 100%; */
-  flex: 1
+  flex: 1;
+  max-width: 90%;
+  max-width: 90vw;
+}
+
+.container-fluid {
+  max-width: 90%;
+  max-width: 90vw;
 }
 
 body{
@@ -76,7 +83,8 @@ body{
 
 /* LANDING PAGE*/
 #logo {
-  width: 70%
+  width: 70%;
+  padding-bottom: 12px;
 }
 
 #welcome {
@@ -222,7 +230,7 @@ button {
 
 #selector {
   font-size: 100px;
-  max-width: 100px;
+  max-width: 80px;
   z-index: 3;
   margin-bottom: -4%;
 }
@@ -288,11 +296,16 @@ p#card-info{
 #result-info-table tr {
   border: 4px solid black;
   border-radius: 5px;
-  line-break: anywhere;
+  line-break: auto;
+  
 }
 
-#result-hours-table td {
-  font-size: 16px;
+#result-hours-table td, #result-info-table td, #result-info-table a {
+  font-size: 12px;
+}
+
+#results-info-table td {
+  min-width: 200px;
 }
 
 /* Search Page Styling */
