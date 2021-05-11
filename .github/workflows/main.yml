@@ -1,7 +1,10 @@
 name: Run Jest Tests & Deploy to Netlify
 env:
       YELP_API_KEY: ${{ secrets.YELP_API_KEY }}
-on: [push, pull_request]
+on: 
+  push:
+    branches:
+      -main
 
 jobs:
   test:
