@@ -16,13 +16,33 @@ import Result from './Result';
 class Search extends Component {
     constructor(props) {
         super(props);
-        this.state = { value: '', seeResult: false };
+        this.state = { value: '', seeResult: false, locationVal: "seattle", moneyVal: 0, distanceVal: 0};
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleLocation = this.handleLocation.bind(this);
+        this.handleMoney = this.handleMoney.bind(this);
+        this.handleDistance = this.handleDistance.bind(this);
     }
 
     handleChange(event) {
         this.setState({ value: event.target.value });
+    }
+
+    handleMoney(event) {
+        var id = event.target.id;
+        if (id == "dollarButton1") {
+            this.setState({ moneyVal: 1})
+        } else if (id == "dollarButton2") {
+            this.setState({ moneyVal: 2})
+        } else if (id == "dollarButton3") {
+            this.setState({ moneyVal: 3})
+        } else {
+            this.setState({ moneyVal: 4})
+        }
+    }
+
+    handleLocation(event) {
+        this.setState({ locationVal: event.target.value });
     }
 
     handleSubmit(event) {
@@ -32,6 +52,10 @@ class Search extends Component {
 
     seeResult = () => {
         this.setState({ seeResult: true });
+    }
+
+    handleDistance(event) {
+        this.setState({ distanceVal: event.target.value });
     }
 
     render() {
@@ -71,7 +95,7 @@ class Search extends Component {
                             </form>
                             <Row id="search-row">
                                 <label for="location" id="search-text" >Location</label>
-                                <select class="options" id="location">
+                                <select class="options" id="location" onChange={this.handleLocation}>
                                     {/* 50 Most Populated WA Cities (Hardcoded*/}
                                     <option>Select City</option>
                                     <option>Auburn, WA</option>
@@ -128,22 +152,22 @@ class Search extends Component {
                             <Row id="search-row">
                                 <p id="search-text">Price</p>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button id="dollarButton" type="button" class="dollarButton">
+                                    <button id="dollarButton1" type="button" className="dollarButton" onClick={this.handleMoney}>
                                         <span>&#36;</span>
                                     </button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button id="dollarButton" type="button" class="dollarButton">
+                                    <button id="dollarButton2" type="button" className="dollarButton" onClick={this.handleMoney}>
                                         <span>&#36;&#36;</span>
                                     </button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button id="dollarButton" type="button" class="dollarButton">
+                                    <button id="dollarButton3" type="button" className="dollarButton" onClick={this.handleMoney}>
                                         <span>&#36;&#36;&#36;</span>
                                     </button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button id="dollarButton" type="button" class="dollarButton">
+                                    <button id="dollarButton4" type="button" className="dollarButton" onClick={this.handleMoney}>
                                         <span>&#36;&#36;&#36;&#36;</span>
                                     </button>
                                 </Col>
@@ -151,16 +175,16 @@ class Search extends Component {
                             <Row id="search-row">
                                 <p id="search-text">Distance</p>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button id="distance-button" class="distanceButton">5 mi</button>
+                                    <button id="distance-button" class="distanceButton" onClick={this.handleDistance}>5 mi</button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button id="distance-button" class="distanceButton">10 mi</button>
+                                    <button id="distance-button" class="distanceButton" onClick={this.handleDistance}>10 mi</button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button id="distance-button" class="distanceButton">15 mi</button>
+                                    <button id="distance-button" class="distanceButton" onClick={this.handleDistance}>15 mi</button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button id="distance-button" class="distanceButton">20 mi</button>
+                                    <button id="distance-button" class="distanceButton" onClick={this.handleDistance}>20 mi</button>
                                 </Col>
                             </Row>
                             <div class="text-center">
@@ -170,7 +194,7 @@ class Search extends Component {
                     </Row>
                 ) : (
                     <Row>
-                        <Result location="seattle" category={this.state.value}></Result>
+                        <Result location={this.state.locationVal} category={this.state.value} price={this.state.moneyVal} radius={this.state.distanceVal}></Result>
                     </Row>
                 )}
             </Container>
