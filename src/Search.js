@@ -16,7 +16,7 @@ import Result from './Result';
 class Search extends Component {
     constructor(props) {
         super(props);
-        this.state = { value: '', seeResult: false, locationVal: "seattle", moneyVal: 0, distanceVal: 0};
+        this.state = { value: '', seeResult: false, locationVal: "seattle", moneyVal: 0, distanceVal: "", keyword: ""};
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleLocation = this.handleLocation.bind(this);
@@ -46,8 +46,7 @@ class Search extends Component {
     }
 
     handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.value);
-        event.preventDefault();
+        this.setState({keyword: event.target.value })
     }
 
     seeResult = () => {
@@ -175,16 +174,16 @@ class Search extends Component {
                             <Row id="search-row">
                                 <p id="search-text">Distance</p>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button id="distance-button" class="distanceButton" onClick={this.handleDistance}>5 mi</button>
+                                    <button id="distance-button" className="distanceButton" onClick={this.handleDistance}>5 mi</button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button id="distance-button" class="distanceButton" onClick={this.handleDistance}>10 mi</button>
+                                    <button id="distance-button" className="distanceButton" onClick={this.handleDistance}>10 mi</button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button id="distance-button" class="distanceButton" onClick={this.handleDistance}>15 mi</button>
+                                    <button id="distance-button" className="distanceButton" onClick={this.handleDistance}>15 mi</button>
                                 </Col>
                                 <Col lg={2} md={2} sm={2} xs={2}>
-                                    <button id="distance-button" class="distanceButton" onClick={this.handleDistance}>20 mi</button>
+                                    <button id="distance-button" className="distanceButton" onClick={this.handleDistance}>20 mi</button>
                                 </Col>
                             </Row>
                             <div class="text-center">
@@ -194,7 +193,8 @@ class Search extends Component {
                     </Row>
                 ) : (
                     <Row>
-                        <Result location={this.state.locationVal} category={this.state.value} price={this.state.moneyVal} radius={this.state.distanceVal}></Result>
+                        <Result location={this.state.locationVal} category={this.state.value} price={this.state.moneyVal}
+                            radius={this.state.distanceVal} term={this.state.keyword}></Result>
                     </Row>
                 )}
             </Container>
