@@ -84,7 +84,7 @@ body{
 /* LANDING PAGE*/
 #logo {
   width: 70%;
-  padding-bottom: 12px;
+  padding-bottom: 16px;
 }
 
 #welcome {
@@ -301,7 +301,7 @@ p#card-info{
 }
 
 #result-hours-table td, #result-info-table td, #result-info-table a {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 #results-info-table td {
