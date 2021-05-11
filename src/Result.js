@@ -89,7 +89,7 @@ class Result extends Component {
                             </table>
                         </Row>
                     </Col>
-                    <Col sm={6}>
+                    <Col sm={{ span: 6, offset: 1 }} >
                         <div className="font-medium">About</div>
                         <div>More about this experience coming soon!</div>
                         <Row>
