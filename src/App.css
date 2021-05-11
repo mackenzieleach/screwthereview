@@ -317,7 +317,7 @@ p#card-info{
   margin-top: 20px
 }
 
-button#dollarButton {
+.dollarButton {
   border-radius: 40px;
   height: 80px;
   width: 80px;
@@ -325,7 +325,7 @@ button#dollarButton {
   margin-left: 30px;
 }
 
-button#dollarButton:focus:not(:focus-visible), button#distance-button:focus:not(:focus-visible){
+.dollarButton:focus:not(:focus-visible), .distance-button:focus:not(:focus-visible){
   background-color: #ffcf00;
 }
 
