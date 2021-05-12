@@ -195,22 +195,21 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week, I got the bulk of the implementation done for the Search feature. I implemented the price, distance, keyword, and location components for the Search page. I also wrote a test suite for the Search feature that ensured all of the UI components and text exist on the page. I also learned and used Bootstrapping to modify the formatting of the various buttons and UI elements to be consistent with our CSS classes. We also got together to film our beta release video on Monday night. <p>&nbsp;</p>
+* **Successful Tactics:** This week was the heaviest in terms of coding. For me, researching documentation, using tutorials, and learning from my teammate's code was helpful. I also found it helpful to communicate with Lulu and Kenzie when I was stuck or feeling blocked. Lulu helped me set up the React states and props for the Search feature, and Kenzie helped me fix some of the boostrap padding for the photo cards and buttons. I also found it most productive to set aside large hours of time to dedicate to coding and learning. <p>&nbsp;</p>
+* **Learning:** I learned a lot of technical concepts this week regarding React states and prop, Bootstrapping, writing tests, and advice from my teammates. I learned how to save state for my location, price, distance, and keyword filters to a Result component that Lulu developed. <p>&nbsp;</p>
+* **Issues & Challenges:** One of the challenges was figuring out how to auto fill the location filter with cities and states. In the end, I decided to hardcode the values for the beta release. I will have to do more digging to find an API that takes care of it for you. <p>&nbsp;</p>
+* **Blockers:** My main blocker is probably refactoring the searchTest to follow better style/conventions, toggle the button active status in Search code directly, and auto fill the location options. <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Auto fill the options for the location filter
+* **Goal 2:** Toggle active status for the Price and Distance buttons directly in the code 
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Rachel Ye** | <Task> | <Due>  
-  
-  
+**Rachel Ye** | Auto fill the options for the location filter | May 16 11:59PM PDT
+| |  Toggle active status for the Price and Distance buttons directly in the code | May 16 11:59pm PDT
