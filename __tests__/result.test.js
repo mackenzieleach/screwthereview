@@ -67,7 +67,7 @@ describe('Result Overall', () => {
 
     test("Result link rendered", () => {
         render(<Result />);
-        expect(screen.getAllByRole("link").length).toBeGreaterThan(0);
+        expect(screen.getByText("Website"));
     cleanup();
     })
     
