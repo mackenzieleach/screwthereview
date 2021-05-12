@@ -72,7 +72,7 @@ If this is your first time cloning a repository from Github, you will be prompte
 
 &nbsp;  
 
-**Install Dependencies:** Running `yarn install` will install all dependencies listed in the package.json file that will be needed for development.
+**Install Dependencies:** Running `yarn install` will install all dependencies listed in the package.json file that will be needed for development. If you are using Mac, you will need to run the command `brew install yarn`.
 
 &nbsp; 
 
@@ -128,7 +128,7 @@ For more information about how to navigate Screw the Review and its features, pl
 &nbsp; 
 
 ### Bug Reporting
-If you encounter a bug, you may create a **Github Issue** to report the bug. You issue should include a descriptive title, the exact steps you took to encounter the bug, what operating system and browser you are using, and any applicable screenshots of the bug. 
+If you encounter a bug, you may create a **Github Issue** to report the bug. Your issue should include a descriptive title, the exact steps you took to encounter the bug, what operating system and browser you are using, and any applicable screenshots of the bug. 
 
 &nbsp; 
 
