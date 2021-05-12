@@ -1,10 +1,11 @@
-import React from "react";
-import { useAuth0 } from "@auth0/auth0-react";
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
 
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
 
-  return <button id="auth0-login" onClick={() => loginWithRedirect()}>Log In</button>;
+  return <button type="button" id="auth0-login" onClick={() => loginWithRedirect()}>Log In</button>;
 };
 
-export default LoginButton; 
+export default LoginButton;
