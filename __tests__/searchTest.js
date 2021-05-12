@@ -24,7 +24,7 @@ describe('Image Rendering Tests', () => {
         cleanup();
     })
 
-    test('People pic Renders', () => {
+    test('People Pic Renders', () => {
         render(<Search/>);
         expect(screen.getByAltText("people")).toBeInTheDocument();
         cleanup();
@@ -67,43 +67,43 @@ describe('Button Rendering Tests', () => {
     })
     test('Location options renders', () => {
         render(<Search/>);
-        expect(screen.getAllByRol('option').count).toBeGreaterThanOrEqual(1);
+        expect(screen.getAllByRole('option').count).toBeGreaterThanOrEqual(1);
         cleanup();
-    }
+    })
 })
 
 describe('Text Rendering Tests', () => {
     test('Location Text Renders', () => {
-        render(<Search/>)
+        render(<Search/>);
         expect(screen.getByText('Location')).toBeInTheDocument();
-        cleanup()
+        cleanup();
     })
 
     test('Price Text Renders', () => {
-        render(<Search/>)
+        render(<Search/>);
         expect(screen.getByText('Price')).toBeInTheDocument();
         expect(screen.getByText('$')).toBeInTheDocument();
         expect(screen.getByText('$$')).toBeInTheDocument();
         expect(screen.getByText('$$$')).toBeInTheDocument();
         expect(screen.getByText('$$$$')).toBeInTheDocument();
-        cleanup()
+        cleanup();
     })
 
     test('Distance Text Renders', () => {
-        render(<Search />)
-        expect(screen.getByText('Distance').toBeInTheDocument();
-        cleanup()
+        render(<Search />);
+        expect(screen.getByText('Distance')).toBeInTheDocument();
+        cleanup();
     })
 
-    test('Screw that review text renders, () => {
-        render(<Search/>)
+    test('Screw that review text renders', () => {
+        render(<Search/>);
         expect(screen.getByText('Screw that Review!')).toBeInTheDocument();
-        cleanup()
+        cleanup();
     })
 
     test('Placeholder Keyword Text Renders', () => {
-        render(<Search/>)
+        render(<Search/>);
         expect(screen.getByPlaceholderText("Type a keyword ... (hike, Chinese, etc.)")).toBeInTheDocument();
-        cleanup()
+        cleanup();
     })
 })
