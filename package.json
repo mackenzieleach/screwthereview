@@ -13,12 +13,17 @@
     "async": "^3.2.0",
     "auth0-js": "^9.16.0",
     "axios": "^0.21.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "bootstrap": "^4.6.0",
     "canvas": "^2.7.0",
     "cheerio": "^1.0.0-rc.6",
     "dotenv": "^9.0.0",
     "enzyme": "^3.11.0",
-    "eslint": "^7.26.0",
+    "eslint": "7.2.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "fetch": "^1.1.0",
     "jest-dom": "^4.0.0",
     "jest-fetch-mock": "^3.0.3",
@@ -68,6 +73,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-airbnb-base": "14.2.1",
     "identity-obj-proxy": "^3.0.0",
     "react-test-renderer": "^17.0.2"
   }
