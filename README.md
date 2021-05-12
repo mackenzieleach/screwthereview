@@ -66,7 +66,11 @@ If this is your first time cloning a repository from Github, you will be prompte
 
 **Install Node.js:** In order to use this application, you will need to have Node installed. You can do this by navigating to <https://nodejs.org/en/download/> and selecting the appropriate installer for your operating system. 
 
+&nbsp;  
+
 **Install Yarn via NPM:** Running the command `npm install yarn` will add the yarn package manager that is used in this project to install all dependencies.
+
+&nbsp;  
 
 **Install Dependencies:** Running the following command will install all dependencies listed in the package.json file that will be needed for development.
 
