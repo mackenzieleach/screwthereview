@@ -92,7 +92,7 @@ class Search extends Component {
                 <form onSubmit={this.handleSubmit}>
                   <div className="form-group">
                     <label htmlFor="inputdefault" />
-                    <input className="form-control" id="inputdefault" type="text" placeholder="Type a keyword ... (hike, Chinese, etc.)" value={this.state.value} onChange={this.handleChange} />
+                    <input alt="Keyword" className="form-control" id="inputdefault" type="text" placeholder="Type a keyword ... (hike, Chinese, etc.)" value={this.state.value} onChange={this.handleChange} />
                   </div>
                 </form>
                 <Row id="search-row">
