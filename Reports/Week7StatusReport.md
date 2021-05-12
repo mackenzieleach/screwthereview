@@ -75,11 +75,11 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week's Beta deployment was a huge understaking for our whole team, myself included. I configured our new server repo to deploy w Heroku, added more request headers to our server endpoint, worked out some server testing kinks, configured eslint to enforce our style guidelines, recorded the beta presentation w the team, and implemented the Express middleware package on our server code.  <p>&nbsp;</p>
+* **Successful Tactics:** Prioritization, priorization, prioritization! <p>&nbsp;</p>
+* **Learning:** Heroku deployment, Express package, testing a server w jest. <p>&nbsp;</p>
+* **Issues & Challenges:** I wasn't able to get to scraping the biz description yet, despite committing to it last week. I had too much other work on my plate to get ready for beta release. <p>&nbsp;</p>
+* **Blockers:** None <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -91,7 +91,8 @@
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
+**Luke LeVasseur** | Scrape biz descriptions from Yelp | 5/18
+|| Team status report w Kenzie | 5/12
 
 &nbsp;  
 
