@@ -50,24 +50,19 @@ describe('Image Rendering Tests', () => {
 })
 
 describe('Button Rendering Tests', () => {
-    test('Distance Buttons', () => {
-        render(<Search/>);
-        expect(screen.getAllByRole('distanceButton').count).toBeGreaterThanOrEqual(4);
-        cleanup();
-    })
-    test('Price Buttons', () => {
-        render(<Search/>);
-        expect(screen.getAllByRole('dollarButton').count).toBeGreaterThanOrEqual(4);
-        cleanup();
-    })
-    test('Screw the Review Button', () => {
-        render(<Search/>);
-        expect(screen.getAllByRole('str-Button').count).toBeGreaterThanOrEqual(1);
-        cleanup();
-    })
     test('Location options renders', () => {
         render(<Search/>);
-        expect(screen.getAllByRole('option').count).toBeGreaterThanOrEqual(1);
+        expect(screen.getAllByRole('option').length).toBeGreaterThanOrEqual(50);
+        cleanup();
+    })
+    test('Distance, price, and screw the review buttons render', () => {
+        render(<Search/>);
+        expect(screen.getAllByRole('button').length).toBeGreaterThanOrEqual(9);
+        cleanup();
+    })
+    test('Keyword input button renders', () => {
+        render(<Search/>);
+        expect(screen.getByAltText('Keyword')).toBeInTheDocument();
         cleanup();
     })
 })
@@ -82,10 +77,6 @@ describe('Text Rendering Tests', () => {
     test('Price Text Renders', () => {
         render(<Search/>);
         expect(screen.getByText('Price')).toBeInTheDocument();
-        expect(screen.getByText('$')).toBeInTheDocument();
-        expect(screen.getByText('$$')).toBeInTheDocument();
-        expect(screen.getByText('$$$')).toBeInTheDocument();
-        expect(screen.getByText('$$$$')).toBeInTheDocument();
         cleanup();
     })
 
