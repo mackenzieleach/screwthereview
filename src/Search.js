@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
@@ -90,9 +91,8 @@ class Search extends Component {
                 <img src={searchLogo} alt="Logo" className="searchLogo" id="searchLogo" />
                 <form onSubmit={this.handleSubmit}>
                   <div className="form-group">
-                    <label htmlFor="inputdefault">
-                      <input alt="Keyword" className="keywordBtn" id="inputdefault" type="text" placeholder="Type a keyword ... (hike, Chinese, etc.)" value={this.state.value} onChange={this.handleChange} />
-                    </label>
+                    <label htmlFor="inputdefault" />
+                    <input className="form-control" id="inputdefault" type="text" placeholder="Type a keyword ... (hike, Chinese, etc.)" value={this.state.value} onChange={this.handleChange} />
                   </div>
                 </form>
                 <Row id="search-row">

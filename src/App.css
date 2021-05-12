@@ -39,6 +39,7 @@ body{
 
 .page-container {
   min-height: 100vh;
+  margin-bottom:20px;
 }
 
 .row {
@@ -251,13 +252,12 @@ input {
 }
 
 .str-button, .str-button:hover {
-  width: 100%;
-  padding: 10px;
+  min-width: 100%;
   background: #ffcf00;
   border: 4px solid black;
   font-size: 20px;
   border-radius:5px;
-  margin-bottom: 20px;
+  margin-bottom:20px;
 }
 
 /* override form styling */
@@ -266,6 +266,11 @@ input {
   font-size: 20px;
   border-radius:5px;
   margin: 10px;
+  background-color: #d3d3d3;
+  font-weight: 800;
+  font-size: 18px;
+  font-family: 'Helvetica';
+  min-height: 50px;
 }
 
 /* About Page */
@@ -349,7 +354,6 @@ p#card-info{
   margin-bottom: 20px;
   height: 50px;
   margin-left: 30px;
-  display: block;
 }
 
 .distanceButton {
@@ -364,13 +368,15 @@ p#card-info{
 
 .keywordBtn {
   min-width: 90%;
-  border: 4px solid black;
-  border-radius:5px;
+  border: 4px solid #000;
+  border-radius: 5px;
   min-height: 50px;
+  background-color: lightgrey;
+}
+
+#keyword{
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  background-color: lightgray;
 }
 
 .searchLogo {

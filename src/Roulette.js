@@ -322,7 +322,7 @@ class Roulette extends React.Component {
                       Reset
                     </button>
                   ) : (
-                    <button className="str-button" type="button" id="spin" onClick={this.spin}>
+                    <button className="str-button" type="button" id="spin" onClick={this.spin} style={{ marginBottom: '20px' }}>
                       Screw that Review!
                     </button>
                   )}

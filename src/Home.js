@@ -38,10 +38,10 @@ class Home extends Component {
 
               <p id="info">
                 {' '}
-                Don`&#39;`t know what you want to do today? Screw the Review is designed to provide
+                Don&#39;t know what you want to do today? Screw the Review is designed to provide
                 new experiences like dining, arts and shopping at the click of a button.
                 Search generates an experience from filters like price, location and
-                keyword. Spin the roulette wheel to receive a category and we`&#39;`ll pick a
+                keyword. Spin the roulette wheel to receive a category and we&#39;ll pick a
                 new experience from it!
               </p>
 

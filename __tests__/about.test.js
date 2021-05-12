@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react';
 import { render, cleanup, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import About from '../src/About.js';
+import About from '../src/About';
 
 /* This file implements testing for all UI components in About.js. */
 
