@@ -1,22 +1,22 @@
-const { Connection, Request } = require("tedious");
+const { Connection, Request } = require('tedious');
 
 // Create connection to database
 const config = {
   authentication: {
     options: {
-      userName: "username", // update me
-      password: "password" // update me
+      userName: 'username', // update me
+      password: 'password', // update me
     },
-    type: "default"
+    type: 'default',
   },
-  server: "your_server.database.windows.net", // update me
+  server: 'your_server.database.windows.net', // update me
   options: {
-    database: "your_database", //update me
-    encrypt: true
-  }
+    database: 'your_database', // update me
+    encrypt: true,
+  },
 };
 
-/* 
+/*
     //Use Azure VM Managed Identity to connect to the SQL database
     const connection = new Connection({
     server: process.env["db_server"],
@@ -47,7 +47,7 @@ const config = {
 const connection = new Connection(config);
 
 // Attempt to connect and execute queries if connection goes through
-connection.on("connect", err => {
+connection.on('connect', (err) => {
   if (err) {
     console.error(err.message);
   } else {
@@ -56,7 +56,7 @@ connection.on("connect", err => {
 });
 
 function queryDatabase() {
-  console.log("Reading rows from the Table...");
+  console.log('Reading rows from the Table...');
 
   // Read all rows from table
   const request = new Request(
@@ -70,12 +70,12 @@ function queryDatabase() {
       } else {
         console.log(`${rowCount} row(s) returned`);
       }
-    }
+    },
   );
 
-  request.on("row", columns => {
-    columns.forEach(column => {
-      console.log("%s\t%s", column.metadata.colName, column.value);
+  request.on('row', (columns) => {
+    columns.forEach((column) => {
+      console.log('%s\t%s', column.metadata.colName, column.value);
     });
   });
 
