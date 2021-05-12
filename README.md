@@ -72,11 +72,7 @@ If this is your first time cloning a repository from Github, you will be prompte
 
 &nbsp;  
 
-**Install Dependencies:** Running the following command will install all dependencies listed in the package.json file that will be needed for development.
-
-``` *.sh
-yarn install
-```
+**Install Dependencies:** Running `yarn install` will install all dependencies listed in the package.json file that will be needed for development.
 
 &nbsp; 
 
