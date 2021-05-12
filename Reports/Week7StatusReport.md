@@ -4,9 +4,10 @@
 
 ## Team Report
 ### **Meeting Agenda**
-1. <Agenda Item 1>
-2. <Agenda Item 2>
-3. <Agenda Item 3>
+1. Quick standup
+2. Synchronous work time
+3. Beta release practice
+4. Beta release recording
 
 &nbsp;  
 
@@ -34,27 +35,38 @@
 &nbsp;  
 
 ### **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** Whew, what a week. As a team, we went from a few disparate components to a functional, well-tested, dynamically-resizable webapp in just about a week. We made massive progress with both front and backend functionality (It's all enumerated in individual reports, so read on there if you want the full list), and recorded an awesome beta release video on top of all that. We also pulled together a quick-start guide for developing.  <p>&nbsp;</p>
+* **Successful Tactics:** Communication (synchronously and async) was hugely important this week. Knowing we had a big deliverable coming up, we added 3 hours of synchronous meeting time to our regular weekly agenda, which was immensely helpful in getting all the kinks worked out. We also communicated proactively in our text and slack groupchats. <p>&nbsp;</p>
+* **Learning:** Again, so much to say! Bootstrapped react components, Express middleware, Jest best practices, Herokj, making API calls from front end, etc. <p>&nbsp;</p>
+* **Issues & Challenges:** We're quickly realizing that we need to tie the Google Places API into our app asap, both for the map and directions functionality on the results page and the autocompleting location field on the search page. We also hit a few snags with resizing our app, as we all have different sized screens/monitors and use dif browsers, which led to different errors on eachother's machines. <p>&nbsp;</p>
+* **Blockers:** Not too much atm - all the frameworks we need are in place and we now just need to keep our momentum over the final few weeks! <p>&nbsp;</p>
 
 &nbsp;  
 
 ### **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
-* **Goal 3:**
+* **Goal 1:** Return business descriptions from the server
+* **Goal 2:** Plug into Google maps/places API for location elements
+* **Goal 3:** Write quality user and developer documentation
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
-**Mackenzie Leach** | <Task> | <Due>   
-**LuLu Pinczower** | <Task> | <Due>  
-**Rachel Ye** | <Task> | <Due>  
+**Luke LeVasseur** | Scrape biz descriptions from Yelp | 5/18
+|| Team status report w Kenzie | 5/12
+**Mackenzie Leach** | Team Status Report | May 12, 11:00 PM PDT 
+| | Update Team Timeline & Tasks | May 12, 11:59 PM PDT 
+| | Outline User & Developer Guides | May 12, 11:59 PM PDT 
+| | Draft User & Developer Guides | May 17, 11:59 PM PDT 
+| | User & Developer Guides Deliverable | May 18, 11:59 PM PDT 
+**Team Member** | **Task** | **Due**
+------------ | ------------------------|------------
+**LuLu Pinczower** | Allow user to personalize location | May 15, 11:59 PM PDT
+| | Digest Yelp category JSON values | May 17, 11:59 PM PDT 
+| | Fix small result bugs (slowed rendering of image) | May 15, 11:59 PM PDT 
+| | Integrate Luke's scraper data | May 17, 11:59 PM PDT 
+**Rachel Ye** | Auto fill the options for the location filter | May 16 11:59PM PDT
+| |  Toggle active status for the Price and Distance buttons directly in the code | May 16 11:59pm PDT
 
 &nbsp;  
 
@@ -117,7 +129,7 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** I finished both the landing page and abput page along with full UI test suites for both. I also helped out with finishing the Bootstrapping for the Search class and hardcoded some values for our location filter until we have the opportunity to use the Google Places API for geographic autocomplete. I wrapped up the Quick Start Guide in this repository and worked with Luke to updated the quick start guide in the server repository. <p>&nbsp;</p>
+* **Tasks Completed:** I finished both the landing page and about page along with full UI test suites for both. I also helped out with finishing the Bootstrapping for the Search class and hardcoded some values for our location filter until we have the opportunity to use the Google Places API for geographic autocomplete. I wrapped up the Quick Start Guide in this repository and worked with Luke to updated the quick start guide in the server repository. <p>&nbsp;</p>
 * **Successful Tactics:** We've definitely spent a lot of time communicating on Slack and texting each other this week which has been incredibly helpful. We set aside an additoinal two synchronous meetings this week to touch base and work together to resolve bugs as we encountered them. <p>&nbsp;</p>
 * **Learning:** Testing in Jest is a lot more complex than I expected and it was really time consuming to learn how to test UI components. The documentation for Jest is also a bit lacking, so I'd like to learn about utilizing mocking to test out things like link functionality as opposed to just their presence on the page. <p>&nbsp;</p>
 * **Issues & Challenges:** I think time management has been my biggest challenge. I've put a lot off in my other classes to work on this application in the past week and will need to pivot and take a couple of days to catch back up before continuing to grind on this! <p>&nbsp;</p>
