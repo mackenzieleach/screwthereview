@@ -47,7 +47,7 @@ Please note that the user and developer guides referenced here are still under d
 &nbsp;
 
 ### Prerequisites
-In order to complete the sections in this quick start guide, there are three prerequisites that must be completed. 
+In order to complete the sections in this quick start guide, there are a few prerequisites that must be completed. 
 
 **Create a Github Account:** If you do not have a Github Account, you will need to create one to be able to clone the repository. Navigate to <https://github.com/> and create a repository. You will want to save your username and password as these will be needed later in cloning a repository. 
 
@@ -64,7 +64,11 @@ If this is your first time cloning a repository from Github, you will be prompte
 
 &nbsp;
 
-**Install Yarn:** Yarn is the package manager used for the code in the application. Running the following command will install all dependencies listed in the package.json file that will be needed for development.
+**Install Node.js:** In order to use this application, you will need to have Node installed. You can do this by navigating to <https://nodejs.org/en/download/> and selecting the appropriate installer for your operating system. 
+
+**Install Yarn via NPM:** Running the command `npm install yarn` will add the yarn package manager that is used in this project to install all dependencies.
+
+**Install Dependencies:** Running the following command will install all dependencies listed in the package.json file that will be needed for development.
 
 ``` *.sh
 yarn install
