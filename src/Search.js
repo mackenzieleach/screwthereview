@@ -30,11 +30,11 @@ class Search extends Component {
 
     handleMoney(event) {
         var id = event.target.id;
-        if (id == "dollarButton1") {
+        if (id === "dollarButton1") {
             this.setState({ moneyVal: 1})
-        } else if (id == "dollarButton2") {
+        } else if (id === "dollarButton2") {
             this.setState({ moneyVal: 2})
-        } else if (id == "dollarButton3") {
+        } else if (id === "dollarButton3") {
             this.setState({ moneyVal: 3})
         } else {
             this.setState({ moneyVal: 4})
@@ -85,16 +85,16 @@ class Search extends Component {
                             </div>
                         </Col>
                         <Col id="search-filters" lg={6} md={12} sm={12} xs={12}>
-                            <img src={searchLogo} alt="Logo" class="searchLogo" id="searchLogo" />
+                            <img src={searchLogo} alt="Logo" className="searchLogo" id="searchLogo" />
                             <form onSubmit={this.handleSubmit}>
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label for="inputdefault"></label>
-                                    <input id="keyword-bar" class="keywordBtn" id="inputdefault" type="text" placeholder="Type a keyword ... (hike, Chinese, etc.)" value={this.state.value} onChange={this.handleChange} />
+                                    <input alt="Keyword" className="keywordBtn" id="inputdefault" type="text" placeholder="Type a keyword ... (hike, Chinese, etc.)" value={this.state.value} onChange={this.handleChange} />
                                 </div>
                             </form>
                             <Row id="search-row">
                                 <label for="location" id="search-text" >Location</label>
-                                <select class="options" id="location" onChange={this.handleLocation}>
+                                <select className="options" id="location" onChange={this.handleLocation}>
                                     {/* 50 Most Populated WA Cities (Hardcoded*/}
                                     <option>Select City</option>
                                     <option>Auburn, WA</option>
@@ -186,8 +186,8 @@ class Search extends Component {
                                     <button id="distance-button" className="distanceButton" onClick={this.handleDistance}>20 mi</button>
                                 </Col>
                             </Row>
-                            <div class="text-center">
-                                <button id="str-search" type="button" class="str-button" onClick={this.seeResult}>Screw that Review!</button>
+                            <div className="text-center">
+                                <button id="str-search" type="button" className="str-button" onClick={this.seeResult}>Screw that Review!</button>
                             </div>
                         </Col>
                     </Row>
