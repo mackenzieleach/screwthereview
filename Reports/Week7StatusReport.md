@@ -75,11 +75,11 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week's Beta deployment was a huge understaking for our whole team, myself included. I configured our new server repo to deploy w Heroku, added more request headers to our server endpoint, worked out some server testing kinks, configured eslint to enforce our style guidelines, recorded the beta presentation w the team, and implemented the Express middleware package on our server code.  <p>&nbsp;</p>
+* **Successful Tactics:** Prioritization, priorization, prioritization! <p>&nbsp;</p>
+* **Learning:** Heroku deployment, Express package, testing a server w jest. <p>&nbsp;</p>
+* **Issues & Challenges:** I wasn't able to get to scraping the biz description yet, despite committing to it last week. I had too much other work on my plate to get ready for beta release. <p>&nbsp;</p>
+* **Blockers:** None <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -91,7 +91,8 @@
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
+**Luke LeVasseur** | Scrape biz descriptions from Yelp | 5/18
+|| Team status report w Kenzie | 5/12
 
 &nbsp;  
 
@@ -157,23 +158,26 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week I completed 2 main tasks and fine tuned some of my previous UI work. Firstly, I successfully integrated the server and frontend. Both the search and roulette page can succesfully ping the server with a set of headers to receive a random experience result. I also wrote tests for both the roulette and result pages. On top of this, I had some additional bootstrapping that needed to be done to add site-wide consistency.  <p>&nbsp;</p>
+* **Successful Tactics:** Communication was definitely key this week. Whenever I hit an obstacle that I knew a group member had experience in, I made sure to reach out and set up a meeting. For example, Kenzie helped me out with some of the Jest testing semantics, and Luke walked me through the basics of the server that he set up. <p>&nbsp;</p>
+* **Learning:** I have never made calls to a server via a React app, so I definitely needed to do a lot of research on that topic. Similarly, I have never written tests using Jest before. This week was definitely full of technical learning. I also learned how to parse a JSON string into an object that is more usable in our React application <p>&nbsp;</p>
+* **Issues & Challenges:** My main issue encountered this week was integrating the frontend with the server. This definitely took a lot of trial and error that Luke helped out with a lot. In the end, we were able to succesfully instantiate GET requests, retrieving the desired result with limited headers. <p>&nbsp;</p>
+* **Blockers:** My main blocker right now is the limiting offering of location preferences on the roulette and search page. Ideally the user would have much more control over their location, but we will need to tap into more APIs to build this out. <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
+* **Goal 1:** Integrate more flexible user input for location
 * **Goal 2:**
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**LuLu Pinczower** | <Task> | <Due> 
+**LuLu Pinczower** | Allow user to personalize location | May 15, 11:59 PM PDT
+| | Digest Yelp category JSON values | May 17, 11:59 PM PDT 
+| | Fix small result bugs (slowed rendering of image) | May 15, 11:59 PM PDT 
+| | Integrate Luke's scraper data | May 17, 11:59 PM PDT 
 
 &nbsp;  
 
@@ -188,26 +192,24 @@
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
 **Rachel Ye** | Finish filters, banner, and fake picture placeholders by Sunday | Sunday 5/9
-
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week, I got the bulk of the implementation done for the Search feature. I implemented the price, distance, keyword, and location components for the Search page. I also wrote a test suite for the Search feature that ensured all of the UI components and text exist on the page. I also learned and used Bootstrapping to modify the formatting of the various buttons and UI elements to be consistent with our CSS classes. We also got together to film our beta release video on Monday night. <p>&nbsp;</p>
+* **Successful Tactics:** This week was the heaviest in terms of coding. For me, researching documentation, using tutorials, and learning from my teammate's code was helpful. I also found it helpful to communicate with Lulu and Kenzie when I was stuck or feeling blocked. Lulu helped me set up the React states and props for the Search feature, and Kenzie helped me fix some of the boostrap padding for the photo cards and buttons. I also found it most productive to set aside large hours of time to dedicate to coding and learning. <p>&nbsp;</p>
+* **Learning:** I learned a lot of technical concepts this week regarding React states and prop, Bootstrapping, writing tests, and advice from my teammates. I learned how to save state for my location, price, distance, and keyword filters to a Result component that Lulu developed. <p>&nbsp;</p>
+* **Issues & Challenges:** One of the challenges was figuring out how to auto fill the location filter with cities and states. In the end, I decided to hardcode the values for the beta release. I will have to do more digging to find an API that takes care of it for you. <p>&nbsp;</p>
+* **Blockers:** My main blocker is probably refactoring the searchTest to follow better style/conventions, toggle the button active status in Search code directly, and auto fill the location options. <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Auto fill the options for the location filter
+* **Goal 2:** Toggle active status for the Price and Distance buttons directly in the code 
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Rachel Ye** | <Task> | <Due>  
-  
-  
+**Rachel Ye** | Auto fill the options for the location filter | May 16 11:59PM PDT
+| |  Toggle active status for the Price and Distance buttons directly in the code | May 16 11:59pm PDT
