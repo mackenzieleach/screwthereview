@@ -1,4 +1,3 @@
-/* global seeResult */
 /* eslint-disable react/no-unused-state */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/jsx-filename-extension */
@@ -18,6 +17,7 @@ class Roulette extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
+    this.setViewState = this.setViewState.bind(this);
 
     this.state = {
       list: [],
@@ -42,6 +42,20 @@ class Roulette extends React.Component {
 
   handleChange(event) {
     this.setState({ searchValue: event.target.value });
+  }
+
+  // setViewState(prevState) {
+  //   this.setState((prevState) => {
+  //     return { seeResult: !prevState.seeResult };
+  //   });
+  // }
+
+  // setViewState = () => {
+  //   this.setState({ seeResult: !seeResult });
+  // }
+
+  setViewState = () => {
+    this.setState((prevState) => ({ seeResult: !prevState.seeResult }));
   }
 
   topPosition = (num, angle) => {
@@ -125,12 +139,6 @@ class Roulette extends React.Component {
       spinning: false,
     });
   };
-
-  setViewState = () => {
-    this.setState({
-      seeResult: !seeResult,
-    });
-  }
 
   renderWheel() {
     const categories = [];
