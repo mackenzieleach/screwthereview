@@ -48,7 +48,7 @@ Please note that the user and developer guides referenced here are still under d
 &nbsp;
 
 ### Prerequisites
-In order to complete the sections in this quick start guide, there are three prerequisites that must be completed. 
+In order to complete the sections in this quick start guide, there are a few prerequisites that must be completed. 
 
 **Create a Github Account:** If you do not have a Github Account, you will need to create one to be able to clone the repository. Navigate to <https://github.com/> and create a repository. You will want to save your username and password as these will be needed later in cloning a repository. 
 
@@ -65,11 +65,15 @@ If this is your first time cloning a repository from Github, you will be prompte
 
 &nbsp;
 
-**Install Yarn:** Yarn is the package manager used for the code in the application. Running the following command will install all dependencies listed in the package.json file that will be needed for development.
+**Install Node.js:** In order to use this application, you will need to have Node installed. You can do this by navigating to <https://nodejs.org/en/download/> and selecting the appropriate installer for your operating system. 
 
-``` *.sh
-yarn install
-```
+&nbsp;  
+
+**Install Yarn via NPM:** Running the command `npm install yarn` will add the yarn package manager that is used in this project to install all dependencies.
+
+&nbsp;  
+
+**Install Dependencies:** Running `yarn install` will install all dependencies listed in the package.json file that will be needed for development. If you are using Mac, you will need to run the command `brew install yarn`.
 
 &nbsp; 
 
@@ -125,7 +129,7 @@ For more information about how to navigate Screw the Review and its features, pl
 &nbsp; 
 
 ### Bug Reporting
-If you encounter a bug, you may create a **Github Issue** to report the bug. You issue should include a descriptive title, the exact steps you took to encounter the bug, what operating system and browser you are using, and any applicable screenshots of the bug. 
+If you encounter a bug, you may create a **Github Issue** to report the bug. Your issue should include a descriptive title, the exact steps you took to encounter the bug, what operating system and browser you are using, and any applicable screenshots of the bug. 
 
 &nbsp; 
 
