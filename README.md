@@ -40,7 +40,7 @@ For more information about this application and technical details, please visit 
 
 ## User and Developer Guides
 Under the Wikis for this repository, we offer two important guides:
-1. **[Developer Guide](https://github.com/mackenzieleach/screwthereview/wiki/Screw-the-Review:-Developer-Guide):** The developer guide is intended for those who would like to contribute to the code base for this project. The guide contains information about the repository structure, how to obtain the source code, how to run, build and test the system and how to build a new release. 
+1. **[Developer Guide](https://github.com/mackenzieleach/screwthereview/wiki/Screw-the-Review:-Developer-Guide-(Client)):** The developer guide is intended for those who would like to contribute to the code base for this project. The guide contains information about the repository structure, how to obtain the source code, how to run, build and test the system and how to build a new release. 
 2. **[User Guide](https://github.com/mackenzieleach/screwthereview/wiki/Screw-the-Review:-User-Guide):** The user guide is intended for those who would like to utilize the Screw the Review application. It describes more about Screw the Review, how to use the features on the website, how to report bugs and where to find the currently known bugs in the software
 
 &nbsp; 
