@@ -385,3 +385,9 @@ p#card-info{
   margin-right: auto;
   display: block;
 }
+
+.profile-picture {
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+}
