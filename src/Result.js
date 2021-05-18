@@ -5,6 +5,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Map from './Map.png';
+import server from './server';
 
 class Result extends Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class Result extends Component {
   }
 
   componentDidMount() {
-    fetch('https://hidden-mesa-04199.herokuapp.com/', {
+    fetch(server.getServerUrl(), {
       headers: {
         location: this.props.location,
         category: this.props.category,
