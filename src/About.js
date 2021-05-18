@@ -5,10 +5,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import logo from './Images/ScrewtheReviewLogo.png';
-import rachel from './Images/Rachel.png';
-import kenzie from './Images/Kenzie.png';
-import lulu from './Images/LuLu.png';
-import luke from './Images/Luke.png';
+import rachel from './Images/Rachel-Compressed.png';
+import kenzie from './Images/Kenzie-Compressed.png';
+import lulu from './Images/LuLu-Compressed.png';
+import luke from './Images/Luke-Compressed.png';
 
 class About extends Component {
   render() {
