@@ -1,5 +1,5 @@
-# Week <#> Status Report
-**Month DD, YYYY**
+# Week 8 Status Report
+**May 19, 2021**
 &nbsp;  
 
 ## Team Report
@@ -119,23 +119,25 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** The past few days have definitely been very busy. I wrote the developer and user guide wikis in our client repository and the and the developer guide for the server repository. I also got a GitHub issues template set up for easy bug reporting going into Peer Review next week. Lastly, I was able to close a GitHub issue where the images on the About page were rendering very slowly. <p>&nbsp;</p>
+* **Successful Tactics:** I was out of town late last week but asked my teammates to take notes on feedback which was really helpful in getting caught up. I think as a team we've continued to proactively communicate and worked on integrating Slack and GitHub to make pull requests and code reviews easier. <p>&nbsp;</p>
+* **Learning:** I spent some time reading about the best practices in writing documentation this week as I was working on the guides. I've also learned a lot about linting over the past week as we've started using EsLint to enforce the Airbnb Javascript Style Guide. <p>&nbsp;</p>
+* **Issues & Challenges:** This is an incredibly busy time of the quarter and I have a lot of my plate with other classes and TAing, so I'm finding it a bit difficult to carve out the amount of time I'd like to have to work on development for this course. I'm very appreciate of LuLu for stepping up to help out with developing the Account page this week so I could focus on other classes and work. <p>&nbsp;</p>
+* **Blockers:** None! <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Address open GitHub Issues for Landing Page
+* **Goal 2:** Shift contact form to React Component 
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Mackenzie Leach** | <Task> | <Due> 
+**Mackenzie Leach** | Team Status Report with Luke | May 19, 11:00 PM PDT
+| | Address GitHub Issues for Landing Page | May 24, 11:59 PM PDT
+| | Account Page & Auth0 Development with LuLu | May 24, 11:59 PM PDT
 
 &nbsp;  
 
