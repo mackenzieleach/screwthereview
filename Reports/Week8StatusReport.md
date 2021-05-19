@@ -80,11 +80,11 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** While scraping descriptions still eludes me, I had a super productive week! I completed the server development guide, implemented true random selection of experience from the Yelp API, and added a "dev mode" feature to the client repo which allows it to communicate with a locally-hosted server. <p>&nbsp;</p>
+* **Successful Tactics:** This week, proactivity was huge for me. Taking initiative on important tasks, like writing dev mode code, w/o overthinking the planning aspect was very helpful in keeping project momentum moving.<p>&nbsp;</p>
+* **Learning:** When you make a new branch, MAKE SURE YOU"RE BRANCHING OFF MAIN. I accidentally branched off a sandbox branch Weds morning to merge a trivial .md file into the repo, but ended up adding my half-finished scratch work to the repo as well and needing to manually roll back my changes. <p>&nbsp;</p>
+* **Issues & Challenges:** Time - With the EOQ coming up, I feel more and more stretched to find time to get all my work done on a weekly basis. Holding myself accountable to my own schedule will be huge through the next few weeks. <p>&nbsp;</p>
+* **Blockers:** Nothing ATM. <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -96,7 +96,9 @@
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
+**Luke LeVasseur** | Scrape biz descriptions from Yelp | 5/22
+|| Team status report w Kenzie | 5/22
+|| Improve test suite for the server | 5/22
 
 &nbsp;  
 
