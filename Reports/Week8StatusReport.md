@@ -196,22 +196,22 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week has been busier than I expected. I had not finished the auto fill options feature but I started researching how to do it instead. I have been looking into getting some of the git issues completed. I want to add a "back button" and fix the bootstrapping issues for the small phone screens. <p>&nbsp;</p>
+* **Successful Tactics:** Communication has been pretty important. I have been communicating with Lulu to figure out how we should get a Google Cloud API key for the Google Places API. <p>&nbsp;</p>
+* **Learning:** This week has been a slower development week for me, but I will probably research more about the Places API and get that working for the options section.  <p>&nbsp;</p>
+* **Issues & Challenges:** Time management has been really difficult for me this last week. I'm running behind in my other two classes and I've also been trying to wrap up my part time internship. We are all definitely starting to get burnt out so I know I need to be more intentional about finding time to grind out these last few features for our project. I hope to find time this weekend to catch up. <p>&nbsp;</p>
+* **Blockers:** None at the moment! <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Address github issues (implement back button and bootstrap sizing)
+* **Goal 2:** Help Lulu with Google Places API
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Rachel Ye** | <Task> | <Due>  
+**Rachel Ye** | Address github issues | Next Monday  
   
   
