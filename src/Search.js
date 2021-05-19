@@ -194,6 +194,9 @@ class Search extends Component {
                 <div className="text-center">
                   <button id="str-search" type="button" className="str-button" onClick={this.seeResult}>Screw that Review!</button>
                 </div>
+                <div className="text-center">
+                  <button id="str-search" type="button" className="str-button" onClick={this.goBack}>Back</button>
+                </div>
               </Col>
             </Row>
           ) : (
