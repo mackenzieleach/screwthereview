@@ -80,11 +80,11 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** While scraping descriptions still eludes me, I had a super productive week! I completed the server development guide, implemented true random selection of experience from the Yelp API, and added a "dev mode" feature to the client repo which allows it to communicate with a locally-hosted server. <p>&nbsp;</p>
+* **Successful Tactics:** This week, proactivity was huge for me. Taking initiative on important tasks, like writing dev mode code, w/o overthinking the planning aspect was very helpful in keeping project momentum moving.<p>&nbsp;</p>
+* **Learning:** When you make a new branch, MAKE SURE YOU"RE BRANCHING OFF MAIN. I accidentally branched off a sandbox branch Weds morning to merge a trivial .md file into the repo, but ended up adding my half-finished scratch work to the repo as well and needing to manually roll back my changes. <p>&nbsp;</p>
+* **Issues & Challenges:** Time - With the EOQ coming up, I feel more and more stretched to find time to get all my work done on a weekly basis. Holding myself accountable to my own schedule will be huge through the next few weeks. <p>&nbsp;</p>
+* **Blockers:** Nothing ATM. <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -96,7 +96,9 @@
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
+**Luke LeVasseur** | Scrape biz descriptions from Yelp | 5/22
+|| Team status report w Kenzie | 5/22
+|| Improve test suite for the server | 5/22
 
 &nbsp;  
 
@@ -198,22 +200,22 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week has been busier than I expected. I had not finished the auto fill options feature but I started researching how to do it instead. I have been looking into getting some of the git issues completed. I want to add a "back button" and fix the bootstrapping issues for the small phone screens. <p>&nbsp;</p>
+* **Successful Tactics:** Communication has been pretty important. I have been communicating with Lulu to figure out how we should get a Google Cloud API key for the Google Places API. <p>&nbsp;</p>
+* **Learning:** This week has been a slower development week for me, but I will probably research more about the Places API and get that working for the options section.  <p>&nbsp;</p>
+* **Issues & Challenges:** Time management has been really difficult for me this last week. I'm running behind in my other two classes and I've also been trying to wrap up my part time internship. We are all definitely starting to get burnt out so I know I need to be more intentional about finding time to grind out these last few features for our project. I hope to find time this weekend to catch up. <p>&nbsp;</p>
+* **Blockers:** None at the moment! <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Address github issues (implement back button and bootstrap sizing)
+* **Goal 2:** Help Lulu with Google Places API
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Rachel Ye** | <Task> | <Due>  
+**Rachel Ye** | Address github issues | Next Monday  
   
   
