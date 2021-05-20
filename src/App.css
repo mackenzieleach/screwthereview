@@ -290,7 +290,7 @@ p#card-info{
 }
 
 #LuLu, #Rachel, #Mackenzie, #Luke{
-  height: 500px;
+  height: 450px;
 }
 
 /* table styling */
@@ -384,4 +384,10 @@ p#card-info{
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.profile-picture {
+  padding: 10%;
+  width: 100%;
+  height: 100%;
 }
