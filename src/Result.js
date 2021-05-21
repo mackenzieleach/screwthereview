@@ -4,6 +4,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { useHistory } from "react-router-dom";
 import Map from './Map.png';
 import server from './server';
 
@@ -61,6 +62,7 @@ class Result extends Component {
     }
 
     render() {
+      let history = useHistory();
       return (
         <Container fluid className="page-container" style={{ paddingBottom: '36px' }}>
           <Row>
@@ -150,7 +152,7 @@ class Result extends Component {
               </Row>
               <Row>
                 <div className="text-center">
-                  <button id="str-search" type="button" className="str-button" onClick={this.seeResult}>Go Back!</button>
+                  <button id="str-search" type="button" className="str-button" onClick={() => history.goBack()}>Go Back!</button>
                 </div>
               </Row>
             </Col>
