@@ -19,17 +19,12 @@ class Search extends Component {
     super(props);
     this.state = {
       value: '', seeResult: false, locationVal: 'seattle', moneyVal: 0, distanceVal: '', keyword: '',
-      dollarFocus: false, distanceFocus: false
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleLocation = this.handleLocation.bind(this);
     this.handleMoney = this.handleMoney.bind(this);
     this.handleDistance = this.handleDistance.bind(this);
-  }
-
-  componentDidMount() {
-
   }
 
   handleChange(event) {
@@ -39,8 +34,7 @@ class Search extends Component {
   handleMoney(event) {
     const { id } = event.target;
     if (id === 'dollarButton1') {
-      
-      this.setState({ moneyVal: 1, dollarFocus:'dollarButton1'});
+      this.setState({ moneyVal: 1 });
     } else if (id === 'dollarButton2') {
       this.setState({ moneyVal: 2 });
     } else if (id === 'dollarButton3') {
@@ -48,7 +42,6 @@ class Search extends Component {
     } else {
       this.setState({ moneyVal: 4 });
     }
-    
   }
 
   handleLocation(event) {
@@ -182,7 +175,7 @@ class Search extends Component {
                   </button>
                 </Col>
                 <Col lg={2} md={2} sm={2} xs={2}>
-                  <button id="dollarButton4" type="button" className="dollarButton" onClick={this.handleMoney} >
+                  <button id="dollarButton4" type="button" className="dollarButton" onClick={this.handleMoney}>
                     <span>&#36;&#36;&#36;&#36;</span>
                   </button>
                 </Col>
