@@ -148,6 +148,11 @@ class Result extends Component {
                   <button type="button" className="font-medium">Get Directions</button>
                 </Col>
               </Row>
+              <Row>
+                <div className="text-center">
+                  <button id="str-search" type="button" className="str-button" onClick={this.seeResult}>Go Back!</button>
+                </div>
+              </Row>
             </Col>
           </Row>
           {/* <Row>
