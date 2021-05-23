@@ -31,7 +31,6 @@ class Result extends Component {
     })
       .then((response) => response.text())
       .then((json) => {
-        // console.log(json);
         this.parseResult(json);
       });
   }

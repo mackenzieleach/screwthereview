@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 import title from './Images/RouletteLogo.png';
 import selector from './Images/selector.png';
 import Result from './Result';
+import LocationSearchBar from './LocationSearchBar';
 import './App.css';
 
 const WHEELSIZE = 8;
@@ -16,7 +17,7 @@ class Roulette extends React.Component {
   // search bar
   constructor(props) {
     super(props);
-    this.handleChange = this.handleChange.bind(this);
+    this.callBackFunction = this.callBackFunction.bind(this);
     this.setViewState = this.setViewState.bind(this);
 
     this.state = {
@@ -40,19 +41,9 @@ class Roulette extends React.Component {
     this.renderWheel();
   }
 
-  handleChange(event) {
-    this.setState({ searchValue: event.target.value });
+  handleChange = (location) => {
+    console.log(location);
   }
-
-  // setViewState(prevState) {
-  //   this.setState((prevState) => {
-  //     return { seeResult: !prevState.seeResult };
-  //   });
-  // }
-
-  // setViewState = () => {
-  //   this.setState({ seeResult: !seeResult });
-  // }
 
   setViewState = () => {
     this.setState((prevState) => ({ seeResult: !prevState.seeResult }));
@@ -139,6 +130,10 @@ class Roulette extends React.Component {
       spinning: false,
     });
   };
+
+  callBackFunction = (childData) => {
+    this.setState({ searchValue: childData });
+  }
 
   renderWheel() {
     const categories = [];
@@ -253,75 +248,9 @@ class Roulette extends React.Component {
                 <img alt="roulette" src={title} style={{ width: '-webkit-fill-available' }} />
               </Row>
               <Row>Ready to try something new? Spin the wheel for your new experience!</Row>
-              {/* <Row style={{ flexWrap: 'inherit' }}>
-                <span className="font-medium">Location: </span>
-                <form onSubmit={this.handleSubmit}>
-                  <div className="form-group">
-                    <label id="location-label">
-                      <input className="form-control" id="inputdefault" labelledby="location-label"
-                      type="text" placeholder="" value={this.state.searchValue}
-                      onChange={this.handleChange} style={{ minWidth: '260px' }} />
-                    </label>
-                  </div>
-                </form>
-              </Row> */}
               <Row id="search-row">
-                <label htmlFor="location" id="search-text">
-                  Location
-                  <select className="options" id="location" onChange={this.handleChange} data-testid="location-dropdown">
-                    {/* 50 Most Populated WA Cities (Hardcoded */}
-                    <option>Select City</option>
-                    <option>Auburn, WA</option>
-                    <option>Bainbridge Island, WA</option>
-                    <option>Bellevue, WA</option>
-                    <option>Bellingham, WA</option>
-                    <option>Bothell, WA</option>
-                    <option>Bremerton, WA</option>
-                    <option>Burien, WA</option>
-                    <option>Des Moines, WA</option>
-                    <option>Edmonds, WA</option>
-                    <option>Everett, WA</option>
-                    <option>Federal Way, WA</option>
-                    <option>Graham, WA</option>
-                    <option>Issaquah, WA</option>
-                    <option>Kennewick, WA</option>
-                    <option>Kirkland, WA</option>
-                    <option>Kent, WA</option>
-                    <option>Lacey, WA</option>
-                    <option>Lake Stevens, WA</option>
-                    <option>Lakewood, WA</option>
-                    <option>Longview, WA</option>
-                    <option>Lynnwood, WA</option>
-                    <option>Marysville, WA</option>
-                    <option>Maple Valley, WA</option>
-                    <option>Mill Creek East, WA</option>
-                    <option>Mercer Island, WA</option>
-                    <option>Mount Vernon, WA</option>
-                    <option>Olympia, WA</option>
-                    <option>Orchards, WA</option>
-                    <option>Pasco, WA</option>
-                    <option>Parkland, WA</option>
-                    <option>Pullman, WA</option>
-                    <option>Puyallup, WA</option>
-                    <option>Redmond, WA</option>
-                    <option>Renton, WA</option>
-                    <option>Richland, WA</option>
-                    <option>Sammamish, WA</option>
-                    <option>Seattle, WA</option>
-                    <option>SeaTac, WA</option>
-                    <option>Shoreline, WA</option>
-                    <option>South Hill, WA</option>
-                    <option>Spanaway, WA</option>
-                    <option>Spokane, WA</option>
-                    <option>Spokane Valley, WA</option>
-                    <option>Tacoma, WA</option>
-                    <option>University Place, WA</option>
-                    <option>Vancouver, WA</option>
-                    <option>Walla Walla, WA</option>
-                    <option>Wenatchee, WA</option>
-                    <option>Yakima, WA</option>
-                  </select>
-                </label>
+                Location
+                <LocationSearchBar parentCallback={this.callBackFunction} />
               </Row>
               <Row>
                 <Col sm={6}>
