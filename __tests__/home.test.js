@@ -46,12 +46,11 @@ describe('Text Rendering Tests', () => {
   });
 
   /* Since Linting, this is going to require a function to do the text matching */
-  /*     test('Website About Text Renders', () => {
-        render(<Home />)
-
-        expect(screen.getByText('Don\'t know what')).toBeInTheDocument();
-        cleanup()
-    }) */
+  test('Website About Text Renders', () => {
+    render(<Home />);
+    expect(screen.getByText('Don\'t know what', { exact: false })).toBeInTheDocument();
+    cleanup();
+  });
 
   test('Click Tiles Text Renders', () => {
     render(<Home />);
