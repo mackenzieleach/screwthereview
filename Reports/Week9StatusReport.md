@@ -148,23 +148,25 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week I succesfully implemented the autofill Google Places search bar on the roulette page. I also spent a little more time building out the basic skeletal page for account. <p>&nbsp;</p>
+* **Successful Tactics:** I definitely found that trying to do things as simply as possible helped my development this week. For example, I found that there was a React Native element for GooglePlacesAutocomplete which made implementation very simple and straightforward. There were a couple additional features that I wanted to implement with the search bar, so I also looked around for a lot of preexisting examples. While the original documentation for the deature is helpeful to look at, I also found that looking at examples could really supplement my understanding. <p>&nbsp;</p>
+* **Learning:** Besides the (very niche) skill of implementing the GooglePlacesAutocomplete component, I did not learn too many new things this week. Through working with the GoogPlacesAutocomplete feature, and the component I constructed with it, I did learn how to use callback functions to pass props from a child to parent component. It was interesting to see just how many useful React native components are avialable to developers. <p>&nbsp;</p>
+* **Issues & Challenges:** The biggest challenge for me this week was syncing the GooglePlacesAutocomplete bar with the state of the Roulette page. I chose to make the search bar its own component which was a child of the Roulette (and soon to be Search) page. This meant that I had to pass data from the child component to the parent via a callback. This was somewhat difficult for me to understand, but after much trial and error I was able to accomplish my goal! <p>&nbsp;</p>
+* **Blockers:** I do not currently see any blockers in my path. Although, based off of the demands of my other classes and working schedule at the moment, I am a little worried about time management once again. There are a couple bugs that I have been putting off for some time now, and I definitely need to get around to fixing those soon. <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Squash all bugs assigned from peer review
+* **Goal 2:** Finalize implementation of search bar feature
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**LuLu Pinczower** | <Task> | <Due> 
+**LuLu Pinczower** | Cleanup search bar UI on Roulette page | May 27, 11:59 PM PDT 
+| | Finish skeleton build of Account page (did not accomplish last week) | May 27, 11:59 PM PDT 
+| | implement search bar feature on search page | May 27, 11:59 PM PDT 
 
 &nbsp;  
 
