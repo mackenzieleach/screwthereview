@@ -18,7 +18,7 @@ class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '', seeResult: false, locationVal: 'seattle', moneyVal: 0, distanceVal: '', keyword: '',
+      value: '', seeResult: false, locationVal: 'seattle', moneyVal: 0, distanceVal: '', keyword: '', active: false,
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -33,6 +33,8 @@ class Search extends Component {
 
   handleMoney(event) {
     const { id } = event.target;
+    const currentState = this.state.active;
+    this.setState({ active: !currentState });
     if (id === 'dollarButton1') {
       this.setState({ moneyVal: 1 });
     } else if (id === 'dollarButton2') {
@@ -54,11 +56,18 @@ class Search extends Component {
 
   handleDistance(event) {
     this.setState({ distanceVal: event.target.value });
+    const currentState = this.state.active;
+    this.setState({ active: !currentState });
   }
 
     seeResult = () => {
       this.setState({ seeResult: true });
     }
+
+    // toggleClass() {
+    //   const currentState = this.state.active;
+    //   this.setState({ active: !currentState });
+    // }
 
     render() {
       return (
@@ -156,22 +165,22 @@ class Search extends Component {
                 <Row id="search-row">
                   <p id="search-text">Price</p>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button id="dollarButton1" type="button" className="dollarButton" onClick={this.handleMoney}>
+                    <button id="dollarButton1" type="button" className={this.state.active ? 'dollarButtonTrue' : 'dollarButtonFalse'} onClick={this.handleMoney}>
                       <span>&#36;</span>
                     </button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button id="dollarButton2" type="button" className="dollarButton" onClick={this.handleMoney}>
+                    <button id="dollarButton2" type="button" className={this.state.active ? 'dollarButtonTrue' : 'dollarButtonFalse'} onClick={this.handleMoney}>
                       <span>&#36;&#36;</span>
                     </button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button id="dollarButton3" type="button" className="dollarButton" onClick={this.handleMoney}>
+                    <button id="dollarButton3" type="button" className={this.state.active ? 'dollarButtonTrue' : 'dollarButtonFalse'} onClick={this.handleMoney}>
                       <span>&#36;&#36;&#36;</span>
                     </button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button id="dollarButton4" type="button" className="dollarButton" onClick={this.handleMoney}>
+                    <button id="dollarButton4" type="button" className={this.state.active ? 'dollarButtonTrue' : 'dollarButtonFalse'} onClick={this.handleMoney}>
                       <span>&#36;&#36;&#36;&#36;</span>
                     </button>
                   </Col>
