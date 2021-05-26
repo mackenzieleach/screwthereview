@@ -74,23 +74,24 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week, I focused on peer reviewing the ChoreCenter application. I also investigated possible means of scrapign the business description from Yelp.  <p>&nbsp;</p>
+* **Successful Tactics:** In my peer review, I proactively communictated with the team when faced with blockers in starting up the app on my local machine. I also tried to be very flexible with my working time, making myself available for PR reviews and general questions when my team was blocked. <p>&nbsp;</p>
+* **Learning:** I learned a lot about Android Studio, Gradle, and running a local flask server through the peer review of the Chorecenter app. <p>&nbsp;</p>
+* **Issues & Challenges:** Lots of configuration issues w Android SDK's, python versions, and .keystore files. <p>&nbsp;</p>
+* **Blockers:** none <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Implement biz description scraping
+* **Goal 2:** Killer final release deliverable!
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
+**Luke LeVasseur** | biz description scraping implemented | 5/30
+  || final release! | 6/1
 
 &nbsp;  
 
