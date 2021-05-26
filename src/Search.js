@@ -188,16 +188,16 @@ class Search extends Component {
                 <Row id="search-row">
                   <p id="search-text">Distance</p>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button type="button" id="distance-button" className="distanceButton" onClick={this.handleDistance}>5 mi</button>
+                    <button type="button" id="distance-button" className={this.state.active ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance}>5 mi</button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button type="button" id="distance-button" className="distanceButton" onClick={this.handleDistance}>10 mi</button>
+                    <button type="button" id="distance-button" className={this.state.active ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance}>10 mi</button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button type="button" id="distance-button" className="distanceButton" onClick={this.handleDistance}>15 mi</button>
+                    <button type="button" id="distance-button" className={this.state.active ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance}>15 mi</button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button type="button" id="distance-button" className="distanceButton" onClick={this.handleDistance}>20 mi</button>
+                    <button type="button" id="distance-button" className={this.state.active ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance}>20 mi</button>
                   </Col>
                 </Row>
                 <div className="text-center">
