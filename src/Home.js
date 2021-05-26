@@ -13,7 +13,6 @@ import contactIcon from './Images/ContactIcon.png';
 import aboutIcon from './Images/AboutIcon.png';
 import LoginButton from './LoginButton';
 import LogoutButton from './LogoutButton';
-import Form from './Form';
 
 class Home extends Component {
   constructor(props) {
@@ -99,7 +98,27 @@ class Home extends Component {
                     <Modal.Body id="modal-body">
                       {/* Contact Form is integrated with Netlify */}
                       <p id="contact-prompt"> Please fill out the form below to let us know what you think about Screw the Review! </p>
-                      <Form />
+                      <form name="contact" netlify>
+                        <p>
+                          <label htmlFor="form-text" id="form-text">
+                            Name:
+                            <input id="name" type="text" name="name" />
+                          </label>
+                        </p>
+                        <p>
+                          <label htmlFor="form-text" id="form-text">
+                            Email:
+                            <input id="name" type="email" name="email" />
+                          </label>
+                        </p>
+                        <p>
+                          <label htmlFor="form-text" id="form-text">
+                            Message:
+                            <textarea id="name" name="message" />
+                          </label>
+                        </p>
+                        <p><button id="submit-contact" type="submit">Send</button></p>
+                      </form>
                     </Modal.Body>
                   </Modal>
                 </div>
