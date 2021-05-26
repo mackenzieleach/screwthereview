@@ -2,10 +2,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { BrowserRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 import { Auth0Provider } from '@auth0/auth0-react';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import history from './history';
 
 ReactDOM.render(
   <Auth0Provider
@@ -13,9 +14,9 @@ ReactDOM.render(
     clientId="x5eLaOB6JHRf5AyMPPMWvK4rW6ee2fSC"
     redirectUri={window.location.origin}
   >
-    <BrowserRouter>
+    <Router history={history}>
       <App />
-    </BrowserRouter>
+    </Router>
   </Auth0Provider>,
   document.getElementById('root'),
 );
