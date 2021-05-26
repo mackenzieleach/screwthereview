@@ -45,13 +45,15 @@ describe('Text Rendering Tests', () => {
     cleanup();
   });
 
-  /* Since Linting, this is going to require a function to do the text matching */
-  /*     test('Website About Text Renders', () => {
-        render(<Home />)
+  test('Website About Paragraph Text Renders', () => {
+    render(<Home />);
 
-        expect(screen.getByText('Don\'t know what')).toBeInTheDocument();
-        cleanup()
-    }) */
+    // In linting, this paragraph describing our website is now split and on multiple lines.
+    // Instead of using a regex, which can't match over multiple lines, we use an inexact
+    // match to look for the start of the first line of the paragraph to ensure it has rendered.
+    expect(screen.getByText('Don\'t know what', { exact: false })).toBeInTheDocument();
+    cleanup();
+  });
 
   test('Click Tiles Text Renders', () => {
     render(<Home />);
