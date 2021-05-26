@@ -111,23 +111,26 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week was a much slower week in terms of code. I was able to fix a test that broke during linting since regular expressions no longer worked and got the proper implementation of the contact form for Netlify parsing, which closes out all of my current GitHub issues. I'll be switching focus to supporting work on the Account page and potentially assisting with other open issues that are popping up during peer review.  <p>&nbsp;</p>
+* **Successful Tactics:** Our team has continued to communicate via text and Slack which has been helpful in knowing which development tasks and issues in Github are being tackled. I know we're all a bit tight on time and we've been able to communicate well about limitations this past week also. I also particularly like having our GitHub linked to Slack as I get a notification on my phone when a PR needs to get reviewed. <p>&nbsp;</p>
+* **Learning:** I discovered that Netlify has a workaround for parsing forms in a JSX app and followed a couple of online guides to set up the form so that it works with our app and our Netlify dashboard.  <p>&nbsp;</p>
+* **Issues & Challenges:** My biggest challenge this week has just been a lack of time to work. I've got a lot of projects due for other courses which has made it challenging to carve out long enough blocks of time to work on code, especially with peer review this week as well. <p>&nbsp;</p>
+* **Blockers:** None! <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Get a full implementation of the account page working (with LuLu)
+* **Goal 2:** Support team members on open GitHub Issues to resolve bugs in preparation for final release. 
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Mackenzie Leach** | <Task> | <Due> 
+**Mackenzie Leach** | Team Status Report (with Luke) | 5/26 11:00 PM PDT
+| | Complete Development of the Account Page (with LuLu) | 5/31 7:00 PM PDT
+| | Address Feedback from Peer Review | 5/31 7:00 PM PDT
+| | Support closing issues & bugs for team | 5/31 7:00 PM PDT 
 
 &nbsp;  
 
