@@ -58,7 +58,8 @@
 **LuLu Pinczower** | Cleanup search bar UI on Roulette page | May 27, 11:59 PM PDT 
 | | Finish skeleton build of Account page (did not accomplish last week) | May 27, 11:59 PM PDT 
 | | implement search bar feature on search page | May 27, 11:59 PM PDT  
-**Rachel Ye** | <Task> | <Due>  
+**Rachel Ye** | Address the git issue about the $$ filter | Sunday
+|| Make yellow highlight only apply to selected button | Sunday
 
 &nbsp;  
 
