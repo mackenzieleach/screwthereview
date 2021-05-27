@@ -17,7 +17,8 @@ class Roulette extends React.Component {
   // search bar
   constructor(props) {
     super(props);
-    this.callBackFunction = this.callBackFunction.bind(this);
+    this.callBackFunctionSearchBar = this.callBackFunctionSearchBar.bind(this);
+    // this.callBackFunctionResult = this.callBackFunctionResult.bind(this);
     this.setViewState = this.setViewState.bind(this);
 
     this.state = {
@@ -32,6 +33,7 @@ class Roulette extends React.Component {
       result: null, // INDEX
       spinning: false,
       searchValue: '',
+      resultValue: '',
       seeResult: false,
     };
   }
@@ -131,9 +133,13 @@ class Roulette extends React.Component {
     });
   };
 
-  callBackFunction = (childData) => {
+  callBackFunctionSearchBar = (childData) => {
     this.setState({ searchValue: childData });
   }
+
+  // callBackFunctionResult = (childData) => {
+  //   this.setState({ resultValue: childData });
+  // }
 
   renderWheel() {
     const categories = [];
@@ -249,8 +255,9 @@ class Roulette extends React.Component {
               </Row>
               <Row>Ready to try something new? Spin the wheel for your new experience!</Row>
               <Row id="search-row">
-                Location
-                <LocationSearchBar parentCallback={this.callBackFunction} />
+                <Col sm={12}>
+                  <LocationSearchBar parentCallbackSearchBar={this.callBackFunctionSearchBar} />
+                </Col>
               </Row>
               <Row>
                 <Col sm={6}>
@@ -272,7 +279,13 @@ class Roulette extends React.Component {
           </Row>
         ) : (
           <Row>
-            <Result location={this.state.searchValue ? this.state.searchValue : 'seattle'} category={this.state.list[this.state.result]} />
+            {/* <Result parentCallbackResult={this.callBackFunctionResult}
+                location={this.state.searchValue ? this.state.searchValue : 'seattle'}
+                category={this.state.list[this.state.result]} /> */}
+            <Result
+              location={this.state.searchValue ? this.state.searchValue : 'seattle'}
+              category={this.state.list[this.state.result]}
+            />
           </Row>
         )}
       </Container>

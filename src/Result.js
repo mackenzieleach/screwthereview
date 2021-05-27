@@ -10,6 +10,7 @@ import server from './server';
 class Result extends Component {
   constructor(props) {
     super(props);
+    // this.getDirections = this.getDirections.bind(this);
     this.state = {
       name: null,
       description: null,
@@ -23,6 +24,7 @@ class Result extends Component {
   }
 
   componentDidMount() {
+    console.log(this.props.location);
     fetch(server.getServerUrl(), {
       headers: {
         location: this.props.location,
@@ -33,6 +35,21 @@ class Result extends Component {
       .then((json) => {
         this.parseResult(json);
       });
+  }
+
+  getDirections() {
+    fetch('https://www.google.com/maps/dir/?api=1', {
+      headers: {
+        origin: this.props.searchValue,
+        category: this.props.category,
+      },
+    })
+      .then((response) => response.text())
+      .then((json) => {
+        this.parseResult(json);
+      });
+    const { parentCallbackResult } = this.props;
+    parentCallbackResult(this.state.name);
   }
 
     parseResult = (json) => {
@@ -144,6 +161,8 @@ class Result extends Component {
                   <div>{ this.state.address }</div>
                 </Col>
                 <Col sm={5}>
+                  {/* <button type="button" className="font-medium"
+                       onClick={this.getDirections}>Get Directions</button> */}
                   <button type="button" className="font-medium">Get Directions</button>
                 </Col>
               </Row>
