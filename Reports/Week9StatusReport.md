@@ -4,9 +4,8 @@
 
 ## Team Report
 ### **Meeting Agenda**
-1. <Agenda Item 1>
-2. <Agenda Item 2>
-3. <Agenda Item 3>
+1. Standup (Progress, Plans, Issues/Challenges, Blockers)
+2. Assign Presentation Sections for Final Release
 
 &nbsp;  
 
@@ -33,26 +32,32 @@
 &nbsp;  
 
 ### **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** Our primary focus in the past week has been tackling open issues and bugs on GitHub as well as wrapping up the implementation of the account page and Google Places API. As of today, all issues for the landing page have been closed, the Google API search bar that will be added to search and roulette to auto-complete a users location is functioning and is almost ready for a PR, and Luke fixed a test timeout issue on the server. <p>&nbsp;</p>
+* **Successful Tactics:** Our Slack channel has really helped us stay on top of actively reviewing pull requests and viewing team progress. We've also communicated a lot via text about progress, anticipated plans and time constraints, and asking for support in debugging more complex issues in the code. <p>&nbsp;</p>
+* **Learning:** Each of us had our own individual learning this week in attempting to peer review other projects. As we work through debugging, we all continue to learn about React, Netlify and JavaScript. <p>&nbsp;</p>
+* **Issues & Challenges:** One of the biggest challenges at the end of the quarter is time management. Peer Review took a large chunk of time for each of us and it's been challening to find solid blocks of time to work on coding given the intensity of our other courses. We've landed on just addressing the bugs and providing a well polished MVP rather than adding additional features to help with the time constraints. <p>&nbsp;</p>
+* **Blockers:** None <p>&nbsp;</p>
 
 &nbsp;  
 
 ### **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
-* **Goal 3:**
+* **Goal 1:** Wrap up addressing open GitHub issues
+* **Goal 2:** Address feedback from peer review 
+* **Goal 3:** Finish implementation of account page & Google API
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Luke LeVasseur** | <Task> | <Due> 
-**Mackenzie Leach** | <Task> | <Due>   
-**LuLu Pinczower** | <Task> | <Due>  
+**Luke LeVasseur** | biz description scraping implemented | 5/30
+  || final release! | 6/1
+**Mackenzie Leach** | Team Status Report (with Luke) | 5/26 11:00 PM PDT
+| | Complete Development of the Account Page (with LuLu) | 5/31 7:00 PM PDT
+| | Address Feedback from Peer Review | 5/31 7:00 PM PDT
+| | Support closing issues & bugs for team | 5/31 7:00 PM PDT   
+**LuLu Pinczower** | Cleanup search bar UI on Roulette page | May 27, 11:59 PM PDT 
+| | Finish skeleton build of Account page (did not accomplish last week) | May 27, 11:59 PM PDT 
+| | implement search bar feature on search page | May 27, 11:59 PM PDT  
 **Rachel Ye** | <Task> | <Due>  
 
 &nbsp;  
@@ -189,20 +194,21 @@
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week I started two new branches, one for the yellow highlight for the distance and dollar buttons in the search page, and the other branch was focused on adding the back button to the Roulette page. I am still debugging both of the branches because they are not complete right now, so that is why I have not merged it into the main branch. The back button also involves modifying our react routes in order to add a 'history' component for route navigation.  <p> &nbsp;</p>
+* **Successful Tactics:** This week I was able to spend a significant chunk of time on the development compared to last week. I went through a lot of different StackOverflow posts and tutorials to figure out how to get the highlight button working. Currently, my state is toggling as active which is causing every button to turn yellow rather than the one that is clicked. I saw a tutorial that explained how to make an array of buttons change color when clicked so I may try that method instead. You just have to refactor the buttons as a map. I also reached out to my team members to help unblock me. <p>&nbsp;</p>
+* **Learning:** I learned a bit about React routes and history using router-dom. In order to make the back button work, I need to modify the routes in index.js, App.js, and Navigation.js and change the BrowserRouter to a Router that uses history. However it is difficult to refactor everything because I don't want to break our current code or structure of routes. <p>&nbsp;</p>
+* **Issues & Challenges:** It was tough trying to debug my problems and not making much progress with it. For the back button, I realized that the Result page url doesn't update to /result which is why the back button isn't currently working. I've also been stuck with button state for the yellow highlight so I have been trying to brainstorm alternative solutions that doesn't involve rewriting all my buttons into a map. <p>&nbsp;</p>
+* **Blockers:** I am not necessarily blocked but I am focusing more of my energy on figuring out button highlight and the new issue that has opened during peer review involving the $$$$ dollar button. I will revisit the back button later becuase it is a more complex issue and it involves structural changes to the code that we may not have time for. <p>&nbsp;</p>
 
 &nbsp;  
 
 **Upcoming Plans & Goals**  
-* **Goal 1:**
-* **Goal 2:**
+* **Goal 1:** Address the $$$$ bug that we got during the peer review.  
+* **Goal 2:** Figure out how to make the yelow highlight only apply to the selected button on Search page.
 
 &nbsp;  
 
 **Team Member** | **Task** | **Due**
 ------------ | ------------------------|------------
-**Rachel Ye** | <Task> | <Due>  
+**Rachel Ye** | Address the git issue about the $$ filter | Sunday
+**Rachel Ye** | Make yellow highlight only apply to selected button | Sunday
