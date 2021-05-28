@@ -19,7 +19,6 @@ class Roulette extends React.Component {
     super(props);
     this.callBackFunctionSearchBar = this.callBackFunctionSearchBar.bind(this);
     // this.callBackFunctionResult = this.callBackFunctionResult.bind(this);
-    this.handleChange = this.handleChange.bind(this);
     this.setViewState = this.setViewState.bind(this);
 
     this.state = {
