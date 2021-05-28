@@ -19,6 +19,7 @@ class Roulette extends React.Component {
     super(props);
     this.callBackFunctionSearchBar = this.callBackFunctionSearchBar.bind(this);
     // this.callBackFunctionResult = this.callBackFunctionResult.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.setViewState = this.setViewState.bind(this);
 
     this.state = {
@@ -46,6 +47,20 @@ class Roulette extends React.Component {
   handleChange = (location) => {
     console.log(location);
   }
+
+  setViewState = () => {
+    this.setState((prevState) => ({ seeResult: !prevState.seeResult }));
+  }
+
+  // setViewState(prevState) {
+  //   this.setState((prevState) => {
+  //     return { seeResult: !prevState.seeResult };
+  //   });
+  // }
+
+  // setViewState = () => {
+  //   this.setState({ seeResult: !seeResult });
+  // }
 
   setViewState = () => {
     this.setState((prevState) => ({ seeResult: !prevState.seeResult }));
