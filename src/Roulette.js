@@ -43,10 +43,6 @@ class Roulette extends React.Component {
     this.renderWheel();
   }
 
-  handleChange = (location) => {
-    console.log(location);
-  }
-
   setViewState = () => {
     this.setState((prevState) => ({ seeResult: !prevState.seeResult }));
   }

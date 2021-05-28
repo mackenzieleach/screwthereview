@@ -24,7 +24,7 @@ class Result extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props.location);
+    // console.log(this.props.location);
     fetch(server.getServerUrl(), {
       headers: {
         location: this.props.location,

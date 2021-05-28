@@ -13,13 +13,13 @@ class LocationSearchBar extends Component {
 
   sendData = (data) => {
     const { parentCallbackSearchBar } = this.props;
-    console.log(data.label);
+    // console.log(data.label);
     parentCallbackSearchBar(data.label);
   }
 
   render() {
     return (
-      <Row>
+      <Row data-testid="autofill-search">
         <script
           type="text/javascript"
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnf5cu-0DsgGB-pRF25wFURi2Cn1vNboc&libraries=places"

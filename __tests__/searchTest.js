@@ -53,7 +53,10 @@ describe('Image Rendering Tests', () => {
 describe('Button Rendering Tests', () => {
   test('Location options renders', () => {
     render(<Search />);
-    expect(screen.getAllByRole('option').length).toBeGreaterThanOrEqual(50);
+    const locationLabel = screen.getByText('Location');
+    const locationInput = screen.getByTestId('autofill-search');
+    expect(locationLabel).toBeInTheDocument();
+    expect(locationInput).toBeInTheDocument();
     cleanup();
   });
   test('Distance, price, and screw the review buttons render', () => {
