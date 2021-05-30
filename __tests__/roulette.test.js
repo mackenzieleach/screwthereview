@@ -2,6 +2,7 @@
 import React from 'react';
 import { render, cleanup, screen } from '@testing-library/react';
 import Roulette from '../src/Roulette';
+import LocationSearchBar from '../src/LocationSearchBar';
 import '@testing-library/jest-dom';
 
 describe('Roulette Overall', () => {
@@ -20,10 +21,8 @@ describe('Roulette Overall', () => {
   test('Roulette location input box rendered', () => {
     render(<Roulette />);
     const locationLabel = screen.getByText('Location');
-    // const locationInput = screen.getByPlaceholderText("");
-    const locationInput = screen.getByTestId('location-dropdown');
+    const locationInput = screen.getByTestId('autofill-search');
     expect(locationLabel).toBeInTheDocument();
-    // expect(locationInput).toBeInTheDocument();
     expect(locationInput).toBeInTheDocument();
     cleanup();
   });

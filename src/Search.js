@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import LocationSearchBar from './LocationSearchBar';
 import searchLogo from './Images/SearchLogo.png';
 import coffee0 from './Images/coffee0.jpeg';
 import people from './Images/people.jpeg';
@@ -22,9 +23,9 @@ class Search extends Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleLocation = this.handleLocation.bind(this);
     this.handleMoney = this.handleMoney.bind(this);
     this.handleDistance = this.handleDistance.bind(this);
+    this.callBackFunctionSearchBar = this.callBackFunctionSearchBar.bind(this);
   }
 
   handleChange(event) {
@@ -46,10 +47,6 @@ class Search extends Component {
     }
   }
 
-  handleLocation(event) {
-    this.setState({ locationVal: event.target.value });
-  }
-
   handleSubmit(event) {
     this.setState({ keyword: event.target.value });
   }
@@ -58,6 +55,10 @@ class Search extends Component {
     this.setState({ distanceVal: event.target.value });
     const currentState = this.state.active;
     this.setState({ active: !currentState });
+  }
+
+  callBackFunctionSearchBar = (childData) => {
+    this.setState({ locationVal: childData });
   }
 
     seeResult = () => {
@@ -105,62 +106,9 @@ class Search extends Component {
                   </div>
                 </form>
                 <Row id="search-row">
-                  <label htmlFor="options" id="search-text">
-                    Location
-                    <select className="options" id="location" onChange={this.handleLocation}>
-                      {/* 50 Most Populated WA Cities (Hardcoded */}
-                      <option>Select City</option>
-                      <option>Auburn, WA</option>
-                      <option>Bainbridge Island, WA</option>
-                      <option>Bellevue, WA</option>
-                      <option>Bellingham, WA</option>
-                      <option>Bothell, WA</option>
-                      <option>Bremerton, WA</option>
-                      <option>Burien, WA</option>
-                      <option>Des Moines, WA</option>
-                      <option>Edmonds, WA</option>
-                      <option>Everett, WA</option>
-                      <option>Federal Way, WA</option>
-                      <option>Graham, WA</option>
-                      <option>Issaquah, WA</option>
-                      <option>Kennewick, WA</option>
-                      <option>Kirkland, WA</option>
-                      <option>Kent, WA</option>
-                      <option>Lacey, WA</option>
-                      <option>Lake Stevens, WA</option>
-                      <option>Lakewood, WA</option>
-                      <option>Longview, WA</option>
-                      <option>Lynnwood, WA</option>
-                      <option>Marysville, WA</option>
-                      <option>Maple Valley, WA</option>
-                      <option>Mill Creek East, WA</option>
-                      <option>Mercer Island, WA</option>
-                      <option>Mount Vernon, WA</option>
-                      <option>Olympia, WA</option>
-                      <option>Orchards, WA</option>
-                      <option>Pasco, WA</option>
-                      <option>Parkland, WA</option>
-                      <option>Pullman, WA</option>
-                      <option>Puyallup, WA</option>
-                      <option>Redmond, WA</option>
-                      <option>Renton, WA</option>
-                      <option>Richland, WA</option>
-                      <option>Sammamish, WA</option>
-                      <option>Seattle, WA</option>
-                      <option>SeaTac, WA</option>
-                      <option>Shoreline, WA</option>
-                      <option>South Hill, WA</option>
-                      <option>Spanaway, WA</option>
-                      <option>Spokane, WA</option>
-                      <option>Spokane Valley, WA</option>
-                      <option>Tacoma, WA</option>
-                      <option>University Place, WA</option>
-                      <option>Vancouver, WA</option>
-                      <option>Walla Walla, WA</option>
-                      <option>Wenatchee, WA</option>
-                      <option>Yakima, WA</option>
-                    </select>
-                  </label>
+                  <Col sm={12}>
+                    <LocationSearchBar parentCallbackSearchBar={this.callBackFunctionSearchBar} />
+                  </Col>
                 </Row>
                 <Row id="search-row">
                   <p id="search-text">Price</p>
