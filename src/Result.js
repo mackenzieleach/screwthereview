@@ -10,7 +10,7 @@ import server from './server';
 class Result extends Component {
   constructor(props) {
     super(props);
-    // this.getDirections = this.getDirections.bind(this);
+    this.getDirections = this.getDirections.bind(this);
     this.state = {
       name: null,
       description: null,
@@ -38,19 +38,15 @@ class Result extends Component {
       });
   }
 
-  getDirections() {
-    fetch('https://www.google.com/maps/dir/?api=1', {
-      headers: {
-        origin: this.props.searchValue,
-        category: this.props.category,
-      },
-    })
-      .then((response) => response.text())
-      .then((json) => {
-        this.parseResult(json);
-      });
-    const { parentCallbackResult } = this.props;
-    parentCallbackResult(this.state.name);
+  getDirections = () => {
+    const origin = escape(this.props.location);
+    const destination = escape(this.state.address);
+    let link = 'https://www.google.com/maps/dir/?api=1&origin=';
+    link += origin;
+    link += '&destination=';
+    link += destination;
+    console.log(link);
+    window.open(link);
   }
 
     parseResult = (json) => {
@@ -185,16 +181,11 @@ class Result extends Component {
                   <div>{ this.state.address }</div>
                 </Col>
                 <Col sm={5}>
-                  {/* <button type="button" className="font-medium"
-                       onClick={this.getDirections}>Get Directions</button> */}
-                  <button type="button" className="font-medium">Get Directions</button>
+                  <button type="button" className="font-medium" onClick={this.getDirections}>Get Directions</button>
                 </Col>
               </Row>
             </Col>
           </Row>
-          {/* <Row>
-                    <Button className="str-button" href="/roulette">Spin Again!</Button>
-                </Row> */}
         </Container>
       );
     }
