@@ -49,7 +49,8 @@ class Home extends Component {
               <p id="tiles">
                 Click the tiles to learn more and experience something new! If you&lsquo;d like to
                 create an account, log in using
-                Auth0 below! You can view your account details and more on the account page.
+                Auth0 below! More functionality is soon to come for users with a Screw the
+                Review Account.
                 {' '}
               </p>
 
