@@ -426,3 +426,7 @@ p#card-info{
 .profile-name {
   display: block !important;
 }
+
+.hours {
+  white-space: pre-wrap;
+}
