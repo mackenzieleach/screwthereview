@@ -54,8 +54,8 @@ class Home extends Component {
                 {' '}
               </p>
 
-              <LoginButton id="auth0-button" onClick={this.logIn}> Sign In </LoginButton>
-              <LogoutButton id="auth0-button" onClick={this.logOut}>Sign Out</LogoutButton>
+              <LoginButton id="auth0-button"> Sign In </LoginButton>
+              <LogoutButton id="auth0-button">Sign Out</LogoutButton>
 
             </Col>
 
