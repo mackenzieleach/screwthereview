@@ -65,13 +65,13 @@ describe('Text Rendering Tests', () => {
 
   test('Log In Text Renders', () => {
     render(<Home />);
-    expect(screen.getByText('Log In')).toBeInTheDocument();
+    expect(screen.getByText('Sign In')).toBeInTheDocument();
     cleanup();
   });
 
   test('Log Out Text Renders', () => {
     render(<Home />);
-    expect(screen.getByText('Log Out')).toBeInTheDocument();
+    expect(screen.getByText('Sign Out')).toBeInTheDocument();
     cleanup();
   });
 
