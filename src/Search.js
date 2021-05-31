@@ -33,7 +33,7 @@ class Search extends Component {
   }
 
   handleMoney(event) {
-    const { id } = event.target;
+    const { id } = event.target.id;
     const currentState = this.state.active;
     this.setState({ active: !currentState });
     if (id === 'dollarButton1') {
@@ -53,8 +53,8 @@ class Search extends Component {
 
   handleDistance(event) {
     this.setState({ distanceVal: event.target.value });
-    const currentState = this.state.active;
-    this.setState({ active: !currentState });
+    const { id } = event.target.id;
+    this.document.getElementById(id).focus();
   }
 
   callBackFunctionSearchBar = (childData) => {
@@ -136,16 +136,16 @@ class Search extends Component {
                 <Row id="search-row">
                   <p id="search-text">Distance</p>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button type="button" id="distance-button" className={this.state.active ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance}>5 mi</button>
+                    <button type="button" id="dist-btn0" className={this.state.active ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance}>5 mi</button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button type="button" id="distance-button" className={this.state.active ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance}>10 mi</button>
+                    <button type="button" id="dist-btn1" className={this.state.active ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance}>10 mi</button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button type="button" id="distance-button" className={this.state.active ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance}>15 mi</button>
+                    <button type="button" id="dist-btn2" className={this.state.active ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance}>15 mi</button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button type="button" id="distance-button" className={this.state.active ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance}>20 mi</button>
+                    <button type="button" id="dist-btn3" className="distanceButtonFalse" onClick={this.handleDistance}>20 mi</button>
                   </Col>
                 </Row>
                 <div className="text-center">
