@@ -21,16 +21,12 @@ class Home extends Component {
     this.state = {
       /* Track the state of the modal to determine when contact form is shown */
       isOpen: false,
-
-      /* Track user login status to determine which button to display */
-      isLoggedIn: false,
     };
   }
 
     openModal = () => this.setState({ isOpen: true });
+
     closeModal = () => this.setState({ isOpen: false });
-    logIn = () => this.setState({isLoggedIn : true});
-    logOut = () => this.setState({isLoggedIn : false});
 
     render() {
       return (
@@ -57,7 +53,6 @@ class Home extends Component {
                 {' '}
               </p>
 
-              {/* Conditionally Display Button */}
               <LoginButton id="auth0-button" onClick={this.logIn}> Sign In </LoginButton>
               <LogoutButton id="auth0-button" onClick={this.logOut}>Sign Out</LogoutButton>
 
