@@ -21,12 +21,16 @@ class Home extends Component {
     this.state = {
       /* Track the state of the modal to determine when contact form is shown */
       isOpen: false,
+
+      /* Track user login status to determine which button to display */
+      isLoggedIn: false,
     };
   }
 
     openModal = () => this.setState({ isOpen: true });
-
     closeModal = () => this.setState({ isOpen: false });
+    logIn = () => this.setState({isLoggedIn : true});
+    logOut = () => this.setState({isLoggedIn : false});
 
     render() {
       return (
@@ -46,10 +50,16 @@ class Home extends Component {
                 new experience from it!
               </p>
 
-              <p id="tiles">Click the tiles to learn more and experience something new!</p>
+              <p id="tiles">
+                Click the tiles to learn more and experience something new! If you&lsquo;d like to
+                create an account, log in using
+                Auth0 below! You can view your account details and more on the account page.
+                {' '}
+              </p>
 
-              <LoginButton id="auth0-button"> Sign In </LoginButton>
-              <LogoutButton id="auth0-button">Sign Out</LogoutButton>
+              {/* Conditionally Display Button */}
+              <LoginButton id="auth0-button" onClick={this.logIn}> Sign In </LoginButton>
+              <LogoutButton id="auth0-button" onClick={this.logOut}>Sign Out</LogoutButton>
 
             </Col>
 
