@@ -29,10 +29,11 @@ class Result extends Component {
     fetch(server.getServerUrl(), {
       headers: {
         location: this.props.location,
-        category: this.props.category,
+        categories: this.props.category,
       },
     })
       .then((response) => response.text())
+      .then(console.log(this.props.category))
       .then((json) => {
         this.setState({
           loading: false,
@@ -63,7 +64,12 @@ class Result extends Component {
       for (let i = 1; i < rCategories.length; i += 1) {
         sCategories += `, ${rCategories[i].title}`;
       }
-      const sHours = this.parseHours(result.hours);
+      let sHours;
+      if (result.hours === undefined) {
+        sHours = '';
+      } else {
+        sHours = this.parseHours(result.hours);
+      }
       this.setState({
         name: result.name,
         imageURL: result.image_url,
