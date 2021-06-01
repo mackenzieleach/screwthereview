@@ -289,6 +289,8 @@ class Roulette extends React.Component {
             <Result
               location={this.state.searchValue ? this.state.searchValue : 'seattle'}
               category={this.state.listAlias[this.state.result]}
+              price=""
+              radius="10"
             />
           </Row>
         )}
