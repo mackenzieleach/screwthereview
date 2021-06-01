@@ -137,7 +137,9 @@ class Result extends Component {
 
     render() {
       if (this.state.loading) {
-        return <Loader type="Bars" color="#00BFFF" height={100} width={100} timeout={3000} />;
+        return (
+          <Loader type="Oval" color="#00BFFF" height={300} width={300} timeout={3000} />
+        );
       }
       return (
         <Container fluid className="page-container" style={{ paddingBottom: '36px' }}>
