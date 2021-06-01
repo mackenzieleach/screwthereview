@@ -4,7 +4,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import MapImage from './Map.png';
 import server from './server';
 
 class Result extends Component {
@@ -33,7 +32,6 @@ class Result extends Component {
     })
       .then((response) => response.text())
       .then((json) => {
-        console.log(json);
         this.parseResult(json);
       });
   }
@@ -45,7 +43,6 @@ class Result extends Component {
     link += origin;
     link += '&destination=';
     link += destination;
-    console.log(link);
     window.open(link);
   }
 
@@ -73,6 +70,12 @@ class Result extends Component {
         hours: sHours,
         description: result.description,
       });
+      const map = document.getElementById('map-image');
+      let mapSrc;
+      mapSrc = 'https://maps.googleapis.com/maps/api/staticmap?size=400x400&markers=';
+      mapSrc += this.state.address;
+      mapSrc += '&key=AIzaSyAnf5cu-0DsgGB-pRF25wFURi2Cn1vNboc';
+      map.src = mapSrc;
     }
 
     convertHours = (hour) => {
@@ -168,7 +171,12 @@ class Result extends Component {
               <div>{this.state.description}</div>
               <Row>
                 <Col sm={7}>
-                  <img alt="map" src={MapImage} className="img-responsive fit-image col-12" />
+                  <img
+                    id="map-image"
+                    alt="map"
+                    src="https://maps.googleapis.com/maps/api/staticmap?center=Berkeley,CA&size=400x400&key=AIzaSyAnf5cu-0DsgGB-pRF25wFURi2Cn1vNboc"
+                    className="img-responsive fit-image col-12"
+                  />
                 </Col>
                 <Col sm={5}>
                   <div className="font-medium">Hours</div>
