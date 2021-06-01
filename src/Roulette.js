@@ -21,7 +21,8 @@ class Roulette extends React.Component {
     this.setViewState = this.setViewState.bind(this);
 
     this.state = {
-      list: [],
+      listTitle: [],
+      listAlias: [],
       radius: 75, // PIXELS
       rotate: 0, // DEGREES
       easeOut: 0, // SECONDS
@@ -99,7 +100,7 @@ class Roulette extends React.Component {
     // repeat substraction of inner angle amount from total distance traversed
     // use count as an index to find value of result from state list
     const {
-      angle, top, offset, list,
+      angle, top, offset, listTitle,
     } = this.state;
     const netRotation = ((spin % 360) * Math.PI) / 180; // RADIANS
     let travel = netRotation + offset;
@@ -112,7 +113,7 @@ class Roulette extends React.Component {
     if (count >= 0) {
       result = count;
     } else {
-      result = list.length + count;
+      result = listTitle.length + count;
     }
 
     // set state variable to display result
@@ -174,12 +175,14 @@ class Roulette extends React.Component {
       categories.push(selectedCategory);
       aliases.push(selectedAlias);
       keys.splice(rand, 1);
+      values.splice(rand, 1);
     }
     // determine number/size of sectors that need to created
     const numOptions = WHEELSIZE;
     const arcSize = (2 * Math.PI) / numOptions;
     this.setState({
-      list: aliases,
+      listTitle: categories,
+      listAlias: aliases,
       angle: arcSize,
       radius,
     }, () => {
@@ -193,7 +196,7 @@ class Roulette extends React.Component {
       const colors = ['rgba(255,3,3,1)', 'rgba(77,216,255,1)', 'rgba(255,79,205,1)', 'rgba(255,204,77,1)'];
       const numColors = colors.length;
       for (let j = 0; j < numOptions; j += 1) {
-        const text = this.state.list[j];
+        const text = this.state.listTitle[j];
         this.renderSector(j + 1, text, angle, arcSize, colors[j % numColors]);
         angle += arcSize;
       }
@@ -285,7 +288,7 @@ class Roulette extends React.Component {
           <Row>
             <Result
               location={this.state.searchValue ? this.state.searchValue : 'seattle'}
-              category={this.state.list[this.state.result]}
+              category={this.state.listAlias[this.state.result]}
             />
           </Row>
         )}
