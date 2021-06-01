@@ -5,12 +5,14 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import server from './server';
+import LoadingIcon from './LoadingIcon';
 
 class Result extends Component {
   constructor(props) {
     super(props);
     this.getDirections = this.getDirections.bind(this);
     this.state = {
+      iconAnimating: true,
       name: null,
       description: null,
       phone: null,
@@ -32,6 +34,9 @@ class Result extends Component {
     })
       .then((response) => response.text())
       .then((json) => {
+        this.setState({
+          iconAnimating: false,
+        });
         this.parseResult(json);
       });
   }
@@ -131,6 +136,9 @@ class Result extends Component {
     }
 
     render() {
+      if (this.state.iconAnimating) {
+        return LoadingIcon;
+      }
       return (
         <Container fluid className="page-container" style={{ paddingBottom: '36px' }}>
           <Row>
