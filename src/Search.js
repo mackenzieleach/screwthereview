@@ -19,7 +19,7 @@ class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '', seeResult: false, locationVal: 'seattle', moneyVal: 0, distanceVal: '', keyword: '',
+      value: '', seeResult: false, locationVal: 'seattle', moneyVal: '', distanceVal: '', keyword: '', isActive1: false, isActive2: false, isActive3: false, isActive4: false, isActive5: false, isActive6: false, isActive7: false, isActive8: false,
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -33,15 +33,26 @@ class Search extends Component {
   }
 
   handleMoney(event) {
-    const { id } = event.target;
-    if (id === 'dollarButton1') {
-      this.setState({ moneyVal: 1 });
-    } else if (id === 'dollarButton2') {
-      this.setState({ moneyVal: 2 });
-    } else if (id === 'dollarButton3') {
-      this.setState({ moneyVal: 3 });
-    } else {
-      this.setState({ moneyVal: 4 });
+    if (event.target.id === 'dollarButton1') {
+      this.setState({ moneyVal: '1' });
+      this.setState((prevState) => ({
+        isActive1: !prevState.isActive1,
+      }));
+    } else if (event.target.id === 'dollarButton2') {
+      this.setState({ moneyVal: '2' });
+      this.setState((prevState) => ({
+        isActive2: !prevState.isActive2,
+      }));
+    } else if (event.target.id === 'dollarButton3') {
+      this.setState({ moneyVal: '3' });
+      this.setState((prevState) => ({
+        isActive3: !prevState.isActive3,
+      }));
+    } else if (event.target.id === 'dollarButton4') {
+      this.setState({ moneyVal: '4' });
+      this.setState((prevState) => ({
+        isActive4: !prevState.isActive4,
+      }));
     }
   }
 
@@ -50,6 +61,23 @@ class Search extends Component {
   }
 
   handleDistance(event) {
+    if (event.target.id === 'dist-btn0') {
+      this.setState((prevState) => ({
+        isActive5: !prevState.isActive5,
+      }));
+    } else if (event.target.id === 'dist-btn1') {
+      this.setState((prevState) => ({
+        isActive6: !prevState.isActive6,
+      }));
+    } else if (event.target.id === 'dist-btn2') {
+      this.setState((prevState) => ({
+        isActive7: !prevState.isActive7,
+      }));
+    } else {
+      this.setState((prevState) => ({
+        isActive8: !prevState.isActive8,
+      }));
+    }
     this.setState({ distanceVal: event.target.value });
   }
 
@@ -104,22 +132,22 @@ class Search extends Component {
                 <Row id="search-row">
                   <p id="search-text">Price</p>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button id="dollarButton1" type="button" className="dollarButton" onClick={this.handleMoney}>
+                    <button id="dollarButton1" type="button" className={this.state.isActive1 ? 'dollarButtonTrue' : 'dollarButtonFalse'} onClick={this.handleMoney}>
                       <span>&#36;</span>
                     </button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button id="dollarButton2" type="button" className="dollarButton" onClick={this.handleMoney}>
+                    <button id="dollarButton2" type="button" className={this.state.isActive2 ? 'dollarButtonTrue' : 'dollarButtonFalse'} onClick={this.handleMoney}>
                       <span>&#36;&#36;</span>
                     </button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button id="dollarButton3" type="button" className="dollarButton" onClick={this.handleMoney}>
+                    <button id="dollarButton3" type="button" className={this.state.isActive3 ? 'dollarButtonTrue' : 'dollarButtonFalse'} onClick={this.handleMoney}>
                       <span>&#36;&#36;&#36;</span>
                     </button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button id="dollarButton4" type="button" className="dollarButton" onClick={this.handleMoney}>
+                    <button id="dollarButton4" type="button" className={this.state.isActive4 ? 'dollarButtonTrue' : 'dollarButtonFalse'} onClick={this.handleMoney}>
                       <span>&#36;&#36;&#36;&#36;</span>
                     </button>
                   </Col>
@@ -127,16 +155,16 @@ class Search extends Component {
                 <Row id="search-row">
                   <p id="search-text">Distance</p>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button type="button" id="distance-button" className="distanceButton" onClick={this.handleDistance}>5 mi</button>
+                    <button type="button" id="dist-btn0" className={this.state.isActive5 ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance} value="5">5 mi</button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button type="button" id="distance-button" className="distanceButton" onClick={this.handleDistance}>10 mi</button>
+                    <button type="button" id="dist-btn1" className={this.state.isActive6 ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance} value="10">10 mi</button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button type="button" id="distance-button" className="distanceButton" onClick={this.handleDistance}>15 mi</button>
+                    <button type="button" id="dist-btn2" className={this.state.isActive7 ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance} value="15">15 mi</button>
                   </Col>
                   <Col lg={2} md={2} sm={2} xs={2}>
-                    <button type="button" id="distance-button" className="distanceButton" onClick={this.handleDistance}>20 mi</button>
+                    <button type="button" id="dist-btn3" className={this.state.isActive8 ? 'distanceButtonTrue' : 'distanceButtonFalse'} onClick={this.handleDistance} value="20">20 mi</button>
                   </Col>
                 </Row>
                 <div className="text-center">

@@ -27,6 +27,8 @@ class Result extends Component {
     fetch(server.getServerUrl(), {
       headers: {
         location: this.props.location,
+        price: this.props.price,
+        radius: this.props.radius,
         categories: this.props.category,
       },
     })

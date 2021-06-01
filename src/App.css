@@ -334,7 +334,16 @@ p#card-info{
   margin-top: 20px
 }
 
-.dollarButton {
+.dollarButtonTrue {
+  border-radius: 40px;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  background-color: #ffcf00;
+}
+
+.dollarButtonFalse {
   border-radius: 40px;
   height: 80px;
   width: 80px;
@@ -342,8 +351,14 @@ p#card-info{
   margin-left: 30px;
 }
 
-.dollarButton:focus:not(:focus-visible), .distanceButton:focus:not(:focus-visible){
-  background-color: #ffcf00;
+.distanceButtonFalse {
+  background: none;
+  border: 4px solid black;
+  font-size: 20px;
+  border-radius:5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 80px;
 }
 
 .options {
@@ -355,8 +370,8 @@ p#card-info{
   margin-left: 30px;
 }
 
-.distanceButton {
-  background: none;
+.distanceButtonTrue {
+  background-color: #ffcf00;
   border: 4px solid black;
   font-size: 20px;
   border-radius:5px;
