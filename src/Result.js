@@ -25,7 +25,6 @@ class Result extends Component {
   }
 
   componentDidMount() {
-    // console.log(this.props.location);
     fetch(server.getServerUrl(), {
       headers: {
         location: this.props.location,
@@ -33,7 +32,6 @@ class Result extends Component {
       },
     })
       .then((response) => response.text())
-      .then(console.log(this.props.category))
       .then((json) => {
         this.setState({
           loading: false,
@@ -54,7 +52,6 @@ class Result extends Component {
 
     parseResult = (json) => {
       const result = JSON.parse(json);
-      // console.log(result);
       // decompose categories
       const rCategories = result.categories;
       let sCategories = '';
@@ -89,32 +86,36 @@ class Result extends Component {
       map.src = mapSrc;
     }
 
-    convertHours = (hour) => {
+    convertHours = (time) => {
       let result = '';
-      const iHour = parseInt(hour, 10);
+
+      const sHour = time.substring(0, 2);
+      const sMin = time.substring(2, 5);
+
+      let iHour = parseInt(sHour, 10);
+      const iMin = parseInt(sMin, 10);
       let timeOfDay = ' am';
 
-      let hours = (iHour / 100);
       // check time of day
-      if (hours === 0) {
-        hours = 12;
+      if (iHour === 0) {
+        iHour = 12;
       }
-      if (hours > 12) {
+      if (iHour > 12) {
         timeOfDay = ' pm';
-        hours -= 12;
+        iHour -= 12;
         // add zero for single digit
-        if (hours < 10) {
+        if (iHour < 10) {
           result = '0';
         }
       }
-      result += hours.toString();
+      result += iHour.toString();
       result += ':';
-      const minutes = (iHour % 100);
+
       // add zero for single digit
-      if (minutes < 10) {
+      if (iMin < 10) {
         result += '0';
       }
-      result += minutes.toString();
+      result += iMin.toString();
       result += timeOfDay;
       return result;
     }
@@ -144,7 +145,13 @@ class Result extends Component {
     render() {
       if (this.state.loading) {
         return (
-          <Loader type="Oval" color="#00BFFF" height={300} width={300} timeout={3000} />
+          <Container className="loader-container">
+            <Row>
+              <Col>
+                <Loader type="Oval" color="#00BFFF" height={300} width={300} timeout={30000} />
+              </Col>
+            </Row>
+          </Container>
         );
       }
       return (

@@ -7,7 +7,7 @@ import '@testing-library/jest-dom';
 
 require('jest-fetch-mock').enableMocks();
 
-beforeEach(() => { // if you have an existing `beforeEach` just add the following lines to it
+beforeEach(() => {
   fetchMock.mockIf('http://hidden-mesa-04199.herokuapp.com?location=seattle', (req) => {
     if (req.url.endsWith('/path1')) {
       return 'some response body';

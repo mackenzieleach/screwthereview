@@ -429,3 +429,9 @@ p#card-info{
 .hours {
   white-space: pre-wrap;
 }
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
