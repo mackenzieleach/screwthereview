@@ -28,9 +28,10 @@ function Navigation() {
           <li className="nav-item ml-4">
             <a className="nav-link" href="/about">About</a>
           </li>
-          <li className="nav-item ml-4">
+          {/* <li className="nav-item ml-4">
             <a className="nav-link" href="/account">Account</a>
           </li>
+          */}
         </ul>
       </div>
     </nav>

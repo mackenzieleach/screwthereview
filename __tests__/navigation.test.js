@@ -14,7 +14,7 @@ describe('Nav Bar Overall', () => {
 
   test('Renders 5 List Items', () => {
     render(<Navigation />);
-    expect(screen.getAllByRole('listitem').length).toBe(5);
+    expect(screen.getAllByRole('listitem').length).toBe(4);
     cleanup();
   });
 });
@@ -41,12 +41,6 @@ describe('Nav Bar Link Text', () => {
   test('About Text Renders', () => {
     render(<Navigation />);
     expect(screen.getByText('About')).toBeInTheDocument();
-    cleanup();
-  });
-
-  test('Account Text Renders', () => {
-    render(<Navigation />);
-    expect(screen.getByText('Account')).toBeInTheDocument();
     cleanup();
   });
 });
