@@ -50,7 +50,7 @@ class Home extends Component {
                 Click the tiles to learn more and experience something new! If you&lsquo;d like to
                 create an account, log in using
                 Auth0 below! More functionality is soon to come for users with a Screw the
-                Review Account.
+                Review account.
                 {' '}
               </p>
 
