@@ -30,7 +30,7 @@ class Roulette extends React.Component {
       top: null, // INDEX
       offset: null, // RADIANS
       net: null, // RADIANS
-      result: null, // INDEX
+      result: 0, // INDEX
       spinning: false,
       searchValue: '',
       resultValue: '',
@@ -153,6 +153,7 @@ class Roulette extends React.Component {
 
   renderWheel() {
     const categories = [];
+    const aliases = [];
     const categoryMap = new Map(
       [['Arts & Entertainment', 'arts'],
         ['Active Life', 'active'],
@@ -172,20 +173,24 @@ class Roulette extends React.Component {
     const radius = canvas.width / 4;
 
     const keys = Array.from(categoryMap.keys());
+    const values = Array.from(categoryMap.values());
     // randomly select categories to populate wheel
     let selectedCategory;
+    let selectedAlias;
     let rand;
     for (let i = 0; i < WHEELSIZE; i += 1) {
       rand = Math.floor(Math.random() * keys.length);
       selectedCategory = keys[rand];
+      selectedAlias = values[rand];
       categories.push(selectedCategory);
+      aliases.push(selectedAlias);
       keys.splice(rand, 1);
     }
     // determine number/size of sectors that need to created
     const numOptions = WHEELSIZE;
     const arcSize = (2 * Math.PI) / numOptions;
     this.setState({
-      list: categories,
+      list: aliases,
       angle: arcSize,
       radius,
     }, () => {
