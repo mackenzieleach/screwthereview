@@ -12,7 +12,7 @@ describe('Nav Bar Overall', () => {
     expect(screen.getByAltText('logo')).toBeInTheDocument();
   });
 
-  test('Renders 5 List Items', () => {
+  test('Renders 4 List Items', () => {
     render(<Navigation />);
     expect(screen.getAllByRole('listitem').length).toBe(4);
     cleanup();
