@@ -4,13 +4,12 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Map from './Map.png';
 import server from './server';
 
 class Result extends Component {
   constructor(props) {
     super(props);
-    // this.getDirections = this.getDirections.bind(this);
+    this.getDirections = this.getDirections.bind(this);
     this.state = {
       name: null,
       description: null,
@@ -37,19 +36,14 @@ class Result extends Component {
       });
   }
 
-  getDirections() {
-    fetch('https://www.google.com/maps/dir/?api=1', {
-      headers: {
-        origin: this.props.searchValue,
-        category: this.props.category,
-      },
-    })
-      .then((response) => response.text())
-      .then((json) => {
-        this.parseResult(json);
-      });
-    const { parentCallbackResult } = this.props;
-    parentCallbackResult(this.state.name);
+  getDirections = () => {
+    const origin = escape(this.props.location);
+    const destination = escape(this.state.address);
+    let link = 'https://www.google.com/maps/dir/?api=1&origin=';
+    link += origin;
+    link += '&destination=';
+    link += destination;
+    window.open(link);
   }
 
     parseResult = (json) => {
@@ -64,6 +58,7 @@ class Result extends Component {
       for (let i = 1; i < rCategories.length; i += 1) {
         sCategories += `, ${rCategories[i].title}`;
       }
+      const sHours = this.parseHours(result.hours);
       this.setState({
         name: result.name,
         imageURL: result.image_url,
@@ -72,8 +67,67 @@ class Result extends Component {
         address: result.location.display_address.join(' '),
         tags: sCategories,
         price: result.price,
-        hours: 'HOURS',
+        hours: sHours,
+        description: result.description,
       });
+      const map = document.getElementById('map-image');
+      let mapSrc;
+      mapSrc = 'https://maps.googleapis.com/maps/api/staticmap?size=400x400&markers=';
+      mapSrc += this.state.address;
+      mapSrc += '&key=AIzaSyAnf5cu-0DsgGB-pRF25wFURi2Cn1vNboc';
+      map.src = mapSrc;
+    }
+
+    convertHours = (hour) => {
+      let result = '';
+      const iHour = parseInt(hour, 10);
+      let timeOfDay = ' am';
+
+      let hours = (iHour / 100);
+      // check time of day
+      if (hours === 0) {
+        hours = 12;
+      }
+      if (hours > 12) {
+        timeOfDay = ' pm';
+        hours -= 12;
+        // add zero for single digit
+        if (hours < 10) {
+          result = '0';
+        }
+      }
+      result += hours.toString();
+      result += ':';
+      const minutes = (iHour % 100);
+      // add zero for single digit
+      if (minutes < 10) {
+        result += '0';
+      }
+      result += minutes.toString();
+      result += timeOfDay;
+      return result;
+    }
+
+    parseHours = (hours) => {
+      let result = '';
+      const dayMap = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday',
+        'Friday', 'Saturday'];
+      let day;
+      let dayStart;
+      let dayEnd;
+      const hoursOpen = hours[0].open;
+      for (let i = 0; i < hoursOpen.length; i += 1) {
+        day = hoursOpen[i];
+        result += dayMap[day.day];
+        result += ': ';
+        dayStart = this.convertHours(day.start);
+        result += dayStart;
+        result += ' - ';
+        dayEnd = this.convertHours(day.end);
+        result += dayEnd;
+        result += '\n';
+      }
+      return result;
     }
 
     render() {
@@ -114,45 +168,19 @@ class Result extends Component {
             </Col>
             <Col sm={{ span: 6, offset: 1 }}>
               <div className="font-medium">About</div>
-              <div>More about this experience coming soon!</div>
+              <div>{this.state.description}</div>
               <Row>
                 <Col sm={7}>
-                  <img alt="map" src={Map} className="img-responsive fit-image col-12" />
+                  <img
+                    id="map-image"
+                    alt="map"
+                    src="https://maps.googleapis.com/maps/api/staticmap?center=Berkeley,CA&size=400x400&key=AIzaSyAnf5cu-0DsgGB-pRF25wFURi2Cn1vNboc"
+                    className="img-responsive fit-image col-12"
+                  />
                 </Col>
                 <Col sm={5}>
                   <div className="font-medium">Hours</div>
-                  <table id="result-hours-table" data-testid="result-hours-table">
-                    <tbody>
-                      <tr data-testid="ht-item">
-                        <td>Sunday</td>
-                        <td>10:30AM-9:30PM</td>
-                      </tr>
-                      <tr data-testid="ht-item">
-                        <td>Monday</td>
-                        <td>10:30AM-9:30PM</td>
-                      </tr>
-                      <tr data-testid="ht-item">
-                        <td>Tuesday</td>
-                        <td>10:30AM-9:30PM</td>
-                      </tr>
-                      <tr data-testid="ht-item">
-                        <td>Wednesday</td>
-                        <td>10:30AM-9:30PM</td>
-                      </tr>
-                      <tr data-testid="ht-item">
-                        <td>Thursday</td>
-                        <td>10:30AM-9:30PM</td>
-                      </tr>
-                      <tr data-testid="ht-item">
-                        <td>Friday</td>
-                        <td>10:30AM-9:30PM</td>
-                      </tr>
-                      <tr data-testid="ht-item">
-                        <td>Saturday</td>
-                        <td>10:30AM-9:30PM</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div className="hours" data-testid="result-hours-table">{this.state.hours}</div>
                 </Col>
               </Row>
               <Row>
@@ -161,16 +189,11 @@ class Result extends Component {
                   <div>{ this.state.address }</div>
                 </Col>
                 <Col sm={5}>
-                  {/* <button type="button" className="font-medium"
-                       onClick={this.getDirections}>Get Directions</button> */}
-                  <button type="button" className="font-medium">Get Directions</button>
+                  <button type="button" className="font-medium" onClick={this.getDirections}>Get Directions</button>
                 </Col>
               </Row>
             </Col>
           </Row>
-          {/* <Row>
-                    <Button className="str-button" href="/roulette">Spin Again!</Button>
-                </Row> */}
         </Container>
       );
     }
