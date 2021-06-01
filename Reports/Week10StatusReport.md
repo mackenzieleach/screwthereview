@@ -90,11 +90,11 @@ Thank you for a great quarter Wilson!
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week, I went through all of our peer review and opened up GitHub issues for the items that we needed to address. I also cleaned up, added labeling and better comments to our existing open issues so bugs are well documented as we wrap up the project. I completed my portion of the slides for the final release and also edited our team's video as we filmed in a few takes to switch screen sharing control to demo. <p>&nbsp;</p>
+* **Successful Tactics:** We utilized a much longer team meeting Monday night to work through some of the open GitHub issues and bugs, add a loading symbol to the result page since it is a bit slow now that we've implemented business description scraping. We took the rest of this meeting to work on our final presentation and get it filmed. <p>&nbsp;</p>
+* **Learning:** For me, there wasn't much use of new tools or languages this week as I worked mainly on addressing currently open GitHub issues, bugs and updating documentation.  <p>&nbsp;</p>
+* **Issues & Challenges:** LuLu and I discovered over the weekend that in order to implement the Auth0 functionality in the way we wanted it for the account page, we would need to build out an entire server endpoint to interact with the API. We made the decision that given time and the other bugs we needed to fix, we'd have to totally drop working on any form of the user model to round out that page. <p>&nbsp;</p>
+* **Blockers:** None! <p>&nbsp;</p>
 
 &nbsp;  
 
