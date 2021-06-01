@@ -4,15 +4,15 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import Loader from 'react-loader-spinner';
 import server from './server';
-import LoadingIcon from './LoadingIcon';
 
 class Result extends Component {
   constructor(props) {
     super(props);
     this.getDirections = this.getDirections.bind(this);
     this.state = {
-      iconAnimating: true,
+      loading: true,
       name: null,
       description: null,
       phone: null,
@@ -35,7 +35,7 @@ class Result extends Component {
       .then((response) => response.text())
       .then((json) => {
         this.setState({
-          iconAnimating: false,
+          loading: false,
         });
         this.parseResult(json);
       });
@@ -136,8 +136,8 @@ class Result extends Component {
     }
 
     render() {
-      if (this.state.iconAnimating) {
-        return LoadingIcon;
+      if (this.state.loading) {
+        return <Loader type="Bars" color="#00BFFF" height={100} width={100} timeout={3000} />;
       }
       return (
         <Container fluid className="page-container" style={{ paddingBottom: '36px' }}>
