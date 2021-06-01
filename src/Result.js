@@ -180,7 +180,7 @@ class Result extends Component {
                 </Col>
                 <Col sm={5}>
                   <div className="font-medium">Hours</div>
-                  <div className="hours">{this.state.hours}</div>
+                  <div className="hours" data-testid="result-hours-table">{this.state.hours}</div>
                 </Col>
               </Row>
               <Row>
