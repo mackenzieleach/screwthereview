@@ -19,7 +19,7 @@ class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '', seeResult: false, locationVal: 'seattle', moneyVal: "", distanceVal: '', keyword: '', isActive1: false, isActive2: false, isActive3: false, isActive4: false, isActive5: false, isActive6: false, isActive7: false, isActive8: false,
+      value: '', seeResult: false, locationVal: 'seattle', moneyVal: '', distanceVal: '', keyword: '', isActive1: false, isActive2: false, isActive3: false, isActive4: false, isActive5: false, isActive6: false, isActive7: false, isActive8: false,
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -34,22 +34,22 @@ class Search extends Component {
 
   handleMoney(event) {
     if (event.target.id === 'dollarButton1') {
-      this.setState({ moneyVal: "1" });
+      this.setState({ moneyVal: '1' });
       this.setState((prevState) => ({
         isActive1: !prevState.isActive1,
       }));
     } else if (event.target.id === 'dollarButton2') {
-      this.setState({ moneyVal: "2" });
+      this.setState({ moneyVal: '2' });
       this.setState((prevState) => ({
         isActive2: !prevState.isActive2,
       }));
     } else if (event.target.id === 'dollarButton3') {
-      this.setState({ moneyVal: "3" });
+      this.setState({ moneyVal: '3' });
       this.setState((prevState) => ({
         isActive3: !prevState.isActive3,
       }));
     } else if (event.target.id === 'dollarButton4') {
-      this.setState({ moneyVal: "4" });
+      this.setState({ moneyVal: '4' });
       this.setState((prevState) => ({
         isActive4: !prevState.isActive4,
       }));
