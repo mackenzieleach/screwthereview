@@ -29,6 +29,8 @@ class Result extends Component {
       headers: {
         location: this.props.location,
         category: this.props.category,
+        price: this.props.price,
+        radius: this.props.radius,
       },
     })
       .then((response) => response.text())
