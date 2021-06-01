@@ -207,7 +207,6 @@ button {
   border-radius:5px;
 }
 
-
 #spin {
   bottom: 20vh;
   right: 45vw;
@@ -401,15 +400,47 @@ p#card-info{
   display: block;
 }
 
+/* search bar */
+.css-2b097c-container {
+  width: 80%;
+  margin-left: 12px;
+  margin-top: -6px;
+}
+
+/* account page */
+.profile-picture-container {
+  background: #4dd8ff;
+  border: 2px solid black;
+  padding: 48px;
+}
+
 .profile-picture {
   padding: 10%;
   width: 100%;
   height: 100%;
 }
 
-/* search bar */
-.css-2b097c-container {
-  width: 80%;
-  margin-left: 12px;
-  margin-top: -6px;
+.profile-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-button, .profile-button:hover, .profile-button:active{
+  background-color: lightgray;
+  color: black;
+  border: 2px solid black;
+}
+
+.profile-info-container {
+  border: 2px solid black;
+  padding: 48px;
+}
+
+.profile-name {
+  display: block !important;
+}
+
+.hours {
+  white-space: pre-wrap;
 }

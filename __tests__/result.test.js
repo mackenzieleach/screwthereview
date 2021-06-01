@@ -49,10 +49,8 @@ describe('Result Overall', () => {
     render(<Result />);
     const hoursLabel = screen.getByText('Hours');
     const hoursTable = screen.getByTestId('result-hours-table');
-    const hoursTableItems = screen.getAllByTestId('ht-item');
     expect(hoursLabel).toBeInTheDocument();
     expect(hoursTable).toBeInTheDocument();
-    expect(hoursTableItems.length).toBeGreaterThanOrEqual(7);
     cleanup();
   });
 
