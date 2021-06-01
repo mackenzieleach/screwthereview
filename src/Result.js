@@ -26,21 +26,37 @@ class Result extends Component {
   }
 
   componentDidMount() {
-    fetch(server.getServerUrl(), {
-      headers: {
-        location: this.props.location,
-        price: this.props.price,
-        radius: this.props.radius,
-        categories: this.props.category,
-      },
-    })
-      .then((response) => response.text())
-      .then((json) => {
-        this.setState({
-          loading: false,
+    if (this.props.price === undefined) {
+      fetch(server.getServerUrl(), {
+        headers: {
+          location: this.props.location,
+          categories: this.props.category,
+        },
+      })
+        .then((response) => response.text())
+        .then((json) => {
+          this.setState({
+            loading: false,
+          });
+          this.parseResult(json);
         });
-        this.parseResult(json);
-      });
+    } else {
+      fetch(server.getServerUrl(), {
+        headers: {
+          location: this.props.location,
+          price: this.props.price,
+          radius: this.props.radius,
+          categories: this.props.category,
+        },
+      })
+        .then((response) => response.text())
+        .then((json) => {
+          this.setState({
+            loading: false,
+          });
+          this.parseResult(json);
+        });
+    }
   }
 
   getDirections = () => {
