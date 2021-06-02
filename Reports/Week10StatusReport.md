@@ -63,11 +63,11 @@ Thank you for a great quarter Wilson!
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** Well folks, what a week. I did the biz description scraping thing (which was way tough), I implemented the loading wheel for the results page (me on frontend? Who woulda thought!) and wrote and presented half the final release slides. Crazy week if I ever had one...  <p>&nbsp;</p>
+* **Successful Tactics:** Synchronous programming, dogged perseverance, and empathetic flexiblility <p>&nbsp;</p>
+* **Learning:** the NPM package react-loader (think that's what it's called?) and bing-scraper. Also presentation skillz woo. <p>&nbsp;</p>
+* **Issues & Challenges:** Time crucnch to the extreme, but it's over so were good! <p>&nbsp;</p>
+* **Blockers:** None <p>&nbsp;</p>
 
 &nbsp;  
 
