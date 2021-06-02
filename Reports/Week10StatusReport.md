@@ -63,11 +63,11 @@ Thank you for a great quarter Wilson!
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** Well folks, what a week. I did the biz description scraping thing (which was way tough), I implemented the loading wheel for the results page (me on frontend? Who woulda thought!) and wrote and presented half the final release slides. Crazy week if I ever had one...  <p>&nbsp;</p>
+* **Successful Tactics:** Synchronous programming, dogged perseverance, and empathetic flexiblility <p>&nbsp;</p>
+* **Learning:** the NPM package react-loader (think that's what it's called?) and bing-scraper. Also presentation skillz woo. <p>&nbsp;</p>
+* **Issues & Challenges:** Time crucnch to the extreme, but it's over so were good! <p>&nbsp;</p>
+* **Blockers:** None <p>&nbsp;</p>
 
 &nbsp;  
 
@@ -115,11 +115,11 @@ Thank you for a great quarter Wilson!
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week I completed a lot of tasks in preparation of final release. Firstly, I implemented the Google places API in 2 different places to accomodate static maps and directions on the result page. I also addressed some bugs that were not allowing the correct headers to be passed in when making calls to the server. Also, I was able to digest more data (such as details and hours) passed in by the server to be displayed on the Result page. On top of this, I had to implement a whole new testing schema to address a loading wheel that we implemented. <p>&nbsp;</p>
+* **Successful Tactics:** All of the above mentioned tasks were accomplished in one "coding session," meaning I just sat down and basically coded all day. While this was tiresome, it really allowed me to direct all of my focus on the project which I think attributed to my successes. <p>&nbsp;</p>
+* **Learning:** Technically speaking, I learned how to use the enzyme plugin with the Jest testing framework. I had to do this because it allows for mocking componen states which was necessary for the tests written for the Result page, following the implementation of the loading wheel. <p>&nbsp;</p>
+* **Issues & Challenges:** My main issue this week was time. Because it is the end of the school year and my intersnhip is ending, I am finding myself having to tie up a lot of loose ends on projects. My demanding schedule accompanied with the burnout of a full year onlne definitely made this week more tiresome, but I am glad to have produced a final project that we are all very excited about!! <p>&nbsp;</p>
+* **Blockers:** I currently have no blockers as we turned in our final assignment :) All I have left is my final reflection!! <p>&nbsp;</p>
 
 &nbsp;  
 
