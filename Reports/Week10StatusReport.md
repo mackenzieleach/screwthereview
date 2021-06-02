@@ -34,11 +34,11 @@
 &nbsp;  
 
 ### **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week was an incredibly busy final push in development for final release! Our team addressed several bugs and issues with documentation found in peer review, finished implementing scraping of business description and hours on the server side for the results page, and added the Google Maps API for static maps and directions on the result page. We also filmed our final release video Monday night.  <p>&nbsp;</p>
+* **Successful Tactics:** We used a longer synchronous meeting this week that allowed us to work through some of the bugs as a team which definitely sped up the process a bit. The Slack channel also pushes notifications for pull requests to our phones, which has allowed us to stay on top of code reviews this week.  <p>&nbsp;</p>
+* **Learning:** LuLu learned a lot about Enzyme testing for mocking states after the addition of a loading wheel to the results page. Luke focused on implementing an entire Bing scraper for business descriptions and hours, which was not an easy task. <p>&nbsp;</p>
+* **Issues & Challenges:** This week, finding the time to make that final push was difficult for all of us with finals approaching, and we are definitely all feeling a bit of releif to be past final release! <p>&nbsp;</p>
+* **Blockers:** None! <p>&nbsp;</p>
 
 &nbsp;  
 
