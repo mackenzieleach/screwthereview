@@ -2,6 +2,9 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { render, cleanup, screen } from '@testing-library/react';
+import { shallow, configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+configure({ adapter: new Adapter() });
 import Result from '../src/Result';
 import '@testing-library/jest-dom';
 
@@ -24,50 +27,48 @@ beforeEach(() => {
       body: 'Not Found',
     };
   });
-  const resultComponent = shallow(<Result />);
-  resultComponent.setState({ loading: false });
 });
 
-describe.skip('Result Overall', () => {
+describe('Result Overall', () => {
   test('Result image rendered', () => {
-    render(<Result />);
-    expect(screen.getByAltText('result')).toBeInTheDocument();
+    const result = shallow(<Result />)
+    result.setState({ loading: false });
+    expect(result.find("#result-image").length).toBeGreaterThanOrEqual(1);
     cleanup();
   });
 
-  test.skip('Result name rendered', () => {
-    render(<Result />);
-    expect(screen.getByTestId('result-name')).toBeInTheDocument();
+  test('Result name rendered', () => {
+    const result = shallow(<Result />)
+    result.setState({ loading: false });
+    expect(result.find('#result-name').length).toBeGreaterThanOrEqual(1);
     cleanup();
   });
 
-  test.skip('Result map rendered', () => {
-    render(<Result />);
-    expect(screen.getByAltText('map')).toBeInTheDocument();
+  test('Result map rendered', () => {
+    const result = shallow(<Result />)
+    result.setState({ loading: false });
+    expect(result.find('#map-image').length).toBeGreaterThanOrEqual(1);
     cleanup();
   });
 
-  test.skip('Result hours table rendered', () => {
-    render(<Result />);
-    const hoursLabel = screen.getByText('Hours');
-    const hoursTable = screen.getByTestId('result-hours-table');
-    expect(hoursLabel).toBeInTheDocument();
-    expect(hoursTable).toBeInTheDocument();
+  test('Result hours table rendered', () => {
+    const result = shallow(<Result />)
+    result.setState({ loading: false });
+    expect(result.find('#result-hours-table').length).toBeGreaterThanOrEqual(1);
     cleanup();
   });
 
-  test.skip('Result info table rendered', () => {
-    render(<Result />);
-    const infoTable = screen.getByTestId('result-info-table');
-    const infoTableItems = screen.getAllByTestId('info-item');
-    expect(infoTable).toBeInTheDocument();
-    expect(infoTableItems.length).toBeGreaterThanOrEqual(4);
+  test('Result info table rendered', () => {
+    const result = shallow(<Result />)
+    result.setState({ loading: false });
+    expect(result.find('#result-info-table').length).toBeGreaterThanOrEqual(1);
     cleanup();
   });
 
-  test.skip('Result link rendered', () => {
-    render(<Result />);
-    expect(screen.getByText('Website'));
+  test('Result link rendered', () => {
+    const result = shallow(<Result />)
+    result.setState({ loading: false });
+    expect(result.find('#link').length).toBeGreaterThanOrEqual(1);
     cleanup();
   });
 });

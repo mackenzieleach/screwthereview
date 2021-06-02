@@ -160,31 +160,31 @@ class Result extends Component {
       return (
         <Container fluid className="page-container" style={{ paddingBottom: '36px' }}>
           <Row>
-            <div className="col font-large" data-testid="result-name">{this.state.name}</div>
+            <div id="result-name" className="col font-large">{this.state.name}</div>
           </Row>
           <Row>
             <Col sm={5}>
               <Row>
-                <img alt="result" className="img-fluid" src={this.state.imageURL} style={{ width: '100%' }} />
+                <img id="result-image" alt="result" className="img-fluid" src={this.state.imageURL} style={{ width: '100%' }} />
               </Row>
               <Row>
-                <table id="result-info-table" data-testid="result-info-table">
+                <table id="result-info-table">
                   <tbody>
-                    <tr data-testid="info-item">
+                    <tr>
                       <td>Phone: </td>
                       <td>{this.state.phone}</td>
                     </tr>
-                    <tr data-testid="info-item">
+                    <tr>
                       <td>
                         <a id="link" href={this.state.website}>Website</a>
                       </td>
                       <td />
                     </tr>
-                    <tr data-testid="info-item">
+                    <tr>
                       <td>Tags: </td>
                       <td>{this.state.tags}</td>
                     </tr>
-                    <tr data-testid="info-item">
+                    <tr>
                       <td>Price: </td>
                       <td>{this.state.price}</td>
                     </tr>
@@ -206,7 +206,7 @@ class Result extends Component {
                 </Col>
                 <Col sm={5}>
                   <div className="font-medium">Hours</div>
-                  <div className="hours" data-testid="result-hours-table">{this.state.hours}</div>
+                  <div className="hours" id="result-hours-table">{this.state.hours}</div>
                 </Col>
               </Row>
               <Row>
