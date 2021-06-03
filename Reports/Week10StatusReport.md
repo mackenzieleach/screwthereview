@@ -139,10 +139,10 @@ Thank you for a great quarter Wilson!
 &nbsp; 
 
 **Progress & Issues**  
-* **Tasks Completed:** <Description>  <p>&nbsp;</p>
-* **Successful Tactics:** <Description> <p>&nbsp;</p>
-* **Learning:** <Description> <p>&nbsp;</p>
-* **Issues & Challenges:** <Description> <p>&nbsp;</p>
-* **Blockers:** <Description> <p>&nbsp;</p>
+* **Tasks Completed:** This week was a very successful week for the whole team! We all powered through and knocked out important issues and created a very polished final release youtube video. I was able to debug the price and radius filter not working (it wasn't sending the proper information to the headers because I was originally grabbing undefined data from the user input). I also finally figured out the yellow highlight button by adding the necessary React states that we needed for each dollar and distance button. <p>&nbsp;</p>
+* **Successful Tactics:** Pair programming on zoom video helped us debug the issues together. We were also very prepared with our scripts for the final release video which helped us film more effectively. <p>&nbsp;</p>
+* **Learning:** I learned a lot from my teammates and through online Stackoverflow posts regarding adding states to react buttons.<p>&nbsp;</p>
+* **Issues & Challenges:** Most of my issues were able to be solved with the help of my teammates and spending significant hours over the weekend to debug problems. <p>&nbsp;</p>
+* **Blockers:** No blockers! :) <p>&nbsp;</p>
 
 &nbsp;  
